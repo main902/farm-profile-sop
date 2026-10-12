@@ -65,6 +65,14 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xfig2k .st.res .go{background:#1c2622}
 #xfig2k .side a{color:#5c4900;font-weight:900;text-decoration:underline}
 
+.pg-btn{display:block!important;width:max-content;max-width:100%;margin:6px auto 0;background:#d42a1e!important;color:#fff!important;text-decoration:none;font-weight:900!important;font-size:clamp(20px,4.6vw,28px)!important;border-radius:999px;padding:16px 44px!important;box-shadow:0 5px 0 #8f1a10,0 8px 18px rgba(212,42,30,.35);animation:pgpulse 2.4s ease-in-out infinite}
+.pg-btn:hover{transform:translateY(-2px)}
+.pg-btn::after{content:" ›"}
+@keyframes pgpulse{0%,100%{box-shadow:0 5px 0 #8f1a10,0 8px 18px rgba(212,42,30,.35)}50%{box-shadow:0 5px 0 #8f1a10,0 8px 28px rgba(212,42,30,.6)}}
+.pg-lead a.pg-cta{background:#d42a1e!important;color:#fff!important;font-size:18px!important;padding:10px 20px!important;box-shadow:0 3px 0 #8f1a10;border:2px solid #fff}
+@media (prefers-reduced-motion:reduce){.pg-btn{animation:none}}
+@media (max-width:960px){.pg-btn{white-space:nowrap;font-size:21px!important;padding:14px 26px!important}}
+
 #xg4 .n{display:none!important}
 #xg4 .bot{background:none!important}
 .pg-after{margin-top:8px;font-size:15px;font-weight:700;color:#5d6a64}.pg-after a{color:#c8361c;font-weight:900}
@@ -884,7 +892,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 }
 
 </style></head><body>
-<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html">目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html" class=on>K式</a></nav><span class="pg-tag">農場プロファイル</span><h1>診療・農場フロー型パッケージ（K式）実施SOP</h1><p>日々の診療のついでに、期限までに少しずつ。1日でまとめてもOK。</p><div class="pg-lead"><a href="#s-fig2k">はじめから見る ▶</a><a href="#step7">📊 結果の見かた</a><a href="K式_実施ガイド_A4印刷用.pdf">🖨 印刷用PDF（A4）</a></div></div></header>
+<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html">目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html" class=on>K式</a></nav><span class="pg-tag">農場プロファイル</span><h1>診療・農場フロー型パッケージ（K式）実施SOP</h1><p>日々の診療のついでに、期限までに少しずつ。1日でまとめてもOK。</p><div class="pg-lead"><a class="pg-cta" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a><a href="#s-fig2k">はじめから見る ▶</a><a href="#step7">📊 結果の見かた</a><a href="K式_実施ガイド_A4印刷用.pdf">🖨 印刷用PDF（A4）</a></div></div></header>
 <nav class="pg-toc"><div class="pg-wrap"><a href="#s-fig2k"><span>▶</span>K式の流れ</a><a href="#step1"><span>1</span>申請</a><a href="#step2"><span>2</span>Zone登録</a><a href="#step3"><span>3</span>キット</a><a href="#step4"><span>4</span>採材・撮影</a><a href="#step5"><span>5</span>終わりにする</a><a href="#step6"><span>6</span>発送</a><a href="#step7"><span>7</span>結果</a></div></nav>
 <section class="pg-sec" id="s-fig2k"><h2>K式の流れ</h2><p class="pg-cap">各ステップを押すと、その説明へ移動します</p><div class="pg-fig" id="xfig2k"><div class="w">
 <h1>K式の流れ<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
@@ -1233,7 +1241,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
   <div style="text-align:right;padding-right:44px;height:20px"><svg width="20" height="20"><path d="M10 0v12" stroke="#2f6688" stroke-width="4"/><path d="M2 10h16l-8 10z" fill="#2f6688"/></svg></div>
   <div class="addon" style="margin-top:2px">＋ <span>Add-on解析</span> で Act を支援</div>
  </div>
-</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="https://www.notion.so/2b10b8956056814e875ddb38864610da" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例をダウンロード（Notionページ）</a></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><section class="pg-sec" id="s-g6"><span class="pg-tagst">STEP 7</span><h2>Add-on解析で「Act」まで</h2><p class="pg-cap">問題が見えたところだけを深く調べ、対策につなげて、効果まで確かめる</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
+</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="docs/プロファイル診断レポート_例.pdf" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例を開く（PDF）</a></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><section class="pg-sec" id="s-g6"><span class="pg-tagst">STEP 7</span><h2>Add-on解析で「Act」まで</h2><p class="pg-cap">問題が見えたところだけを深く調べ、対策につなげて、効果まで確かめる</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
 <div class="lead">問題が見えたところだけを<b>深く調べ</b>、対策につなげて、<b>効果まで確かめる</b></div>
 <div class="mcyc"><div style="--c:#e0561b">📊 <b>農場プロファイル</b><small>農場全体を広く見る</small></div><i>▼</i><div style="--c:#c28a00;background:#fdf5dc">🔍 <b>Check！</b><small>SeFレポートで問題発見</small></div><i>▼</i><div style="--c:#2f6688;background:#e6eef3">🔬 <b>Add-on解析</b><small>原因を深く調べる</small></div><i>▼</i><div style="--c:#2f7d3a;background:#eaf5eb">🛠️ <b>Act</b><small>対策を決めて実行</small></div><i>▼</i><div style="--c:#6b3fa0">🔁 <b>Re-profile</b><small>対策した段階を測り直す</small></div><i class="up">↺ はじめにもどる</i></div><svg class="dcyc" viewBox="0 0 944 560" width="944" style="display:block;margin:0 auto">
  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f6a04d"/></marker></defs>

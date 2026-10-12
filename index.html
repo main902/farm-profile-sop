@@ -58,6 +58,14 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xfig5 .pre .lab{flex-basis:100%;font-size:15px;font-weight:900;color:#5d6a64}
 .pg-foot{max-width:1040px;margin:18px auto 40px;padding:0 16px;color:#5d6a64;font-size:13px}
 
+.pg-btn{display:block!important;width:max-content;max-width:100%;margin:6px auto 0;background:#d42a1e!important;color:#fff!important;text-decoration:none;font-weight:900!important;font-size:clamp(20px,4.6vw,28px)!important;border-radius:999px;padding:16px 44px!important;box-shadow:0 5px 0 #8f1a10,0 8px 18px rgba(212,42,30,.35);animation:pgpulse 2.4s ease-in-out infinite}
+.pg-btn:hover{transform:translateY(-2px)}
+.pg-btn::after{content:" ›"}
+@keyframes pgpulse{0%,100%{box-shadow:0 5px 0 #8f1a10,0 8px 18px rgba(212,42,30,.35)}50%{box-shadow:0 5px 0 #8f1a10,0 8px 28px rgba(212,42,30,.6)}}
+.pg-lead a.pg-cta{background:#d42a1e!important;color:#fff!important;font-size:18px!important;padding:10px 20px!important;box-shadow:0 3px 0 #8f1a10;border:2px solid #fff}
+@media (prefers-reduced-motion:reduce){.pg-btn{animation:none}}
+@media (max-width:960px){.pg-btn{white-space:nowrap;font-size:21px!important;padding:14px 26px!important}}
+
 #xg4 .n{display:none!important}
 #xg4 .bot{background:none!important}
 .pg-after{margin-top:8px;font-size:15px;font-weight:700;color:#5d6a64}.pg-after a{color:#c8361c;font-weight:900}
@@ -323,7 +331,6 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xo_apply .chain .cut{counter-increment:c}
 #xo_apply .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
 #xo_apply .chain .cut{padding-right:32px!important}
-#xo_apply .ap a.f{font-size:17px!important;padding:10px 16px!important}
 #xo_apply .ap .pre{font-size:14px!important}
 #xo_apply .lk a{font-size:14px!important}#xg1 .w{width:100%!important;padding:18px 16px 22px!important}
 #xg1 *{max-width:100%}
@@ -484,11 +491,11 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 }
 
 </style></head><body>
-<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html" class=on>目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html">K式</a></nav><span class="pg-tag">BRDC Frontiers</span><h1>📊 農場プロファイル実施SOP</h1><p>2つのルートから選べます。評価する「ものさし」は同じです。</p><div class="pg-lead"><a href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォーム</a><a href="odan.html">🟥 横断パッケージ</a><a href="k-shiki.html">🟩 K式</a></div></div></header>
+<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html" class=on>目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html">K式</a></nav><span class="pg-tag">BRDC Frontiers</span><h1>📊 農場プロファイル実施SOP</h1><p>2つのルートから選べます。評価する「ものさし」は同じです。</p><div class="pg-lead"><a class="pg-cta" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a><a href="odan.html">🟥 横断パッケージ</a><a href="k-shiki.html">🟩 K式</a></div></div></header>
 <nav class="pg-toc"><div class="pg-wrap"><a href="#s-apply"><span>📝</span>申請</a><a href="#s-route"><span>🔀</span>えらぶ</a><a href="#s-sop"><span>📋</span>実施SOP</a><a href="#s-howto"><span>❓</span>申請のしかた</a><a href="#s-result"><span>📊</span>結果</a><a href="#s-addon"><span>🔬</span>Add-on</a><a href="#s-open"><span>ⓘ</span>オープン化</a></div></nav>
 <section class="pg-sec" id="s-apply"><h2>申請はこちらから</h2><div class="pg-fig" id="xo_apply"><div class="w"><div class="ap">
 <div class="pre">先に下の<b>「実施方法をえらぶ」</b>で、横断パッケージ／K式のどちらにするか決めてから申請してください</div>
-<a class="f" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 農場プロファイル実施申請フォーム</a>
+<a class="pg-btn" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a>
 <div class="lk"><a href="https://www.notion.so/3f40b89560568088acbbee4978316247" target="_blank" rel="noopener">🎬 説明動画（YouTube）</a><a href="https://www.notion.so/3f40b89560568023b745f3cdfbc95b29" target="_blank" rel="noopener">📖 説明漫画</a></div>
 </div></div></div></section><section class="pg-sec" id="s-route"><h2>実施方法をえらぶ</h2><p class="pg-cap">横断パッケージとK式、どちらも集めるデータは同じです</p><div class="pg-fig" id="xg1"><div class="w"><div class="h1">農場プロファイル　<span>2つのルート</span></div><div class="lead">方法は選べて、評価する「ものさし」は同じです。</div><div class="sec"><div class="sh">共通して取得する４つの基本データ</div>
  <div class="four">
@@ -602,7 +609,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
   <div style="text-align:right;padding-right:44px;height:20px"><svg width="20" height="20"><path d="M10 0v12" stroke="#2f6688" stroke-width="4"/><path d="M2 10h16l-8 10z" fill="#2f6688"/></svg></div>
   <div class="addon" style="margin-top:2px">＋ <span>Add-on解析</span> で Act を支援</div>
  </div>
-</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="https://www.notion.so/2b10b8956056814e875ddb38864610da" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例をダウンロード（Notionページ）</a></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-addon"><h2>追加解析（Add-on）</h2><p class="pg-cap">SeFレポートで問題が見えたところだけを深く調べ、対策（Act）とその効果の確認まで支援します。申込みはメールでセンターへ</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
+</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="docs/プロファイル診断レポート_例.pdf" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例を開く（PDF）</a></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-addon"><h2>追加解析（Add-on）</h2><p class="pg-cap">SeFレポートで問題が見えたところだけを深く調べ、対策（Act）とその効果の確認まで支援します。申込みはメールでセンターへ</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
 <div class="lead">問題が見えたところだけを<b>深く調べ</b>、対策につなげて、<b>効果まで確かめる</b></div>
 <div class="mcyc"><div style="--c:#e0561b">📊 <b>農場プロファイル</b><small>農場全体を広く見る</small></div><i>▼</i><div style="--c:#c28a00;background:#fdf5dc">🔍 <b>Check！</b><small>SeFレポートで問題発見</small></div><i>▼</i><div style="--c:#2f6688;background:#e6eef3">🔬 <b>Add-on解析</b><small>原因を深く調べる</small></div><i>▼</i><div style="--c:#2f7d3a;background:#eaf5eb">🛠️ <b>Act</b><small>対策を決めて実行</small></div><i>▼</i><div style="--c:#6b3fa0">🔁 <b>Re-profile</b><small>対策した段階を測り直す</small></div><i class="up">↺ はじめにもどる</i></div><svg class="dcyc" viewBox="0 0 944 560" width="944" style="display:block;margin:0 auto">
  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f6a04d"/></marker></defs>

@@ -65,6 +65,14 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xo_flow .st.res .go{background:#1c2622}
 #xo_flow .side a{color:#5c4900;font-weight:900;text-decoration:underline}
 
+.pg-btn{display:block!important;width:max-content;max-width:100%;margin:6px auto 0;background:#d42a1e!important;color:#fff!important;text-decoration:none;font-weight:900!important;font-size:clamp(20px,4.6vw,28px)!important;border-radius:999px;padding:16px 44px!important;box-shadow:0 5px 0 #8f1a10,0 8px 18px rgba(212,42,30,.35);animation:pgpulse 2.4s ease-in-out infinite}
+.pg-btn:hover{transform:translateY(-2px)}
+.pg-btn::after{content:" ›"}
+@keyframes pgpulse{0%,100%{box-shadow:0 5px 0 #8f1a10,0 8px 18px rgba(212,42,30,.35)}50%{box-shadow:0 5px 0 #8f1a10,0 8px 28px rgba(212,42,30,.6)}}
+.pg-lead a.pg-cta{background:#d42a1e!important;color:#fff!important;font-size:18px!important;padding:10px 20px!important;box-shadow:0 3px 0 #8f1a10;border:2px solid #fff}
+@media (prefers-reduced-motion:reduce){.pg-btn{animation:none}}
+@media (max-width:960px){.pg-btn{white-space:nowrap;font-size:21px!important;padding:14px 26px!important}}
+
 #xg4 .n{display:none!important}
 #xg4 .bot{background:none!important}
 .pg-after{margin-top:8px;font-size:15px;font-weight:700;color:#5d6a64}.pg-after a{color:#c8361c;font-weight:900}
@@ -456,7 +464,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 }
 
 </style></head><body>
-<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html">目次</a><a href="odan.html" class=on>横断パッケージ</a><a href="k-shiki.html">K式</a></nav><span class="pg-tag">農場プロファイル</span><h1>横断パッケージ 実施SOP</h1><p>専用日に1日で、農場全体（15頭）をまとめて評価します。</p><div class="pg-lead"><a href="#s-flow">はじめから見る ▶</a><a href="https://youtu.be/no0Gnvm21ps?si=VB3FtnRJIXhM50e8" target="_blank" rel="noopener">▶ 実践ガイド動画</a><a href="#step6">📊 結果の見かた</a></div></div></header>
+<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html">目次</a><a href="odan.html" class=on>横断パッケージ</a><a href="k-shiki.html">K式</a></nav><span class="pg-tag">農場プロファイル</span><h1>横断パッケージ 実施SOP</h1><p>専用日に1日で、農場全体（15頭）をまとめて評価します。</p><div class="pg-lead"><a class="pg-cta" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a><a href="#s-flow">はじめから見る ▶</a><a href="https://youtu.be/no0Gnvm21ps?si=VB3FtnRJIXhM50e8" target="_blank" rel="noopener">▶ 実践ガイド動画</a><a href="#step6">📊 結果の見かた</a></div></div></header>
 <nav class="pg-toc"><div class="pg-wrap"><a href="#s-flow"><span>▶</span>流れ</a><a href="#s-sheet"><span>✎</span>聞き取り</a><a href="#step1"><span>1</span>申請</a><a href="#step2"><span>2</span>配置図・実施日</a><a href="#step3"><span>3</span>準備</a><a href="#step4"><span>4</span>当日</a><a href="#step5"><span>5</span>発送</a><a href="#step6"><span>6</span>結果</a><a href="#detail"><span>📖</span>詳細SOP</a></div></nav>
 <section class="pg-sec" id="s-flow"><h2>横断パッケージの流れ</h2><p class="pg-cap">各ステップを押すと、その説明へ移動します</p><div class="pg-fig" id="xo_flow"><div class="w">
 <h1>横断パッケージの流れ</h1>
@@ -470,7 +478,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 <a class="stl" href="#step6"><div class="st res"><div class="n">6</div><div><b>結果レポートが返ってくる</b><small>１か月以内に返送</small><em class="go">結果の見かたへ ›</em></div></div></a>
 </div></div></section><section class="pg-sec" id="s-sheet"><h2>いつでもOK：農場聞き取りシート</h2><div class="pg-fig" id="xo_sheet"><div class="w">
 <div class="cd"><svg width="64" height="76" viewBox="0 0 64 76"><rect x="6" y="8" width="52" height="64" rx="6" fill="#8a6d00"/><rect x="12" y="16" width="40" height="50" fill="#fff"/><rect x="22" y="3" width="20" height="10" rx="3" fill="#4a4f4c"/><path d="M18 28h28M18 38h28M18 48h20" stroke="#9aa8a1" stroke-width="3"/></svg>
-<div><b>農場聞き取りシート</b><p>手書きで記入して、スマホで写真に撮って提出でもOK。<br>実施後に、動画などと一緒に共有フォルダかフォームから提出します。</p><a class="dl" href="https://www.notion.so/3f40b8956056810fb13fd7915db612ed" target="_blank" rel="noopener">📄 PDFをダウンロード（Notionページ）</a></div></div>
+<div><b>農場聞き取りシート</b><p>手書きで記入して、スマホで写真に撮って提出でもOK。<br>実施後に、動画などと一緒に共有フォルダかフォームから提出します。</p><a class="dl" href="docs/農場聞き取りシート_260626版.pdf" target="_blank" rel="noopener">📄 聞き取りシートを開く（PDF）</a></div></div>
 </div></div><a class="pg-back" href="#s-flow">▲ 流れにもどる</a></section><div class="pg-step" id="step1"><span class="pg-no">1</span><div><small>STEP 1</small><b>申請フォームで申請</b></div></div><section class="pg-sec" id="s-apply"><span class="pg-tagst">STEP 1</span><h2>申請のしかた</h2><p class="pg-cap">Googleアカウントを用意 → 農場のGoogle Map情報 → 申請フォームで「横断パッケージ」を選ぶ → 共有フォルダのアドレスがメールで届く</p><div class="pg-fig" id="xg4"><div class="w"><div class="sec"><div class="sh">申請のしかた（共通）</div>
 <div class="steps">
  <div class="st"><div class="n">1</div><div class="ic"><svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" fill="#fff" stroke="#e0561b" stroke-width="4"/><circle cx="42" cy="33" r="13" fill="#e0561b"/><path d="M18 68c4-14 14-20 24-20s20 6 24 20" fill="#e0561b"/></svg></div>
@@ -532,7 +540,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 <div class="k" style="--c:#7a5230"><h3>糞便採取用</h3><ul><li>糞便輸送チューブ（25mL遠沈管）× 採材頭数分</li></ul></div>
 <div class="k" style="--c:#2f6688"><h3>検体返送用</h3><ul><li>返送用着払伝票</li><li>保冷袋</li></ul></div>
 </div>
-<a class="dl" href="https://www.notion.so/3f40b8956056810fb13fd7915db612ed" target="_blank" rel="noopener">📄 物品チェックリスト（PDF・Notionページ）</a><a class="dl" href="https://www.notion.so/2b10b895605681329daef6db4baa827b" target="_blank" rel="noopener">🛒 各商品詳細（購入先）</a>
+<a class="dl" href="docs/農場プロファイル物品チェックリスト.pdf" target="_blank" rel="noopener">📄 物品チェックリストを開く（PDF）</a><a class="dl" href="https://www.notion.so/2b10b895605681329daef6db4baa827b" target="_blank" rel="noopener">🛒 各商品詳細（購入先）</a>
 </div></div><a class="pg-back" href="#s-flow">▲ 流れにもどる</a></section><div class="pg-step" id="step4"><span class="pg-no">4</span><div><small>STEP 4</small><b>当日：採材・撮影</b></div></div><section class="pg-sec" id="s-day"><span class="pg-tagst">STEP 4</span><h2>当日の採材と撮影</h2><p class="pg-cap">先に動画を見てから。牛は採材サポートカード、農場は撮影サポートカードに従って</p><div class="pg-fig" id="xo_day"><div class="w">
 <a class="yt" href="https://youtu.be/no0Gnvm21ps?si=VB3FtnRJIXhM50e8" target="_blank" rel="noopener"><div class="th"><img src="https://img.youtube.com/vi/no0Gnvm21ps/hqdefault.jpg" alt="YouTube 実践ガイド動画" loading="lazy"><div class="pl"><span>▶</span></div></div><div><b>実施前に、この動画で当日の方法を確認</b><p>【牛臨床獣医師必見】10分でわかる農場プロファイル実践ガイド！「意外と簡単」な実施のコツを解説</p></div></a>
 <div class="two">
@@ -591,7 +599,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
   <div style="text-align:right;padding-right:44px;height:20px"><svg width="20" height="20"><path d="M10 0v12" stroke="#2f6688" stroke-width="4"/><path d="M2 10h16l-8 10z" fill="#2f6688"/></svg></div>
   <div class="addon" style="margin-top:2px">＋ <span>Add-on解析</span> で Act を支援</div>
  </div>
-</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="https://www.notion.so/2b10b8956056814e875ddb38864610da" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例をダウンロード（Notionページ）</a></div></div><a class="pg-back" href="#s-flow">▲ 流れにもどる</a></section><section class="pg-sec" id="s-g6"><span class="pg-tagst">STEP 6</span><h2>Add-on解析で「Act」まで</h2><p class="pg-cap">問題が見えたところだけを深く調べ、対策につなげて、効果まで確かめる</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
+</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="docs/プロファイル診断レポート_例.pdf" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例を開く（PDF）</a></div></div><a class="pg-back" href="#s-flow">▲ 流れにもどる</a></section><section class="pg-sec" id="s-g6"><span class="pg-tagst">STEP 6</span><h2>Add-on解析で「Act」まで</h2><p class="pg-cap">問題が見えたところだけを深く調べ、対策につなげて、効果まで確かめる</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
 <div class="lead">問題が見えたところだけを<b>深く調べ</b>、対策につなげて、<b>効果まで確かめる</b></div>
 <div class="mcyc"><div style="--c:#e0561b">📊 <b>農場プロファイル</b><small>農場全体を広く見る</small></div><i>▼</i><div style="--c:#c28a00;background:#fdf5dc">🔍 <b>Check！</b><small>SeFレポートで問題発見</small></div><i>▼</i><div style="--c:#2f6688;background:#e6eef3">🔬 <b>Add-on解析</b><small>原因を深く調べる</small></div><i>▼</i><div style="--c:#2f7d3a;background:#eaf5eb">🛠️ <b>Act</b><small>対策を決めて実行</small></div><i>▼</i><div style="--c:#6b3fa0">🔁 <b>Re-profile</b><small>対策した段階を測り直す</small></div><i class="up">↺ はじめにもどる</i></div><svg class="dcyc" viewBox="0 0 944 560" width="944" style="display:block;margin:0 auto">
  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f6a04d"/></marker></defs>
