@@ -27,7 +27,7 @@ def scope(css,fid):
             parts.append(f'#{fid} {s}')
         if parts: res.append(','.join(parts)+'{'+body+'}')
     return '\n'.join(res)
-FORM='https://forms.gle/vr7b8SnN8KoWRgaZ8'
+FORM='https://docs.google.com/forms/d/e/1FAIpQLSdV2-E2YteqzdCNkF99YDuRffNlWEpdek1MivJMex-iblThvQ/viewform?usp=dialog'
 steps=[(1,'申請フォームで申請','申請','申請のしかたへ'),
 (2,'配置図を修正して、Zoneを登録','Zone登録','配置図とZoneの説明へ'),
 (3,'キット（コンテナ）が届く','キット','キットの中身へ'),

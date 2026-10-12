@@ -1,7 +1,7 @@
 import re, os, html
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 BP = 960
-FORM = 'https://forms.gle/vr7b8SnN8KoWRgaZ8'
+FORM = 'https://docs.google.com/forms/d/e/1FAIpQLSdV2-E2YteqzdCNkF99YDuRffNlWEpdek1MivJMex-iblThvQ/viewform?usp=dialog'
 NOTION = {
     '@NOTION_TOP@': 'https://www.notion.so/2b10b8956056814e875ddb38864610da',
     '@NOTION_ODAN@': 'https://www.notion.so/3f40b8956056810fb13fd7915db612ed',
