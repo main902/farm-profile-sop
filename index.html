@@ -1,6 +1,656 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>農場プロファイル 実施SOP</title>
-<style>body{margin:0;font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;background:#f5f7f5;color:#1c2622}main{max-width:720px;margin:0 auto;padding:32px 16px}h1{font-size:26px}a{display:block;background:#fff;border-radius:14px;padding:16px 18px;margin:12px 0;text-decoration:none;color:#1c2622;font-weight:700;box-shadow:0 1px 3px rgba(0,0,0,.08)}a small{display:block;font-weight:400;color:#5d6a64}</style></head>
-<body><main><h1>農場プロファイル 実施SOP</h1>
-<a href="k-shiki.html">🟩 診療・農場フロー型パッケージ（K式）実施SOP<small>日々の診療のついでに、期限までに少しずつ</small></a>
-<a href="K式_実施ガイド_A4印刷用.pdf">🖨 K式 実施ガイド（A4印刷用PDF）</a>
-</main></body></html>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>農場プロファイル実施SOP｜BRDC Frontiers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c2622;--muted:#5d6a64;--line:#c9d3cd;--bg:#ffffff;--soft:#f3f6f4;
+--a:#2f6688;--a-bg:#e6eef3;--k:#3f6b45;--k-bg:#e8f0e7;--c:#4a4f4c;--c-bg:#eef1ee;--warn:#c2362b;--warn-bg:#fbe7e4;--zone:#8a6d00;--zone-bg:#fbf3d2}
+:root{--th:#e0561b;--th2:#fff3ea;--th3:#f3c7a8}
+:root{--page:#f5f7f5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP","Noto Sans CJK JP","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.5}
+.pg-top{background:var(--th);color:#fff;padding:22px 16px 18px}
+.pg-top .pg-in,.pg-wrap{max-width:1040px;margin:0 auto}
+.pg-top .pg-tag{display:inline-block;background:#fff;color:var(--th);font-weight:900;border-radius:999px;padding:0 12px;font-size:14px}
+.pg-top h1{margin:6px 0 4px;font-size:clamp(24px,5vw,36px);font-weight:900;line-height:1.25}
+.pg-top p{margin:0;font-size:15px;opacity:.95}
+.pg-lead{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pg-lead a{background:#fff;color:var(--th);text-decoration:none;font-weight:900;border-radius:10px;padding:8px 14px;font-size:15px}
+.pg-toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #dfe5e1;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.pg-toc .pg-wrap{display:flex;gap:6px;padding:8px 12px}
+.pg-toc a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#1c2622;font-size:14px;font-weight:700;border:1px solid #cfd8d2;border-radius:999px;padding:4px 12px 4px 4px;background:#fafcfa}
+.pg-toc a span{display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--th);color:#fff;text-align:center;line-height:22px;font-size:12px}
+.pg-sec{max-width:1040px;margin:18px auto;background:#fff;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);padding:16px 20px 18px;scroll-margin-top:56px}
+.pg-sec > h2{margin:0;font-size:clamp(20px,4vw,26px);font-weight:900;display:flex;align-items:center;gap:10px}
+.pg-step .pg-no{display:inline-block;min-width:32px;height:32px;border-radius:50%;background:var(--th);color:#fff;text-align:center;line-height:32px;font-size:17px}
+.pg-sec .pg-cap{margin:6px 0 10px;color:#5d6a64;font-size:15px}
+.pg-fig{overflow:hidden}
+.pg-fig > .w{margin:0 auto;padding-top:4px!important}
+.pg-fig h1{display:none!important}
+.pg-back{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--th);text-decoration:none;border:1px solid #cfd8d2;border-radius:999px;padding:4px 14px;background:#fafcfa}
+#xfig2k a.stl{display:block;text-decoration:none;color:inherit;border-radius:14px;transition:transform .12s, box-shadow .12s}
+#xfig2k a.stl:hover .st,#xfig2k a.stl:focus .st{box-shadow:0 0 0 3px #ffe08a;transform:translateY(-1px)}
+#xfig2k a.stl:active .st{transform:scale(.99)}
+#xfig2k .go{display:table;margin-top:5px;font-style:normal;font-size:14px;font-weight:900;color:#fff;background:var(--th);border-radius:999px;padding:1px 12px}
+#xfig2k .st.end .go{background:#c2362b}
+#xfig2k .side a{color:#5c4900;font-weight:900;text-decoration:underline}
+.pg-step{max-width:1040px;margin:30px auto 0;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--th);color:#fff;border-radius:14px;scroll-margin-top:56px}
+.pg-step .pg-no{display:inline-block;min-width:44px;height:44px;border-radius:50%;background:#fff;color:var(--th);text-align:center;line-height:44px;font-size:24px;font-weight:900}
+.pg-step small{display:block;font-size:13px;font-weight:700;opacity:.85;letter-spacing:.08em}
+.pg-step b{display:block;font-size:clamp(19px,4vw,24px);font-weight:900;line-height:1.3}
+.pg-tagst{display:inline-block;font-size:12px;font-weight:900;color:var(--th);background:var(--th2);border-radius:999px;padding:0 10px;margin-bottom:2px}
+.pg-btn{display:inline-block;background:#c2362b;color:#fff!important;text-decoration:none;font-weight:900;font-size:18px;border-radius:999px;padding:8px 22px}
+.pg-fig .sh{display:none!important}
+.pg-fig > .w > .sec{border:none!important;margin:0!important}
+#xg4 .n{display:none!important}
+#xg4 .bot{background:none!important}
+#xg6 .lead{display:none}
+#xg6 .mcyc{display:none}
+.mcyc{flex-direction:column;align-items:stretch;gap:2px;max-width:420px;margin:4px auto}
+.mcyc div{border:3px solid var(--c);border-radius:12px;padding:6px 12px;font-size:20px;background:#fff}
+.mcyc b{color:var(--c);font-size:19px}
+.mcyc small{display:block;font-size:14px;font-weight:700;color:#5d6a64;margin-left:30px}
+.mcyc i{font-style:normal;text-align:center;color:#f08a3c;font-size:16px;line-height:1.2}
+.mcyc i.up{font-weight:900;color:#e0561b;font-size:14px}
+.pg-fig .pgh{font-size:18px;font-weight:900;color:var(--th);margin:6px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--th3)}
+#xfig5 .pre{border:2px solid #cfd8d2;border-radius:12px;padding:8px 10px;flex-wrap:wrap}
+#xfig5 .pre.p2{border-color:#e3cf8a;background:#fffcf0}
+#xfig5 .pre .lab{flex-basis:100%;font-size:15px;font-weight:900;color:#5d6a64}
+.pg-foot{max-width:1040px;margin:18px auto 40px;padding:0 16px;color:#5d6a64;font-size:13px}
+
+#xg4 .n{display:none!important}
+#xg4 .bot{background:none!important}
+.pg-after{margin-top:8px;font-size:15px;font-weight:700;color:#5d6a64}.pg-after a{color:#c8361c;font-weight:900}
+#xg6 .lead{display:none}#xg6 .mcyc{display:none}
+#xg6 + #xg7{margin-top:14px}
+#xg1 .h1,#xg1 .lead{display:none}#xg1 .sh{display:block!important}#xg1 .sec{border:2px solid #f3c7a8!important}
+.pg-mob{display:none}
+.pg-band .pg-no{font-size:20px}
+.pg-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.pg-nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:1px 10px}.pg-nav a.on{background:#fff;color:var(--th)}
+#xo_apply .w{width:1000px;padding:6px 0 10px}
+#xo_apply .ap{border:3px solid #e0561b;background:#fff3ea;border-radius:16px;padding:14px 18px;text-align:center}
+#xo_apply .ap .pre{font-size:16px;font-weight:700;color:#5d6a64;margin-bottom:10px}
+#xo_apply .ap .pre b{color:#c8361c}
+#xo_apply .ap a.f{display:inline-block;background:#c8361c;color:#fff;text-decoration:none;font-weight:900;font-size:22px;border-radius:999px;padding:10px 30px;box-shadow:0 3px 0 #8f2412}
+#xo_apply .lk{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+#xo_apply .lk a{border:2px solid #e0561b;background:#fff;color:#c8361c;text-decoration:none;font-weight:900;border-radius:12px;padding:6px 14px;font-size:16px}#xg1{--o:#e0561b;--o2:#f6a04d;--ob:#fff3ea;--a:#c8361c;--k:#2f7d3a;--kb:#eaf5eb;--ab:#fdeee9;--ink:#1f2328;--mut:#5d6a64;--p:#6b3fa0}
+#xg1 *{box-sizing:border-box}
+#xg1{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:var(--ink)}
+#xg1 .w{width:1000px;background:#fff;padding:14px 0 18px}
+#xg1 .top{padding:18px 34px 0;position:relative;height:204px;background:linear-gradient(180deg,#fff 0%,#fff 70%,#fdeee3 100%)}
+#xg1 .cat{font-size:26px;font-weight:900;line-height:1.35}
+#xg1 .cat .two{color:var(--o);font-size:34px}
+#xg1 .ttl{font-size:48px;font-weight:900;color:var(--o);letter-spacing:.01em;margin-top:4px;line-height:1.1}
+#xg1 .sub{display:flex;align-items:center;gap:14px;margin-top:12px}
+#xg1 .sub .b{background:var(--o);color:#fff;font-size:24px;font-weight:900;padding:4px 16px;border-radius:6px}
+#xg1 .sub span{font-size:22px;font-weight:700}
+#xg1 .cows{position:absolute;right:30px;top:12px}
+#xg1 .sec{margin:10px 26px 0;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden;background:#fff}
+#xg1 .sh{background:var(--o);color:#fff;font-weight:900;font-size:23px;text-align:center;padding:5px}
+#xg1 .four{display:grid;grid-template-columns:repeat(4,1fr);padding:6px 8px}
+#xg1 .four div{display:flex;align-items:center;justify-content:center;gap:10px;font-size:20px;font-weight:700;border-right:1px dashed #e6c3ab}
+#xg1 .four div:last-child{border:none}
+#xg1 .note{text-align:center;font-size:16px;font-weight:700;padding:0 0 6px}
+#xg1 .flow{padding:12px 16px 14px;position:relative}
+#xg1 .q{border:2px solid;border-radius:10px;padding:8px 14px;font-size:19px;font-weight:700;background:#fff;display:flex;align-items:center;gap:10px}
+#xg1 .qa{border-color:var(--o)}
+#xg1 .qk{border-color:var(--k)}
+#xg1 .lab{font-size:18px;font-weight:900}
+#xg1 .res{border-radius:10px;color:#fff;font-weight:900;font-size:20px;text-align:center;padding:10px 6px;line-height:1.25}
+#xg1 .res small{display:block;font-size:14px;font-weight:700;opacity:.95}
+#xg1 .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px 12px 10px}
+#xg1 .cd{border:2px solid;border-radius:12px;padding:10px 14px 0;display:flex;flex-direction:column}
+#xg1 .cd.a{border-color:#f1b9a6}
+#xg1 .cd.k{border-color:#a9d3ae}
+#xg1 .cd h3{margin:0;font-size:23px;font-weight:900;text-align:center;line-height:1.2}
+#xg1 .cd.a h3{color:var(--a)}
+#xg1 .cd.k h3{color:var(--k)}
+#xg1 .pill{display:block;width:max-content;margin:6px auto 2px;color:#fff;font-weight:900;font-size:16px;padding:1px 14px;border-radius:999px}
+#xg1 .cd.a .pill{background:var(--a)}
+#xg1 .cd.k .pill{background:var(--k)}
+#xg1 .typ{text-align:center;font-weight:900;font-size:18px;margin-bottom:4px}
+#xg1 .cd.a .typ{color:var(--a)}
+#xg1 .cd.k .typ{color:var(--k)}
+#xg1 .it{display:grid;grid-template-columns:30px 1fr;gap:6px;margin-top:4px}
+#xg1 .it h4{margin:0;font-size:17px;font-weight:900}
+#xg1 .cd.a h4{color:var(--a)}
+#xg1 .cd.k h4{color:var(--k)}
+#xg1 .it ul{margin:1px 0 0;padding-left:1.1em;font-size:14.5px;line-height:1.36}
+#xg1 .ft{margin-top:auto;border-top:1px solid #ddd;display:grid;grid-template-columns:repeat(3,1fr);font-size:15px;font-weight:700;padding:7px 0;margin-left:-14px;margin-right:-14px;text-align:center}
+#xg1 .bot{position:absolute;left:0;right:0;bottom:0;height:84px;background:var(--o);display:flex;align-items:center;justify-content:space-between;padding:0 26px;color:#fff}
+#xg1 .bot .l{font-size:26px;font-weight:900;line-height:1.3}
+#xg1 .bot .l span{color:#ffe08a}
+#xg1 .bot .r{background:#fff;color:var(--o);border-radius:10px;padding:8px 18px;font-size:20px;font-weight:900;text-align:center;line-height:1.35}
+#xg1 .url{background:#1f3a5f;color:#fff;border-radius:6px;padding:2px 14px;font-size:18px;font-weight:900;display:inline-block;margin-bottom:4px}
+#xg1 .cards2{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px}
+#xg1 .cx{border:3px solid;border-radius:14px;padding:10px 14px 12px;display:flex;flex-direction:column;align-items:stretch}
+#xg1 .cx.a{border-color:#c8361c}
+#xg1 .cx.k{border-color:#2f7d3a;background:#f7fbf7}
+#xg1 .cxh{text-align:center;font-size:27px;font-weight:900;line-height:1.2}
+#xg1 .a .cxh{color:#c8361c}
+#xg1 .k .cxh{color:#2f7d3a}
+#xg1 .cxs{text-align:center;font-size:17px;font-weight:700;color:#5d6a64;margin-bottom:6px}
+#xg1 .tls{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+#xg1 .tl{background:#f6f6f4;border-radius:10px;padding:8px 4px;text-align:center}
+#xg1 .ti{font-size:34px;line-height:1.1}
+#xg1 .tt{font-size:16px;line-height:1.35;margin-top:4px}
+#xg1 .tt b{font-size:19px}
+#xg1 .fx{margin-top:10px;border-radius:10px;text-align:center;font-weight:900;padding:10px 6px;font-size:19px}
+#xg1 .fx.a{background:#fdeee9;color:#c8361c}
+#xg1 .fx.k{background:#2f7d3a;color:#fff;font-size:23px;line-height:1.35;box-shadow:0 0 0 3px #ffe08a inset}
+#xg1 .h1{margin:4px 26px 6px;font-size:34px;font-weight:900;color:#1f2328}
+#xg1 .h1 span{color:#e0561b}
+#xg1 .lead{margin:0 26px 4px;font-size:19px;color:#5d6a64;font-weight:700}
+#xg1 .sec{margin-top:6px!important}#xg2{--o:#e0561b;--o2:#f6a04d;--ob:#fff3ea;--a:#c8361c;--k:#2f7d3a;--kb:#eaf5eb;--ab:#fdeee9;--ink:#1f2328;--mut:#5d6a64;--p:#6b3fa0}
+#xg2 *{box-sizing:border-box}
+#xg2{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:var(--ink)}
+#xg2 .w{width:1000px;background:#fff;padding:14px 0 18px}
+#xg2 .top{padding:18px 34px 0;position:relative;height:204px;background:linear-gradient(180deg,#fff 0%,#fff 70%,#fdeee3 100%)}
+#xg2 .cat{font-size:26px;font-weight:900;line-height:1.35}
+#xg2 .cat .two{color:var(--o);font-size:34px}
+#xg2 .ttl{font-size:48px;font-weight:900;color:var(--o);letter-spacing:.01em;margin-top:4px;line-height:1.1}
+#xg2 .sub{display:flex;align-items:center;gap:14px;margin-top:12px}
+#xg2 .sub .b{background:var(--o);color:#fff;font-size:24px;font-weight:900;padding:4px 16px;border-radius:6px}
+#xg2 .sub span{font-size:22px;font-weight:700}
+#xg2 .cows{position:absolute;right:30px;top:12px}
+#xg2 .sec{margin:10px 26px 0;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden;background:#fff}
+#xg2 .sh{background:var(--o);color:#fff;font-weight:900;font-size:23px;text-align:center;padding:5px}
+#xg2 .four{display:grid;grid-template-columns:repeat(4,1fr);padding:6px 8px}
+#xg2 .four div{display:flex;align-items:center;justify-content:center;gap:10px;font-size:20px;font-weight:700;border-right:1px dashed #e6c3ab}
+#xg2 .four div:last-child{border:none}
+#xg2 .note{text-align:center;font-size:16px;font-weight:700;padding:0 0 6px}
+#xg2 .flow{padding:12px 16px 14px;position:relative}
+#xg2 .q{border:2px solid;border-radius:10px;padding:8px 14px;font-size:19px;font-weight:700;background:#fff;display:flex;align-items:center;gap:10px}
+#xg2 .qa{border-color:var(--o)}
+#xg2 .qk{border-color:var(--k)}
+#xg2 .lab{font-size:18px;font-weight:900}
+#xg2 .res{border-radius:10px;color:#fff;font-weight:900;font-size:20px;text-align:center;padding:10px 6px;line-height:1.25}
+#xg2 .res small{display:block;font-size:14px;font-weight:700;opacity:.95}
+#xg2 .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px 12px 10px}
+#xg2 .cd{border:2px solid;border-radius:12px;padding:10px 14px 0;display:flex;flex-direction:column}
+#xg2 .cd.a{border-color:#f1b9a6}
+#xg2 .cd.k{border-color:#a9d3ae}
+#xg2 .cd h3{margin:0;font-size:23px;font-weight:900;text-align:center;line-height:1.2}
+#xg2 .cd.a h3{color:var(--a)}
+#xg2 .cd.k h3{color:var(--k)}
+#xg2 .pill{display:block;width:max-content;margin:6px auto 2px;color:#fff;font-weight:900;font-size:16px;padding:1px 14px;border-radius:999px}
+#xg2 .cd.a .pill{background:var(--a)}
+#xg2 .cd.k .pill{background:var(--k)}
+#xg2 .typ{text-align:center;font-weight:900;font-size:18px;margin-bottom:4px}
+#xg2 .cd.a .typ{color:var(--a)}
+#xg2 .cd.k .typ{color:var(--k)}
+#xg2 .it{display:grid;grid-template-columns:30px 1fr;gap:6px;margin-top:4px}
+#xg2 .it h4{margin:0;font-size:17px;font-weight:900}
+#xg2 .cd.a h4{color:var(--a)}
+#xg2 .cd.k h4{color:var(--k)}
+#xg2 .it ul{margin:1px 0 0;padding-left:1.1em;font-size:14.5px;line-height:1.36}
+#xg2 .ft{margin-top:auto;border-top:1px solid #ddd;display:grid;grid-template-columns:repeat(3,1fr);font-size:15px;font-weight:700;padding:7px 0;margin-left:-14px;margin-right:-14px;text-align:center}
+#xg2 .bot{position:absolute;left:0;right:0;bottom:0;height:84px;background:var(--o);display:flex;align-items:center;justify-content:space-between;padding:0 26px;color:#fff}
+#xg2 .bot .l{font-size:26px;font-weight:900;line-height:1.3}
+#xg2 .bot .l span{color:#ffe08a}
+#xg2 .bot .r{background:#fff;color:var(--o);border-radius:10px;padding:8px 18px;font-size:20px;font-weight:900;text-align:center;line-height:1.35}
+#xg2 .url{background:#1f3a5f;color:#fff;border-radius:6px;padding:2px 14px;font-size:18px;font-weight:900;display:inline-block;margin-bottom:4px}
+#xg2 .cards2{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px}
+#xg2 .cx{border:3px solid;border-radius:14px;padding:10px 14px 12px;display:flex;flex-direction:column;align-items:stretch}
+#xg2 .cx.a{border-color:#c8361c}
+#xg2 .cx.k{border-color:#2f7d3a;background:#f7fbf7}
+#xg2 .cxh{text-align:center;font-size:27px;font-weight:900;line-height:1.2}
+#xg2 .a .cxh{color:#c8361c}
+#xg2 .k .cxh{color:#2f7d3a}
+#xg2 .cxs{text-align:center;font-size:17px;font-weight:700;color:#5d6a64;margin-bottom:6px}
+#xg2 .tls{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+#xg2 .tl{background:#f6f6f4;border-radius:10px;padding:8px 4px;text-align:center}
+#xg2 .ti{font-size:34px;line-height:1.1}
+#xg2 .tt{font-size:16px;line-height:1.35;margin-top:4px}
+#xg2 .tt b{font-size:19px}
+#xg2 .fx{margin-top:10px;border-radius:10px;text-align:center;font-weight:900;padding:10px 6px;font-size:19px}
+#xg2 .fx.a{background:#fdeee9;color:#c8361c}
+#xg2 .fx.k{background:#2f7d3a;color:#fff;font-size:23px;line-height:1.35;box-shadow:0 0 0 3px #ffe08a inset}
+#xg2 .h1{margin:4px 26px 6px;font-size:34px;font-weight:900;color:#1f2328}
+#xg2 .h1 span{color:#e0561b}
+#xg2 .lead{margin:0 26px 4px;font-size:19px;color:#5d6a64;font-weight:700}
+#xg2 .sec{margin-top:6px!important}#xo_choose .w{width:1000px}
+#xo_choose .q{border:2px solid #e0561b;border-radius:12px;padding:8px 12px;font-size:16px;font-weight:900;background:#fff}
+#xo_choose .q.k{border-color:#2f7d3a}
+#xo_choose .br{display:grid;grid-template-columns:auto 1fr;gap:6px 8px;align-items:center;margin:6px 0 10px 10px}
+#xo_choose .br i{font-style:normal;font-weight:900;font-size:14px;white-space:nowrap}
+#xo_choose .r{display:block;border-radius:10px;color:#fff;font-weight:900;font-size:15px;padding:6px 10px;text-decoration:none}
+#xo_choose .r small{display:block;font-size:12px;font-weight:700;opacity:.95}
+#xo_choose .sub{margin:4px 0 10px 10px;border-left:3px solid #f3c7a8;padding-left:10px}
+#xo_choose .nt{font-size:13px;color:#5d6a64;margin-top:6px}#xo_routes *{box-sizing:border-box}
+#xo_routes{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
+#xo_routes .w{width:1000px;padding:6px 0 10px}
+#xo_routes .rt{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#xo_routes .rt a{text-decoration:none;color:inherit;display:block;transition:transform .12s}
+#xo_routes .rt a:hover{transform:translateY(-2px)}
+#xo_routes .c{border:4px solid var(--c);border-radius:20px;overflow:hidden;background:var(--bg);min-height:578px;display:flex;flex-direction:column}
+#xo_routes .h{background:var(--c);color:#fff;text-align:center;padding:12px 8px 10px}
+#xo_routes .h .t{font-size:34px;font-weight:900;line-height:1.15}
+#xo_routes .h .s{font-size:18px;font-weight:700;opacity:.95;margin-top:2px}
+#xo_routes .ill{display:block;margin:10px auto 0}
+#xo_routes .pts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 16px 0}
+#xo_routes .p{background:#fff;border-radius:12px;text-align:center;padding:8px 2px;font-size:16px;font-weight:700;line-height:1.35;border:2px solid var(--l)}
+#xo_routes .p b{font-size:21px;color:var(--c)}
+#xo_routes .go{margin:auto 16px 16px;position:relative;top:14px;margin-bottom:30px;background:var(--c);color:#fff;border-radius:999px;text-align:center;font-size:24px;font-weight:900;padding:10px;box-shadow:0 4px 0 var(--d)}
+#xo_routes .fx{margin:12px 16px 0;border-radius:12px;text-align:center;font-weight:900;padding:10px 6px;font-size:22px;line-height:1.35}
+#xo_routes .yt{margin:8px 16px 0;text-align:center;font-weight:900;font-size:20px;color:#fff;background:#c4302b;border-radius:12px;padding:8px}#xg4 *{box-sizing:border-box}
+#xg4{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
+#xg4 .w{width:1000px;background:#fff;padding:14px 0 18px}
+#xg4 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
+#xg4 .sh{background:#e0561b;color:#fff;font-weight:900;font-size:25px;text-align:center;padding:6px}
+#xg4 .steps{display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr 34px 1fr;align-items:stretch;padding:16px 12px 12px}
+#xg4 .st{border:2px solid #f3c7a8;border-radius:12px;padding:10px 8px 12px;text-align:center;background:#fffaf6;display:flex;flex-direction:column;align-items:center}
+#xg4 .n{width:40px;height:40px;border-radius:50%;background:#e0561b;color:#fff;font-weight:900;font-size:24px;line-height:40px}
+#xg4 .t{font-size:21px;font-weight:900;margin:6px 0 4px;line-height:1.25}
+#xg4 .s{font-size:15px;font-weight:700;color:#5d6a64;line-height:1.35}
+#xg4 .ar{display:flex;align-items:center;justify-content:center}
+#xg4 .ic{height:92px;display:flex;align-items:center;justify-content:center;margin:4px 0}
+#xg4 .opt{width:100%;font-size:14px;font-weight:700;background:#fff;border:1px solid #e9cbb6;border-radius:6px;padding:3px 4px;margin-top:4px}
+#xg4 .ch{display:flex;gap:6px;justify-content:center;margin-top:4px}
+#xg4 .ch span{border-radius:999px;color:#fff;font-weight:900;font-size:15px;padding:2px 10px}
+#xg4 .bot{margin:0 12px 14px;background:#fff3ea;border-radius:10px;padding:8px;text-align:center;font-size:18px;font-weight:900;color:#c8361c}#xo_gmap .w{width:1000px;padding:4px 0 6px}
+#xo_gmap details{border:2px solid #f3c7a8;border-radius:12px;background:#fffaf6}
+#xo_gmap summary{cursor:pointer;font-weight:900;font-size:17px;padding:8px 14px;color:#c8361c}
+#xo_gmap .g{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 12px 12px}
+#xo_gmap .g div{background:#fff;border:1px solid #e9cbb6;border-radius:10px;padding:8px 10px;font-size:15px;font-weight:700;line-height:1.5}
+#xo_gmap .g b{display:block;color:#c8361c}
+#xo_gmap .g code{font-family:inherit;font-weight:400;color:#3a4540;word-break:break-all}#xg5 *{box-sizing:border-box}
+#xg5{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
+#xg5 .w{width:1000px;background:#fff;padding:14px 0 18px}
+#xg5 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
+#xg5 .sh{background:#e0561b;color:#fff;font-weight:900;font-size:25px;text-align:center;padding:6px}
+#xg5 .tl{display:flex;align-items:center;justify-content:center;gap:14px;padding:14px 0 4px;font-weight:900;font-size:20px}
+#xg5 .tl .b{border-radius:999px;padding:4px 16px;background:#fff3ea;color:#c8361c}
+#xg5 .tl .big{background:#e0561b;color:#fff;font-size:22px}
+#xg5 .cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px}
+#xg5 .cd{border:3px solid;border-radius:14px;padding:10px 14px 12px;display:flex;flex-direction:column}
+#xg5 .cd.p{border-color:#6b3fa0}
+#xg5 .cd.g{border-color:#2f7d3a;background:#f7fbf7}
+#xg5 .ch{text-align:center;font-size:26px;font-weight:900;line-height:1.2}
+#xg5 .p .ch{color:#6b3fa0}
+#xg5 .g .ch{color:#2f7d3a}
+#xg5 .who{display:block;width:max-content;margin:4px auto 6px;color:#fff;font-weight:900;font-size:16px;padding:1px 14px;border-radius:999px}
+#xg5 .p .who{background:#6b3fa0}
+#xg5 .g .who{background:#2f7d3a}
+#xg5 .xl{margin-top:auto;display:flex;align-items:center;gap:12px;background:#eaf5eb;border:2px solid #1d6f42;border-radius:10px;padding:8px 12px;font-size:17px;font-weight:900;line-height:1.4}
+#xg5 .xl b{color:#1d6f42}
+#xg5 .box{background:#fff;border:1px solid #cfe6d2;border-radius:10px;padding:8px 10px;margin-top:8px;text-align:center}
+#xg5 .bh{font-size:18px;font-weight:900;color:#2f7d3a}
+#xg5 .flow{display:grid;grid-template-columns:1fr 26px 1fr 26px 1fr;align-items:center;margin-top:6px}
+#xg5 .fs{border-radius:10px;padding:6px 4px;text-align:center;font-weight:900;line-height:1.25}
+#xg5 .fs .k{font-size:22px;display:block}
+#xg5 .fs small{font-size:13px;font-weight:700;display:block}
+#xg5 .addon{margin-top:10px;border-radius:10px;background:#2f6688;color:#fff;font-weight:900;text-align:center;padding:8px;font-size:19px;position:relative}
+#xg5 .addon span{color:#ffe08a}#xo_report .w{width:1000px;padding:4px 0 6px}
+#xo_report a.dl{display:inline-block;background:#2f7d3a;color:#fff;text-decoration:none;font-weight:900;border-radius:999px;padding:6px 18px;font-size:16px}#xg6 *{box-sizing:border-box}
+#xg6{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
+#xg6 .w{width:1000px;background:#fff;padding:14px 0 18px}
+#xg6 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
+#xg6 .sh{background:#e0561b;color:#fff;font-weight:900;font-size:25px;text-align:center;padding:6px}
+#xg6 .lead{text-align:center;font-size:19px;font-weight:700;color:#5d6a64;padding:10px 0 0}
+#xg6 .lead b{color:#c8361c}#xg7 *{box-sizing:border-box}
+#xg7{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
+#xg7 .w{width:1000px;background:#fff;padding:14px 0 18px}
+#xg7 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
+#xg7 .sh{background:#e0561b;color:#fff;font-weight:900;font-size:25px;text-align:center;padding:6px}
+#xg7 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:14px 12px 10px}
+#xg7 .t{border:2px solid var(--c);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+#xg7 .th{background:var(--c);color:#fff;font-weight:900;font-size:19px;padding:6px 10px;display:flex;align-items:center;gap:8px}
+#xg7 .th span{font-size:26px}
+#xg7 .q{padding:8px 12px 4px;font-size:15px;font-weight:700;color:#5d6a64}
+#xg7 .q b{display:block;font-size:17px;color:#1f2328;line-height:1.4}
+#xg7 .dn{text-align:center;color:var(--c);font-size:18px;line-height:1}
+#xg7 .a{margin:4px 10px 10px;background:var(--b);border-radius:8px;padding:7px 8px;text-align:center;font-weight:900;font-size:17px;line-height:1.35;color:var(--c);flex:1;display:flex;flex-direction:column;justify-content:center}
+#xg7 .a small{display:block;font-size:13.5px;font-weight:700;color:#5d6a64}
+#xg7 .mail{border:2px dashed #e0561b;border-radius:12px;background:#fff3ea;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:10px;gap:6px}
+#xg7 .mail .h{font-size:20px;font-weight:900;color:#c8361c}
+#xg7 .mail .s{font-size:15px;font-weight:700;line-height:1.5}
+#xg7 .mail .s b{color:#c8361c}#xo_open .w{width:1000px;padding:4px 0 6px}
+#xo_open details{border:2px solid #cfd8d2;border-radius:12px;background:#fafcfa}
+#xo_open summary{cursor:pointer;font-weight:900;font-size:17px;padding:8px 14px}
+#xo_open .b{padding:0 16px 12px;font-size:15.5px;line-height:1.75}
+#xo_open .b p{margin:6px 0}
+@media (max-width:960px){
+.pg-sec{margin:12px 8px;padding:12px 10px 14px;border-radius:12px}
+.pg-top{padding:18px 14px 14px}
+#xo_apply .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_apply *{max-width:100%}
+#xo_apply svg{height:auto}
+#xo_apply [style*="grid-template-columns"],#xo_apply .chain,#xo_apply .grid,#xo_apply .cols,#xo_apply .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_apply [style*="display:flex"],#xo_apply .pre,#xo_apply .hd,#xo_apply .fs,#xo_apply .leg{flex-wrap:wrap!important}
+#xo_apply h1{font-size:30px!important;line-height:1.25}
+#xo_apply .chain{counter-reset:c}
+#xo_apply .chain .cut{counter-increment:c}
+#xo_apply .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_apply .chain .cut{padding-right:32px!important}
+#xo_apply .ap a.f{font-size:17px!important;padding:10px 16px!important}
+#xo_apply .ap .pre{font-size:14px!important}
+#xo_apply .lk a{font-size:14px!important}#xg1 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg1 *{max-width:100%}
+#xg1 svg{height:auto}
+#xg1 [style*="grid-template-columns"],#xg1 .chain,#xg1 .grid,#xg1 .cols,#xg1 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xg1 [style*="display:flex"],#xg1 .pre,#xg1 .hd,#xg1 .fs,#xg1 .leg{flex-wrap:wrap!important}
+#xg1 h1{font-size:30px!important;line-height:1.25}
+#xg1 .chain{counter-reset:c}
+#xg1 .chain .cut{counter-increment:c}
+#xg1 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xg1 .chain .cut{padding-right:32px!important}
+#xg1 .four{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px 0}
+#xg1 .four div{font-size:15px!important;border-right:none!important;justify-content:flex-start!important;gap:6px!important}
+#xg1 .four svg{width:30px;height:30px}
+#xg1 .sh{font-size:16px!important}
+#xg1 .note{font-size:13px!important}#xg2 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg2 *{max-width:100%}
+#xg2 svg{height:auto}
+#xg2 [style*="grid-template-columns"],#xg2 .chain,#xg2 .grid,#xg2 .cols,#xg2 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xg2 [style*="display:flex"],#xg2 .pre,#xg2 .hd,#xg2 .fs,#xg2 .leg{flex-wrap:wrap!important}
+#xg2 h1{font-size:30px!important;line-height:1.25}
+#xg2 .chain{counter-reset:c}
+#xg2 .chain .cut{counter-increment:c}
+#xg2 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xg2 .chain .cut{padding-right:32px!important}#xo_choose .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_choose *{max-width:100%}
+#xo_choose svg{height:auto}
+#xo_choose [style*="grid-template-columns"],#xo_choose .chain,#xo_choose .grid,#xo_choose .cols,#xo_choose .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_choose [style*="display:flex"],#xo_choose .pre,#xo_choose .hd,#xo_choose .fs,#xo_choose .leg{flex-wrap:wrap!important}
+#xo_choose h1{font-size:30px!important;line-height:1.25}
+#xo_choose .chain{counter-reset:c}
+#xo_choose .chain .cut{counter-increment:c}
+#xo_choose .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_choose .chain .cut{padding-right:32px!important}#xo_routes .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_routes *{max-width:100%}
+#xo_routes svg{height:auto}
+#xo_routes [style*="grid-template-columns"],#xo_routes .chain,#xo_routes .grid,#xo_routes .cols,#xo_routes .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_routes [style*="display:flex"],#xo_routes .pre,#xo_routes .hd,#xo_routes .fs,#xo_routes .leg{flex-wrap:wrap!important}
+#xo_routes h1{font-size:30px!important;line-height:1.25}
+#xo_routes .chain{counter-reset:c}
+#xo_routes .chain .cut{counter-increment:c}
+#xo_routes .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_routes .chain .cut{padding-right:32px!important}
+#xo_routes .rt{grid-template-columns:1fr!important;gap:12px!important}
+#xo_routes .c{min-height:0!important}
+#xo_routes .ill{width:70%;height:auto}
+#xo_routes .h .t{font-size:26px!important}
+#xo_routes .p{font-size:13px!important}
+#xo_routes .p b{font-size:17px!important}
+#xo_routes .fx{font-size:17px!important}
+#xo_routes .yt{font-size:15px!important}
+#xo_routes .go{font-size:19px!important;top:0!important;margin-bottom:16px!important;margin-top:12px!important}
+#xo_routes .pts{grid-template-columns:repeat(3,minmax(0,1fr))!important}#xg4 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg4 *{max-width:100%}
+#xg4 svg{height:auto}
+#xg4 [style*="grid-template-columns"],#xg4 .chain,#xg4 .grid,#xg4 .cols,#xg4 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xg4 [style*="display:flex"],#xg4 .pre,#xg4 .hd,#xg4 .fs,#xg4 .leg{flex-wrap:wrap!important}
+#xg4 h1{font-size:30px!important;line-height:1.25}
+#xg4 .chain{counter-reset:c}
+#xg4 .chain .cut{counter-increment:c}
+#xg4 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xg4 .chain .cut{padding-right:32px!important}
+#xg4 .steps{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;padding:6px 0!important}
+#xg4 .ar{display:none!important}
+#xg4 .ic{height:58px!important}
+#xg4 .ic svg{width:52px!important;height:52px!important}
+#xg4 .t{font-size:17px!important}
+#xg4 .s{font-size:13px!important}
+#xg4 .opt{font-size:13px!important}
+#xg4 .opt br{display:none}
+#xg4 .bot{margin:6px 0 4px!important}
+#xg4 .t br{display:none}
+#xg4 .t{font-size:16px!important;word-break:keep-all;overflow-wrap:anywhere}#xo_gmap .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_gmap *{max-width:100%}
+#xo_gmap svg{height:auto}
+#xo_gmap [style*="grid-template-columns"],#xo_gmap .chain,#xo_gmap .grid,#xo_gmap .cols,#xo_gmap .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_gmap [style*="display:flex"],#xo_gmap .pre,#xo_gmap .hd,#xo_gmap .fs,#xo_gmap .leg{flex-wrap:wrap!important}
+#xo_gmap h1{font-size:30px!important;line-height:1.25}
+#xo_gmap .chain{counter-reset:c}
+#xo_gmap .chain .cut{counter-increment:c}
+#xo_gmap .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_gmap .chain .cut{padding-right:32px!important}
+#xo_gmap .g{grid-template-columns:1fr!important}
+#xo_gmap .g div{font-size:14px!important}
+#xo_gmap summary{font-size:15px!important}#xg5 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg5 *{max-width:100%}
+#xg5 svg{height:auto}
+#xg5 [style*="grid-template-columns"],#xg5 .chain,#xg5 .grid,#xg5 .cols,#xg5 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xg5 [style*="display:flex"],#xg5 .pre,#xg5 .hd,#xg5 .fs,#xg5 .leg{flex-wrap:wrap!important}
+#xg5 h1{font-size:30px!important;line-height:1.25}
+#xg5 .chain{counter-reset:c}
+#xg5 .chain .cut{counter-increment:c}
+#xg5 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xg5 .chain .cut{padding-right:32px!important}
+#xg5 .cards{grid-template-columns:1fr!important;padding:8px 0!important}
+#xg5 .tl{font-size:14px!important;gap:6px!important;flex-wrap:wrap}
+#xg5 .tl .big{font-size:16px!important}
+#xg5 .tl svg{width:26px}
+#xg5 .ch{font-size:22px!important}
+#xg5 .xl{font-size:15px!important}
+#xg5 .xl br{display:none}
+#xg5 .bh{font-size:16px!important}
+#xg5 .flow{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)!important}
+#xg5 .flow > svg{width:14px}
+#xg5 .fs .k{font-size:16px!important}
+#xg5 .fs small{font-size:11px!important}
+#xg5 .fs small br{display:none}
+#xg5 .addon{font-size:17px!important}
+#xg5 .tl{flex-direction:column!important}
+#xg5 .tl svg{transform:rotate(90deg);height:20px}#xo_report .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_report *{max-width:100%}
+#xo_report svg{height:auto}
+#xo_report [style*="grid-template-columns"],#xo_report .chain,#xo_report .grid,#xo_report .cols,#xo_report .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_report [style*="display:flex"],#xo_report .pre,#xo_report .hd,#xo_report .fs,#xo_report .leg{flex-wrap:wrap!important}
+#xo_report h1{font-size:30px!important;line-height:1.25}
+#xo_report .chain{counter-reset:c}
+#xo_report .chain .cut{counter-increment:c}
+#xo_report .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_report .chain .cut{padding-right:32px!important}
+#xo_report a.dl{font-size:14px!important}#xg6 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg6 *{max-width:100%}
+#xg6 svg{height:auto}
+#xg6 [style*="grid-template-columns"],#xg6 .chain,#xg6 .grid,#xg6 .cols,#xg6 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xg6 [style*="display:flex"],#xg6 .pre,#xg6 .hd,#xg6 .fs,#xg6 .leg{flex-wrap:wrap!important}
+#xg6 h1{font-size:30px!important;line-height:1.25}
+#xg6 .chain{counter-reset:c}
+#xg6 .chain .cut{counter-increment:c}
+#xg6 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xg6 .chain .cut{padding-right:32px!important}#xg7 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg7 *{max-width:100%}
+#xg7 svg{height:auto}
+#xg7 [style*="grid-template-columns"],#xg7 .chain,#xg7 .grid,#xg7 .cols,#xg7 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xg7 [style*="display:flex"],#xg7 .pre,#xg7 .hd,#xg7 .fs,#xg7 .leg{flex-wrap:wrap!important}
+#xg7 h1{font-size:30px!important;line-height:1.25}
+#xg7 .chain{counter-reset:c}
+#xg7 .chain .cut{counter-increment:c}
+#xg7 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xg7 .chain .cut{padding-right:32px!important}
+#xg7 .grid{grid-template-columns:1fr!important;padding:8px 0!important;gap:10px!important}
+#xg7 .q b br{display:none}
+#xg7 .q{display:flex;flex-direction:column}
+#xg7 .a{font-size:16px!important}#xo_open .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_open *{max-width:100%}
+#xo_open svg{height:auto}
+#xo_open [style*="grid-template-columns"],#xo_open .chain,#xo_open .grid,#xo_open .cols,#xo_open .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_open [style*="display:flex"],#xo_open .pre,#xo_open .hd,#xo_open .fs,#xo_open .leg{flex-wrap:wrap!important}
+#xo_open h1{font-size:30px!important;line-height:1.25}
+#xo_open .chain{counter-reset:c}
+#xo_open .chain .cut{counter-increment:c}
+#xo_open .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_open .chain .cut{padding-right:32px!important}
+#xo_open .b{font-size:14px!important}
+#xo_open summary{font-size:15px!important}
+.pg-desk{display:none!important}.pg-mob{display:block!important}
+
+#xg6 .mcyc{display:flex}#xg6 svg.dcyc{display:none!important}
+.pg-step{margin:22px 8px 0;padding:8px 12px}
+}
+
+</style></head><body>
+<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html" class=on>目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html">K式</a></nav><span class="pg-tag">BRDC Frontiers</span><h1>📊 農場プロファイル実施SOP</h1><p>2つのルートから選べます。評価する「ものさし」は同じです。</p><div class="pg-lead"><a href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォーム</a><a href="odan.html">🟥 横断パッケージ</a><a href="k-shiki.html">🟩 K式</a></div></div></header>
+<nav class="pg-toc"><div class="pg-wrap"><a href="#s-apply"><span>📝</span>申請</a><a href="#s-route"><span>🔀</span>えらぶ</a><a href="#s-sop"><span>📋</span>実施SOP</a><a href="#s-howto"><span>❓</span>申請のしかた</a><a href="#s-result"><span>📊</span>結果</a><a href="#s-addon"><span>🔬</span>Add-on</a><a href="#s-open"><span>ⓘ</span>オープン化</a></div></nav>
+<section class="pg-sec" id="s-apply"><h2>申請はこちらから</h2><div class="pg-fig" id="xo_apply"><div class="w"><div class="ap">
+<div class="pre">先に下の<b>「実施方法をえらぶ」</b>で、横断パッケージ／K式のどちらにするか決めてから申請してください</div>
+<a class="f" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 農場プロファイル実施申請フォーム</a>
+<div class="lk"><a href="https://www.notion.so/3f40b89560568088acbbee4978316247" target="_blank" rel="noopener">🎬 説明動画（YouTube）</a><a href="https://www.notion.so/3f40b89560568023b745f3cdfbc95b29" target="_blank" rel="noopener">📖 説明漫画</a></div>
+</div></div></div></section><section class="pg-sec" id="s-route"><h2>実施方法をえらぶ</h2><p class="pg-cap">横断パッケージとK式、どちらも集めるデータは同じです</p><div class="pg-fig" id="xg1"><div class="w"><div class="h1">農場プロファイル　<span>2つのルート</span></div><div class="lead">方法は選べて、評価する「ものさし」は同じです。</div><div class="sec"><div class="sh">共通して取得する４つの基本データ</div>
+ <div class="four">
+  <div><svg width="38" height="44" viewBox="0 0 38 44"><rect x="3" y="6" width="32" height="36" rx="4" fill="#fff" stroke="#1f3a5f" stroke-width="3"/><rect x="12" y="2" width="14" height="8" rx="2" fill="#1f3a5f"/><path d="M10 20l3 3 5-6M10 32l3 3 5-6M22 21h8M22 33h8" stroke="#1f3a5f" stroke-width="2.5" fill="none"/></svg>聞き取りシート</div>
+  <div><svg width="30" height="46" viewBox="0 0 30 46"><rect x="2" y="2" width="26" height="42" rx="5" fill="#1f2328"/><rect x="5" y="7" width="20" height="30" fill="#2f6fd6"/><path d="M12 17l7 5-7 5z" fill="#fff"/></svg>スマホ動画</div>
+  <div><svg width="40" height="46" viewBox="0 0 40 46"><path d="M28 4l8 8L12 40q-4 4-8 0t0-8z" fill="#fff" stroke="#1f3a5f" stroke-width="3"/><path d="M6 36l8-8" stroke="#2f6fd6" stroke-width="5"/></svg>鼻咽頭スワブ</div>
+  <div><svg width="46" height="40" viewBox="0 0 46 40"><circle cx="18" cy="20" r="15" fill="#fff" stroke="#1f3a5f" stroke-width="3"/><circle cx="18" cy="20" r="5" fill="#1f3a5f"/><path d="M30 28h14v8H24" fill="#1f3a5f"/></svg>胸囲測定</div>
+ </div>
+ <div class="note">どちらのパッケージでも、評価の基本項目は共通です。</div>
+</div>
+
+</div></div><div class="pg-fig pg-desk" id="xg2"><div class="w"><div class="sec"><div class="sh">どちらのパッケージを選ぶか</div>
+ <div class="flow">
+  <svg viewBox="0 0 948 340" style="display:block;width:100%;height:auto">
+   <foreignObject x="210" y="2" width="530" height="48"><div class="q qa" xmlns="http://www.w3.org/1999/xhtml">🐮 農場全体を、専用日に1日でまとめて評価しますか？</div></foreignObject>
+   <path d="M330 52v40" stroke="#c8361c" stroke-width="4"/><path d="M322 86l8 12 8-12z" fill="#c8361c"/>
+   <text x="342" y="80" font-size="19" font-weight="900" fill="#c8361c">はい</text>
+   <path d="M640 52v40" stroke="#2f7d3a" stroke-width="4"/><path d="M632 86l8 12 8-12z" fill="#2f7d3a"/>
+   <text x="652" y="80" font-size="19" font-weight="900" fill="#2f7d3a">いいえ</text>
+   <foreignObject x="150" y="100" width="360" height="84"><div class="q qa" xmlns="http://www.w3.org/1999/xhtml">👥 15頭程度（各日齢5頭）を<br>その日に確保できますか？</div></foreignObject>
+   <foreignObject x="520" y="100" width="400" height="84"><div class="q qk" xmlns="http://www.w3.org/1999/xhtml">🏠 診療時や離乳・移動時に<br>少しずつ採材できますか？</div></foreignObject>
+   <path d="M230 186v54" stroke="#c8361c" stroke-width="4"/><path d="M222 234l8 12 8-12z" fill="#c8361c"/><text x="242" y="220" font-size="18" font-weight="900" fill="#c8361c">はい</text>
+   <path d="M420 186q0 30 110 56" stroke="#2f7d3a" stroke-width="4" fill="none"/><path d="M518 236l16 10-4-14z" fill="#2f7d3a"/><text x="452" y="206" font-size="17" font-weight="900" fill="#2f7d3a">いいえ</text>
+   <path d="M626 186v54" stroke="#2f7d3a" stroke-width="4"/><path d="M618 234l8 12 8-12z" fill="#2f7d3a"/><text x="638" y="220" font-size="18" font-weight="900" fill="#2f7d3a">はい</text>
+   <path d="M856 186v54" stroke="#6b3fa0" stroke-width="4"/><path d="M848 234l8 12 8-12z" fill="#6b3fa0"/><text x="868" y="220" font-size="18" font-weight="900" fill="#6b3fa0">難しい</text>
+   <foreignObject x="110" y="248" width="260" height="90"><div class="res" style="background:#c8361c" xmlns="http://www.w3.org/1999/xhtml">横断パッケージ<small>1日で農場全体を把握</small></div></foreignObject>
+   <foreignObject x="476" y="248" width="290" height="90"><div class="res" style="background:#2f7d3a" xmlns="http://www.w3.org/1999/xhtml">診療・農場フロー型<br>パッケージ（K式）<small>日々の診療で少しずつ蓄積</small></div></foreignObject>
+   <foreignObject x="778" y="248" width="156" height="90"><div class="res" style="background:#6b3fa0" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size:18px">Frontiersへ<br>相談</span></div></foreignObject>
+  </svg>
+  <div style="font-size:15px;color:var(--mut);text-align:center;margin-top:4px">※ K式は、期限までに少しずつ集めても、1日でまとめて実施してもOK（15頭そろわない農場はK式で）</div>
+ </div>
+</div>
+
+</div></div><div class="pg-fig pg-mob" id="xo_choose"><div class="w">
+<div class="q">🐮 農場全体を、専用日に1日でまとめて評価しますか？</div>
+<div class="sub"><i style="font-style:normal;font-weight:900;color:#c8361c">はい ▼</i>
+<div class="q">👥 15頭程度（各日齢5頭）をその日に確保できますか？</div>
+<div class="br"><i style="color:#c8361c">はい →</i><a class="r" href="odan.html" style="background:#c8361c">横断パッケージ<small>1日で農場全体を把握</small></a><i style="color:#2f7d3a">いいえ →</i><a class="r" href="k-shiki.html" style="background:#2f7d3a">K式<small>日々の診療で少しずつ蓄積</small></a></div></div>
+<div class="sub" style="border-color:#a9d3ae"><i style="font-style:normal;font-weight:900;color:#2f7d3a">いいえ ▼</i>
+<div class="q k">🏠 診療時や離乳・移動時に、少しずつ採材できますか？</div>
+<div class="br"><i style="color:#2f7d3a">はい →</i><a class="r" href="k-shiki.html" style="background:#2f7d3a">K式<small>日々の診療で少しずつ蓄積</small></a><i style="color:#6b3fa0">難しい →</i><span class="r" style="background:#6b3fa0">Frontiersへ相談</span></div></div>
+<div class="nt">※ K式は、期限までに少しずつ集めても、1日でまとめて実施してもOK（15頭そろわない農場はK式で）</div>
+</div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-sop"><h2>各ルートの実施SOP</h2><p class="pg-cap">カードを押すと、それぞれの実施SOPページへ移動します</p><div class="pg-fig" id="xo_routes"><div class="w"><div class="rt"><a href="odan.html"><div class="c" style="--c:#c8361c;--bg:#fdf3ef;--l:#f1b9a6;--d:#8f2412">
+<div class="h"><div class="t">横断パッケージ</div><div class="s">決めた1日で、まとめて実施</div></div>
+<svg class="ill" viewBox="0 0 520 170" width="520"><rect x="30" y="18" width="150" height="140" rx="14" fill="#fff" stroke="#c8361c" stroke-width="6"/><rect x="30" y="18" width="150" height="40" rx="14" fill="#c8361c"/><rect x="30" y="44" width="150" height="14" fill="#c8361c"/><circle cx="70" cy="18" r="6" fill="#fff"/><circle cx="140" cy="18" r="6" fill="#fff"/><text x="105" y="128" text-anchor="middle" font-size="54" font-weight="900" fill="#c8361c">1日</text><path d="M196 88h28" stroke="#c8361c" stroke-width="6"/><path d="M220 76l16 12-16 12z" fill="#c8361c"/><g transform="translate(250,30) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(296,30) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(342,30) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(388,30) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(434,30) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(250,70) scale(1.25)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(296,70) scale(1.25)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(342,70) scale(1.25)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(388,70) scale(1.25)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(434,70) scale(1.25)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(250,110) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(296,110) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(342,110) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(388,110) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(434,110) scale(1.25)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g></svg>
+<div class="pts"><div class="p">⏰<br>専用日に<br><b>1日</b>で</div><div class="p">🐄<br><b>15頭</b><br>各日齢5頭</div><div class="p">📝<br>採材シート<br>に<b>記録</b></div></div>
+<div class="fx" style="background:#fdeee9;color:#c8361c;border:2px solid #f1b9a6">1日で農場全体を把握できる</div><div class="yt">▶ YouTubeの実践ガイド動画あり</div><div class="go">実施SOPを見る ▶</div></div></a><a href="k-shiki.html"><div class="c" style="--c:#2f7d3a;--bg:#f2f9f2;--l:#a9d3ae;--d:#1d5426">
+<div class="h"><div class="t">診療・農場フロー型（K式）</div><div class="s">期限までに、少しずつ集める</div></div>
+<svg class="ill" viewBox="0 0 520 170" width="520"><rect x="14" y="20" width="492" height="90" rx="12" fill="#fff" stroke="#2f7d3a" stroke-width="6"/><rect x="14" y="20" width="492" height="28" rx="12" fill="#2f7d3a"/><rect x="14" y="36" width="492" height="12" fill="#2f7d3a"/><text x="260" y="41" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">期限（約1か月）までに</text><rect x="24" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><rect x="72" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><g transform="translate(76,64) scale(1.1)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="120" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><rect x="168" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><g transform="translate(172,64) scale(1.1)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="216" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><g transform="translate(220,64) scale(1.1)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="264" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><rect x="312" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><rect x="360" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><g transform="translate(364,64) scale(1.1)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="408" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><rect x="456" y="58" width="40" height="40" rx="6" fill="#eaf5eb"/><g transform="translate(460,64) scale(1.1)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><text x="260" y="148" text-anchor="middle" font-size="24" font-weight="900" fill="#2f7d3a">（1日でまとめてもOK）</text></svg>
+<div class="pts"><div class="p">🔄<br>専用日<br><b>不要</b></div><div class="p">📱<br>記録は<br><b>ほぼスマホ</b></div><div class="p">🩺<br><b>診療の</b><br>ついでに</div></div>
+<div class="fx" style="background:#2f7d3a;color:#fff;box-shadow:0 0 0 3px #ffe08a inset">1回の負担が小さく、<br>ムリなくはじめられる</div><div class="go">実施SOPを見る ▶</div></div></a></div></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-howto"><h2>申請のしかた（共通）</h2><p class="pg-cap">Googleアカウント → Google Map情報 → 申請フォーム（実施方法を選ぶ）→ センターからメール</p><div class="pg-fig" id="xg4"><div class="w"><div class="sec"><div class="sh">申請のしかた（共通）</div>
+<div class="steps">
+ <div class="st"><div class="n">1</div><div class="ic"><svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" fill="#fff" stroke="#e0561b" stroke-width="4"/><circle cx="42" cy="33" r="13" fill="#e0561b"/><path d="M18 68c4-14 14-20 24-20s20 6 24 20" fill="#e0561b"/></svg></div>
+  <div class="t">Googleアカウント<br>を用意</div><div class="s">個人のものでOK</div><div class="opt" style="margin-top:8px;font-size:15px;line-height:1.45">📁 センター側の<br>共有フォルダを使うので<br>ご自身のDriveは<br><b style="color:#c8361c">圧迫しません</b></div></div>
+ <div class="ar"><svg width="30" height="40"><path d="M4 8l20 12-20 12z" fill="#f6a04d"/></svg></div>
+ <div class="st"><div class="n">2</div><div class="ic"><svg width="84" height="88" viewBox="0 0 84 88"><path d="M42 6c-17 0-30 13-30 29 0 22 30 49 30 49s30-27 30-49C72 19 59 6 42 6z" fill="#e0561b"/><circle cx="42" cy="35" r="12" fill="#fff"/></svg></div>
+  <div class="t">農場の<br>Google Map情報</div><div class="s">どれか1つ</div>
+  <div class="opt">🔗 共有リンク</div><div class="opt">＋ Plus Code</div><div class="opt">🧭 緯度・経度</div></div>
+ <div class="ar"><svg width="30" height="40"><path d="M4 8l20 12-20 12z" fill="#f6a04d"/></svg></div>
+ <div class="st"><div class="n">3</div><div class="ic"><svg width="80" height="88" viewBox="0 0 80 88"><rect x="8" y="4" width="64" height="80" rx="8" fill="#fff" stroke="#e0561b" stroke-width="4"/><rect x="18" y="18" width="44" height="6" rx="3" fill="#f3c7a8"/><rect x="18" y="32" width="44" height="6" rx="3" fill="#f3c7a8"/><circle cx="24" cy="54" r="6" fill="#c8361c"/><rect x="34" y="51" width="28" height="6" rx="3" fill="#c8361c"/><circle cx="24" cy="70" r="6" fill="none" stroke="#2f7d3a" stroke-width="3"/><circle cx="24" cy="70" r="3" fill="#2f7d3a"/><rect x="34" y="67" width="28" height="6" rx="3" fill="#2f7d3a"/></svg></div>
+  <div class="t">申請フォーム<br>から申請</div><div class="s">実施方法を選ぶ</div>
+  <div class="ch"><span style="background:#c8361c">横断</span><span style="background:#2f7d3a">K式</span></div></div>
+ <div class="ar"><svg width="30" height="40"><path d="M4 8l20 12-20 12z" fill="#f6a04d"/></svg></div>
+ <div class="st"><div class="n">4</div><div class="ic"><svg width="90" height="80" viewBox="0 0 90 80"><rect x="4" y="14" width="70" height="50" rx="6" fill="#fff" stroke="#e0561b" stroke-width="4"/><path d="M6 18l33 24 33-24" fill="none" stroke="#e0561b" stroke-width="4"/><circle cx="72" cy="58" r="16" fill="#2f6688"/><path d="M63 55h8l3-4h7v14H63z" fill="#fff"/></svg></div>
+  <div class="t">センターから<br>メールが届く</div><div class="s">共有フォルダの<br>アドレス</div></div>
+</div>
+<div class="bot"><a class="pg-btn" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a><div class="pg-after">このあとは、選んだルートのSOPへ：<a href="odan.html">横断パッケージ ›</a>　<a href="k-shiki.html">K式 ›</a></div></div>
+</div></div></div><div class="pg-fig" id="xo_gmap"><div class="w"><details><summary>Google Map情報の例（どれか1つでOK）</summary><div class="g">
+<div><b>🔗 共有リンク</b>「共有」で表示されるリンクのコピー<br><code>例：https://maps.app.goo.gl/YRZjwykURuxgmoTQA</code></div>
+<div><b>＋ Plus Code</b>Plus Codeのコピー<br><code>例：C872+8V 泉佐野市、大阪府</code></div>
+<div><b>🧭 緯度・経度</b>緯度・経度の情報<br><code>例：34°24'47.7"N 135°18'09.5"E または 34.413250, 135.302639</code></div>
+</div></details></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-result"><h2>プロファイル結果（１か月以内に返送）</h2><p class="pg-cap">獣医師向けの「SeF生データ」（Excel）と、農家さん向けの「SeFレポート」</p><div class="pg-fig" id="xg5"><div class="w"><div class="sec"><div class="sh">プロファイル結果</div>
+<div class="tl"><span class="b">発送・アップロード</span><svg width="40" height="20"><path d="M2 10h28" stroke="#f6a04d" stroke-width="4"/><path d="M28 2l10 8-10 8z" fill="#f6a04d"/></svg><span class="b big">１か月以内に返送</span></div>
+<div class="cards">
+ <div class="cd p"><div class="ch">SeF生データ</div><span class="who">獣医師向け</span>
+  <svg viewBox="0 0 440 400" width="100%">
+   <circle cx="220" cy="128" r="112" fill="#e98a5f" opacity=".72"/>
+   <circle cx="150" cy="262" r="112" fill="#f6c84c" opacity=".72"/>
+   <circle cx="290" cy="262" r="112" fill="#a9b4bd" opacity=".75"/>
+   <g text-anchor="middle" font-weight="900">
+    <text x="220" y="58" font-size="16" fill="#7a2b0c">病原体要因</text>
+    <text x="220" y="92" font-size="27" fill="#1f2328">病原体保有率</text>
+    <text x="220" y="118" font-size="14" fill="#5a2a12" font-weight="700">12種類の病原体</text>
+    <text x="108" y="262" font-size="16" fill="#6b4e00">宿主要因</text>
+    <text x="108" y="294" font-size="25" fill="#1f2328">胸囲充足率</text>
+    <text x="108" y="318" font-size="14" fill="#5a4500" font-weight="700">（HGR）</text>
+    <text x="332" y="262" font-size="16" fill="#38424a">環境要因</text>
+    <text x="332" y="294" font-size="21" fill="#1f2328">環境プロファイル</text>
+    <text x="332" y="318" font-size="13" fill="#38424a" font-weight="700">飼養管理・地理・気象</text>
+   </g>
+   <path d="M220 172 L252 226 L188 226 Z" fill="#d7261e"/>
+   <text x="220" y="218" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">BRDC</text>
+  </svg>
+  <div class="xl"><svg width="46" height="52" viewBox="0 0 46 52"><rect x="8" y="2" width="36" height="48" rx="4" fill="#fff" stroke="#1d6f42" stroke-width="3"/><g stroke="#9cc9ad" stroke-width="2"><path d="M14 16h24M14 24h24M14 32h24M14 40h24M26 10v36"/></g><rect x="0" y="14" width="26" height="24" rx="3" fill="#1d6f42"/><text x="13" y="32" font-size="17" font-weight="900" fill="#fff" text-anchor="middle">X</text></svg>
+   <div>3つの要因のデータを<br><b>Excelファイルで詳しく確認</b>できます</div></div>
+ </div>
+ <div class="cd g"><div class="ch">SeFレポート</div><span class="who">農家さん向け</span>
+  <div class="box"><div class="bh">BRDCリスクを3段階で報告</div>
+   <svg width="230" height="112" viewBox="0 17 300 148"><path d="M40 150 A110 110 0 0 1 95 55" fill="none" stroke="#5aa864" stroke-width="34"/><path d="M100 52 A110 110 0 0 1 200 52" fill="none" stroke="#f2c14e" stroke-width="34"/><path d="M205 55 A110 110 0 0 1 260 150" fill="none" stroke="#c8361c" stroke-width="34"/>
+    <text x="58" y="104" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">低</text><text x="150" y="50" font-size="20" font-weight="900" fill="#5a4500" text-anchor="middle">中</text><text x="242" y="104" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">高</text>
+    <path d="M150 150 L205 92" stroke="#1f2328" stroke-width="7" stroke-linecap="round"/><circle cx="150" cy="150" r="12" fill="#1f2328"/></svg></div>
+  <div class="box"><div class="bh">農場の問題を「Check！」→「Act」へ</div>
+   <div class="flow">
+    <div class="fs" style="background:#eef1ee"><span style="font-size:26px">📊</span><span class="k" style="font-size:17px">結果</span><small>プロファイル</small></div>
+    <svg width="26" height="20"><path d="M4 2l16 8-16 8z" fill="#2f7d3a"/></svg>
+    <div class="fs" style="background:#f2c14e;color:#5a4500"><span style="font-size:26px">🔍</span><span class="k">Check！</span><small>農場の問題を<br>見つける</small></div>
+    <svg width="26" height="20"><path d="M4 2l16 8-16 8z" fill="#2f7d3a"/></svg>
+    <div class="fs" style="background:#2f7d3a;color:#fff"><span style="font-size:26px">🛠️</span><span class="k">Act</span><small>対策の流れを<br>提案</small></div>
+   </div>
+  </div>
+  <div style="text-align:right;padding-right:44px;height:20px"><svg width="20" height="20"><path d="M10 0v12" stroke="#2f6688" stroke-width="4"/><path d="M2 10h16l-8 10z" fill="#2f6688"/></svg></div>
+  <div class="addon" style="margin-top:2px">＋ <span>Add-on解析</span> で Act を支援</div>
+ </div>
+</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="https://www.notion.so/2b10b8956056814e875ddb38864610da" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例をダウンロード（Notionページ）</a></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-addon"><h2>追加解析（Add-on）</h2><p class="pg-cap">SeFレポートで問題が見えたところだけを深く調べ、対策（Act）とその効果の確認まで支援します。申込みはメールでセンターへ</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
+<div class="lead">問題が見えたところだけを<b>深く調べ</b>、対策につなげて、<b>効果まで確かめる</b></div>
+<div class="mcyc"><div style="--c:#e0561b">📊 <b>農場プロファイル</b><small>農場全体を広く見る</small></div><i>▼</i><div style="--c:#c28a00;background:#fdf5dc">🔍 <b>Check！</b><small>SeFレポートで問題発見</small></div><i>▼</i><div style="--c:#2f6688;background:#e6eef3">🔬 <b>Add-on解析</b><small>原因を深く調べる</small></div><i>▼</i><div style="--c:#2f7d3a;background:#eaf5eb">🛠️ <b>Act</b><small>対策を決めて実行</small></div><i>▼</i><div style="--c:#6b3fa0">🔁 <b>Re-profile</b><small>対策した段階を測り直す</small></div><i class="up">↺ はじめにもどる</i></div><svg class="dcyc" viewBox="0 0 944 560" width="944" style="display:block;margin:0 auto">
+ <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f6a04d"/></marker></defs>
+ <circle cx="472" cy="290" r="190" fill="none" stroke="#fde3cf" stroke-width="22"/>
+ <g transform="translate(625.7,178.3) rotate(54)"><path d="M-15 -17 L17 0 L-15 17 Z" fill="#f08a3c"/></g>
+<g transform="translate(642.8,373.3) rotate(116)"><path d="M-15 -17 L17 0 L-15 17 Z" fill="#f08a3c"/></g>
+<g transform="translate(442.3,477.7) rotate(189)"><path d="M-15 -17 L17 0 L-15 17 Z" fill="#f08a3c"/></g>
+<g transform="translate(295.8,361.2) rotate(248)"><path d="M-15 -17 L17 0 L-15 17 Z" fill="#f08a3c"/></g>
+<g transform="translate(340.0,153.3) rotate(316)"><path d="M-15 -17 L17 0 L-15 17 Z" fill="#f08a3c"/></g>
+ <text x="472" y="275" text-anchor="middle" font-size="30" font-weight="900" fill="#e0561b">BRDCを</text>
+ <text x="472" y="315" text-anchor="middle" font-size="30" font-weight="900" fill="#e0561b">減らす</text>
+ <!-- 1 profile top -->
+ <g transform="translate(472,96)"><rect x="-120" y="-60" width="240" height="112" rx="16" fill="#fff" stroke="#e0561b" stroke-width="4"/>
+  <text y="-22" text-anchor="middle" font-size="30">📊</text><text y="16" text-anchor="middle" font-size="22" font-weight="900">農場プロファイル</text><text y="40" text-anchor="middle" font-size="16" font-weight="700" fill="#5d6a64">農場全体を広く見る</text></g>
+ <!-- 2 check right top -->
+ <g transform="translate(730,270)"><rect x="-110" y="-62" width="220" height="116" rx="16" fill="#f2c14e"/>
+  <text y="-22" text-anchor="middle" font-size="30">🔍</text><text y="16" text-anchor="middle" font-size="25" font-weight="900" fill="#5a4500">Check！</text><text y="40" text-anchor="middle" font-size="16" font-weight="700" fill="#5a4500">SeFレポートで問題発見</text></g>
+ <!-- 3 add-on bottom right -->
+ <g transform="translate(610,480)"><rect x="-130" y="-66" width="260" height="124" rx="16" fill="#2f6688" stroke="#ffe08a" stroke-width="5"/>
+  <text y="-24" text-anchor="middle" font-size="30">🔬</text><text y="16" text-anchor="middle" font-size="27" font-weight="900" fill="#ffe08a">Add-on解析</text><text y="42" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">原因を深く調べる</text></g>
+ <!-- 4 act bottom left -->
+ <g transform="translate(300,480)"><rect x="-110" y="-62" width="220" height="116" rx="16" fill="#2f7d3a"/>
+  <text y="-22" text-anchor="middle" font-size="30">🛠️</text><text y="16" text-anchor="middle" font-size="27" font-weight="900" fill="#fff">Act</text><text y="40" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">対策を決めて実行</text></g>
+ <!-- 5 reprofile left -->
+ <g transform="translate(200,270)"><rect x="-110" y="-62" width="220" height="116" rx="16" fill="#fff" stroke="#6b3fa0" stroke-width="4"/>
+  <text y="-22" text-anchor="middle" font-size="30">🔁</text><text y="16" text-anchor="middle" font-size="23" font-weight="900" fill="#6b3fa0">Re-profile</text><text y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#5d6a64">対策した段階を測り直す</text></g>
+</svg>
+</div></div></div><div class="pg-fig" id="xg7"><div class="w"><div class="sec"><div class="sh">Add-on解析　お悩み別メニュー</div>
+<div class="grid">
+ <div class="t" style="--c:#b0582a;--b:#fbeee6"><div class="th"><span>🐄</span>母牛の栄養・代謝</div>
+  <div class="q">こんなとき<b>分娩前後の母牛の<br>状態が気になる</b></div><div class="dn">▼</div><div class="a">母牛の血液検査<small>代謝プロファイル（MPT）</small></div></div>
+ <div class="t" style="--c:#c28a00;--b:#fdf5dc"><div class="th"><span>🍼</span>初乳・初期免疫</div>
+  <div class="q">こんなとき<b>生まれてすぐの子牛が<br>よく病気になる</b></div><div class="dn">▼</div><div class="a">受動免疫移行確認<small>初乳の抗体がうまく移ったかを確認</small></div></div>
+ <div class="t" style="--c:#2f7d3a;--b:#eaf5eb"><div class="th"><span>📏</span>子牛の栄養・発育</div>
+  <div class="q">こんなとき<b>胸囲充足率（HGR）が<br>低い</b></div><div class="dn">▼</div><div class="a">子牛の血液検査・飼料分析<small>栄養の不足・バランスを確認</small></div></div>
+ <div class="t" style="--c:#7a5230;--b:#f4ece4"><div class="th"><span>💩</span>下痢・消化器</div>
+  <div class="q">こんなとき<b>子牛の下痢が<br>多い</b></div><div class="dn">▼</div><div class="a">下痢便の病原体検査・便性状<small>原因となる病原体をしらべる</small></div></div>
+ <div class="t" style="--c:#2f6688;--b:#e6eef3"><div class="th"><span>🌡️</span>飼養環境</div>
+  <div class="q">こんなとき<b>換気や寒暖差が<br>気になる</b></div><div class="dn">▼</div><div class="a">環境センサーの貸出<small>温湿度・CO₂・アンモニア・風速 等</small></div></div>
+ <div class="mail"><svg width="64" height="48" viewBox="0 0 64 48"><rect x="3" y="3" width="58" height="42" rx="6" fill="#fff" stroke="#e0561b" stroke-width="4"/><path d="M5 7l27 20 27-20" fill="none" stroke="#e0561b" stroke-width="4"/></svg>
+  <div class="h">申込みはメールで</div>
+  <div class="s">SeFレポートの提案を見て<br>センターへ<b>メール</b>でご相談ください<br>→ 必要なキットをお送りします</div></div>
+</div>
+<div style="text-align:center;font-size:16px;font-weight:700;color:#5d6a64;padding:0 0 12px">頭数・方法など、くわしくはセンターへお問い合わせください</div>
+</div></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section><section class="pg-sec" id="s-open"><div class="pg-fig" id="xo_open"><div class="w"><details><summary>データのオープン化（オープンサイエンス）について</summary><div class="b">
+<p>実施いたしましたプロファイルデータにつきましては、個々の農家様への貢献はもちろんのこと、ひいては<b>日本の畜産全体の技術向上と発展に寄与するため</b>、公共の財産として活用させていただきたいと考えております。</p>
+<p>具体的には、<b>農場や個体に関わるプライバシー情報は厳格に保護（匿名化）した上で</b>、データをオープン化し、業界全体の研究開発を加速させるために役立てさせていただきます。</p>
+<p>ご協力いただいた皆様には、詳細な解析結果をお返しいたします。これらは皆様自身の貴重な知財ですので、<b>今後のご研究や農場経営の改善などに、どうぞ自由にご活用ください</b>。</p>
+</div></details></div></div><a class="pg-back" href="#s-apply">▲ 上にもどる</a></section>
+<p class="pg-foot">© BRDC Frontiers プロファイルセンター</p>
+</body></html>

@@ -4,40 +4,41 @@
 <style>
 :root{--ink:#1c2622;--muted:#5d6a64;--line:#c9d3cd;--bg:#ffffff;--soft:#f3f6f4;
 --a:#2f6688;--a-bg:#e6eef3;--k:#3f6b45;--k-bg:#e8f0e7;--c:#4a4f4c;--c-bg:#eef1ee;--warn:#c2362b;--warn-bg:#fbe7e4;--zone:#8a6d00;--zone-bg:#fbf3d2}
+:root{--th:#3f6b45;--th2:#e8f0e7;--th3:#cfe0cf}
 :root{--page:#f5f7f5}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP","Noto Sans CJK JP","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.5}
-.pg-top{background:#3f6b45;color:#fff;padding:22px 16px 18px}
+.pg-top{background:var(--th);color:#fff;padding:22px 16px 18px}
 .pg-top .pg-in,.pg-wrap{max-width:1040px;margin:0 auto}
-.pg-top .pg-tag{display:inline-block;background:#fff;color:#3f6b45;font-weight:900;border-radius:999px;padding:0 12px;font-size:14px}
+.pg-top .pg-tag{display:inline-block;background:#fff;color:var(--th);font-weight:900;border-radius:999px;padding:0 12px;font-size:14px}
 .pg-top h1{margin:6px 0 4px;font-size:clamp(24px,5vw,36px);font-weight:900;line-height:1.25}
 .pg-top p{margin:0;font-size:15px;opacity:.95}
 .pg-lead{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.pg-lead a{background:#fff;color:#3f6b45;text-decoration:none;font-weight:900;border-radius:10px;padding:8px 14px;font-size:15px}
+.pg-lead a{background:#fff;color:var(--th);text-decoration:none;font-weight:900;border-radius:10px;padding:8px 14px;font-size:15px}
 .pg-toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #dfe5e1;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
 .pg-toc .pg-wrap{display:flex;gap:6px;padding:8px 12px}
 .pg-toc a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#1c2622;font-size:14px;font-weight:700;border:1px solid #cfd8d2;border-radius:999px;padding:4px 12px 4px 4px;background:#fafcfa}
-.pg-toc a span{display:inline-block;width:22px;height:22px;border-radius:50%;background:#3f6b45;color:#fff;text-align:center;line-height:22px;font-size:12px}
+.pg-toc a span{display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--th);color:#fff;text-align:center;line-height:22px;font-size:12px}
 .pg-sec{max-width:1040px;margin:18px auto;background:#fff;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);padding:16px 20px 18px;scroll-margin-top:56px}
 .pg-sec > h2{margin:0;font-size:clamp(20px,4vw,26px);font-weight:900;display:flex;align-items:center;gap:10px}
-.pg-step .pg-no{display:inline-block;min-width:32px;height:32px;border-radius:50%;background:#3f6b45;color:#fff;text-align:center;line-height:32px;font-size:17px}
+.pg-step .pg-no{display:inline-block;min-width:32px;height:32px;border-radius:50%;background:var(--th);color:#fff;text-align:center;line-height:32px;font-size:17px}
 .pg-sec .pg-cap{margin:6px 0 10px;color:#5d6a64;font-size:15px}
 .pg-fig{overflow:hidden}
 .pg-fig > .w{margin:0 auto;padding-top:4px!important}
 .pg-fig h1{display:none!important}
-.pg-back{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:#3f6b45;text-decoration:none;border:1px solid #cfd8d2;border-radius:999px;padding:4px 14px;background:#fafcfa}
+.pg-back{display:inline-block;margin-top:10px;font-size:14px;font-weight:700;color:var(--th);text-decoration:none;border:1px solid #cfd8d2;border-radius:999px;padding:4px 14px;background:#fafcfa}
 #xfig2k a.stl{display:block;text-decoration:none;color:inherit;border-radius:14px;transition:transform .12s, box-shadow .12s}
 #xfig2k a.stl:hover .st,#xfig2k a.stl:focus .st{box-shadow:0 0 0 3px #ffe08a;transform:translateY(-1px)}
 #xfig2k a.stl:active .st{transform:scale(.99)}
-#xfig2k .go{display:table;margin-top:5px;font-style:normal;font-size:14px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:1px 12px}
+#xfig2k .go{display:table;margin-top:5px;font-style:normal;font-size:14px;font-weight:900;color:#fff;background:var(--th);border-radius:999px;padding:1px 12px}
 #xfig2k .st.end .go{background:#c2362b}
 #xfig2k .side a{color:#5c4900;font-weight:900;text-decoration:underline}
-.pg-step{max-width:1040px;margin:30px auto 0;display:flex;align-items:center;gap:12px;padding:10px 16px;background:#3f6b45;color:#fff;border-radius:14px;scroll-margin-top:56px}
-.pg-step .pg-no{display:inline-block;min-width:44px;height:44px;border-radius:50%;background:#fff;color:#3f6b45;text-align:center;line-height:44px;font-size:24px;font-weight:900}
+.pg-step{max-width:1040px;margin:30px auto 0;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--th);color:#fff;border-radius:14px;scroll-margin-top:56px}
+.pg-step .pg-no{display:inline-block;min-width:44px;height:44px;border-radius:50%;background:#fff;color:var(--th);text-align:center;line-height:44px;font-size:24px;font-weight:900}
 .pg-step small{display:block;font-size:13px;font-weight:700;opacity:.85;letter-spacing:.08em}
 .pg-step b{display:block;font-size:clamp(19px,4vw,24px);font-weight:900;line-height:1.3}
-.pg-tagst{display:inline-block;font-size:12px;font-weight:900;color:#3f6b45;background:#e8f0e7;border-radius:999px;padding:0 10px;margin-bottom:2px}
+.pg-tagst{display:inline-block;font-size:12px;font-weight:900;color:var(--th);background:var(--th2);border-radius:999px;padding:0 10px;margin-bottom:2px}
 .pg-btn{display:inline-block;background:#c2362b;color:#fff!important;text-decoration:none;font-weight:900;font-size:18px;border-radius:999px;padding:8px 22px}
 .pg-fig .sh{display:none!important}
 .pg-fig > .w > .sec{border:none!important;margin:0!important}
@@ -51,11 +52,26 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 .mcyc small{display:block;font-size:14px;font-weight:700;color:#5d6a64;margin-left:30px}
 .mcyc i{font-style:normal;text-align:center;color:#f08a3c;font-size:16px;line-height:1.2}
 .mcyc i.up{font-weight:900;color:#e0561b;font-size:14px}
-.pg-fig .pgh{font-size:18px;font-weight:900;color:#3f6b45;margin:6px 0 8px;padding-bottom:4px;border-bottom:2px solid #cfe0cf}
+.pg-fig .pgh{font-size:18px;font-weight:900;color:var(--th);margin:6px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--th3)}
 #xfig5 .pre{border:2px solid #cfd8d2;border-radius:12px;padding:8px 10px;flex-wrap:wrap}
 #xfig5 .pre.p2{border-color:#e3cf8a;background:#fffcf0}
 #xfig5 .pre .lab{flex-basis:100%;font-size:15px;font-weight:900;color:#5d6a64}
 .pg-foot{max-width:1040px;margin:18px auto 40px;padding:0 16px;color:#5d6a64;font-size:13px}
+
+#xfig2k a.stl{display:block;text-decoration:none;color:inherit;border-radius:14px;transition:transform .12s, box-shadow .12s}
+#xfig2k a.stl:hover .st,#xfig2k a.stl:focus .st{box-shadow:0 0 0 3px #ffe08a;transform:translateY(-1px)}
+#xfig2k .go{display:table;margin-top:5px;font-style:normal;font-size:14px;font-weight:900;color:#fff;background:var(--th);border-radius:999px;padding:1px 12px}
+#xfig2k .st.end .go{background:#c2362b}
+#xfig2k .st.res .go{background:#1c2622}
+#xfig2k .side a{color:#5c4900;font-weight:900;text-decoration:underline}
+
+#xg4 .n{display:none!important}
+#xg4 .bot{background:none!important}
+.pg-after{margin-top:8px;font-size:15px;font-weight:700;color:#5d6a64}.pg-after a{color:#c8361c;font-weight:900}
+#xg6 .lead{display:none}#xg6 .mcyc{display:none}
+.pg-mob{display:none}
+.pg-band .pg-no{font-size:20px}
+.pg-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.pg-nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:1px 10px}.pg-nav a.on{background:#fff;color:var(--th)}
 #xfig2k *{box-sizing:border-box}
 #xfig2k{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
 #xfig2k .w{width:1000px;padding:28px 28px 32px}
@@ -71,11 +87,6 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xfig2k .st.res .n{background:var(--ink)}
 #xfig2k .dn{text-align:center;color:var(--k);font-size:22px;line-height:1;margin:5px 0}
 #xfig2k .side{margin:6px 0 0 64px;border:2px dashed var(--zone);border-radius:12px;padding:6px 12px;font-size:18px;background:#fffdf5;color:#5c4900;font-weight:700}#xg4 *{box-sizing:border-box}
-#xg4{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
-#xg4 .w{width:1000px;padding:28px 28px 32px}
-#xg4 h1{font-size:36px;margin:0 0 4px;font-weight:900}
-#xg4 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
-#xg4 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#xg4 *{box-sizing:border-box}
 #xg4{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
 #xg4 .w{width:1000px;background:#fff;padding:14px 0 18px}
 #xg4 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
@@ -90,12 +101,13 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg4 .opt{width:100%;font-size:14px;font-weight:700;background:#fff;border:1px solid #e9cbb6;border-radius:6px;padding:3px 4px;margin-top:4px}
 #xg4 .ch{display:flex;gap:6px;justify-content:center;margin-top:4px}
 #xg4 .ch span{border-radius:999px;color:#fff;font-weight:900;font-size:15px;padding:2px 10px}
-#xg4 .bot{margin:0 12px 14px;background:#fff3ea;border-radius:10px;padding:8px;text-align:center;font-size:18px;font-weight:900;color:#c8361c}#xhaichi *{box-sizing:border-box}
-#xhaichi{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
-#xhaichi .w{width:1000px;padding:28px 28px 32px}
-#xhaichi h1{font-size:36px;margin:0 0 4px;font-weight:900}
-#xhaichi .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
-#xhaichi .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#xhaichi .w{width:1000px;padding:6px 0 10px}
+#xg4 .bot{margin:0 12px 14px;background:#fff3ea;border-radius:10px;padding:8px;text-align:center;font-size:18px;font-weight:900;color:#c8361c}#xo_gmap .w{width:1000px;padding:4px 0 6px}
+#xo_gmap details{border:2px solid #f3c7a8;border-radius:12px;background:#fffaf6}
+#xo_gmap summary{cursor:pointer;font-weight:900;font-size:17px;padding:8px 14px;color:#c8361c}
+#xo_gmap .g{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 12px 12px}
+#xo_gmap .g div{background:#fff;border:1px solid #e9cbb6;border-radius:10px;padding:8px 10px;font-size:15px;font-weight:700;line-height:1.5}
+#xo_gmap .g b{display:block;color:#c8361c}
+#xo_gmap .g code{font-family:inherit;font-weight:400;color:#3a4540;word-break:break-all}#xhaichi .w{width:1000px;padding:6px 0 10px}
 #xhaichi .how{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 12px}
 #xhaichi .how div{border:2px solid #cfe0cf;background:#f3f8f3;border-radius:12px;padding:8px 12px;font-size:17px;font-weight:700;line-height:1.45}
 #xhaichi .how b{display:block;color:#3f6b45;font-size:19px;font-weight:900}
@@ -460,11 +472,6 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xfig6 .a .tg{background:var(--a)}
 #xfig6 .sub3{display:flex;gap:8px;margin-top:6px}
 #xfig6 .sub3 span{border:2px solid var(--k);border-radius:8px;padding:1px 10px;font-size:18px;font-weight:700;color:var(--k);background:var(--k-bg)}#xg5 *{box-sizing:border-box}
-#xg5{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
-#xg5 .w{width:1000px;padding:28px 28px 32px}
-#xg5 h1{font-size:36px;margin:0 0 4px;font-weight:900}
-#xg5 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
-#xg5 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#xg5 *{box-sizing:border-box}
 #xg5{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
 #xg5 .w{width:1000px;background:#fff;padding:14px 0 18px}
 #xg5 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
@@ -491,23 +498,14 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg5 .fs .k{font-size:22px;display:block}
 #xg5 .fs small{font-size:13px;font-weight:700;display:block}
 #xg5 .addon{margin-top:10px;border-radius:10px;background:#2f6688;color:#fff;font-weight:900;text-align:center;padding:8px;font-size:19px;position:relative}
-#xg5 .addon span{color:#ffe08a}#xg6 *{box-sizing:border-box}
-#xg6{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
-#xg6 .w{width:1000px;padding:28px 28px 32px}
-#xg6 h1{font-size:36px;margin:0 0 4px;font-weight:900}
-#xg6 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
-#xg6 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#xg6 *{box-sizing:border-box}
+#xg5 .addon span{color:#ffe08a}#xo_report .w{width:1000px;padding:4px 0 6px}
+#xo_report a.dl{display:inline-block;background:#2f7d3a;color:#fff;text-decoration:none;font-weight:900;border-radius:999px;padding:6px 18px;font-size:16px}#xg6 *{box-sizing:border-box}
 #xg6{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
 #xg6 .w{width:1000px;background:#fff;padding:14px 0 18px}
 #xg6 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
 #xg6 .sh{background:#e0561b;color:#fff;font-weight:900;font-size:25px;text-align:center;padding:6px}
 #xg6 .lead{text-align:center;font-size:19px;font-weight:700;color:#5d6a64;padding:10px 0 0}
 #xg6 .lead b{color:#c8361c}#xg7 *{box-sizing:border-box}
-#xg7{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
-#xg7 .w{width:1000px;padding:28px 28px 32px}
-#xg7 h1{font-size:36px;margin:0 0 4px;font-weight:900}
-#xg7 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
-#xg7 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#xg7 *{box-sizing:border-box}
 #xg7{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
 #xg7 .w{width:1000px;background:#fff;padding:14px 0 18px}
 #xg7 .sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
@@ -562,7 +560,19 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg4 .opt br{display:none}
 #xg4 .bot{margin:6px 0 4px!important}
 #xg4 .t br{display:none}
-#xg4 .t{font-size:16px!important;word-break:keep-all;overflow-wrap:anywhere}#xhaichi .w{width:100%!important;padding:18px 16px 22px!important}
+#xg4 .t{font-size:16px!important;word-break:keep-all;overflow-wrap:anywhere}#xo_gmap .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_gmap *{max-width:100%}
+#xo_gmap svg{height:auto}
+#xo_gmap [style*="grid-template-columns"],#xo_gmap .chain,#xo_gmap .grid,#xo_gmap .cols,#xo_gmap .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_gmap [style*="display:flex"],#xo_gmap .pre,#xo_gmap .hd,#xo_gmap .fs,#xo_gmap .leg{flex-wrap:wrap!important}
+#xo_gmap h1{font-size:30px!important;line-height:1.25}
+#xo_gmap .chain{counter-reset:c}
+#xo_gmap .chain .cut{counter-increment:c}
+#xo_gmap .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_gmap .chain .cut{padding-right:32px!important}
+#xo_gmap .g{grid-template-columns:1fr!important}
+#xo_gmap .g div{font-size:14px!important}
+#xo_gmap summary{font-size:15px!important}#xhaichi .w{width:100%!important;padding:18px 16px 22px!important}
 #xhaichi *{max-width:100%}
 #xhaichi svg{height:auto}
 #xhaichi [style*="grid-template-columns"],#xhaichi .chain,#xhaichi .grid,#xhaichi .cols,#xhaichi .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -834,7 +844,17 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg5 .fs small br{display:none}
 #xg5 .addon{font-size:17px!important}
 #xg5 .tl{flex-direction:column!important}
-#xg5 .tl svg{transform:rotate(90deg);height:20px}#xg6 .w{width:100%!important;padding:18px 16px 22px!important}
+#xg5 .tl svg{transform:rotate(90deg);height:20px}#xo_report .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_report *{max-width:100%}
+#xo_report svg{height:auto}
+#xo_report [style*="grid-template-columns"],#xo_report .chain,#xo_report .grid,#xo_report .cols,#xo_report .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_report [style*="display:flex"],#xo_report .pre,#xo_report .hd,#xo_report .fs,#xo_report .leg{flex-wrap:wrap!important}
+#xo_report h1{font-size:30px!important;line-height:1.25}
+#xo_report .chain{counter-reset:c}
+#xo_report .chain .cut{counter-increment:c}
+#xo_report .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_report .chain .cut{padding-right:32px!important}
+#xo_report a.dl{font-size:14px!important}#xg6 .w{width:100%!important;padding:18px 16px 22px!important}
 #xg6 *{max-width:100%}
 #xg6 svg{height:auto}
 #xg6 [style*="grid-template-columns"],#xg6 .chain,#xg6 .grid,#xg6 .cols,#xg6 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -857,12 +877,14 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg7 .q b br{display:none}
 #xg7 .q{display:flex;flex-direction:column}
 #xg7 .a{font-size:16px!important}
+.pg-desk{display:none!important}.pg-mob{display:block!important}
+
 #xg6 .mcyc{display:flex}#xg6 svg.dcyc{display:none!important}
 .pg-step{margin:22px 8px 0;padding:8px 12px}
 }
+
 </style></head><body>
-<header class="pg-top"><div class="pg-in"><span class="pg-tag">農場プロファイル</span><h1>診療・農場フロー型パッケージ（K式）実施SOP</h1><p>日々の診療のついでに、期限までに少しずつ。1日でまとめてもOK。</p>
-<div class="pg-lead"><a href="#s-fig2k">はじめから見る ▶</a><a href="#step7">📊 結果の見かた</a><a href="K式_実施ガイド_A4印刷用.pdf">🖨 印刷用PDF（A4）</a></div></div></header>
+<header class="pg-top"><div class="pg-in"><nav class="pg-nav"><a href="index.html">目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html" class=on>K式</a></nav><span class="pg-tag">農場プロファイル</span><h1>診療・農場フロー型パッケージ（K式）実施SOP</h1><p>日々の診療のついでに、期限までに少しずつ。1日でまとめてもOK。</p><div class="pg-lead"><a href="#s-fig2k">はじめから見る ▶</a><a href="#step7">📊 結果の見かた</a><a href="K式_実施ガイド_A4印刷用.pdf">🖨 印刷用PDF（A4）</a></div></div></header>
 <nav class="pg-toc"><div class="pg-wrap"><a href="#s-fig2k"><span>▶</span>K式の流れ</a><a href="#step1"><span>1</span>申請</a><a href="#step2"><span>2</span>Zone登録</a><a href="#step3"><span>3</span>キット</a><a href="#step4"><span>4</span>採材・撮影</a><a href="#step5"><span>5</span>終わりにする</a><a href="#step6"><span>6</span>発送</a><a href="#step7"><span>7</span>結果</a></div></nav>
 <section class="pg-sec" id="s-fig2k"><h2>K式の流れ</h2><p class="pg-cap">各ステップを押すと、その説明へ移動します</p><div class="pg-fig" id="xfig2k"><div class="w">
 <h1>K式の流れ<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
@@ -892,7 +914,11 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
   <div class="t">センターから<br>メールが届く</div><div class="s">共有フォルダの<br>アドレス</div></div>
 </div>
 <div class="bot"><a class="pg-btn" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a></div>
-</div></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><div class="pg-step" id="step2"><span class="pg-no">2</span><div><small>STEP 2</small><b>配置図を修正して、Zoneを登録</b></div></div><section class="pg-sec" id="s-haichi"><span class="pg-tagst">STEP 2</span><h2>配置図の修正（記入例）</h2><p class="pg-cap">センターが番号をふった配置図を確認し、表に牛舎の詳細を書きます</p><div class="pg-fig" id="xhaichi"><div class="w">
+</div></div></div><div class="pg-fig" id="xo_gmap"><div class="w"><details><summary>Google Map情報の例（どれか1つでOK）</summary><div class="g">
+<div><b>🔗 共有リンク</b>「共有」で表示されるリンクのコピー<br><code>例：https://maps.app.goo.gl/YRZjwykURuxgmoTQA</code></div>
+<div><b>＋ Plus Code</b>Plus Codeのコピー<br><code>例：C872+8V 泉佐野市、大阪府</code></div>
+<div><b>🧭 緯度・経度</b>緯度・経度の情報<br><code>例：34°24'47.7"N 135°18'09.5"E または 34.413250, 135.302639</code></div>
+</div></details></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><div class="pg-step" id="step2"><span class="pg-no">2</span><div><small>STEP 2</small><b>配置図を修正して、Zoneを登録</b></div></div><section class="pg-sec" id="s-haichi"><span class="pg-tagst">STEP 2</span><h2>配置図の修正（記入例）</h2><p class="pg-cap">センターが番号をふった配置図を確認し、表に牛舎の詳細を書きます</p><div class="pg-fig" id="xhaichi"><div class="w">
 <div class="how"><div><b>番号をチェック</b>「農場名　農場配置ファイル」で、牛舎と思われる建物に番号がふってあります。番号がおかしいときは修正</div><div><b>表に牛舎詳細を記入</b>それぞれの番号に、どんな牛を飼っているか（牛の段階・飼い方）を書く</div></div>
 <div class="ex"><figure class="ph"><img src="img/haichi_sample.jpg" alt="農場配置ファイルの記入例（サンプル画像。実際は衛星写真）"><figcaption>農場配置ファイルの記入例（実際は衛星写真）</figcaption></figure>
 <div><table><tr><th>番号</th><th>牛舎詳細</th></tr>
@@ -1207,7 +1233,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
   <div style="text-align:right;padding-right:44px;height:20px"><svg width="20" height="20"><path d="M10 0v12" stroke="#2f6688" stroke-width="4"/><path d="M2 10h16l-8 10z" fill="#2f6688"/></svg></div>
   <div class="addon" style="margin-top:2px">＋ <span>Add-on解析</span> で Act を支援</div>
  </div>
-</div></div></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><section class="pg-sec" id="s-g6"><span class="pg-tagst">STEP 7</span><h2>Add-on解析で「Act」まで</h2><p class="pg-cap">問題が見えたところだけを深く調べ、対策につなげて、効果まで確かめる</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
+</div></div></div></div><div class="pg-fig" id="xo_report"><div class="w"><a class="dl" href="https://www.notion.so/2b10b8956056814e875ddb38864610da" target="_blank" rel="noopener">📄 SeFレポート（農家さん向け）の例をダウンロード（Notionページ）</a></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><section class="pg-sec" id="s-g6"><span class="pg-tagst">STEP 7</span><h2>Add-on解析で「Act」まで</h2><p class="pg-cap">問題が見えたところだけを深く調べ、対策につなげて、効果まで確かめる</p><div class="pg-fig" id="xg6"><div class="w"><div class="sec"><div class="sh">Add-on解析で「Act」まで</div>
 <div class="lead">問題が見えたところだけを<b>深く調べ</b>、対策につなげて、<b>効果まで確かめる</b></div>
 <div class="mcyc"><div style="--c:#e0561b">📊 <b>農場プロファイル</b><small>農場全体を広く見る</small></div><i>▼</i><div style="--c:#c28a00;background:#fdf5dc">🔍 <b>Check！</b><small>SeFレポートで問題発見</small></div><i>▼</i><div style="--c:#2f6688;background:#e6eef3">🔬 <b>Add-on解析</b><small>原因を深く調べる</small></div><i>▼</i><div style="--c:#2f7d3a;background:#eaf5eb">🛠️ <b>Act</b><small>対策を決めて実行</small></div><i>▼</i><div style="--c:#6b3fa0">🔁 <b>Re-profile</b><small>対策した段階を測り直す</small></div><i class="up">↺ はじめにもどる</i></div><svg class="dcyc" viewBox="0 0 944 560" width="944" style="display:block;margin:0 auto">
  <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#f6a04d"/></marker></defs>
@@ -1253,5 +1279,5 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 </div>
 <div style="text-align:center;font-size:16px;font-weight:700;color:#5d6a64;padding:0 0 12px">頭数・方法など、くわしくはセンターへお問い合わせください</div>
 </div></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section>
-<p class="pg-foot">くわしい手順（詳細SOP）は、農場プロファイル実施SOPのNotionページにあります。　© BRDC Frontiers プロファイルセンター</p>
+<p class="pg-foot">くわしい手順（詳細SOP）は、K式実施SOPのNotionページにあります。　© BRDC Frontiers プロファイルセンター</p>
 </body></html>
