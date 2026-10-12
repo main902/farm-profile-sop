@@ -53,6 +53,18 @@ def load(f):
     return open(p).read()
 
 
+SOFT = {
+ '#c8361c':'#b4594b','#e0561b':'#cf7c4e','#2f7d3a':'#4e8a5c','#2e8b57':'#5b9a76','#3f6b45':'#56795c',
+ '#c2362b':'#b55a4f','#f6a04d':'#efb486','#f08a3c':'#eaa676','#d9822b':'#d39c66','#6b3fa0':'#7d67a2',
+ '#8a6d00':'#987f43','#2f6688':'#4f7a95','#f2c14e':'#efd08e','#e57a5c':'#e09c86','#c4302b':'#b55a4f',
+ '#c28a00':'#b4944f','#1d6f42':'#3f7d5a','#f3c7a8':'#efd9c8','#ffe08a':'#f3e2ad','#5c4900':'#6a5a2c',
+ '#5a4500':'#665632','#f1b9a6':'#ecd0c5','#a9d3ae':'#bcd8bf','#7a5230':'#7f6248','#b0582a':'#ad7556',
+ '#c8361c33':'#b4594b33','#e9a59f':'#e6c0bb','#d7261e':'#c0584d','#e98a5f':'#e5a585','#f6c84c':'#efd08e',
+ '#5aa864':'#79b07f','#e0561b33':'#cf7c4e33'}
+def soften(s):
+    import re as _re
+    return _re.sub(r'#[0-9a-fA-F]{6}\b', lambda m: SOFT.get(m.group(0).lower(), m.group(0)), s)
+
 def render(cfg):
     desk, mob, sections, toc = [], [], [], []
     cur = None
@@ -119,6 +131,7 @@ def render(cfg):
 {''.join(sections)}
 <p class="pg-foot">{cfg.get('foot', '© BRDC Frontiers プロファイルセンター')}</p>
 </body></html>'''
+    page = soften(page)
     open('../site/' + cfg['file'], 'w').write(page)
     return len(page)
 
