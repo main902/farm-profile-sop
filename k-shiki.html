@@ -1,0 +1,813 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K式 実施SOP｜農場プロファイル</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c2622;--muted:#5d6a64;--line:#c9d3cd;--bg:#ffffff;--soft:#f3f6f4;
+--a:#2f6688;--a-bg:#e6eef3;--k:#3f6b45;--k-bg:#e8f0e7;--c:#4a4f4c;--c-bg:#eef1ee;--warn:#c2362b;--warn-bg:#fbe7e4;--zone:#8a6d00;--zone-bg:#fbf3d2}
+:root{--page:#f5f7f5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP","Noto Sans CJK JP","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.5}
+.pg-top{background:#3f6b45;color:#fff;padding:22px 16px 18px}
+.pg-top .pg-in,.pg-wrap{max-width:1040px;margin:0 auto}
+.pg-top .pg-tag{display:inline-block;background:#fff;color:#3f6b45;font-weight:900;border-radius:999px;padding:0 12px;font-size:14px}
+.pg-top h1{margin:6px 0 4px;font-size:clamp(24px,5vw,36px);font-weight:900;line-height:1.25}
+.pg-top p{margin:0;font-size:15px;opacity:.95}
+.pg-lead{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.pg-lead a{background:#fff;color:#3f6b45;text-decoration:none;font-weight:900;border-radius:10px;padding:8px 14px;font-size:15px}
+.pg-toc{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #dfe5e1;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.pg-toc .pg-wrap{display:flex;gap:6px;padding:8px 12px}
+.pg-toc a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:#1c2622;font-size:14px;font-weight:700;border:1px solid #cfd8d2;border-radius:999px;padding:4px 12px 4px 4px;background:#fafcfa}
+.pg-toc a span{display:inline-block;width:22px;height:22px;border-radius:50%;background:#3f6b45;color:#fff;text-align:center;line-height:22px;font-size:12px}
+.pg-sec{max-width:1040px;margin:18px auto;background:#fff;border-radius:16px;box-shadow:0 1px 3px rgba(0,0,0,.06);padding:16px 20px 18px;scroll-margin-top:56px}
+.pg-sec h2{margin:0;font-size:clamp(20px,4vw,26px);font-weight:900;display:flex;align-items:center;gap:10px}
+.pg-sec h2 .pg-no{display:inline-block;min-width:32px;height:32px;border-radius:50%;background:#3f6b45;color:#fff;text-align:center;line-height:32px;font-size:17px}
+.pg-sec .pg-cap{margin:6px 0 10px;color:#5d6a64;font-size:15px}
+.pg-fig{overflow:hidden}
+.pg-fig > .w{margin:0 auto;padding-top:4px!important}
+.pg-fig h1{display:none!important}
+.pg-foot{max-width:1040px;margin:18px auto 40px;padding:0 16px;color:#5d6a64;font-size:13px}
+#k01 *{box-sizing:border-box}
+#k01{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k01 .w{width:1000px;padding:28px 28px 32px}
+#k01 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k01 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k01 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k01 .st{display:grid;grid-template-columns:52px 1fr;gap:12px;align-items:center;border:2px solid var(--k);background:var(--k-bg);border-radius:14px;padding:9px 16px}
+#k01 .st .n{width:44px;height:44px;border-radius:50%;background:var(--k);color:#fff;font-size:22px;font-weight:900;text-align:center;line-height:44px}
+#k01 .st b{font-size:23px;display:block;line-height:1.3}
+#k01 .st small{font-size:17px;color:var(--muted)}
+#k01 .st.end{border-color:var(--warn);background:var(--warn-bg)}
+#k01 .st.end .n{background:var(--warn)}
+#k01 .st.res{border-color:var(--ink);background:#f3f4f3}
+#k01 .st.res .n{background:var(--ink)}
+#k01 .dn{text-align:center;color:var(--k);font-size:22px;line-height:1;margin:5px 0}
+#k01 .side{margin:6px 0 0 64px;border:2px dashed var(--zone);border-radius:12px;padding:6px 12px;font-size:18px;background:#fffdf5;color:#5c4900;font-weight:700}#k02 *{box-sizing:border-box}
+#k02{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k02 .w{width:1000px;padding:28px 28px 32px}
+#k02 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k02 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k02 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k02 .bar{display:grid;grid-template-columns:1fr 1.6fr 1.15fr;gap:8px;margin-top:6px}
+#k02 .seg{border-radius:14px;overflow:hidden;border:2px solid;display:flex;flex-direction:column}
+#k02 .seg .h{color:#fff;padding:7px 12px;font-size:22px;font-weight:900}
+#k02 .seg .h small{display:block;font-size:15px;font-weight:400;opacity:.95}
+#k02 .seg .b{padding:8px 12px;font-size:17px;line-height:1.5;flex:1;display:flex;flex-direction:column}
+#k02 .seg .b b.q{display:block;font-size:20px;margin-bottom:4px;line-height:1.35}
+#k02 .tg{margin-top:auto;padding-top:8px}
+#k02 .tgt{border-radius:10px;padding:6px 10px;color:#fff;font-weight:900;font-size:19px;line-height:1.3}
+#k02 .tgt small{display:block;font-size:14px;font-weight:700;opacity:.95}
+#k02 .s1{border-color:#8a6d00}
+#k02 .s1 .h,#k02 .s1 .tgt{background:#8a6d00}
+#k02 .s2{border-color:#2e8b57}
+#k02 .s2 .h,#k02 .s2 .tgt{background:#2e8b57}
+#k02 .s3{border-color:#2f6688}
+#k02 .s3 .h,#k02 .s3 .tgt{background:#2f6688}
+#k02 .note{margin-top:6px;font-size:14px;line-height:1.4;color:#2f6688;background:#e6eef3;border-radius:8px;padding:5px 8px;font-weight:700}
+#k02 .goal{margin-top:12px;border:3px solid var(--ink);border-radius:14px;padding:10px 14px;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center}
+#k02 .goal .gl{font-size:20px;font-weight:900}
+#k02 .steps{display:flex;align-items:stretch;gap:6px}
+#k02 .st{flex:1;border-radius:10px;padding:6px 8px;text-align:center;font-size:15px;line-height:1.35;display:flex;flex-direction:column;justify-content:center}
+#k02 .st b{display:block;font-size:24px}
+#k02 .st.a{background:#1c2622;color:#fff}
+#k02 .st.b{background:#e6eef3}
+#k02 .st.c{background:#fbf3d2}
+#k02 .st.d{background:#f3f4f3;border:2px dashed #9aa8a1;flex:1.5}
+#k02 .st.d b{font-size:16px}
+#k02 .arw{display:flex;align-items:center;color:var(--muted);font-size:18px}
+#k02 .eq{margin-top:12px;display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;align-items:stretch}
+#k02 .ei{border-radius:14px;border:2px solid;padding:8px 12px;font-size:15px;line-height:1.45}
+#k02 .ei b{display:block;font-size:18px}
+#k02 .op{display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;color:var(--muted)}
+#k02 .e1{border-color:#2e8b57;background:#eef8f1}
+#k02 .e2{border-color:#8a6d00;background:#fbf3d2}
+#k02 .e3{border-color:var(--ink);background:var(--ink);color:#fff}
+#k02 .exh{font-size:24px;font-weight:900;margin:16px 0 6px}
+#k02 .ex{border:2px solid var(--line);border-radius:14px;padding:6px 10px}
+#k02 .exr{display:grid;grid-template-columns:150px 0.9fr 1.5fr 0.9fr 290px;gap:8px;align-items:stretch;padding:7px 0;border-top:1px dashed var(--line)}
+#k02 .exr.head{border-top:none;font-size:15px;font-weight:700;color:var(--muted);text-align:center;padding:2px 0}
+#k02 .pl{display:flex;flex-direction:column;justify-content:center}
+#k02 .pl b{font-size:19px;line-height:1.3}
+#k02 .pl small{font-size:14px;color:var(--muted);line-height:1.35}
+#k02 .pk{display:inline-block;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;text-align:center;line-height:28px;font-weight:900;margin-bottom:2px}
+#k02 .ec{background:#f6f8f6;border-radius:10px;padding:6px 8px;text-align:center;display:flex;flex-direction:column;justify-content:center}
+#k02 .ec .ic{display:flex;flex-wrap:wrap;gap:3px;justify-content:center;align-items:flex-end;min-height:30px}
+#k02 .ec .cp{font-size:14px;font-weight:700;margin-top:3px;line-height:1.3}
+#k02 .redc{margin-top:5px;display:flex;align-items:center;justify-content:center;gap:3px;font-size:13px;font-weight:700;color:#c2362b;border-top:1px dashed #e7b4ae;padding-top:4px}
+#k02 .rs{font-size:15px;line-height:1.45;align-self:center;border-left:4px solid #2e8b57;padding-left:10px}
+#k02 .rs.mid{border-left-color:#d9822b}
+#k02 .rs b{font-size:18px}
+#k02 .act{margin-top:3px;font-weight:900;font-size:16px;color:#1c2622}
+#k02 .lg2{display:flex;gap:4px;align-items:center;justify-content:flex-end;font-size:14px;color:var(--muted);margin-top:4px}
+#k02 .ch2{margin-top:auto;padding-top:8px;display:flex;flex-direction:column;align-items:stretch}
+#k02 .ch2 .c1{border-radius:8px;padding:5px 9px;font-size:15px;line-height:1.4;background:#f3f6f4;border:1.5px solid #c9d3cd;text-align:center}
+#k02 .ch2 .a2{text-align:center;font-size:13px;line-height:1.1;color:var(--muted);margin:2px 0}
+#k02 .ch2 .c2{border-radius:10px;padding:6px 10px;color:#fff;text-align:center;line-height:1.3}
+#k02 .ch2 .c2 b{font-size:19px;display:block}
+#k02 .ch2 .c2 small{font-size:13.5px;font-weight:700;opacity:.95;display:block}
+#k02 .s1 .c2{background:#8a6d00}
+#k02 .s2 .c2{background:#2e8b57}
+#k02 .s3 .c2{background:#2f6688}
+#k02 .ln{display:flex;align-items:center;gap:6px;flex-wrap:nowrap;white-space:nowrap;margin:1px 0}
+#k02 .ln b{font-size:16px!important}
+#k02 .bok,#k02 .bmid{display:inline-block;font-size:13px;font-weight:900;color:#fff;border-radius:999px;padding:0 9px;line-height:1.7}
+#k02 .bok{background:#2e8b57}
+#k02 .bmid{background:#d9822b}#k03 *{box-sizing:border-box}
+#k03{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k03 .w{width:1000px;padding:28px 28px 32px}
+#k03 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k03 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k03 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k03 .def{background:var(--zone-bg);border:2px solid var(--zone);border-radius:16px;padding:14px 18px;margin-bottom:16px}
+#k03 .def b{font-size:28px;color:#5c4900;font-weight:900;line-height:1.35;display:block}
+#k03 .def span{font-size:20px;color:#5c4900}
+#k03 .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+#k03 .cd{display:grid;grid-template-columns:78px 1fr;gap:10px;border:2px solid var(--line);border-radius:14px;padding:10px 14px;align-items:center}
+#k03 .cd .t{font-size:25px;font-weight:900}
+#k03 .cd .t i{font-style:normal;display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:var(--zone);color:#fff;font-size:20px;margin-right:8px;vertical-align:2px}
+#k03 .cd .e{font-size:19px;color:var(--muted);line-height:1.45;margin-top:2px}
+#k03 .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#k03 .rl{border-radius:16px;border:2px solid;padding:12px 14px}
+#k03 .rl.n{border-color:var(--warn);background:#fffafa}
+#k03 .rl.y{border-color:var(--k);background:#fafcfa}
+#k03 .rl h2{margin:0 0 6px;font-size:24px;font-weight:900;line-height:1.3}
+#k03 .rl.n h2{color:var(--warn)}
+#k03 .rl.y h2{color:var(--k)}
+#k03 .rl small{display:block;font-size:19px;color:var(--muted);margin-top:4px;text-align:center}
+#k03 .reg{margin-top:16px;background:var(--c-bg);border-radius:14px;padding:12px 16px;font-size:21px;font-weight:700}
+#k03 .reg span{display:inline-block;background:#fff;border:2px solid var(--c);border-radius:999px;padding:0 14px;margin:2px 4px 2px 0}
+#k03 .target{background:var(--ink);border-radius:18px;padding:14px 16px 16px;margin-bottom:10px}
+#k03 .th{color:#fff;font-size:30px;font-weight:900;margin:0 4px 10px}
+#k03 .tg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#k03 .tc{background:#fff;border-radius:14px;padding:12px 16px}
+#k03 .tk{display:inline-block;color:#fff;font-weight:900;font-size:21px;border-radius:999px;padding:0 16px;margin-bottom:4px}
+#k03 .tc b{display:block;font-size:26px;line-height:1.35;font-weight:900}
+#k03 .tc small{display:block;font-size:19px;color:var(--muted);margin-top:4px}
+#k03 .between{text-align:center;font-size:21px;font-weight:700;color:var(--muted);margin:2px 0 12px}#k04 *{box-sizing:border-box}
+#k04{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k04 .w{width:1000px;padding:28px 28px 32px}
+#k04 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k04 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k04 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k04 .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-bottom:22px}
+#k04 .fs{min-height:135px;border-radius:14px;border:2px solid var(--c);background:var(--c-bg);padding:10px 12px;position:relative;font-size:21px;font-weight:700;line-height:1.35}
+#k04 .fs .n{position:absolute;left:-12px;top:-14px;width:32px;height:32px;border-radius:50%;background:var(--c);color:#fff;text-align:center;line-height:32px;font-size:18px}
+#k04 .fs small{display:block;font-weight:400;font-size:17px;color:var(--muted);margin-top:2px}
+#k04 .fs:not(:last-child)::after{content:"▶";position:absolute;right:-24px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:20px}
+#k04 .panel{border:2px solid var(--line);border-radius:16px;padding:14px 16px}
+#k04 .panel h2{margin:0 0 8px;font-size:26px;font-weight:900}
+#k04 .lg{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:8px;font-size:19px}
+#k04 .lg span{display:inline-flex;align-items:center;gap:6px}
+#k04 .lg i{width:20px;height:20px;border-radius:5px;display:inline-block;border:2px solid}#k05 *{box-sizing:border-box}
+#k05{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k05 .w{width:1000px;padding:28px 28px 32px}
+#k05 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k05 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k05 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k05 h2{font-size:26px;margin:18px 0 8px;font-weight:900}
+#k05 .tubes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+#k05 .tc{border:2px solid;border-radius:16px;padding:12px 14px;display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:center}
+#k05 .tc.b{border-color:#2e8b57;background:#eef8f1}
+#k05 .tc.o{border-color:#d9822b;background:#fdf2e6}
+#k05 .tc.r{border-color:#c2362b;background:#fdeceb}
+#k05 .tc .n{font-size:34px;font-weight:900;line-height:1.1}
+#k05 .tc .n small{font-size:20px}
+#k05 .tc.b .n{color:#2e8b57}
+#k05 .tc.o .n{color:#b5651d}
+#k05 .tc.r .n{color:#c2362b}
+#k05 .tc .d{font-size:20px;font-weight:700;line-height:1.35;margin-top:2px}
+#k05 .tc .d small{display:block;font-size:17px;font-weight:400;color:var(--muted)}
+#k05 .items{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+#k05 .it{border:2px solid var(--line);border-radius:14px;padding:10px 6px 10px;text-align:center}
+#k05 .it b{display:block;font-size:20px;line-height:1.3;margin-top:4px}
+#k05 .it small{display:block;font-size:16px;color:var(--muted);line-height:1.3}
+#k05 .note{margin-top:14px;border:2px dashed var(--c);border-radius:12px;padding:10px 14px;font-size:20px;font-weight:700}
+#k05 .tot{font-size:21px;color:var(--muted)}
+#k05 .goal{margin-top:12px;border:2px solid var(--ink);border-radius:14px;padding:10px 16px}
+#k05 .gt{font-size:22px;font-weight:900}
+#k05 .gr{display:flex;gap:22px;flex-wrap:wrap;font-size:21px;margin:4px 0}
+#k05 .gr b{font-size:27px}
+#k05 .gn{font-size:20px;line-height:1.55;color:#333}
+#k05 .cont{margin-top:14px;display:grid;grid-template-columns:100px 1fr;gap:12px;align-items:center;border:2px solid var(--k);background:var(--k-bg);border-radius:14px;padding:10px 16px}
+#k05 .cont b{font-size:24px;display:block}
+#k05 .cont small{font-size:19px;color:var(--muted)}
+#k05 .tt{width:100%;border-collapse:separate;border-spacing:0 6px;font-size:20px}
+#k05 .tt th{font-size:17px;color:var(--muted);text-align:center;font-weight:700;padding:2px 6px}
+#k05 .tt td{padding:8px 10px;text-align:center;font-size:26px;font-weight:900;background:#f6f8f6}
+#k05 .tt td:first-child{border-radius:10px 0 0 10px;text-align:left;font-size:24px;white-space:nowrap}
+#k05 .tt td:last-child{border-radius:0 10px 10px 0;color:var(--muted)}
+#k05 .tt td:nth-child(2){text-align:left;font-size:20px;font-weight:700}
+#k05 .tt td small{display:block;font-size:16px;font-weight:400;color:var(--muted)}
+#k05 .tt .g td{background:#eef8f1}
+#k05 .tt .o td{background:#fdf2e6}
+#k05 .tt .r td{background:#fdeceb}
+#k05 .tt .wh td{background:#f3f6f4}
+#k05 .tt td.hl{outline:3px solid #1c2622;outline-offset:-3px}
+#k05 .tt th.hl{color:#1c2622}
+#k05 .tt td.nb{font-size:18px;font-weight:700;color:#c2362b}
+#k05 .sw{display:inline-block;width:18px;height:30px;border-radius:4px 4px 9px 9px;vertical-align:middle;margin-right:8px}
+#k05 .tt .w td{background:#f3f4f3}
+#k05 .card{display:inline-block;width:26px;height:20px;border:2px solid #5d6a64;border-radius:3px;font-size:13px;text-align:center;line-height:16px;vertical-align:middle;margin-right:6px;background:#fff;color:#5d6a64}
+#k05 .grp{border:2px solid var(--gc);border-radius:14px;margin-bottom:12px;overflow:hidden}
+#k05 .grp .gh{background:var(--gc);color:#fff;font-weight:900;font-size:21px;padding:4px 14px}
+#k05 .grp .gi{display:grid;gap:8px;padding:8px}
+#k05 .grp .it{border:none;background:#f6f8f6}
+#k05 .two{display:grid;grid-template-columns:3fr 2fr;gap:12px}
+#k05 .rules{margin-top:10px;border:2px solid var(--ink);border-radius:12px;padding:8px 14px;font-size:20px;line-height:1.6}#k06 *{box-sizing:border-box}
+#k06{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k06 .w{width:1000px;padding:28px 28px 32px}
+#k06 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k06 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k06 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k06 .hd{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#k06 .blk{border-radius:18px;border:2px solid;margin-top:16px;overflow:hidden}
+#k06 .blk .bh{color:#fff;padding:10px 18px;font-size:27px;font-weight:900}
+#k06 .blk .bb{padding:14px 16px 16px}
+#k06 .k{border-color:var(--k)}
+#k06 .k .bh{background:var(--k)}
+#k06 .a{border-color:var(--a)}
+#k06 .a .bh{background:var(--a)}
+#k06 .pre{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+#k06 .pc{background:var(--c-bg);border:2px solid var(--c);border-radius:12px;padding:6px 14px;font-size:21px;font-weight:700}
+#k06 .pc.go{background:var(--ink);color:#fff;border-color:var(--ink)}
+#k06 .ar{font-size:22px;color:var(--muted)}
+#k06 .chain{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+#k06 .cut{position:relative;border-radius:12px;padding:8px 10px 10px;border:2px solid;min-height:104px}
+#k06 .cut.v{border-color:var(--a);background:var(--a-bg)}
+#k06 .cut.s{border-color:var(--k);background:var(--k-bg)}
+#k06 .cut .t{display:inline-block;color:#fff;font-size:17px;font-weight:900;border-radius:999px;padding:0 10px;margin-bottom:2px}
+#k06 .cut.v .t{background:var(--a)}
+#k06 .cut.s .t{background:var(--k)}
+#k06 .cut b{display:block;font-size:21px;line-height:1.3}
+#k06 .cut small{display:block;font-size:17px;color:var(--muted);line-height:1.3}
+#k06 .cut:not(:nth-child(4n)):not(:last-child)::after{content:"▶";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:17px}
+#k06 .cut.split{background:linear-gradient(135deg,#e8f0e7 0 50%,#e6eef3 50% 100%);border-color:#7f8f86;padding:0}
+#k06 .cut.split .p1{position:absolute;left:10px;top:8px}
+#k06 .cut.split .p2{position:absolute;right:10px;bottom:8px;text-align:right;width:62%}
+#k06 .cut.split .p2 b{font-size:18px}
+#k06 .up{margin-top:12px;font-size:21px;font-weight:700;background:var(--c-bg);border-radius:10px;padding:8px 14px}
+#k06 .vnote{margin-top:12px;border:2px solid var(--a);background:var(--a-bg);border-radius:12px;padding:8px 14px;font-size:20px}
+#k06 .vnote .t{display:inline-block;color:#fff;background:var(--a);font-size:17px;font-weight:900;border-radius:999px;padding:0 10px;margin-right:8px}
+#k06 .leg{display:flex;gap:16px;font-size:19px;margin-top:6px;color:var(--muted)}
+#k06 .leg span{display:inline-flex;gap:6px;align-items:center}
+#k06 .leg i{display:inline-block;color:#fff;font-style:normal;font-weight:900;border-radius:999px;padding:0 10px;font-size:16px}
+#k06 .lt{font-size:18px;font-weight:400;color:var(--muted);margin-left:12px}
+#k06 .fold{margin-top:16px;border:2px solid var(--ink);border-radius:16px;padding:12px 16px}
+#k06 .fh{font-size:23px;font-weight:900}
+#k06 .fs{display:flex;gap:10px;margin:8px 0}
+#k06 .fs span{flex:1;text-align:center;border:2px solid var(--ink);border-radius:10px;padding:6px;font-size:22px;font-weight:900;background:#fff}
+#k06 .fs span.m{background:var(--ink);color:#fff}
+#k06 .fn{font-size:18px;color:var(--muted)}
+#k06 .wnote{margin-top:10px;display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center;border:2px dashed #5d6a64;border-radius:12px;padding:8px 14px;background:#fafbfa}
+#k06 .wnote b{font-size:21px;display:block}
+#k06 .wnote small{font-size:18px;color:var(--muted)}
+#k06 .wc{width:46px;height:36px;border:3px solid #5d6a64;border-radius:5px;background:#fff;font-weight:900;font-size:20px;text-align:center;line-height:30px;color:#5d6a64}
+#k06 .cut{min-height:150px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:8px 8px 10px}
+#k06 .cut .top{align-self:flex-start;display:flex;gap:6px;align-items:center}
+#k06 .cut .top b{font-size:21px}
+#k06 .cut svg{margin:6px 0 2px}
+#k06 .cut small{font-size:15px!important}
+#k06 .cut.split{background:linear-gradient(135deg,#e8f0e7 0 55%,#e6eef3 55% 100%);border-color:#7f8f86;padding:8px 8px 10px}
+#k06 .t.sm{font-size:14px!important;padding:0 7px!important;margin-right:4px}
+#k06 .pc{display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:19px!important}#k07 *{box-sizing:border-box}
+#k07{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k07 .w{width:1000px;padding:28px 28px 32px}
+#k07 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k07 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k07 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k07 .head{border:2px solid var(--line);border-radius:16px;padding:8px 10px;background:#fafbfa}
+#k07 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+#k07 .sp{border:2px solid var(--k);border-radius:14px;padding:10px 12px;background:#fff;position:relative}
+#k07 .sp .n{position:absolute;left:-10px;top:-12px;width:36px;height:36px;border-radius:50%;background:var(--k);color:#fff;font-weight:900;font-size:20px;text-align:center;line-height:36px}
+#k07 .sp svg{display:block;margin:2px auto 4px}
+#k07 .sp b{display:block;font-size:22px;line-height:1.3;text-align:center}
+#k07 .sp small{display:block;font-size:17px;color:var(--muted);line-height:1.4;text-align:center;margin-top:2px}
+#k07 .sp small em{font-style:normal;color:#c2362b;font-weight:700}
+#k07 .after{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#k07 .af{border-radius:12px;padding:10px 14px;font-size:20px;line-height:1.45}
+#k07 .af b{font-size:21px}
+#k07 .af.k{border:2px solid var(--k);background:var(--k-bg)}
+#k07 .af.a{border:2px solid var(--a);background:var(--a-bg)}
+#k07 .after1{margin-top:14px;border:2px solid var(--k);background:var(--k-bg);border-radius:12px;padding:10px 16px;font-size:21px}#k08 *{box-sizing:border-box}
+#k08{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k08 .w{width:1000px;padding:28px 28px 32px}
+#k08 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k08 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k08 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k08 .hd{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#k08 .grp{border-radius:18px;border:2px solid;margin-bottom:16px;overflow:hidden}
+#k08 .grp .gh{color:#fff;padding:8px 18px;font-size:24px;font-weight:900}
+#k08 .grp .gh small{font-weight:400;font-size:19px;margin-left:10px}
+#k08 .grp .gb{padding:12px 16px 12px}
+#k08 .prep{border-color:#7f8f86}
+#k08 .prep .gh{background:#7f8f86}
+#k08 .shoot{border-color:var(--zone)}
+#k08 .shoot .gh{background:var(--zone)}
+#k08 .st{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;border:2px solid #7f8f86;background:#f3f6f4;border-radius:14px;padding:10px 16px;margin-bottom:10px}
+#k08 .st .n{width:50px;height:50px;border-radius:50%;background:#7f8f86;color:#fff;font-size:27px;font-weight:900;text-align:center;line-height:50px}
+#k08 .st b{font-size:25px;display:block;line-height:1.3}
+#k08 .st small{font-size:19px;color:var(--muted)}
+#k08 .ex{border:2px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:12px;background:#fff}
+#k08 .ex .et{font-size:21px;font-weight:900;margin-bottom:8px}
+#k08 .ex .et span{display:inline-block;color:#fff;background:var(--zone);border-radius:999px;padding:0 12px;font-size:18px;margin-right:8px}
+#k08 .tl{display:flex;align-items:stretch;gap:0}
+#k08 .rec,#k08 .stop{flex:none;width:58px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:15px;font-weight:900}
+#k08 .rec i{width:24px;height:24px;border-radius:50%;background:#c2362b;display:block;margin-bottom:2px}
+#k08 .stop i{width:22px;height:22px;background:#1c2622;display:block;margin-bottom:2px}
+#k08 .sg{border-radius:10px;padding:6px 10px;font-size:19px;font-weight:900;line-height:1.3;display:flex;flex-direction:column;justify-content:center;border:2px solid}
+#k08 .sg small{font-size:15px;font-weight:400;color:var(--muted)}
+#k08 .sg.c{background:var(--zone-bg);border-color:var(--zone);flex:0 0 120px}
+#k08 .sg.z{background:#fffdf5;border-color:var(--zone);flex:1 1 auto}
+#k08 .sg.z em{font-style:normal;color:#c2362b;font-size:16px}
+#k08 .sg.a{background:#fff;border-color:var(--zone);border-style:dashed;flex:0 0 205px;font-size:18px}
+#k08 .sg.walk{background:repeating-linear-gradient(90deg,#fff 0 10px,#f3f6f4 10px 20px);border-color:#9aa8a1;border-style:dashed;flex:0 0 100px;color:#5d6a64;font-size:16px;text-align:center}
+#k08 .ar{flex:none;width:20px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px}
+#k08 .note{border:2px solid var(--c);background:var(--c-bg);border-radius:12px;padding:10px 14px;font-size:21px;font-weight:700}
+#k08 .note small{display:block;font-size:18px;font-weight:400;color:var(--muted)}#k09 *{box-sizing:border-box}
+#k09{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k09 .w{width:1000px;padding:28px 28px 32px}
+#k09 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k09 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k09 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k09 .w{width:1000px}
+#k09 .card{border:5px solid var(--zone);border-radius:22px;overflow:hidden;background:#fff}
+#k09 .top{background:var(--zone);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:14px 26px}
+#k09 .top .zn{font-size:54px;font-weight:900;line-height:1.1}
+#k09 .top .rt{text-align:right;font-size:21px;line-height:1.45}
+#k09 .top .rt b{font-size:24px}
+#k09 .sz{padding:12px 26px;background:var(--zone-bg);border-bottom:3px solid var(--zone)}
+#k09 .sz .h{font-size:23px;font-weight:900;color:#5c4900}
+#k09 .sz .h small{font-weight:400;font-size:18px;margin-left:8px}
+#k09 .pen{display:flex;align-items:baseline;gap:8px;font-size:26px;font-weight:700;margin-top:8px}
+#k09 .pen .ln{display:inline-block;width:92px;border-bottom:3px solid #1c2622;height:28px}
+#k09 .pen .l{font-size:22px;font-weight:900;color:#5c4900;width:78px}
+#k09 .pts{padding:14px 26px 6px}
+#k09 .pts .h{font-size:23px;font-weight:900;margin-bottom:8px}
+#k09 .pt{display:grid;grid-template-columns:44px 64px 1fr;gap:12px;align-items:center;border:2px solid var(--line);border-radius:14px;padding:8px 14px;margin-bottom:10px}
+#k09 .pt .no{width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;font-size:26px;font-weight:900;text-align:center;line-height:44px}
+#k09 .pt b{font-size:27px;display:block;line-height:1.25}
+#k09 .pt small{display:block;font-size:19px;color:var(--muted);line-height:1.35}
+#k09 .pt.big{border-color:var(--zone);background:#fffdf5}
+#k09 .yo{display:inline-block;font-size:17px;font-weight:900;color:#fff;background:#c2362b;border-radius:999px;padding:0 12px;margin-right:6px;vertical-align:3px}
+#k09 .ft{margin:6px 26px 16px;background:var(--a-bg);border:2px solid var(--a);border-radius:12px;padding:8px 14px;font-size:21px;font-weight:700;color:var(--a)}
+#k09 .yrow{display:flex;gap:8px;align-items:center;margin-top:6px;flex-wrap:wrap}
+#k09 .yo{display:inline-block;font-size:18px;font-weight:900;color:#fff;background:#c2362b;border-radius:999px;padding:0 12px}
+#k09 .yi{display:inline-block;font-size:22px;font-weight:900;border:2.5px solid #c2362b;color:#c2362b;border-radius:10px;padding:0 12px;background:#fff}
+#k09 .plus{border:2.5px dashed var(--zone);border-radius:14px;padding:8px 14px 10px;margin:4px 0 16px}
+#k09 .ph{font-size:22px;font-weight:900;color:#5c4900;margin-bottom:6px}
+#k09 .pg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+#k09 .pp{display:grid;grid-template-columns:52px 1fr;gap:8px;align-items:center}
+#k09 .pp b{font-size:23px;display:block;line-height:1.25}
+#k09 .cd{display:inline-block;margin-top:2px;font-size:16px;font-weight:900;color:#fff;background:#8a6d00;border-radius:999px;padding:0 10px}
+#k09 .pb{font-size:23px!important;margin-top:2px}
+#k09 .pg{display:grid;grid-template-columns:1.3fr 1fr;gap:14px;margin-top:6px}#k10 *{box-sizing:border-box}
+#k10{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k10 .w{width:1000px;padding:28px 28px 32px}
+#k10 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k10 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k10 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k10 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+#k10 .way{border:2px solid var(--c);border-radius:16px;overflow:hidden}
+#k10 .way .wh{background:var(--c);color:#fff;font-size:24px;font-weight:900;padding:8px 16px}
+#k10 .way .wb{padding:12px 16px;font-size:21px;line-height:1.6}
+#k10 .way .wb b{font-size:22px}
+#k10 .st{display:flex;gap:10px;align-items:flex-start;margin:4px 0}
+#k10 .st i{font-style:normal;flex:none;width:32px;height:32px;border-radius:50%;background:var(--c);color:#fff;text-align:center;line-height:32px;font-weight:900;font-size:18px;margin-top:2px}
+#k10 .dn{text-align:center;color:var(--muted);font-size:26px;line-height:1;margin:12px 0}
+#k10 .up{border:2px solid var(--ink);border-radius:14px;padding:12px 16px;font-size:24px;font-weight:900}
+#k10 .up small{display:block;font-size:19px;font-weight:400;color:var(--muted)}#k11 *{box-sizing:border-box}
+#k11{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#k11 .w{width:1000px;padding:28px 28px 32px}
+#k11 h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#k11 .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#k11 .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#k11 .root{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:#fff;border-radius:14px;padding:10px 22px;font-size:28px;font-weight:900;margin-bottom:6px}
+#k11 .tree{margin-left:34px;border-left:3px solid var(--muted);padding-left:0}
+#k11 .r{position:relative;display:grid;grid-template-columns:62px 1fr auto;gap:12px;align-items:center;margin:0 0 10px 28px;border:2px solid;border-radius:14px;padding:10px 16px;background:#fff}
+#k11 .r::before{content:"";position:absolute;left:-31px;top:50%;width:29px;height:3px;background:var(--muted)}
+#k11 .r .no{font-size:34px;font-weight:900}
+#k11 .r .nm{font-size:25px;font-weight:900;line-height:1.25}
+#k11 .r .ds{font-size:19px;color:var(--muted);line-height:1.35}
+#k11 .r .tg{font-size:17px;font-weight:700;border-radius:999px;padding:2px 12px;white-space:nowrap;color:#fff}
+#k11 .cen{border-color:#7f8f86}
+#k11 .cen .no{color:#5d6a64}
+#k11 .cen .tg{background:#7f8f86}
+#k11 .me{border-color:var(--k)}
+#k11 .me .no{color:var(--k)}
+#k11 .me .tg{background:var(--k)}
+#k11 .z{border-color:var(--zone)}
+#k11 .z .no{color:var(--zone)}
+#k11 .z .tg{background:var(--zone)}
+#k11 .a{border-color:var(--a)}
+#k11 .a .no{color:var(--a)}
+#k11 .a .tg{background:var(--a)}
+#k11 .sub3{display:flex;gap:8px;margin-top:6px}
+#k11 .sub3 span{border:2px solid var(--k);border-radius:8px;padding:1px 10px;font-size:18px;font-weight:700;color:var(--k);background:var(--k-bg)}
+@media (max-width:960px){
+.pg-sec{margin:12px 8px;padding:12px 10px 14px;border-radius:12px}
+.pg-top{padding:18px 14px 14px}
+#k01 .w{width:100%!important;padding:18px 16px 22px!important}
+#k01 *{max-width:100%}
+#k01 svg{height:auto}
+#k01 [style*="grid-template-columns"],#k01 .chain,#k01 .grid,#k01 .cols,#k01 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k01 [style*="display:flex"],#k01 .pre,#k01 .hd,#k01 .fs,#k01 .leg{flex-wrap:wrap!important}
+#k01 h1{font-size:30px!important;line-height:1.25}
+#k01 .chain{counter-reset:c}
+#k01 .chain .cut{counter-increment:c}
+#k01 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k01 .chain .cut{padding-right:32px!important}#k02 .w{width:100%!important;padding:18px 16px 22px!important}
+#k02 *{max-width:100%}
+#k02 svg{height:auto}
+#k02 [style*="grid-template-columns"],#k02 .chain,#k02 .grid,#k02 .cols,#k02 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k02 [style*="display:flex"],#k02 .pre,#k02 .hd,#k02 .fs,#k02 .leg{flex-wrap:wrap!important}
+#k02 h1{font-size:30px!important;line-height:1.25}
+#k02 .chain{counter-reset:c}
+#k02 .chain .cut{counter-increment:c}
+#k02 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k02 .chain .cut{padding-right:32px!important}
+#k02 .bar{grid-template-columns:1fr!important}
+#k02 .seg .b{font-size:16px}
+#k02 .goal{grid-template-columns:1fr!important}
+#k02 .steps{flex-direction:column}
+#k02 .arw{justify-content:center;transform:rotate(90deg)}
+#k02 .st{padding:8px}
+#k02 .st br{display:none}
+#k02 .eq{grid-template-columns:1fr!important}
+#k02 .op{height:34px}
+#k02 .exr{grid-template-columns:repeat(3,1fr)!important}
+#k02 .exr .pl,#k02 .exr .rs{grid-column:1/-1}
+#k02 .exr .pl{flex-direction:row;align-items:center;gap:8px;flex-wrap:wrap}
+#k02 .exr .pl .pk{margin:0}
+#k02 .exr.head>div:first-child,#k02 .exr.head>div:last-child{display:none}
+#k02 .rs{margin-top:4px}
+#k02 .lg2{flex-wrap:wrap;justify-content:flex-start}#k03 .w{width:100%!important;padding:18px 16px 22px!important}
+#k03 *{max-width:100%}
+#k03 svg{height:auto}
+#k03 [style*="grid-template-columns"],#k03 .chain,#k03 .grid,#k03 .cols,#k03 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k03 [style*="display:flex"],#k03 .pre,#k03 .hd,#k03 .fs,#k03 .leg{flex-wrap:wrap!important}
+#k03 h1{font-size:30px!important;line-height:1.25}
+#k03 .chain{counter-reset:c}
+#k03 .chain .cut{counter-increment:c}
+#k03 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k03 .chain .cut{padding-right:32px!important}
+#k03 .grid{grid-template-columns:1fr!important}#k04 .w{width:100%!important;padding:18px 16px 22px!important}
+#k04 *{max-width:100%}
+#k04 svg{height:auto}
+#k04 [style*="grid-template-columns"],#k04 .chain,#k04 .grid,#k04 .cols,#k04 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k04 [style*="display:flex"],#k04 .pre,#k04 .hd,#k04 .fs,#k04 .leg{flex-wrap:wrap!important}
+#k04 h1{font-size:30px!important;line-height:1.25}
+#k04 .chain{counter-reset:c}
+#k04 .chain .cut{counter-increment:c}
+#k04 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k04 .chain .cut{padding-right:32px!important}
+#k04 .flow{grid-template-columns:1fr 1fr!important;row-gap:22px}
+#k04 .fs::after{display:none!important}#k05 .w{width:100%!important;padding:18px 16px 22px!important}
+#k05 *{max-width:100%}
+#k05 svg{height:auto}
+#k05 [style*="grid-template-columns"],#k05 .chain,#k05 .grid,#k05 .cols,#k05 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k05 [style*="display:flex"],#k05 .pre,#k05 .hd,#k05 .fs,#k05 .leg{flex-wrap:wrap!important}
+#k05 h1{font-size:30px!important;line-height:1.25}
+#k05 .chain{counter-reset:c}
+#k05 .chain .cut{counter-increment:c}
+#k05 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k05 .chain .cut{padding-right:32px!important}
+#k05 .two{grid-template-columns:1fr!important}
+#k05 .gi[style*="repeat(3"]{grid-template-columns:repeat(3,1fr)!important}#k06 .w{width:100%!important;padding:18px 16px 22px!important}
+#k06 *{max-width:100%}
+#k06 svg{height:auto}
+#k06 [style*="grid-template-columns"],#k06 .chain,#k06 .grid,#k06 .cols,#k06 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k06 [style*="display:flex"],#k06 .pre,#k06 .hd,#k06 .fs,#k06 .leg{flex-wrap:wrap!important}
+#k06 h1{font-size:30px!important;line-height:1.25}
+#k06 .chain{counter-reset:c}
+#k06 .chain .cut{counter-increment:c}
+#k06 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k06 .chain .cut{padding-right:32px!important}#k07 .w{width:100%!important;padding:18px 16px 22px!important}
+#k07 *{max-width:100%}
+#k07 svg{height:auto}
+#k07 [style*="grid-template-columns"],#k07 .chain,#k07 .grid,#k07 .cols,#k07 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k07 [style*="display:flex"],#k07 .pre,#k07 .hd,#k07 .fs,#k07 .leg{flex-wrap:wrap!important}
+#k07 h1{font-size:30px!important;line-height:1.25}
+#k07 .chain{counter-reset:c}
+#k07 .chain .cut{counter-increment:c}
+#k07 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k07 .chain .cut{padding-right:32px!important}#k08 .w{width:100%!important;padding:18px 16px 22px!important}
+#k08 *{max-width:100%}
+#k08 svg{height:auto}
+#k08 [style*="grid-template-columns"],#k08 .chain,#k08 .grid,#k08 .cols,#k08 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k08 [style*="display:flex"],#k08 .pre,#k08 .hd,#k08 .fs,#k08 .leg{flex-wrap:wrap!important}
+#k08 h1{font-size:30px!important;line-height:1.25}
+#k08 .chain{counter-reset:c}
+#k08 .chain .cut{counter-increment:c}
+#k08 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k08 .chain .cut{padding-right:32px!important}
+#k08 .tl{flex-direction:column!important;flex-wrap:nowrap!important;gap:4px}
+#k08 .rec,#k08 .stop{width:auto;flex-direction:row;gap:6px;justify-content:flex-start}
+#k08 .rec i,#k08 .stop i{margin:0}
+#k08 .sg{flex:none!important;width:100%}
+#k08 .sg br{display:none}
+#k08 .ar{width:auto;transform:rotate(90deg);height:18px}
+#k08 .st{grid-template-columns:56px 1fr!important}#k09 .w{width:100%!important;padding:18px 16px 22px!important}
+#k09 *{max-width:100%}
+#k09 svg{height:auto}
+#k09 [style*="grid-template-columns"],#k09 .chain,#k09 .grid,#k09 .cols,#k09 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k09 [style*="display:flex"],#k09 .pre,#k09 .hd,#k09 .fs,#k09 .leg{flex-wrap:wrap!important}
+#k09 h1{font-size:30px!important;line-height:1.25}
+#k09 .chain{counter-reset:c}
+#k09 .chain .cut{counter-increment:c}
+#k09 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k09 .chain .cut{padding-right:32px!important}
+#k09 .top{flex-direction:column;align-items:flex-start;gap:6px}
+#k09 .top .rt{text-align:left}
+#k09 .top .rt b:first-child{display:block}
+#k09 .pen{flex-wrap:nowrap!important;font-size:22px;gap:4px}
+#k09 .pen .ln{width:60px}
+#k09 .pen .l{width:64px;font-size:19px}
+#k09 .pt{grid-template-columns:40px 1fr!important}
+#k09 .pt>svg{display:none}
+#k09 .pg{grid-template-columns:1fr!important}#k10 .w{width:100%!important;padding:18px 16px 22px!important}
+#k10 *{max-width:100%}
+#k10 svg{height:auto}
+#k10 [style*="grid-template-columns"],#k10 .chain,#k10 .grid,#k10 .cols,#k10 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k10 [style*="display:flex"],#k10 .pre,#k10 .hd,#k10 .fs,#k10 .leg{flex-wrap:wrap!important}
+#k10 h1{font-size:30px!important;line-height:1.25}
+#k10 .chain{counter-reset:c}
+#k10 .chain .cut{counter-increment:c}
+#k10 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k10 .chain .cut{padding-right:32px!important}#k11 .w{width:100%!important;padding:18px 16px 22px!important}
+#k11 *{max-width:100%}
+#k11 svg{height:auto}
+#k11 [style*="grid-template-columns"],#k11 .chain,#k11 .grid,#k11 .cols,#k11 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#k11 [style*="display:flex"],#k11 .pre,#k11 .hd,#k11 .fs,#k11 .leg{flex-wrap:wrap!important}
+#k11 h1{font-size:30px!important;line-height:1.25}
+#k11 .chain{counter-reset:c}
+#k11 .chain .cut{counter-increment:c}
+#k11 .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#k11 .chain .cut{padding-right:32px!important}
+}
+</style></head><body>
+<header class="pg-top"><div class="pg-in"><span class="pg-tag">農場プロファイル</span><h1>診療・農場フロー型パッケージ（K式）実施SOP</h1><p>日々の診療のついでに、期限までに少しずつ。1日でまとめてもOK。</p>
+<div class="pg-lead"><a href="#s1">はじめから見る ▶</a><a href="K式_実施ガイド_A4印刷用.pdf">🖨 印刷用PDF（A4）</a></div></div></header>
+<nav class="pg-toc"><div class="pg-wrap"><a href="#s1"><span>1</span>K式の流れ</a><a href="#s2"><span>2</span>なぜ、この頭数なの？</a><a href="#s3"><span>3</span>Zoneとは</a><a href="#s4"><span>4</span>Zoneの登録</a><a href="#s5"><span>5</span>キットの中身</a><a href="#s6"><span>6</span>牛1頭ずつ：個体の撮り方</a><a href="#s7"><span>7</span>NPSの採り方</a><a href="#s8"><span>8</span>Zoneの撮影</a><a href="#s9"><span>9</span>Zoneカードの例</a><a href="#s10"><span>10</span>農場の聞き取り</a><a href="#s11"><span>11</span>共有フォルダとアップロード</a></div></nav>
+<section class="pg-sec" id="s1"><h2><span class="pg-no">1</span>K式の流れ</h2><p class="pg-cap">申請 → Zone登録 → キット到着 → 期限までに採材・撮影 → 終わりにする → アップロード・冷凍便で発送 → 結果</p><div class="pg-fig" id="k01"><div class="w">
+<h1>K式の流れ<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">期限までに少しずつ。1日でまとめて実施してもOK</div>
+<div class="st"><div class="n">1</div><div><b>申請フォームで申請</b><small>方式は「K式」を選び、農場のGoogle Map情報を送る</small></div></div><div class="dn">▼</div>
+<div class="st"><div class="n">2</div><div><b>配置図を修正して、Zoneを登録</b><small>センターとはメールでやりとり</small></div></div><div class="dn">▼</div>
+<div class="st"><div class="n">3</div><div><b>キット（コンテナ）が届く</b><small>農場の隅に置かせてもらう。「◯月◯日まで」の期限札つき</small></div></div><div class="dn">▼</div>
+<div class="st"><div class="n">4</div><div><b>期限までに、取れるときに採材・撮影</b><small>1日でまとめてもOK。チューブは立てたまま診療所の冷凍庫へ</small></div></div>
+<div class="side">時間のあるときに：Zoneの撮影・聞き取りシート</div><div class="dn">▼</div>
+<div class="st end"><div class="n">5</div><div><b>終わりにする（先生が判断）</b><small>目安の数が集まったら、または期限が来たら</small></div></div><div class="dn">▼</div>
+<div class="st"><div class="n">6</div><div><b>アップロードを済ませて、冷凍便で発送</b><small>発送したらセンターにメール。アップロードは後日まとめてOK</small></div></div><div class="dn">▼</div>
+<div class="st res"><div class="n">7</div><div><b>結果レポートが返ってくる</b><small>「5. センターフィードバック」フォルダに入ります</small></div></div>
+</div></div></section><section class="pg-sec" id="s2"><h2><span class="pg-no">2</span>なぜ、この頭数なの？</h2><p class="pg-cap">NPS（緑・橙）は目標15頭 → 目安8頭以上 → 最低5頭。中心は31〜90日齢。0〜30日齢は胸囲を5頭</p><div class="pg-fig" id="k02"><div class="w">
+<h1>なぜ、この頭数なの？<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub" style="margin-bottom:10px">牛の時期によって、知りたいことが違うからです</div>
+<div class="bar">
+ <div class="seg s1"><div class="h">0〜30日齢<small>スタートの時期</small></div><div class="b"><b class="q">初乳・哺乳はうまくいっている？ 母牛の栄養は？</b>生まれてすぐの体格が、その後の病気への強さにつながる
+  <div class="ch2"><div class="c1"><b>体格</b>が大事な時期</div><div class="a2">▼</div><div class="c1"><b>胸囲充足率（HGR）</b>が指標として大事</div><div class="a2">▼</div><div class="c2"><b>胸囲を5頭</b><small>NPSを採らなくても、白カードで胸囲だけ5頭分</small></div></div></div></div>
+ <div class="seg s2"><div class="h">31〜90日齢<small>鼻咽頭の乱れがいちばんはっきり見える時期</small></div><div class="b"><b class="q">自分の免疫で、病原体に抵抗できている？</b>BRDCは主に日和見感染。鼻咽頭の細菌叢が乱れ（ディスバイオーシス）、病気を起こす微生物が優勢になることで始まる。この乱れを健常牛鼻咽頭スワブスクリーニングで評価する
+  <div class="ch2"><div class="c1">この時期のスワブ中の<b>病原微生物の保有率</b>が、BRDCリスクに直結</div><div class="a2">▼</div><div class="c2"><b>NPSを中心に採りたい時期</b><small>緑8・橙4（最大12本）＋胸囲</small></div></div></div></div>
+ <div class="seg s3"><div class="h">91〜135日齢<small>群編成・離乳などのあと</small></div><div class="b"><b class="q">群編成・離乳などのストレスに、耐えられていた？</b>ストレスがかかる時期を越えたあとの鼻咽頭と発育で確かめる
+  <div class="note">※ 群編成・離乳などがなかった農場では、優先度は低めでOK</div>
+  <div class="ch2"><div class="c1">ストレスの影響は、<b>鼻咽頭と発育</b>にあらわれる</div><div class="a2">▼</div><div class="c2"><b>NPS</b><small>緑4・橙1（最大5本）＋胸囲</small></div></div></div></div>
+</div>
+<div class="goal"><div class="gl">NPSの頭数<br><span style="font-size:15px;font-weight:400;color:var(--muted)">緑・橙の合計</span></div>
+ <div class="steps"><div class="st a">目標<b>15頭</b></div><div class="arw">▶</div><div class="st b">届かなければ 目安<b>8頭以上</b></div><div class="arw">▶</div><div class="st c">どうしても<br>むずかしければ<b>5頭</b></div><div class="arw">▶</div><div class="st d"><b>それでも届かないとき</b>期限が来たら、集まった分で<br>発送OK（メールで一言）</div></div></div>
+<div class="eq">
+ <div class="ei e1"><b>抵抗性の指標</b>健常牛鼻咽頭スワブスクリーニング</div><div class="op">＋</div>
+ <div class="ei e2"><b>発育の指標：胸囲充足率（HGR）</b>その日齢の標準に対する胸囲の割合。簡単に測れる、DG（日増体量）の代わりの指標</div><div class="op">＝</div>
+ <div class="ei e3"><b>BRDCリスクの判定</b>2つを合わせて、農場のリスクを判定します</div>
+</div>
+<h2 class="exh">採材の例</h2>
+<div class="ex"><div class="exr head"><div></div><div>0〜30日齢</div><div>31〜90日齢</div><div>91〜135日齢</div><div>結果</div></div><div class="exr"><div class="pl"><span class="pk">A</span><b>ふつうの農場</b><small>各日齢に牛がいる</small></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg></div><div class="cp">緑2＋白3</div></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg></div><div class="cp">緑8＋橙2</div></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg></div><div class="cp">緑3</div></div><div class="rs ok"><div class="ln"><b>NPS 15頭</b><span class="bok">目標クリア</span></div><div class="ln"><b>胸囲（0〜30日齢）5頭</b><span class="bok">クリア</span></div><div class="act">→ 発送</div></div></div><div class="exr"><div class="pl"><span class="pk">B</span><b>子牛が少ない農場</b><small>期限が来ても目安に届かない</small></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg></div><div class="cp">緑1＋白1</div></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg></div><div class="cp">緑4</div></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg></div><div class="cp">緑1</div></div><div class="rs mid"><div class="ln"><b>NPS 6頭</b><span class="bmid">最低5頭クリア</span></div><div class="ln" style="font-size:13px;color:var(--muted)">目安8頭には届かない</div><div class="ln"><b>胸囲（0〜30日齢）2頭</b><span class="bmid">いる牛だけOK</span></div><div class="act">→ 期限が来たら<br>6頭で発送OK</div></div></div><div class="exr"><div class="pl"><span class="pk">C</span><b>発症が多い農場</b><small>群編成・離乳なし</small></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg></div><div class="cp">緑3＋白2</div></div><div class="ec"><div class="ic"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg></div><div class="cp">緑を使い切って橙4</div><div class="redc"><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#c2362b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#c2362b" opacity="0.85"/></svg><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#c2362b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#c2362b" opacity="0.85"/></svg><span>赤2（治療中の牛）</span></div></div><div class="ec"><div class="ic"></div><div class="cp"><span style="color:#2f6688">優先度低め<br>採らなくてOK</span></div></div><div class="rs ok"><div class="ln"><b>NPS 15頭</b><span class="bok">目標クリア</span></div><div class="ln"><b>胸囲（0〜30日齢）5頭</b><span class="bok">クリア</span></div><div class="ln" style="color:#c2362b;font-size:14px">赤2本は頭数に数えない</div><div class="act">→ 発送</div></div></div><div class="lg2"><b style="color:#1c2622;margin-right:4px">NPSチューブ：</b><svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#2e8b57"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#2e8b57" opacity="0.85"/></svg>緑　<svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#d9822b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#d9822b" opacity="0.85"/></svg>橙　<svg width="14" height="30" viewBox="0 0 14 30"><rect x="3" y="0" width="8" height="4" rx="1" fill="#c2362b"/><path d="M2 4h10v18q0 6-5 6t-5-6z" fill="#c2362b" opacity="0.85"/></svg>赤　<b style="color:#1c2622;margin:0 4px 0 10px">胸囲だけ：</b><svg width="24" height="18" viewBox="0 0 24 18"><rect x="1.5" y="1.5" width="21" height="15" rx="2" fill="#fff" stroke="#5d6a64" stroke-width="2"/><text x="12" y="12.5" text-anchor="middle" font-size="8" font-weight="900" fill="#5d6a64">W</text></svg>白カード</div></div>
+</div></div></section><section class="pg-sec" id="s3"><h2><span class="pg-no">3</span>Zoneとは</h2><p class="pg-cap">牛の段階・収容方法・空間と換気・飼料と哺乳の4つが同じ場所が1つのZone</p><div class="pg-fig" id="k03"><div class="w">
+<h1>Zoneとは<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">Zoneは「建物」ではなく、飼養条件が同じ牛のいる「場所」です</div>
+<div class="target"><div class="th">★ Zoneを登録する場所</div>
+ <div class="tg">
+  <div class="tc"><span class="tk" style="background:#2f6688">母牛</span><b>分娩60日前からの母牛が<br>いる場所</b><small>分娩房、分娩前の牛舎など</small></div>
+  <div class="tc"><span class="tk" style="background:#8a6d00">子牛</span><b>135日齢までの子牛が<br>いる場所</b><small>ハッチ、ロボット、群飼いなど</small></div>
+ </div></div>
+<div class="between">この2つの場所を、次のルールでZoneに分けて登録します　▼</div>
+<div class="def"><b>次の4つが、すべて同じ場所 ＝ 1つのZone</b><span>1つでも違えば、別のZoneにします</span></div>
+<div class="grid">
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><g fill="#8a6d00"><rect x="6" y="38" width="14" height="20" rx="2" opacity=".45"/><rect x="26" y="26" width="14" height="32" rx="2" opacity=".7"/><rect x="46" y="10" width="14" height="48" rx="2"/></g></svg>
+  <div><div class="t"><i>1</i>牛の段階（ステージ）</div><div class="e">母牛（分娩60日前〜）<br>哺乳（離乳前）　／　離乳後</div></div></div>
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="4" y="30" width="22" height="26" rx="3" fill="#fff" stroke="#8a6d00" stroke-width="3"/><circle cx="15" cy="43" r="5" fill="#8a6d00"/><rect x="32" y="20" width="36" height="36" rx="3" fill="#fff" stroke="#8a6d00" stroke-width="3"/><g fill="#8a6d00"><circle cx="42" cy="32" r="4"/><circle cx="58" cy="32" r="4"/><circle cx="42" cy="46" r="4"/><circle cx="58" cy="46" r="4"/></g></svg>
+  <div><div class="t"><i>2</i>収容方法</div><div class="e">個別（ハッチ・個別ペン）<br>群飼い　／　自動哺乳（ロボット）</div></div></div>
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><path d="M6 56V28L35 8l29 20v28z" fill="#fff" stroke="#8a6d00" stroke-width="3" stroke-linejoin="round"/><path d="M18 42q6-7 12 0t12 0t12 0" fill="none" stroke="#8a6d00" stroke-width="3"/></svg>
+  <div><div class="t"><i>3</i>空間・換気</div><div class="e">屋外／屋内<br>壁やカーテンで仕切られた区画<br>換気の方法</div></div></div>
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><path d="M14 20h42l-6 38H20z" fill="#fff" stroke="#8a6d00" stroke-width="3" stroke-linejoin="round"/><path d="M20 20q15-18 30 0" fill="none" stroke="#8a6d00" stroke-width="3"/><path d="M24 34h22" stroke="#8a6d00" stroke-width="3" opacity=".5"/></svg>
+  <div><div class="t"><i>4</i>飼料・哺乳</div><div class="e">哺乳の方法・ミルクの種類<br>スターター、離乳後の飼料</div></div></div>
+</div>
+
+<div class="two">
+ <div class="rl n"><h2>1つでも違う<br>→ 別のZone（同じ建物でも）</h2>
+  <svg viewBox="0 0 440 124" width="100%"><rect x="60" y="14" width="320" height="82" rx="8" fill="#fff" stroke="#5d6a64" stroke-width="3"/>
+   <rect x="64" y="18" width="150" height="74" rx="5" fill="#fbf3d2"/><rect x="226" y="18" width="150" height="74" rx="5" fill="#e8f0e7"/>
+   <line x1="220" y1="10" x2="220" y2="100" stroke="#c2362b" stroke-width="3" stroke-dasharray="7 5"/>
+   <text x="139" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#5c4900">ハッチ</text><text x="139" y="78" text-anchor="middle" font-size="19" fill="#5c4900">Zone A</text>
+   <text x="301" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#3f6b45">ロボット</text><text x="301" y="78" text-anchor="middle" font-size="19" fill="#3f6b45">Zone B</text>
+   <text x="220" y="118" text-anchor="middle" font-size="17" fill="#5d6a64">1つの建物</text></svg>
+  <small>同じ建物内にハッチとロボット → 2 Zone</small></div>
+ <div class="rl y"><h2>4つとも同じ<br>→ 1つのZone（建物が違っても）</h2>
+  <svg viewBox="0 0 440 124" width="100%"><rect x="20" y="14" width="170" height="70" rx="8" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/><rect x="250" y="14" width="170" height="70" rx="8" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/>
+   <text x="105" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2f6688">建物5</text><text x="105" y="70" text-anchor="middle" font-size="18" fill="#2f6688">離乳後・群飼い</text>
+   <text x="335" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2f6688">建物6</text><text x="335" y="70" text-anchor="middle" font-size="18" fill="#2f6688">離乳後・群飼い</text>
+   <path d="M105 88v9h230V88" fill="none" stroke="#3f6b45" stroke-width="3"/><text x="220" y="122" text-anchor="middle" font-size="20" font-weight="700" fill="#3f6b45">Zone 1つ</text></svg>
+  <small>大型農場は、代表1牛舎を選べばOK</small></div>
+</div>
+
+
+</div></div></section><section class="pg-sec" id="s4"><h2><span class="pg-no">4</span>Zoneの登録</h2><p class="pg-cap">分娩60日前からの母牛と、135日齢までの子牛がいる場所を登録</p><div class="pg-fig" id="k04"><div class="w">
+<h1>Zoneの登録の流れ<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">配置図の修正とZone登録は、獣医師が行います</div>
+<div class="flow">
+ <div class="fs"><div class="n">1</div>センターが<br>牛舎を選ぶ<small>Google Mapから</small></div>
+ <div class="fs"><div class="n">2</div>獣医師が<br>番号を修正</div>
+ <div class="fs"><div class="n">3</div>獣医師が<br>Zoneを登録<small>母牛：分娩60日前〜<br>子牛：135日齢まで</small></div>
+ <div class="fs"><div class="n">4</div>Zoneカードが<br>届く<small>キットに同封</small></div>
+</div>
+<div class="panel">
+ <h2>例：こんな農場なら　5 Zone</h2>
+ <svg viewBox="0 0 900 400" width="100%">
+  <rect width="900" height="400" rx="12" fill="#f3f6f4"/>
+  <!-- b1 gray -->
+  <rect x="24" y="24" width="250" height="90" rx="8" fill="#fff" stroke="#9aa8a1" stroke-width="2.5"/><text x="149" y="62" text-anchor="middle" font-size="22" fill="#5d6a64">建物1</text><text x="149" y="92" text-anchor="middle" font-size="20" fill="#5d6a64">搾乳牛</text>
+  <!-- b2 Z1 -->
+  <rect x="313" y="24" width="250" height="90" rx="8" fill="#e6eef3" stroke="#2f6688" stroke-width="4"/><text x="438" y="60" text-anchor="middle" font-size="22" font-weight="700" fill="#2f6688">建物2　分娩房</text><text x="438" y="94" text-anchor="middle" font-size="24" font-weight="900" fill="#2f6688">Zone 1</text>
+  <!-- b3 Z2 -->
+  <rect x="602" y="24" width="274" height="90" rx="8" fill="#e6eef3" stroke="#2f6688" stroke-width="4"/><text x="739" y="60" text-anchor="middle" font-size="22" font-weight="700" fill="#2f6688">建物3　分娩前の母牛</text><text x="739" y="94" text-anchor="middle" font-size="24" font-weight="900" fill="#2f6688">Zone 2</text>
+  <!-- b4 split -->
+  <rect x="24" y="150" width="540" height="110" rx="8" fill="#fff" stroke="#5d6a64" stroke-width="3"/>
+  <rect x="30" y="156" width="260" height="98" rx="5" fill="#fbf3d2" stroke="#8a6d00" stroke-width="3"/><rect x="298" y="156" width="260" height="98" rx="5" fill="#e8f0e7" stroke="#3f6b45" stroke-width="3"/>
+  <line x1="294" y1="144" x2="294" y2="268" stroke="#c2362b" stroke-width="3.5" stroke-dasharray="8 6"/>
+  <text x="160" y="190" text-anchor="middle" font-size="22" font-weight="700" fill="#5c4900">ハッチ</text><text x="160" y="228" text-anchor="middle" font-size="24" font-weight="900" fill="#5c4900">Zone 3</text>
+  <text x="428" y="190" text-anchor="middle" font-size="22" font-weight="700" fill="#3f6b45">ロボット</text><text x="428" y="228" text-anchor="middle" font-size="24" font-weight="900" fill="#3f6b45">Zone 4</text>
+  <text x="294" y="296" text-anchor="middle" font-size="19" fill="#5d6a64">建物4（同じ建物でも、2つのZone）</text>
+  <!-- b5, b6 -->
+  <rect x="602" y="150" width="274" height="50" rx="8" fill="#e8ecf4" stroke="#6a6475" stroke-width="4"/><text x="739" y="184" text-anchor="middle" font-size="21" font-weight="700" fill="#4a4560">建物5　離乳後・群飼い</text>
+  <rect x="602" y="212" width="274" height="50" rx="8" fill="#fff" stroke="#6a6475" stroke-width="2.5" stroke-dasharray="7 5"/><text x="739" y="246" text-anchor="middle" font-size="21" fill="#4a4560">建物6　離乳後・群飼い</text>
+  <path d="M884 175h8v62h-8" fill="none" stroke="#6a6475" stroke-width="3"/>
+  <text x="739" y="296" text-anchor="middle" font-size="24" font-weight="900" fill="#4a4560">Zone 5</text><text x="739" y="322" text-anchor="middle" font-size="18" fill="#5d6a64">同じ条件 → 代表の建物5だけ</text>
+  <!-- b7 gray -->
+  <rect x="24" y="306" width="250" height="70" rx="8" fill="#fff" stroke="#9aa8a1" stroke-width="2.5"/><text x="149" y="338" text-anchor="middle" font-size="21" fill="#5d6a64">建物7　育成牛</text><text x="149" y="362" text-anchor="middle" font-size="18" fill="#5d6a64">135日齢より上</text>
+  <text x="440" y="352" text-anchor="middle" font-size="19" fill="#5d6a64">灰色 ＝ Zoneにしない</text>
+ </svg>
+ <div style="font-size:19px;color:var(--muted)">Zone名は短く（例：Z1分娩房、Z3ハッチ）。個体の動画ではZone名を声で、Zoneの動画では最初にZoneカードを写す</div>
+</div>
+</div></div></section><section class="pg-sec" id="s5"><h2><span class="pg-no">5</span>キットの中身</h2><p class="pg-cap">NPS採取用チューブ25本（色付きキャップ：緑16・橙6・赤3）と白カード5枚</p><div class="pg-fig" id="k05"><div class="w">
+<h1>キットの中身<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">1農場に1コンテナ。チューブには番号があらかじめ書いてあります</div>
+<h2><svg width="22" height="34" viewBox="0 0 22 34" style="vertical-align:-8px;margin:0 4px"><rect x="5" y="1" width="12" height="5" rx="1" fill="#2e8b57"/><path d="M4 6h14v19q0 7-7 7t-7-7z" fill="#fff" stroke="#2e8b57" stroke-width="2"/></svg>NPS採取用チューブ25本　<svg width="40" height="28" viewBox="0 0 40 28" style="vertical-align:-6px;margin:0 4px"><rect x="2" y="2" width="36" height="24" rx="3" fill="#fff" stroke="#5d6a64" stroke-width="2.5"/><text x="20" y="19" text-anchor="middle" font-size="11" font-weight="900" fill="#5d6a64">W03</text></svg>白カード5枚 <span class="tot">（色と日齢で分けています）</span></h2>
+<table class="tt">
+<tr><th></th><th>どんな牛</th><th>0〜30日齢</th><th class="hl">31〜90日齢</th><th>91〜135日齢</th><th>計</th></tr>
+<tr class="g"><td><span class="sw" style="background:#2e8b57"></span><b>緑</b></td><td>発症していない牛<small>採材前14日以内に抗菌薬なし</small></td><td>4</td><td class="hl">8</td><td>4</td><td>16</td></tr>
+<tr class="o"><td><span class="sw" style="background:#d9822b"></span><b>橙</b></td><td>発症した牛<small>初診で治療歴なし</small></td><td>1</td><td class="hl">4</td><td>1</td><td>6</td></tr>
+<tr class="r"><td><span class="sw" style="background:#c2362b"></span><b>赤</b></td><td>発症して治療している牛<small>原因さがし（追加の採材）</small></td><td colspan="3" class="nb">日齢の区分なし</td><td>3</td></tr>
+<tr class="w"><td><span class="card">W</span><b>白カード</b></td><td>胸囲だけ測る牛<small>NPSは採らない。撮影したら破棄</small></td><td>5</td><td colspan="2" class="nb" style="color:#5d6a64">—</td><td>5</td></tr>
+</table>
+<div class="rules"><div>・その日齢の牛がいなければ、使わなくてOK</div><div>・<b>白カードは、撮影したら破棄</b>（使ったカードがまざらないように）</div></div>
+
+<h2>そのほかの入っているもの</h2>
+<div class="grp" style="--gc:#3f6b45"><div class="gh">採材用</div><div class="gi" style="grid-template-columns:repeat(3,1fr)"><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><path d="M10 54L58 8" stroke="#8a6d00" stroke-width="5" stroke-linecap="round"/><ellipse cx="60" cy="7" rx="7" ry="5" transform="rotate(-45 60 7)" fill="#d9c27a" stroke="#8a6d00" stroke-width="2"/></svg><b>スワブ</b><small>30本（1箱）<br>失敗しても足りるよう多め</small></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><circle cx="26" cy="32" r="18" fill="#fbf3d2" stroke="#d9822b" stroke-width="3.5"/><circle cx="26" cy="32" r="5" fill="#d9822b"/><path d="M40 42h24v8H38" fill="#d9822b"/></svg><b>胸囲用メジャー</b></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="10" y="18" width="50" height="34" rx="8" fill="#e8f0e7" stroke="#3f6b45" stroke-width="3.5"/><path d="M26 18q9-10 18 0" fill="#fff" stroke="#3f6b45" stroke-width="3"/></svg><b>除菌ウェット<br>ティッシュ</b></div></div></div><div class="grp" style="--gc:#8a6d00"><div class="gh">環境評価用</div><div class="gi" style="grid-template-columns:repeat(4,1fr)"><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="10" y="12" width="50" height="40" rx="5" fill="#fbf3d2" stroke="#8a6d00" stroke-width="3.5"/><text x="35" y="42" text-anchor="middle" font-size="22" font-weight="900" fill="#5c4900">Z1</text></svg><b>Zoneカード</b><small>Zone名・牛房サイズ<br>撮影ポイントつき</small></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><circle cx="35" cy="32" r="22" fill="#fff" stroke="#8a6d00" stroke-width="5"/><circle cx="35" cy="32" r="9" fill="#fff" stroke="#8a6d00" stroke-width="3"/></svg><b>養生テープ</b><small>Zoneカードを<br>柱などに貼る</small></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="26" y="6" width="18" height="38" rx="4" fill="#fff" stroke="#1c2622" stroke-width="3.5"/><path d="M26 44l9 14 9-14z" fill="#1c2622"/></svg><b>油性マジック</b><small>牛房サイズを<br>カードに書く</small></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="10" y="14" width="38" height="38" rx="8" fill="#fbf3d2" stroke="#8a6d00" stroke-width="3.5"/><circle cx="29" cy="33" r="7" fill="#8a6d00"/><path d="M48 44h18v8H44" fill="#8a6d00"/><path d="M52 44v4M57 44v4M62 44v4" stroke="#fff" stroke-width="1.5"/></svg><b>牛房サイズ測定用<br>メジャー</b></div></div></div><div class="two"><div class="grp" style="--gc:#2f6688"><div class="gh">保管・発送用</div><div class="gi" style="grid-template-columns:repeat(3,1fr)"><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="12" y="10" width="46" height="46" rx="6" fill="#e6eef3" stroke="#2f6688" stroke-width="3.5"/><path d="M12 22h46" stroke="#2f6688" stroke-width="3.5"/></svg><b>保冷袋</b><small>冷凍庫で保管し<br>そのまま発送</small></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="10" y="14" width="50" height="36" rx="6" fill="#e0f0fa" stroke="#2f6688" stroke-width="3.5"/><path d="M35 22v20M25 32h20M28 25l14 14M42 25L28 39" stroke="#2f6688" stroke-width="2.5"/></svg><b>保冷剤</b></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="12" y="8" width="46" height="50" rx="4" fill="#fff" stroke="#2f6688" stroke-width="3.5"/><path d="M20 20h30M20 30h30M20 40h18" stroke="#9aa8a1" stroke-width="3"/><rect x="38" y="38" width="14" height="12" fill="#c2362b"/></svg><b>返送用<br>着払伝票</b></div></div></div><div class="grp" style="--gc:#5d6a64"><div class="gh">その他</div><div class="gi" style="grid-template-columns:repeat(2,1fr)"><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="14" y="8" width="42" height="52" rx="5" fill="#8a6d00"/><rect x="19" y="16" width="32" height="40" fill="#fff"/><rect x="26" y="4" width="18" height="9" rx="2" fill="#4a4f4c"/><path d="M24 26h22M24 34h22M24 42h16" stroke="#9aa8a1" stroke-width="2.5"/></svg><b>バインダー<br>聞き取りシート</b><small>A4・表裏（印刷済み）</small></div><div class="it"><svg width="70" height="64" viewBox="0 0 70 64"><path d="M14 14h42v36H14z" fill="#fdeceb" stroke="#c2362b" stroke-width="3.5"/><circle cx="22" cy="21" r="3" fill="#fff" stroke="#c2362b" stroke-width="2"/><text x="40" y="44" text-anchor="middle" font-size="17" font-weight="900" fill="#c2362b">期限</text></svg><b>期限札</b><small>「◯月◯日まで」</small></div></div></div></div>
+<div class="cont"><svg width="96" height="70" viewBox="0 0 96 70"><rect x="6" y="18" width="84" height="46" rx="6" fill="#e8f0e7" stroke="#3f6b45" stroke-width="3.5"/><rect x="2" y="10" width="92" height="12" rx="4" fill="#3f6b45"/><path d="M36 38h24" stroke="#3f6b45" stroke-width="4" stroke-linecap="round"/></svg><div><b>コンテナは農場の隅に置かせてもらう</b><small>採材できるときに開けて使う。採ったチューブは診療所の冷凍庫へ</small></div></div>
+<div class="note">別に送るもの：糞便用チューブ（希望する農場のみ）</div>
+</div></div></section><section class="pg-sec" id="s6"><h2><span class="pg-no">6</span>牛1頭ずつ：個体の撮り方</h2><p class="pg-cap">スマホは縦・1頭1本：チューブ → 胸囲（声）→ Zone名（声）→ 耳標 → 顔 → 横 → 後ろ</p><div class="pg-fig" id="k06"><div class="w">
+<div class="hd"><div><h1>個体の撮り方（牛1頭ずつ）<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1><div class="sub" style="margin-bottom:0">スマホを<b>縦</b>にして、1頭1本の動画（30秒前後）</div></div>
+<svg width="92" height="128" viewBox="0 0 92 128"><rect x="22" y="6" width="48" height="96" rx="9" fill="#fff" stroke="#1c2622" stroke-width="4"/><circle cx="46" cy="92" r="4" fill="#1c2622"/><rect x="30" y="20" width="32" height="60" rx="3" fill="#e6eef3"/><text x="46" y="124" text-anchor="middle" font-size="16" font-weight="900" fill="#1c2622">縦</text></svg></div>
+<div class="leg"><span><i style="background:#3f6b45">撮</i>カメラに写す</span><span><i style="background:#2f6688">声</i>撮りながら声に出す</span></div>
+<div class="blk k"><div class="bh">測った牛すべて</div><div class="bb">
+ <div class="pre"><div class="pc"><svg width="30" height="34" viewBox="0 0 30 34"><rect x="8" y="2" width="14" height="5" rx="1" fill="#2e8b57"/><path d="M7 7h16v18q0 7-8 7t-8-7z" fill="#fff" stroke="#2e8b57" stroke-width="2"/></svg>NPS採材</div><span class="ar">▶</span><div class="pc">胸囲を測る</div><span class="ar">▶</span><div class="pc go">動画スタート</div></div>
+ <div class="pre"><div class="pc" style="border-color:#8a6d00;background:#fbf3d2"><svg width="44" height="30" viewBox="0 0 44 30"><rect x="3" y="3" width="38" height="24" rx="3" fill="#fff" stroke="#5d6a64" stroke-width="2.5"/><text x="22" y="20" text-anchor="middle" font-size="12" font-weight="900" fill="#5d6a64">W03</text></svg>0〜30日齢・胸囲だけ</div><span class="ar">▶</span><div class="pc">胸囲を測る</div><span class="ar">▶</span><div class="pc go">動画スタート</div><span class="ar">▶</span><div class="pc" style="border-color:#c2362b;color:#c2362b">白カード破棄</div></div>
+ <div class="chain"><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b style="font-size:18px;line-height:1.25">採取後チューブ<br>or 白カード</b></div><svg width="120" height="62" viewBox="0 0 120 62"><rect x="8" y="4" width="22" height="8" rx="2" fill="#2e8b57"/><path d="M6 12h26v34q0 12-13 12t-13-12z" fill="#fff" stroke="#2e8b57" stroke-width="2.5"/><rect x="9" y="22" width="20" height="12" fill="#e6eef3"/><text x="19" y="32" text-anchor="middle" font-size="10" font-weight="900" fill="#1c2622">G12</text><text x="53" y="36" text-anchor="middle" font-size="12" font-weight="700" fill="#5d6a64">または</text><rect x="76" y="18" width="40" height="26" rx="3" fill="#fff" stroke="#5d6a64" stroke-width="2.5"/><text x="96" y="36" text-anchor="middle" font-size="13" font-weight="900" fill="#5d6a64">W03</text></svg><small>番号と色を写す</small></div><div class="cut v"><div class="top"><span class="t" style="background:#2f6688">声</span><b>胸囲</b></div><svg width="190" height="66" viewBox="0 0 190 66"><path d="M10 26h44q8 0 10 8v6q-2 6-10 6H14q-6 0-6-8z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M24 24v24" stroke="#d9822b" stroke-width="5"/><path d="M14 46v14M24 46v14M48 46v14M56 46v14" stroke="#1c2622" stroke-width="2.5"/><path d="M76 6h96q4 0 4 4v14q0 4-4 4H98l-8 7v-7h-6q-4 0-4-4V10q0-4 4-4z" fill="#e6eef3" stroke="#2f6688" stroke-width="2"/><text x="124.0" y="22" text-anchor="middle" font-size="13" font-weight="900" fill="#2f6688">胸囲：82cm</text></svg><small>測った数字</small></div><div class="cut v"><div class="top"><span class="t" style="background:#2f6688">声</span><b>Zone名</b></div><svg width="190" height="66" viewBox="0 0 190 66"><rect x="6" y="22" width="40" height="30" rx="4" fill="#fbf3d2" stroke="#8a6d00" stroke-width="2.5"/><text x="26" y="43" text-anchor="middle" font-size="15" font-weight="900" fill="#5c4900">Z3</text><path d="M56 6h124q4 0 4 4v14q0 4-4 4H78l-8 7v-7h-6q-4 0-4-4V10q0-4 4-4z" fill="#e6eef3" stroke="#2f6688" stroke-width="2"/><text x="118.0" y="22" text-anchor="middle" font-size="13" font-weight="900" fill="#2f6688">ゾーン：Z3ハッチ</text></svg><small>いる場所の名前</small></div><div class="cut split"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>耳標</b></div><svg width="190" height="76" viewBox="0 0 190 76"><path d="M8 34q12-28 38-24q-5 19-26 30z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><rect x="25" y="16" width="16" height="11" rx="2" fill="#f2c94c" stroke="#8a6d00" stroke-width="2"/><path d="M20 44h166q4 0 4 4v14q0 4-4 4H42l-8 7v-7h-6q-4 0-4-4V48q0-4 4-4z" fill="#e6eef3" stroke="#2f6688" stroke-width="2"/><text x="103.0" y="60" text-anchor="middle" font-size="12" font-weight="900" fill="#2f6688">はなこの子：3月13日生まれ</text></svg><small><span class="t sm" style="background:#2f6688">声</span>なければ<br>個体名・生年月日</small></div><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>顔</b></div><svg width="110" height="62" viewBox="0 0 110 62"><path d="M36 8h38q6 0 6 8l-4 30q-2 12-21 12t-21-12l-4-30q0-8 6-8z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M34 12l-14-4 10 12M76 12l14-4-10 12" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><circle cx="45" cy="24" r="2.5" fill="#1c2622"/><circle cx="65" cy="24" r="2.5" fill="#1c2622"/><ellipse cx="55" cy="47" rx="12" ry="7" fill="#f3e0d3" stroke="#1c2622" stroke-width="2"/><circle cx="50" cy="47" r="1.8" fill="#1c2622"/><circle cx="60" cy="47" r="1.8" fill="#1c2622"/><path d="M50 50q-1 6 1 9" stroke="#7fb2d4" stroke-width="2.5" fill="none"/></svg><small>鼻汁・眼脂・耳の傾き</small></div><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>横から全体</b></div><svg width="110" height="62" viewBox="0 0 110 62"><path d="M18 18h52q10 0 12 10v8q-2 8-12 8H24q-8 0-8-10z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M78 22l10-12h10q6 2 6 9l-4 9q-4 4-10 2l-8-2z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><circle cx="96" cy="16" r="1.8" fill="#1c2622"/><path d="M90 11l-2-7 6 5" fill="#fff" stroke="#1c2622" stroke-width="2"/><path d="M24 44v14M34 44v14M64 44v14M74 44v14" stroke="#1c2622" stroke-width="3" stroke-linecap="round"/><path d="M16 22q-8 4-6 16" fill="none" stroke="#1c2622" stroke-width="2"/></svg><small>体格</small></div><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>後ろから</b></div><svg width="110" height="62" viewBox="0 0 110 62"><path d="M30 8q25-6 50 0q8 16 4 30q-2 8-29 8t-29-8q-4-14 4-30z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M55 10v30" stroke="#1c2622" stroke-width="2.5"/><path d="M48 32q7 4 14 0" fill="#c9a96e" stroke="#8a6d00" stroke-width="2"/><path d="M36 44v14M46 46v12M64 46v12M74 44v14" stroke="#1c2622" stroke-width="2.5" stroke-linecap="round"/></svg><small>下痢便スコア</small></div></div>
+ <div class="vnote"><span class="t">声</span>発症している牛のときは、症状など詳しい内容も声で入れる</div>
+</div></div>
+<div class="fold"><div class="fh">アップロード先：「2. 個体撮影」の、牛の日齢のフォルダ</div>
+ <div class="fs"><span>0〜30日齢</span><span class="m">31〜90日齢</span><span>91〜135日齢</span></div>
+ <div class="fn">赤の牛・白カードの牛も日齢で入れる。アップロードは後日まとめてOK（Wi-Fiなど）</div></div>
+</div></div></section><section class="pg-sec" id="s7"><h2><span class="pg-no">7</span>NPSの採り方</h2><p class="pg-cap">下・斜め内側へ入れ、咽頭壁で10回まわす。チューブは立てたまま冷凍庫へ</p><div class="pg-fig" id="k07"><div class="w">
+<h1>NPS（深部鼻咽頭スワブ）の採り方</h1>
+<div class="sub">スワブ：メンディップ 1P3005（30.3 cm。30 cm以上ないと咽頭まで届かない）</div>
+<div class="head">
+<svg viewBox="0 0 940 380" width="100%">
+ <!-- swab handle outside -->
+ <!-- head outline (facing left) -->
+ <path d="M250 225 Q236 185 270 160 L460 95 Q560 62 660 82 Q770 104 820 170 Q850 230 830 290 Q800 345 700 350 L470 320 Q320 300 268 268 Q248 250 250 225Z" fill="#fff" stroke="#1c2622" stroke-width="4"/>
+ <!-- ear -->
+ <path d="M760 110 Q820 50 880 70 Q850 110 800 140Z" fill="#fff" stroke="#1c2622" stroke-width="4"/>
+ <!-- eye -->
+ <ellipse cx="610" cy="150" rx="22" ry="13" fill="#1c2622"/>
+ <circle cx="588" cy="152" r="7" fill="#c2362b"/>
+ <!-- nostril -->
+ <ellipse cx="262" cy="222" rx="8" ry="12" fill="#1c2622"/>
+ <!-- measurement bracket -->
+ <path d="M262 60V40M588 60V40M262 50H588" stroke="#8a6d00" stroke-width="3.5"/>
+ <path d="M262 50l12-7v14zM588 50l-12-7v14z" fill="#8a6d00"/>
+ <text x="425" y="32" text-anchor="middle" font-size="22" font-weight="900" fill="#5c4900">鼻の穴 〜 目頭 ＝ 入れる長さの目安</text>
+ <line x1="262" y1="62" x2="262" y2="205" stroke="#8a6d00" stroke-width="2" stroke-dasharray="5 5"/>
+ <line x1="588" y1="62" x2="588" y2="140" stroke="#8a6d00" stroke-width="2" stroke-dasharray="5 5"/>
+ <!-- dorsal (wrong) path -->
+ <path d="M270 214 Q400 150 540 178" fill="none" stroke="#c2362b" stroke-width="5" stroke-dasharray="10 8"/>
+ <path d="M528 166l24 24M552 166l-24 24" stroke="#c2362b" stroke-width="6" stroke-linecap="round"/>
+ <text x="20" y="120" font-size="20" font-weight="900" fill="#c2362b">✕ 上の道（背側鼻道）</text><text x="20" y="146" font-size="17" fill="#c2362b">短い・途中で抵抗がある</text><text x="20" y="168" font-size="17" fill="#c2362b">→ 入れ直す</text><path d="M210 160 Q260 170 330 190" fill="none" stroke="#c2362b" stroke-width="2"/>
+ <!-- ventral (correct) path: swab -->
+ <line x1="120" y1="218" x2="268" y2="226" stroke="#8a6d00" stroke-width="7" stroke-linecap="round"/>
+ <path d="M268 226 L700 262" stroke="#3f6b45" stroke-width="7" stroke-linecap="round"/>
+ <ellipse cx="704" cy="262" rx="14" ry="9" fill="#fff" stroke="#3f6b45" stroke-width="4"/>
+ <!-- pharynx wall -->
+ <path d="M722 222 Q735 262 722 302" fill="none" stroke="#2f6688" stroke-width="6" stroke-linecap="round"/>
+ <text x="745" y="252" font-size="19" font-weight="900" fill="#2f6688">咽頭壁</text>
+ <text x="745" y="276" font-size="17" fill="#2f6688">当たるまで</text>
+ <text x="470" y="292" text-anchor="middle" font-size="21" font-weight="900" fill="#3f6b45">◎ 下の道（腹鼻道）：下・斜め内側へ</text>
+ <text x="120" y="250" font-size="17" fill="#5d6a64">スワブ</text>
+</svg>
+</div>
+<div class="grid">
+ <div class="sp"><div class="n">1</div><svg width="250" height="104" viewBox="0 0 250 104">
+ <!-- fence post -->
+ <rect x="4" y="8" width="12" height="84" rx="2" fill="#c9d3cd" stroke="#5d6a64" stroke-width="2"/>
+ <!-- slack rope -->
+ <path d="M16 40 Q60 78 104 52" fill="none" stroke="#8a6d00" stroke-width="3.5"/>
+ <text x="22" y="101" font-size="14" font-weight="700" fill="#5c4900">遊び 約50 cm</text>
+ <!-- calf neck + head (facing right) -->
+ <path d="M96 92 Q100 50 128 34 L170 26 Q196 24 210 40 Q220 54 206 62 L176 66 Q150 72 140 92Z" fill="#fff" stroke="#1c2622" stroke-width="3"/>
+ <path d="M132 34 Q122 14 108 16 Q118 28 126 38Z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/>
+ <circle cx="166" cy="38" r="3.5" fill="#1c2622"/>
+ <ellipse cx="208" cy="46" rx="3" ry="4" fill="#1c2622"/>
+ <!-- halter -->
+ <path d="M150 30 L146 66 M146 52 Q126 50 104 52" fill="none" stroke="#8a6d00" stroke-width="3"/>
+ <!-- person's arm headlock -->
+ <path d="M100 10 Q150 0 182 22 Q196 34 186 64 Q178 80 150 80" fill="none" stroke="#2f6688" stroke-width="13" stroke-linecap="round" opacity=".85"/>
+ <text x="160" y="101" font-size="14" font-weight="900" fill="#2f6688">腕で抱える</text>
+</svg><b>保定する</b><small>50 cmほど遊びをもたせ、<br>腕でヘッドロック<br><em>柵にきつく固定すると折れやすい</em></small></div>
+ <div class="sp"><div class="n">2</div><svg width="120" height="76" viewBox="0 0 120 76"><rect x="8" y="28" width="104" height="22" rx="4" fill="#fbf3d2" stroke="#8a6d00" stroke-width="3"/><path d="M22 28v10M38 28v6M54 28v10M70 28v6M86 28v10M102 28v6" stroke="#8a6d00" stroke-width="2.5"/></svg><b>長さを確かめる</b><small>鼻の穴から目頭までの<br>距離をだいたい見ておく</small></div>
+ <div class="sp"><div class="n">3</div><svg width="120" height="76" viewBox="0 0 120 76"><path d="M12 20L96 56" stroke="#3f6b45" stroke-width="7" stroke-linecap="round"/><path d="M96 56l-18 2 8-14z" fill="#3f6b45"/></svg><b>下・斜め内側へ入れる</b><small>咽頭壁に当たるまで進める<br><em>短い・途中で抵抗 → 入れ直す</em></small></div>
+ <div class="sp"><div class="n">4</div><svg width="120" height="76" viewBox="0 0 120 76"><path d="M60 14a24 24 0 1 1-22 14" fill="none" stroke="#3f6b45" stroke-width="5"/><path d="M38 28l-4-14 14 6z" fill="#3f6b45"/><text x="60" y="47" text-anchor="middle" font-size="22" font-weight="900" fill="#3f6b45">10</text></svg><b>10回まわして、10数える</b><small>そのあと素早く抜く</small></div>
+ <div class="sp"><div class="n">5</div><svg width="120" height="76" viewBox="0 0 120 76"><rect x="46" y="6" width="28" height="8" rx="2" fill="#2e8b57"/><path d="M44 14h32v44q0 12-16 12t-16-12z" fill="#fff" stroke="#2e8b57" stroke-width="3"/><path d="M60 62V26l14-16" fill="none" stroke="#8a6d00" stroke-width="4" stroke-linecap="round"/></svg><b>チューブの中で折る</b><small>底から少し浮かせて、<br>チューブの壁で柄を折る→蓋</small></div>
+ <div class="sp"><div class="n">6</div><svg width="120" height="76" viewBox="0 0 120 76"><rect x="24" y="16" width="72" height="54" rx="6" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/><path d="M48 28h10v30q0 6-5 6t-5-6z" fill="#fff" stroke="#2e8b57" stroke-width="2.5"/><path d="M64 28h10v30q0 6-5 6t-5-6z" fill="#fff" stroke="#d9822b" stroke-width="2.5"/></svg><b>立てて保冷袋へ</b><small>胸囲を測る → 手袋・手を<br>除菌ウェットティッシュで拭く</small></div>
+</div>
+<div class="after"><div class="af k"><b>K式</b>：チューブに番号があるので書き込み不要。帰ったら<b>立てたまま冷凍庫</b>へ</div><div class="af a"><b>横断パッケージ</b>：番号を<b>蓋と側面の2か所</b>に書く。帰ったら<b>立てたまま冷凍</b></div></div>
+</div></div></section><section class="pg-sec" id="s8"><h2><span class="pg-no">8</span>Zoneの撮影</h2><p class="pg-cap">スマホは横・1Zone 1本・止めずに：カード → Zone全体（消毒槽、水槽・水桶に寄る）→ ＋α</p><div class="pg-fig" id="k08"><div class="w">
+<div class="hd"><div><h1>Zoneの撮影<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1><div class="sub" style="margin-bottom:0">時間のあるときに。<b>1Zoneで1本</b>、途中で止めずに撮る</div></div>
+<svg width="130" height="92" viewBox="0 0 130 92"><rect x="8" y="14" width="114" height="64" rx="12" fill="#fff" stroke="#1c2622" stroke-width="4"/><circle cx="110" cy="46" r="4" fill="#1c2622"/><rect x="18" y="22" width="80" height="48" rx="3" fill="#fbf3d2"/><text x="58" y="54" text-anchor="middle" font-size="22" font-weight="900" fill="#5c4900">横</text></svg></div>
+<div style="height:12px"></div>
+<div class="grp prep"><div class="gh">準備<small>撮影の直前でなくてOK</small></div><div class="gb">
+ <div class="st"><div class="n">1</div><div><b>牛房を測る</b><small>Zoneの代表的な牛房 1〜2か所でOK</small></div></div>
+ <div class="st" style="margin-bottom:0"><div class="n">2</div><div><b>Zoneカードに縦・横の長さを書いて、柱などに貼る</b><small>油性マジックと養生テープはキットに入っています</small></div></div>
+</div></div>
+<div class="grp shoot"><div class="gh">撮影<small>スマホは横。録画を始めたら、最後まで止めない</small></div><div class="gb">
+ <div class="ex"><div class="et"><span>例1</span>哺乳牛Zone（ハッチ）。哺乳具・流し場が別の建物</div>
+  <div class="tl"><div class="rec"><i></i>録画</div>
+   <div class="sg c">1 カード<small>牛房サイズ</small></div><div class="ar">▶</div>
+   <div class="sg z">2 Zone全体<small>移動しながら、すべての牛</small><em>途中で寄る：消毒槽、水槽・水桶</em></div><div class="ar">▶</div>
+   <div class="sg walk">止めずに<br>歩いて移動</div><div class="ar">▶</div>
+   <div class="sg a">3 哺乳具・流し場</div>
+   <div class="stop"><i></i>停止</div></div></div>
+ <div class="ex"><div class="et"><span>例2</span>ロボットZone</div>
+  <div class="tl"><div class="rec"><i></i>録画</div>
+   <div class="sg c">1 カード<small>牛房サイズ</small></div><div class="ar">▶</div>
+   <div class="sg z">2 Zone全体<small>移動しながら、すべての牛</small><em>途中で寄る：消毒槽、水槽・水桶</em></div><div class="ar">▶</div>
+   <div class="sg a">3 ロボットのライン</div>
+   <div class="stop"><i></i>停止</div></div></div>
+ <div class="ex"><div class="et"><span>例3</span>母牛Zone・離乳後のZone</div>
+  <div class="tl"><div class="rec"><i></i>録画</div>
+   <div class="sg c">1 カード<small>牛房サイズ</small></div><div class="ar">▶</div>
+   <div class="sg z">2 Zone全体<small>移動しながら、すべての牛</small><em>途中で寄る：消毒槽、水槽・水桶</em></div>
+   <div class="stop"><i></i>停止</div></div></div>
+ <div class="note">共有クラウドの「3. Zone」フォルダへ<small>撮影後すぐでなくてOK。Wi-Fiなど通信が安定した場所で、後日まとめてアップロード</small></div>
+</div></div>
+</div></div></section><section class="pg-sec" id="s9"><h2><span class="pg-no">9</span>Zoneカードの例</h2><p class="pg-cap">牛房サイズを書いて、撮るところを番号順に</p><div class="pg-fig" id="k09"><div class="w"><div class="card">
+ <div class="top"><div class="zn">Z3　ハッチ</div><div class="rt"><b>Zoneカード（K式）</b><br>スマホは<b>横</b>・1Zone 1本<br><b>止めずに</b>続けて撮る</div></div>
+ <div class="sz"><div class="h">牛房サイズ<small>代表1〜2か所を測って、マジックで書く</small></div>
+  <div class="pen"><span class="l">牛房A</span>縦<span class="ln"></span>m　×　横<span class="ln"></span>m</div>
+  <div class="pen"><span class="l">牛房B</span>縦<span class="ln"></span>m　×　横<span class="ln"></span>m</div></div>
+ <div class="pts"><div class="h">撮るところ（番号の順に）</div>
+  <div class="pt"><div class="no">1</div><svg width="58" height="56" viewBox="0 0 58 56"><rect x="8" y="10" width="40" height="36" rx="5" fill="#fbf3d2" stroke="#8a6d00" stroke-width="3"/><path d="M15 22h26M15 31h18" stroke="#8a6d00" stroke-width="3"/></svg><div><b>このカード</b><small>牛房サイズが読めるように</small></div></div>
+  <div class="pt big"><div class="no">2</div><svg width="64" height="56" viewBox="0 0 64 56"><path d="M6 38q26-30 52 0" fill="none" stroke="#1c2622" stroke-width="3.5"/><path d="M6 38l-1-11M6 38l12-2M58 38l1-11M58 38l-12-2" stroke="#1c2622" stroke-width="3.5" stroke-linecap="round"/><circle cx="24" cy="46" r="4" fill="#8a6d00"/><circle cx="34" cy="48" r="4" fill="#8a6d00"/><circle cx="44" cy="46" r="4" fill="#8a6d00"/></svg><div><b>Zone全体</b><small>Zoneの中を移動しながら、すべての牛が映るように</small>
+   <div class="yrow"><span class="yo">途中で寄る</span><span class="yi">消毒槽</span><span class="yi">水槽・水桶</span></div></div></div>
+  <div class="pt" style="border-style:dashed;border-color:var(--zone)"><div class="no">3</div><svg width="58" height="56" viewBox="0 0 58 56"><path d="M18 22h16v26q0 4-4 4h-8q-4 0-4-4z" fill="#fff" stroke="#1c2622" stroke-width="3"/><path d="M20 22q6-14 12 0" fill="#e6c9a8" stroke="#1c2622" stroke-width="3"/></svg>
+   <div><b>＋α　このZoneにあれば</b>
+   <div class="pg">
+    <div><span class="cd">哺乳牛Zone</span><b class="pb">哺乳具・流し場</b><small>別の建物なら、止めずに歩いて移動して撮る</small></div>
+    <div><span class="cd">ロボットZone</span><b class="pb">哺乳ロボットのライン</b></div>
+   </div></div></div></div>
+ </div>
+</div></div></div></section><section class="pg-sec" id="s10"><h2><span class="pg-no">10</span>農場の聞き取り</h2><p class="pg-cap">紙に手書きして写真、またはPDFに直接入力。どちらでもOK</p><div class="pg-fig" id="k10"><div class="w">
+<div style="display:flex;justify-content:space-between;align-items:center"><div><h1>農場の聞き取り<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">聞き取りシート（A4・表裏）。いつでもOK、Zoneの撮影とは別に</div></div>
+<svg width="110" height="130" viewBox="0 0 110 130"><rect x="14" y="14" width="82" height="110" rx="8" fill="#8a6d00"/><rect x="22" y="26" width="66" height="90" fill="#fff"/><rect x="38" y="6" width="34" height="18" rx="4" fill="#4a4f4c"/><path d="M30 46h50M30 62h50M30 78h50M30 94h34" stroke="#9aa8a1" stroke-width="4"/></svg></div>
+<div class="two">
+ <div class="way"><div class="wh">A　紙に手書き</div><div class="wb">
+  <div class="st"><i>1</i><div>キットのバインダーと<br>シートで、聞きながら記入</div></div>
+  <div class="st"><i>2</i><div>表と裏をスマホで撮る<br><small style="color:var(--muted)">字が読めるように</small></div></div></div></div>
+ <div class="way"><div class="wh">B　PDFに直接入力</div><div class="wb">
+  <div class="st"><i>1</i><div>「4. 聞き取りシート」にある<br>PDFを開く</div></div>
+  <div class="st"><i>2</i><div>PDFに入力して保存</div></div></div></div>
+</div>
+<div class="dn">▼　どちらでもOK　▼</div>
+<div class="up">共有クラウドの「4. 聞き取りシート」フォルダへ<small>撮影後すぐでなくてOK。Wi-Fiなど通信が安定した場所で、後日まとめてアップロード</small></div>
+</div></div></section><section class="pg-sec" id="s11"><h2><span class="pg-no">11</span>共有フォルダとアップロード</h2><p class="pg-cap">共有フォルダは1〜5の5つ。個体の動画は牛の日齢のフォルダへ</p><div class="pg-fig" id="k11"><div class="w">
+<h1>共有フォルダの中身<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">アップロードは撮影後すぐでなくてOK。Wi-Fiなど通信が安定した場所で、後日まとめて</div>
+<div class="root"><svg width="44" height="36" viewBox="0 0 44 36"><path d="M2 6q0-4 4-4h10l4 5h20q4 0 4 4v19q0 4-4 4H6q-4 0-4-4z" fill="#fff"/></svg>農場名</div>
+<div class="tree">
+ <div class="r cen"><div class="no">1.</div><div><div class="nm">農場配置ファイル</div><div class="ds">センターが作った配置図。先生がZoneを修正・登録する</div></div><span class="tg">センター→先生</span></div>
+ <div class="r me"><div class="no">2.</div><div><div class="nm">個体撮影</div><div class="ds">牛1頭ずつの動画（スマホは縦。白カードの牛も）。牛の日齢のフォルダへ</div>
+  <div class="sub3"><span>0〜30日齢</span><span>31〜90日齢</span><span>91〜135日齢</span></div></div><span class="tg">先生が入れる</span></div>
+ <div class="r z"><div class="no">3.</div><div><div class="nm">Zone</div><div class="ds">Zoneの動画（スマホは横）。Zoneごとに1本</div></div><span class="tg">先生が入れる</span></div>
+ <div class="r me" style="border-color:#555"><div class="no" style="color:#555">4.</div><div><div class="nm">聞き取りシート</div><div class="ds">シートの写真（表・裏）か、入力したPDF（空のPDFもここに）</div></div><span class="tg" style="background:#555">先生が入れる</span></div>
+ <div class="r cen"><div class="no">5.</div><div><div class="nm">センターフィードバック</div><div class="ds">センターからのプロファイル結果など</div></div><span class="tg">センターが入れる</span></div>
+</div>
+</div></div></section>
+<p class="pg-foot">くわしい手順（詳細SOP）は、農場プロファイル実施SOPのNotionページにあります。　© BRDC Frontiers プロファイルセンター</p>
+</body></html>
