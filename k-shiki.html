@@ -90,7 +90,26 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg4 .opt{width:100%;font-size:14px;font-weight:700;background:#fff;border:1px solid #e9cbb6;border-radius:6px;padding:3px 4px;margin-top:4px}
 #xg4 .ch{display:flex;gap:6px;justify-content:center;margin-top:4px}
 #xg4 .ch span{border-radius:999px;color:#fff;font-weight:900;font-size:15px;padding:2px 10px}
-#xg4 .bot{margin:0 12px 14px;background:#fff3ea;border-radius:10px;padding:8px;text-align:center;font-size:18px;font-weight:900;color:#c8361c}#xfig3a *{box-sizing:border-box}
+#xg4 .bot{margin:0 12px 14px;background:#fff3ea;border-radius:10px;padding:8px;text-align:center;font-size:18px;font-weight:900;color:#c8361c}#xhaichi *{box-sizing:border-box}
+#xhaichi{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+#xhaichi .w{width:1000px;padding:28px 28px 32px}
+#xhaichi h1{font-size:36px;margin:0 0 4px;font-weight:900}
+#xhaichi .sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+#xhaichi .tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}#xhaichi .w{width:1000px;padding:6px 0 10px}
+#xhaichi .how{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 12px}
+#xhaichi .how div{border:2px solid #cfe0cf;background:#f3f8f3;border-radius:12px;padding:8px 12px;font-size:17px;font-weight:700;line-height:1.45}
+#xhaichi .how b{display:block;color:#3f6b45;font-size:19px;font-weight:900}
+#xhaichi .ex{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:14px;align-items:start}
+#xhaichi .ph{margin:0}
+#xhaichi .ph img{width:100%;height:auto;display:block;border-radius:10px;border:1px solid #cfd8d2}
+#xhaichi .ph figcaption{font-size:14px;color:#5d6a64;margin-top:4px}
+#xhaichi table{width:100%;border-collapse:collapse;font-size:17px}
+#xhaichi th,#xhaichi td{border:1px solid #cfd8d2;padding:7px 10px;text-align:left}
+#xhaichi th{background:#3f6b45;color:#fff;font-weight:900}
+#xhaichi td:first-child{width:56px;text-align:center;font-weight:900}
+#xhaichi td:first-child span{display:inline-block;width:28px;height:28px;line-height:28px;border-radius:6px;background:#fff;border:2px solid #c2362b;color:#c2362b}
+#xhaichi .note{margin-top:10px;font-size:15px;color:#5d6a64;font-weight:700}
+#xhaichi .go{margin-top:10px;border:2px dashed #8a6d00;background:#fffcf0;border-radius:12px;padding:8px 12px;font-size:16px;font-weight:900;color:#5c4900}#xfig3a *{box-sizing:border-box}
 #xfig3a{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
 #xfig3a .w{width:1000px;padding:28px 28px 32px}
 #xfig3a h1{font-size:36px;margin:0 0 4px;font-weight:900}
@@ -543,7 +562,21 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xg4 .opt br{display:none}
 #xg4 .bot{margin:6px 0 4px!important}
 #xg4 .t br{display:none}
-#xg4 .t{font-size:16px!important;word-break:keep-all;overflow-wrap:anywhere}#xfig3a .w{width:100%!important;padding:18px 16px 22px!important}
+#xg4 .t{font-size:16px!important;word-break:keep-all;overflow-wrap:anywhere}#xhaichi .w{width:100%!important;padding:18px 16px 22px!important}
+#xhaichi *{max-width:100%}
+#xhaichi svg{height:auto}
+#xhaichi [style*="grid-template-columns"],#xhaichi .chain,#xhaichi .grid,#xhaichi .cols,#xhaichi .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xhaichi [style*="display:flex"],#xhaichi .pre,#xhaichi .hd,#xhaichi .fs,#xhaichi .leg{flex-wrap:wrap!important}
+#xhaichi h1{font-size:30px!important;line-height:1.25}
+#xhaichi .chain{counter-reset:c}
+#xhaichi .chain .cut{counter-increment:c}
+#xhaichi .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xhaichi .chain .cut{padding-right:32px!important}
+#xhaichi .how,#xhaichi .ex{grid-template-columns:1fr!important}
+#xhaichi .how div{font-size:15px!important}
+#xhaichi .how b{font-size:17px!important}
+#xhaichi table{font-size:15px!important}
+#xhaichi .go{font-size:14px!important}#xfig3a .w{width:100%!important;padding:18px 16px 22px!important}
 #xfig3a *{max-width:100%}
 #xfig3a svg{height:auto}
 #xfig3a [style*="grid-template-columns"],#xfig3a .chain,#xfig3a .grid,#xfig3a .cols,#xfig3a .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -835,7 +868,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 <h1>K式の流れ<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
 <div class="sub">期限までに少しずつ。1日でまとめて実施してもOK</div>
 <a class="stl" href="#step1"><div class="st"><div class="n">1</div><div><b>申請フォームで申請</b><small>方式は「K式」を選び、農場のGoogle Map情報を送る</small><em class="go">申請のしかたへ ›</em></div></div></a><div class="dn">▼</div>
-<a class="stl" href="#step2"><div class="st"><div class="n">2</div><div><b>配置図を修正して、Zoneを登録</b><small>センターとはメールでやりとり</small><em class="go">Zoneの説明へ ›</em></div></div></a><div class="dn">▼</div>
+<a class="stl" href="#step2"><div class="st"><div class="n">2</div><div><b>配置図を修正して、Zoneを登録</b><small>センターとはメールでやりとり</small><em class="go">配置図とZoneの説明へ ›</em></div></div></a><div class="dn">▼</div>
 <a class="stl" href="#step3"><div class="st"><div class="n">3</div><div><b>キット（コンテナ）が届く</b><small>農場の隅に置かせてもらう。「◯月◯日まで」の期限札つき</small><em class="go">キットの中身へ ›</em></div></div></a><div class="dn">▼</div>
 <a class="stl" href="#step4"><div class="st"><div class="n">4</div><div><b>期限までに、取れるときに採材・撮影</b><small>1日でまとめてもOK。チューブは立てたまま診療所の冷凍庫へ</small><em class="go">採材と撮影へ ›</em></div></div></a>
 <div class="side">時間のあるときに：<a href="#s-fig8">Zoneの撮影 ›</a>・<a href="#s-fig7">聞き取りシート ›</a></div><div class="dn">▼</div>
@@ -859,7 +892,18 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
   <div class="t">センターから<br>メールが届く</div><div class="s">共有フォルダの<br>アドレス</div></div>
 </div>
 <div class="bot"><a class="pg-btn" href="https://forms.gle/vr7b8SnN8KoWRgaZ8" target="_blank" rel="noopener">📝 申請フォームを開く</a></div>
-</div></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><div class="pg-step" id="step2"><span class="pg-no">2</span><div><small>STEP 2</small><b>配置図を修正して、Zoneを登録</b></div></div><section class="pg-sec" id="s-fig3a"><span class="pg-tagst">STEP 2</span><h2>Zoneとは</h2><p class="pg-cap">牛の段階・収容方法・空間と換気・飼料と哺乳の4つが同じ場所が1つのZone</p><div class="pg-fig" id="xfig3a"><div class="w">
+</div></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><div class="pg-step" id="step2"><span class="pg-no">2</span><div><small>STEP 2</small><b>配置図を修正して、Zoneを登録</b></div></div><section class="pg-sec" id="s-haichi"><span class="pg-tagst">STEP 2</span><h2>配置図の修正（記入例）</h2><p class="pg-cap">センターが番号をふった配置図を確認し、表に牛舎の詳細を書きます</p><div class="pg-fig" id="xhaichi"><div class="w">
+<div class="how"><div><b>番号をチェック</b>「農場名　農場配置ファイル」で、牛舎と思われる建物に番号がふってあります。番号がおかしいときは修正</div><div><b>表に牛舎詳細を記入</b>それぞれの番号に、どんな牛を飼っているか（牛の段階・飼い方）を書く</div></div>
+<div class="ex"><figure class="ph"><img src="img/haichi_sample.jpg" alt="農場配置ファイルの記入例（サンプル画像。実際は衛星写真）"><figcaption>農場配置ファイルの記入例（実際は衛星写真）</figcaption></figure>
+<div><table><tr><th>番号</th><th>牛舎詳細</th></tr>
+<tr><td><span>1</span></td><td>哺乳牛舎（カーフペン）</td></tr>
+<tr><td><span>2</span></td><td>哺乳牛舎（哺乳ロボット）</td></tr>
+<tr><td><span>3</span></td><td>育成牛舎（約200日齢まで）</td></tr>
+<tr><td><span>4</span></td><td>育成牛舎（約280日齢まで）</td></tr>
+<tr><td><span>5</span></td><td>母牛舎</td></tr></table>
+<div class="note">センターとはメールでやりとり</div></div></div>
+<div class="go">▼ この配置図をもとに、次の「Zoneとは」「Zoneの登録」でZoneを決めます</div>
+</div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><section class="pg-sec" id="s-fig3a"><span class="pg-tagst">STEP 2</span><h2>Zoneとは</h2><p class="pg-cap">牛の段階・収容方法・空間と換気・飼料と哺乳の4つが同じ場所が1つのZone</p><div class="pg-fig" id="xfig3a"><div class="w">
 <h1>Zoneとは<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
 <div class="sub">Zoneは「建物」ではなく、飼養条件が同じ牛のいる「場所」です</div>
 <div class="target"><div class="th">★ Zoneを登録する場所</div>
