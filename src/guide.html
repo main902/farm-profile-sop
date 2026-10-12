@@ -1,0 +1,110 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+:root{--o:#e0561b;--o2:#f6a04d;--ob:#fff3ea;--a:#c8361c;--k:#2f7d3a;--kb:#eaf5eb;--ab:#fdeee9;--ink:#1f2328;--mut:#5d6a64;--p:#6b3fa0}
+*{box-sizing:border-box}body{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:var(--ink)}
+.w{width:1000px;height:1414px;position:relative;overflow:hidden;background:#fff;padding:0}
+.top{padding:18px 34px 0;position:relative;height:204px;background:linear-gradient(180deg,#fff 0%,#fff 70%,#fdeee3 100%)}
+.cat{font-size:26px;font-weight:900;line-height:1.35}
+.cat .two{color:var(--o);font-size:34px}
+.ttl{font-size:48px;font-weight:900;color:var(--o);letter-spacing:.01em;margin-top:4px;line-height:1.1}
+.sub{display:flex;align-items:center;gap:14px;margin-top:12px}
+.sub .b{background:var(--o);color:#fff;font-size:24px;font-weight:900;padding:4px 16px;border-radius:6px}
+.sub span{font-size:22px;font-weight:700}
+.cows{position:absolute;right:30px;top:12px}
+.sec{margin:10px 26px 0;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden;background:#fff}
+.sh{background:var(--o);color:#fff;font-weight:900;font-size:23px;text-align:center;padding:5px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);padding:6px 8px}
+.four div{display:flex;align-items:center;justify-content:center;gap:10px;font-size:20px;font-weight:700;border-right:1px dashed #e6c3ab}
+.four div:last-child{border:none}
+.note{text-align:center;font-size:16px;font-weight:700;padding:0 0 6px}
+.flow{padding:12px 16px 14px;position:relative}
+.q{border:2px solid;border-radius:10px;padding:8px 14px;font-size:19px;font-weight:700;background:#fff;display:flex;align-items:center;gap:10px}
+.qa{border-color:var(--o)}.qk{border-color:var(--k)}
+.lab{font-size:18px;font-weight:900}
+.res{border-radius:10px;color:#fff;font-weight:900;font-size:20px;text-align:center;padding:10px 6px;line-height:1.25}
+.res small{display:block;font-size:14px;font-weight:700;opacity:.95}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px 12px 10px}
+.cd{border:2px solid;border-radius:12px;padding:10px 14px 0;display:flex;flex-direction:column}
+.cd.a{border-color:#f1b9a6}.cd.k{border-color:#a9d3ae}
+.cd h3{margin:0;font-size:23px;font-weight:900;text-align:center;line-height:1.2}
+.cd.a h3{color:var(--a)}.cd.k h3{color:var(--k)}
+.pill{display:block;width:max-content;margin:6px auto 2px;color:#fff;font-weight:900;font-size:16px;padding:1px 14px;border-radius:999px}
+.cd.a .pill{background:var(--a)}.cd.k .pill{background:var(--k)}
+.typ{text-align:center;font-weight:900;font-size:18px;margin-bottom:4px}
+.cd.a .typ{color:var(--a)}.cd.k .typ{color:var(--k)}
+.it{display:grid;grid-template-columns:30px 1fr;gap:6px;margin-top:4px}
+.it h4{margin:0;font-size:17px;font-weight:900}
+.cd.a h4{color:var(--a)}.cd.k h4{color:var(--k)}
+.it ul{margin:1px 0 0;padding-left:1.1em;font-size:14.5px;line-height:1.36}
+.ft{margin-top:auto;border-top:1px solid #ddd;display:grid;grid-template-columns:repeat(3,1fr);font-size:15px;font-weight:700;padding:7px 0;margin-left:-14px;margin-right:-14px;text-align:center}
+.bot{position:absolute;left:0;right:0;bottom:0;height:84px;background:var(--o);display:flex;align-items:center;justify-content:space-between;padding:0 26px;color:#fff}
+.bot .l{font-size:26px;font-weight:900;line-height:1.3}.bot .l span{color:#ffe08a}
+.bot .r{background:#fff;color:var(--o);border-radius:10px;padding:8px 18px;font-size:20px;font-weight:900;text-align:center;line-height:1.35}
+.url{background:#1f3a5f;color:#fff;border-radius:6px;padding:2px 14px;font-size:18px;font-weight:900;display:inline-block;margin-bottom:4px}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px}
+.cx{border:3px solid;border-radius:14px;padding:10px 14px 12px;display:flex;flex-direction:column;align-items:stretch}
+.cx.a{border-color:#c8361c}.cx.k{border-color:#2f7d3a;background:#f7fbf7}
+.cxh{text-align:center;font-size:27px;font-weight:900;line-height:1.2}.a .cxh{color:#c8361c}.k .cxh{color:#2f7d3a}
+.cxs{text-align:center;font-size:17px;font-weight:700;color:#5d6a64;margin-bottom:6px}
+.tls{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.tl{background:#f6f6f4;border-radius:10px;padding:8px 4px;text-align:center}
+.ti{font-size:34px;line-height:1.1}.tt{font-size:16px;line-height:1.35;margin-top:4px}
+.tt b{font-size:19px}
+.fx{margin-top:10px;border-radius:10px;text-align:center;font-weight:900;padding:10px 6px;font-size:19px}
+.fx.a{background:#fdeee9;color:#c8361c}
+.fx.k{background:#2f7d3a;color:#fff;font-size:23px;line-height:1.35;box-shadow:0 0 0 3px #ffe08a inset}
+</style></head><body><div class="w">
+<div class="top">
+ <div class="cat">一度に把握する。日々、蓄積する。<br>農場に合わせて選べる<span class="two">２つの基本ルート</span></div>
+ <div class="ttl">BRDC Frontiers 農場プロファイル</div>
+ <div class="sub"><span class="b">獣医師向け実施ガイド</span><span>方法は選べる。評価する「ものさし」は揃える。</span></div>
+ <svg class="cows" width="150" height="92" viewBox="0 0 230 140"><g fill="#e0561b" opacity=".85"><path d="M80 40h80q16 0 20 14l4 22q2 8-6 10h-6v40h-12V90h-56v36H92V90q-14-2-14-16z"/><path d="M178 50l18-14h14l8 12-4 12-14 4z"/><path d="M196 36l4-10 6 8z"/><path d="M20 76h46q10 0 12 10v12q0 6-6 6h-4v24h-8v-22H38v22h-8v-24q-10-2-10-10z"/><path d="M76 82l12-8h8l4 8-4 8-8 2z"/></g><path d="M0 130h230" stroke="#f6a04d" stroke-width="4"/></svg>
+</div>
+
+<div class="sec"><div class="sh">共通して取得する４つの基本データ</div>
+ <div class="four">
+  <div><svg width="38" height="44" viewBox="0 0 38 44"><rect x="3" y="6" width="32" height="36" rx="4" fill="#fff" stroke="#1f3a5f" stroke-width="3"/><rect x="12" y="2" width="14" height="8" rx="2" fill="#1f3a5f"/><path d="M10 20l3 3 5-6M10 32l3 3 5-6M22 21h8M22 33h8" stroke="#1f3a5f" stroke-width="2.5" fill="none"/></svg>聞き取りシート</div>
+  <div><svg width="30" height="46" viewBox="0 0 30 46"><rect x="2" y="2" width="26" height="42" rx="5" fill="#1f2328"/><rect x="5" y="7" width="20" height="30" fill="#2f6fd6"/><path d="M12 17l7 5-7 5z" fill="#fff"/></svg>スマホ動画</div>
+  <div><svg width="40" height="46" viewBox="0 0 40 46"><path d="M28 4l8 8L12 40q-4 4-8 0t0-8z" fill="#fff" stroke="#1f3a5f" stroke-width="3"/><path d="M6 36l8-8" stroke="#2f6fd6" stroke-width="5"/></svg>鼻咽頭スワブ</div>
+  <div><svg width="46" height="40" viewBox="0 0 46 40"><circle cx="18" cy="20" r="15" fill="#fff" stroke="#1f3a5f" stroke-width="3"/><circle cx="18" cy="20" r="5" fill="#1f3a5f"/><path d="M30 28h14v8H24" fill="#1f3a5f"/></svg>胸囲測定</div>
+ </div>
+ <div class="note">どちらのパッケージでも、評価の基本項目は共通です。</div>
+</div>
+
+<div class="sec"><div class="sh">どちらのパッケージを選ぶか</div>
+ <div class="flow">
+  <svg viewBox="0 0 948 340" style="display:block;width:100%;height:auto">
+   <foreignObject x="210" y="2" width="530" height="48"><div class="q qa" xmlns="http://www.w3.org/1999/xhtml">🐮 農場全体を、専用日に1日でまとめて評価しますか？</div></foreignObject>
+   <path d="M330 52v40" stroke="#c8361c" stroke-width="4"/><path d="M322 86l8 12 8-12z" fill="#c8361c"/>
+   <text x="342" y="80" font-size="19" font-weight="900" fill="#c8361c">はい</text>
+   <path d="M640 52v40" stroke="#2f7d3a" stroke-width="4"/><path d="M632 86l8 12 8-12z" fill="#2f7d3a"/>
+   <text x="652" y="80" font-size="19" font-weight="900" fill="#2f7d3a">いいえ</text>
+   <foreignObject x="150" y="100" width="360" height="84"><div class="q qa" xmlns="http://www.w3.org/1999/xhtml">👥 15頭程度（各日齢5頭）を<br>その日に確保できますか？</div></foreignObject>
+   <foreignObject x="520" y="100" width="400" height="84"><div class="q qk" xmlns="http://www.w3.org/1999/xhtml">🏠 診療時や離乳・移動時に<br>少しずつ採材できますか？</div></foreignObject>
+   <path d="M230 186v54" stroke="#c8361c" stroke-width="4"/><path d="M222 234l8 12 8-12z" fill="#c8361c"/><text x="242" y="220" font-size="18" font-weight="900" fill="#c8361c">はい</text>
+   <path d="M420 186q0 30 110 56" stroke="#2f7d3a" stroke-width="4" fill="none"/><path d="M518 236l16 10-4-14z" fill="#2f7d3a"/><text x="452" y="206" font-size="17" font-weight="900" fill="#2f7d3a">いいえ</text>
+   <path d="M626 186v54" stroke="#2f7d3a" stroke-width="4"/><path d="M618 234l8 12 8-12z" fill="#2f7d3a"/><text x="638" y="220" font-size="18" font-weight="900" fill="#2f7d3a">はい</text>
+   <path d="M856 186v54" stroke="#6b3fa0" stroke-width="4"/><path d="M848 234l8 12 8-12z" fill="#6b3fa0"/><text x="868" y="220" font-size="18" font-weight="900" fill="#6b3fa0">難しい</text>
+   <foreignObject x="110" y="248" width="260" height="90"><div class="res" style="background:#c8361c" xmlns="http://www.w3.org/1999/xhtml">横断パッケージ<small>1日で農場全体を把握</small></div></foreignObject>
+   <foreignObject x="476" y="248" width="290" height="90"><div class="res" style="background:#2f7d3a" xmlns="http://www.w3.org/1999/xhtml">診療・農場フロー型<br>パッケージ（K式）<small>日々の診療で少しずつ蓄積</small></div></foreignObject>
+   <foreignObject x="778" y="248" width="156" height="90"><div class="res" style="background:#6b3fa0" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size:18px">Frontiersへ<br>相談</span></div></foreignObject>
+  </svg>
+  <div style="font-size:15px;color:var(--mut);text-align:center;margin-top:4px">※ K式は、期限までに少しずつ集めても、1日でまとめて実施してもOK（15頭そろわない農場はK式で）</div>
+ </div>
+</div>
+
+<div class="sec" style="border-color:#f3c7a8"><div class="sh">２つのパッケージ　ひと目でくらべる</div>
+ <div class="cards2">
+  <div class="cx a"><div class="cxh">横断パッケージ</div><div class="cxs">一度に把握する</div>
+   <svg viewBox="0 0 420 150" width="100%"><rect x="10" y="20" width="120" height="120" rx="12" fill="#fff" stroke="#c8361c" stroke-width="5"/><rect x="10" y="20" width="120" height="34" rx="12" fill="#c8361c"/><rect x="10" y="42" width="120" height="12" fill="#c8361c"/><text x="70" y="114" text-anchor="middle" font-size="44" font-weight="900" fill="#c8361c">1日</text><path d="M145 80h20" stroke="#c8361c" stroke-width="5"/><path d="M160 70l14 10-14 10z" fill="#c8361c"/><g transform="translate(190,20) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(234,20) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(278,20) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(322,20) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(366,20) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(190,62) scale(1)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(234,62) scale(1)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(278,62) scale(1)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(322,62) scale(1)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(366,62) scale(1)" fill="#e57a5c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(190,104) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(234,104) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(278,104) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(322,104) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><g transform="translate(366,104) scale(1)" fill="#c8361c"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g></svg>
+   <div class="tls"><div class="tl"><div class="ti" style="color:#c8361c">⏰</div><div class="tt">専用日に<br><b>1日</b>で</div></div><div class="tl"><div class="ti" style="color:#c8361c">🐄</div><div class="tt"><b>15頭</b><br>各日齢5頭</div></div><div class="tl"><div class="ti" style="color:#c8361c">📝</div><div class="tt">採材シート<br>に記録</div></div></div>
+   <div class="fx a">1日で農場全体を把握できる</div></div>
+  <div class="cx k"><div class="cxh">診療・農場フロー型（K式）</div><div class="cxs">日々、蓄積する</div>
+   <svg viewBox="0 0 420 150" width="100%"><rect x="6" y="18" width="408" height="66" rx="10" fill="#fff" stroke="#2f7d3a" stroke-width="5"/><rect x="6" y="18" width="408" height="20" rx="10" fill="#2f7d3a"/><rect x="6" y="30" width="408" height="8" fill="#2f7d3a"/><rect x="20" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><rect x="59" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><g transform="translate(61,48) scale(1.0)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="98" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><rect x="137" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><g transform="translate(139,48) scale(1.0)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="176" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><g transform="translate(178,48) scale(1.0)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="215" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><rect x="254" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><rect x="293" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><g transform="translate(295,48) scale(1.0)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><rect x="332" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><rect x="371" y="46" width="32" height="30" rx="4" fill="#eaf5eb"/><g transform="translate(373,48) scale(1.0)" fill="#2f7d3a"><rect x="0" y="6" width="22" height="11" rx="4"/><rect x="19" y="1" width="10" height="9" rx="3"/><rect x="2" y="15" width="3" height="8"/><rect x="16" y="15" width="3" height="8"/></g><text x="210" y="112" text-anchor="middle" font-size="22" font-weight="900" fill="#2f7d3a">診療のついでに、少しずつ</text><text x="210" y="140" text-anchor="middle" font-size="18" font-weight="700" fill="#5d6a64">（1日でまとめてもOK）</text></svg>
+   <div class="tls"><div class="tl"><div class="ti" style="color:#2f7d3a">🔄</div><div class="tt">専用日<br><b>不要</b></div></div><div class="tl"><div class="ti" style="color:#2f7d3a">🩺</div><div class="tt"><b>診療の</b><br><b>ついで</b>に</div></div><div class="tl"><div class="ti" style="color:#2f7d3a">📱</div><div class="tt">記録は<br><b>ほぼスマホ</b><br>で完結</div></div></div>
+   <div class="fx k"><b>1回の負担が小さく、<br>ムリなくはじめられる</b></div></div>
+ </div>
+</div>
+<div class="bot"><div class="l">ムリなく始めて<br><span>データ指向型 農場カイゼンへ</span></div>
+ <div style="text-align:center"><div class="url">BRDC Frontiers</div><div style="font-size:18px;font-weight:700">www.brdc-frontiers.jp</div></div>
+ <div class="r">まずは農場に合った<br>方法をご相談ください</div></div>
+</div></body></html>

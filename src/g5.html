@@ -1,0 +1,67 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+*{box-sizing:border-box}body{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:#1f2328}
+.w{width:1000px;background:#fff;padding:14px 0 18px}
+.sec{margin:0 26px;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden}
+.sh{background:#e0561b;color:#fff;font-weight:900;font-size:25px;text-align:center;padding:6px}
+.tl{display:flex;align-items:center;justify-content:center;gap:14px;padding:14px 0 4px;font-weight:900;font-size:20px}
+.tl .b{border-radius:999px;padding:4px 16px;background:#fff3ea;color:#c8361c}
+.tl .big{background:#e0561b;color:#fff;font-size:22px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px}
+.cd{border:3px solid;border-radius:14px;padding:10px 14px 12px;display:flex;flex-direction:column}
+.cd.p{border-color:#6b3fa0}.cd.g{border-color:#2f7d3a;background:#f7fbf7}
+.ch{text-align:center;font-size:26px;font-weight:900;line-height:1.2}
+.p .ch{color:#6b3fa0}.g .ch{color:#2f7d3a}
+.who{display:block;width:max-content;margin:4px auto 6px;color:#fff;font-weight:900;font-size:16px;padding:1px 14px;border-radius:999px}
+.p .who{background:#6b3fa0}.g .who{background:#2f7d3a}
+.xl{margin-top:auto;display:flex;align-items:center;gap:12px;background:#eaf5eb;border:2px solid #1d6f42;border-radius:10px;padding:8px 12px;font-size:17px;font-weight:900;line-height:1.4}
+.xl b{color:#1d6f42}
+.box{background:#fff;border:1px solid #cfe6d2;border-radius:10px;padding:8px 10px;margin-top:8px;text-align:center}
+.bh{font-size:18px;font-weight:900;color:#2f7d3a}
+.flow{display:grid;grid-template-columns:1fr 26px 1fr 26px 1fr;align-items:center;margin-top:6px}
+.fs{border-radius:10px;padding:6px 4px;text-align:center;font-weight:900;line-height:1.25}
+.fs .k{font-size:22px;display:block}.fs small{font-size:13px;font-weight:700;display:block}
+.addon{margin-top:10px;border-radius:10px;background:#2f6688;color:#fff;font-weight:900;text-align:center;padding:8px;font-size:19px;position:relative}
+.addon span{color:#ffe08a}
+</style></head><body><div class="w"><div class="sec"><div class="sh">プロファイル結果</div>
+<div class="tl"><span class="b">発送・アップロード</span><svg width="40" height="20"><path d="M2 10h28" stroke="#f6a04d" stroke-width="4"/><path d="M28 2l10 8-10 8z" fill="#f6a04d"/></svg><span class="b big">１か月以内に返送</span></div>
+<div class="cards">
+ <div class="cd p"><div class="ch">SeF生データ</div><span class="who">獣医師向け</span>
+  <svg viewBox="0 0 440 400" width="100%">
+   <circle cx="220" cy="128" r="112" fill="#e98a5f" opacity=".72"/>
+   <circle cx="150" cy="262" r="112" fill="#f6c84c" opacity=".72"/>
+   <circle cx="290" cy="262" r="112" fill="#a9b4bd" opacity=".75"/>
+   <g text-anchor="middle" font-weight="900">
+    <text x="220" y="58" font-size="16" fill="#7a2b0c">病原体要因</text>
+    <text x="220" y="92" font-size="27" fill="#1f2328">病原体保有率</text>
+    <text x="220" y="118" font-size="14" fill="#5a2a12" font-weight="700">12種類の病原体</text>
+    <text x="108" y="262" font-size="16" fill="#6b4e00">宿主要因</text>
+    <text x="108" y="294" font-size="25" fill="#1f2328">胸囲充足率</text>
+    <text x="108" y="318" font-size="14" fill="#5a4500" font-weight="700">（HGR）</text>
+    <text x="332" y="262" font-size="16" fill="#38424a">環境要因</text>
+    <text x="332" y="294" font-size="21" fill="#1f2328">環境プロファイル</text>
+    <text x="332" y="318" font-size="13" fill="#38424a" font-weight="700">飼養管理・地理・気象</text>
+   </g>
+   <path d="M220 172 L252 226 L188 226 Z" fill="#d7261e"/>
+   <text x="220" y="218" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">BRDC</text>
+  </svg>
+  <div class="xl"><svg width="46" height="52" viewBox="0 0 46 52"><rect x="8" y="2" width="36" height="48" rx="4" fill="#fff" stroke="#1d6f42" stroke-width="3"/><g stroke="#9cc9ad" stroke-width="2"><path d="M14 16h24M14 24h24M14 32h24M14 40h24M26 10v36"/></g><rect x="0" y="14" width="26" height="24" rx="3" fill="#1d6f42"/><text x="13" y="32" font-size="17" font-weight="900" fill="#fff" text-anchor="middle">X</text></svg>
+   <div>3つの要因のデータを<br><b>Excelファイルで詳しく確認</b>できます</div></div>
+ </div>
+ <div class="cd g"><div class="ch">SeFレポート</div><span class="who">農家さん向け</span>
+  <div class="box"><div class="bh">BRDCリスクを3段階で報告</div>
+   <svg width="230" height="112" viewBox="0 17 300 148"><path d="M40 150 A110 110 0 0 1 95 55" fill="none" stroke="#5aa864" stroke-width="34"/><path d="M100 52 A110 110 0 0 1 200 52" fill="none" stroke="#f2c14e" stroke-width="34"/><path d="M205 55 A110 110 0 0 1 260 150" fill="none" stroke="#c8361c" stroke-width="34"/>
+    <text x="58" y="104" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">低</text><text x="150" y="50" font-size="20" font-weight="900" fill="#5a4500" text-anchor="middle">中</text><text x="242" y="104" font-size="20" font-weight="900" fill="#fff" text-anchor="middle">高</text>
+    <path d="M150 150 L205 92" stroke="#1f2328" stroke-width="7" stroke-linecap="round"/><circle cx="150" cy="150" r="12" fill="#1f2328"/></svg></div>
+  <div class="box"><div class="bh">農場の問題を「Check！」→「Act」へ</div>
+   <div class="flow">
+    <div class="fs" style="background:#eef1ee"><span style="font-size:26px">📊</span><span class="k" style="font-size:17px">結果</span><small>プロファイル</small></div>
+    <svg width="26" height="20"><path d="M4 2l16 8-16 8z" fill="#2f7d3a"/></svg>
+    <div class="fs" style="background:#f2c14e;color:#5a4500"><span style="font-size:26px">🔍</span><span class="k">Check！</span><small>農場の問題を<br>見つける</small></div>
+    <svg width="26" height="20"><path d="M4 2l16 8-16 8z" fill="#2f7d3a"/></svg>
+    <div class="fs" style="background:#2f7d3a;color:#fff"><span style="font-size:26px">🛠️</span><span class="k">Act</span><small>対策の流れを<br>提案</small></div>
+   </div>
+  </div>
+  <div style="text-align:right;padding-right:44px;height:20px"><svg width="20" height="20"><path d="M10 0v12" stroke="#2f6688" stroke-width="4"/><path d="M2 10h16l-8 10z" fill="#2f6688"/></svg></div>
+  <div class="addon" style="margin-top:2px">＋ <span>Add-on解析</span> で Act を支援</div>
+ </div>
+</div></div></div></body></html>

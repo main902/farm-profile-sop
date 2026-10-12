@@ -1,0 +1,81 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><style>
+:root{--o:#e0561b;--o2:#f6a04d;--ob:#fff3ea;--a:#c8361c;--k:#2f7d3a;--kb:#eaf5eb;--ab:#fdeee9;--ink:#1f2328;--mut:#5d6a64;--p:#6b3fa0}
+*{box-sizing:border-box}body{margin:0;background:#fff;font-family:"Noto Sans CJK JP",sans-serif;color:var(--ink)}
+.w{width:1000px;background:#fff;padding:14px 0 18px}
+.top{padding:18px 34px 0;position:relative;height:204px;background:linear-gradient(180deg,#fff 0%,#fff 70%,#fdeee3 100%)}
+.cat{font-size:26px;font-weight:900;line-height:1.35}
+.cat .two{color:var(--o);font-size:34px}
+.ttl{font-size:48px;font-weight:900;color:var(--o);letter-spacing:.01em;margin-top:4px;line-height:1.1}
+.sub{display:flex;align-items:center;gap:14px;margin-top:12px}
+.sub .b{background:var(--o);color:#fff;font-size:24px;font-weight:900;padding:4px 16px;border-radius:6px}
+.sub span{font-size:22px;font-weight:700}
+.cows{position:absolute;right:30px;top:12px}
+.sec{margin:10px 26px 0;border:2px solid #f3c7a8;border-radius:12px;overflow:hidden;background:#fff}
+.sh{background:var(--o);color:#fff;font-weight:900;font-size:23px;text-align:center;padding:5px}
+.four{display:grid;grid-template-columns:repeat(4,1fr);padding:6px 8px}
+.four div{display:flex;align-items:center;justify-content:center;gap:10px;font-size:20px;font-weight:700;border-right:1px dashed #e6c3ab}
+.four div:last-child{border:none}
+.note{text-align:center;font-size:16px;font-weight:700;padding:0 0 6px}
+.flow{padding:12px 16px 14px;position:relative}
+.q{border:2px solid;border-radius:10px;padding:8px 14px;font-size:19px;font-weight:700;background:#fff;display:flex;align-items:center;gap:10px}
+.qa{border-color:var(--o)}.qk{border-color:var(--k)}
+.lab{font-size:18px;font-weight:900}
+.res{border-radius:10px;color:#fff;font-weight:900;font-size:20px;text-align:center;padding:10px 6px;line-height:1.25}
+.res small{display:block;font-size:14px;font-weight:700;opacity:.95}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:8px 12px 10px}
+.cd{border:2px solid;border-radius:12px;padding:10px 14px 0;display:flex;flex-direction:column}
+.cd.a{border-color:#f1b9a6}.cd.k{border-color:#a9d3ae}
+.cd h3{margin:0;font-size:23px;font-weight:900;text-align:center;line-height:1.2}
+.cd.a h3{color:var(--a)}.cd.k h3{color:var(--k)}
+.pill{display:block;width:max-content;margin:6px auto 2px;color:#fff;font-weight:900;font-size:16px;padding:1px 14px;border-radius:999px}
+.cd.a .pill{background:var(--a)}.cd.k .pill{background:var(--k)}
+.typ{text-align:center;font-weight:900;font-size:18px;margin-bottom:4px}
+.cd.a .typ{color:var(--a)}.cd.k .typ{color:var(--k)}
+.it{display:grid;grid-template-columns:30px 1fr;gap:6px;margin-top:4px}
+.it h4{margin:0;font-size:17px;font-weight:900}
+.cd.a h4{color:var(--a)}.cd.k h4{color:var(--k)}
+.it ul{margin:1px 0 0;padding-left:1.1em;font-size:14.5px;line-height:1.36}
+.ft{margin-top:auto;border-top:1px solid #ddd;display:grid;grid-template-columns:repeat(3,1fr);font-size:15px;font-weight:700;padding:7px 0;margin-left:-14px;margin-right:-14px;text-align:center}
+.bot{position:absolute;left:0;right:0;bottom:0;height:84px;background:var(--o);display:flex;align-items:center;justify-content:space-between;padding:0 26px;color:#fff}
+.bot .l{font-size:26px;font-weight:900;line-height:1.3}.bot .l span{color:#ffe08a}
+.bot .r{background:#fff;color:var(--o);border-radius:10px;padding:8px 18px;font-size:20px;font-weight:900;text-align:center;line-height:1.35}
+.url{background:#1f3a5f;color:#fff;border-radius:6px;padding:2px 14px;font-size:18px;font-weight:900;display:inline-block;margin-bottom:4px}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:12px}
+.cx{border:3px solid;border-radius:14px;padding:10px 14px 12px;display:flex;flex-direction:column;align-items:stretch}
+.cx.a{border-color:#c8361c}.cx.k{border-color:#2f7d3a;background:#f7fbf7}
+.cxh{text-align:center;font-size:27px;font-weight:900;line-height:1.2}.a .cxh{color:#c8361c}.k .cxh{color:#2f7d3a}
+.cxs{text-align:center;font-size:17px;font-weight:700;color:#5d6a64;margin-bottom:6px}
+.tls{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.tl{background:#f6f6f4;border-radius:10px;padding:8px 4px;text-align:center}
+.ti{font-size:34px;line-height:1.1}.tt{font-size:16px;line-height:1.35;margin-top:4px}
+.tt b{font-size:19px}
+.fx{margin-top:10px;border-radius:10px;text-align:center;font-weight:900;padding:10px 6px;font-size:19px}
+.fx.a{background:#fdeee9;color:#c8361c}
+.fx.k{background:#2f7d3a;color:#fff;font-size:23px;line-height:1.35;box-shadow:0 0 0 3px #ffe08a inset}
+</style><style>
+.h1{margin:4px 26px 6px;font-size:34px;font-weight:900;color:#1f2328}.h1 span{color:#e0561b}
+.lead{margin:0 26px 4px;font-size:19px;color:#5d6a64;font-weight:700}
+.sec{margin-top:6px!important}
+</style></head><body><div class="w"><div class="sec"><div class="sh">どちらのパッケージを選ぶか</div>
+ <div class="flow">
+  <svg viewBox="0 0 948 340" style="display:block;width:100%;height:auto">
+   <foreignObject x="210" y="2" width="530" height="48"><div class="q qa" xmlns="http://www.w3.org/1999/xhtml">🐮 農場全体を、専用日に1日でまとめて評価しますか？</div></foreignObject>
+   <path d="M330 52v40" stroke="#c8361c" stroke-width="4"/><path d="M322 86l8 12 8-12z" fill="#c8361c"/>
+   <text x="342" y="80" font-size="19" font-weight="900" fill="#c8361c">はい</text>
+   <path d="M640 52v40" stroke="#2f7d3a" stroke-width="4"/><path d="M632 86l8 12 8-12z" fill="#2f7d3a"/>
+   <text x="652" y="80" font-size="19" font-weight="900" fill="#2f7d3a">いいえ</text>
+   <foreignObject x="150" y="100" width="360" height="84"><div class="q qa" xmlns="http://www.w3.org/1999/xhtml">👥 15頭程度（各日齢5頭）を<br>その日に確保できますか？</div></foreignObject>
+   <foreignObject x="520" y="100" width="400" height="84"><div class="q qk" xmlns="http://www.w3.org/1999/xhtml">🏠 診療時や離乳・移動時に<br>少しずつ採材できますか？</div></foreignObject>
+   <path d="M230 186v54" stroke="#c8361c" stroke-width="4"/><path d="M222 234l8 12 8-12z" fill="#c8361c"/><text x="242" y="220" font-size="18" font-weight="900" fill="#c8361c">はい</text>
+   <path d="M420 186q0 30 110 56" stroke="#2f7d3a" stroke-width="4" fill="none"/><path d="M518 236l16 10-4-14z" fill="#2f7d3a"/><text x="452" y="206" font-size="17" font-weight="900" fill="#2f7d3a">いいえ</text>
+   <path d="M626 186v54" stroke="#2f7d3a" stroke-width="4"/><path d="M618 234l8 12 8-12z" fill="#2f7d3a"/><text x="638" y="220" font-size="18" font-weight="900" fill="#2f7d3a">はい</text>
+   <path d="M856 186v54" stroke="#6b3fa0" stroke-width="4"/><path d="M848 234l8 12 8-12z" fill="#6b3fa0"/><text x="868" y="220" font-size="18" font-weight="900" fill="#6b3fa0">難しい</text>
+   <foreignObject x="110" y="248" width="260" height="90"><div class="res" style="background:#c8361c" xmlns="http://www.w3.org/1999/xhtml">横断パッケージ<small>1日で農場全体を把握</small></div></foreignObject>
+   <foreignObject x="476" y="248" width="290" height="90"><div class="res" style="background:#2f7d3a" xmlns="http://www.w3.org/1999/xhtml">診療・農場フロー<br>蓄積型（K式）<small>日々の診療で少しずつ蓄積</small></div></foreignObject>
+   <foreignObject x="778" y="248" width="156" height="90"><div class="res" style="background:#6b3fa0" xmlns="http://www.w3.org/1999/xhtml"><span style="font-size:18px">Frontiersへ<br>相談</span></div></foreignObject>
+  </svg>
+  <div style="font-size:15px;color:var(--mut);text-align:center;margin-top:4px">※ 蓄積型（K式）は、期限までに少しずつ集めても、1日でまとめて実施してもOK。15頭そろわない農場は蓄積型で</div>
+ </div>
+</div>
+
+</div></body></html>

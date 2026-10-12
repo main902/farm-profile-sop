@@ -1,0 +1,5 @@
+.st{grid-template-columns:40px minmax(0,1fr)!important;padding:8px 10px!important;gap:8px!important}
+.st .n{width:34px!important;height:34px!important;line-height:34px!important;font-size:18px!important}
+.st b{font-size:18px!important}
+.st small{font-size:14px!important;display:block;line-height:1.4}
+.side{margin-left:20px!important;font-size:15px!important}

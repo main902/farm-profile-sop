@@ -1,0 +1,18 @@
+.chain{grid-template-columns:1fr!important;gap:10px!important}
+.cut{min-height:0!important}
+.cut .top b{font-size:17px!important}
+.cut.split .p2{position:static!important;width:auto!important;text-align:center!important}
+.cut .top b{font-size:15px!important}
+.cut small{font-size:12.5px!important}
+.cut svg{max-width:100%;height:auto}
+.pc{font-size:15px!important;padding:4px 10px!important}
+.fs span{font-size:15px!important;padding:4px!important}
+.fh{font-size:17px!important}
+.vnote{font-size:15px!important}
+.leg{font-size:15px!important}
+.pre{flex-direction:column!important;align-items:stretch!important;gap:2px!important}
+.pre .lab{text-align:center}
+.pre .pc{justify-content:center}
+.pre .ar{font-size:0!important;text-align:center;line-height:1}
+.pre .ar::after{content:"▼";font-size:16px;color:#5d6a64}
+.chain .cut.split{padding-right:0!important}.cut.split .ea{padding-right:40px!important}.bub{font-size:14px!important}

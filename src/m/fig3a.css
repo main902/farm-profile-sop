@@ -1,0 +1,16 @@
+.grid{grid-template-columns:1fr!important}
+.th{font-size:21px!important}
+.tg{grid-template-columns:1fr!important}
+.tc b{font-size:19px!important}.tc b br{display:none}
+.tc small{font-size:14px!important}
+.tk{font-size:15px!important}
+.between{font-size:15px!important}
+.def b{font-size:19px!important}.def span{font-size:14px!important}
+.cd{grid-template-columns:48px minmax(0,1fr)!important;padding:8px 10px!important}
+.cd svg{width:44px;height:auto}
+.cd .t{font-size:18px!important}.cd .t i{width:26px!important;height:26px!important;line-height:26px!important;font-size:15px!important}
+.cd .e{font-size:14px!important}
+.two{grid-template-columns:1fr!important}
+.rl h2{font-size:18px!important}.rl h2 br{display:none}
+.rl small{font-size:14px!important}
+.rl svg{max-width:240px;display:block;margin:0 auto}

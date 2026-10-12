@@ -1,0 +1,64 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.def{background:var(--zone-bg);border:2px solid var(--zone);border-radius:16px;padding:14px 18px;margin-bottom:16px}
+.def b{font-size:28px;color:#5c4900;font-weight:900;line-height:1.35;display:block}
+.def span{font-size:20px;color:#5c4900}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.cd{display:grid;grid-template-columns:78px 1fr;gap:10px;border:2px solid var(--line);border-radius:14px;padding:10px 14px;align-items:center}
+.cd .t{font-size:25px;font-weight:900}.cd .t i{font-style:normal;display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;background:var(--zone);color:#fff;font-size:20px;margin-right:8px;vertical-align:2px}
+.cd .e{font-size:19px;color:var(--muted);line-height:1.45;margin-top:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rl{border-radius:16px;border:2px solid;padding:12px 14px}
+.rl.n{border-color:var(--warn);background:#fffafa}.rl.y{border-color:var(--k);background:#fafcfa}
+.rl h2{margin:0 0 6px;font-size:24px;font-weight:900;line-height:1.3}
+.rl.n h2{color:var(--warn)}.rl.y h2{color:var(--k)}
+.rl small{display:block;font-size:19px;color:var(--muted);margin-top:4px;text-align:center}
+.reg{margin-top:16px;background:var(--c-bg);border-radius:14px;padding:12px 16px;font-size:21px;font-weight:700}
+.reg span{display:inline-block;background:#fff;border:2px solid var(--c);border-radius:999px;padding:0 14px;margin:2px 4px 2px 0}
+.target{background:var(--ink);border-radius:18px;padding:14px 16px 16px;margin-bottom:10px}
+.th{color:#fff;font-size:30px;font-weight:900;margin:0 4px 10px}
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tc{background:#fff;border-radius:14px;padding:12px 16px}
+.tk{display:inline-block;color:#fff;font-weight:900;font-size:21px;border-radius:999px;padding:0 16px;margin-bottom:4px}
+.tc b{display:block;font-size:26px;line-height:1.35;font-weight:900}
+.tc small{display:block;font-size:19px;color:var(--muted);margin-top:4px}
+.between{text-align:center;font-size:21px;font-weight:700;color:var(--muted);margin:2px 0 12px}
+</style></head><body><div class="w">
+<h1>Zoneとは<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
+<div class="sub">Zoneは「建物」ではなく、飼養条件が同じ牛のいる「場所」です</div>
+<div class="target"><div class="th">★ Zoneを登録する場所</div>
+ <div class="tg">
+  <div class="tc"><span class="tk" style="background:#2f6688">母牛</span><b>分娩60日前からの母牛が<br>いる場所</b><small>分娩房、分娩前の牛舎など</small></div>
+  <div class="tc"><span class="tk" style="background:#8a6d00">子牛</span><b>135日齢までの子牛が<br>いる場所</b><small>ハッチ、ロボット、群飼いなど</small></div>
+ </div></div>
+<div class="between">この2つの場所を、次のルールでZoneに分けて登録します　▼</div>
+<div class="def"><b>次の4つが、すべて同じ場所 ＝ 1つのZone</b><span>1つでも違えば、別のZoneにします</span></div>
+<div class="grid">
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><g fill="#8a6d00"><rect x="6" y="38" width="14" height="20" rx="2" opacity=".45"/><rect x="26" y="26" width="14" height="32" rx="2" opacity=".7"/><rect x="46" y="10" width="14" height="48" rx="2"/></g></svg>
+  <div><div class="t"><i>1</i>牛の段階（ステージ）</div><div class="e">母牛（分娩60日前〜）<br>哺乳（離乳前）　／　離乳後</div></div></div>
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><rect x="4" y="30" width="22" height="26" rx="3" fill="#fff" stroke="#8a6d00" stroke-width="3"/><circle cx="15" cy="43" r="5" fill="#8a6d00"/><rect x="32" y="20" width="36" height="36" rx="3" fill="#fff" stroke="#8a6d00" stroke-width="3"/><g fill="#8a6d00"><circle cx="42" cy="32" r="4"/><circle cx="58" cy="32" r="4"/><circle cx="42" cy="46" r="4"/><circle cx="58" cy="46" r="4"/></g></svg>
+  <div><div class="t"><i>2</i>収容方法</div><div class="e">個別（ハッチ・個別ペン）<br>群飼い　／　自動哺乳（ロボット）</div></div></div>
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><path d="M6 56V28L35 8l29 20v28z" fill="#fff" stroke="#8a6d00" stroke-width="3" stroke-linejoin="round"/><path d="M18 42q6-7 12 0t12 0t12 0" fill="none" stroke="#8a6d00" stroke-width="3"/></svg>
+  <div><div class="t"><i>3</i>空間・換気</div><div class="e">屋外／屋内<br>壁やカーテンで仕切られた区画<br>換気の方法</div></div></div>
+ <div class="cd"><svg width="70" height="64" viewBox="0 0 70 64"><path d="M14 20h42l-6 38H20z" fill="#fff" stroke="#8a6d00" stroke-width="3" stroke-linejoin="round"/><path d="M20 20q15-18 30 0" fill="none" stroke="#8a6d00" stroke-width="3"/><path d="M24 34h22" stroke="#8a6d00" stroke-width="3" opacity=".5"/></svg>
+  <div><div class="t"><i>4</i>飼料・哺乳</div><div class="e">哺乳の方法・ミルクの種類<br>スターター、離乳後の飼料</div></div></div>
+</div>
+
+<div class="two">
+ <div class="rl n"><h2>1つでも違う<br>→ 別のZone（同じ建物でも）</h2>
+  <svg viewBox="0 0 440 124" width="100%"><rect x="60" y="14" width="320" height="82" rx="8" fill="#fff" stroke="#5d6a64" stroke-width="3"/>
+   <rect x="64" y="18" width="150" height="74" rx="5" fill="#fbf3d2"/><rect x="226" y="18" width="150" height="74" rx="5" fill="#e8f0e7"/>
+   <line x1="220" y1="10" x2="220" y2="100" stroke="#c2362b" stroke-width="3" stroke-dasharray="7 5"/>
+   <text x="139" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#5c4900">ハッチ</text><text x="139" y="78" text-anchor="middle" font-size="19" fill="#5c4900">Zone A</text>
+   <text x="301" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#3f6b45">ロボット</text><text x="301" y="78" text-anchor="middle" font-size="19" fill="#3f6b45">Zone B</text>
+   <text x="220" y="118" text-anchor="middle" font-size="17" fill="#5d6a64">1つの建物</text></svg>
+  <small>同じ建物内にハッチとロボット → 2 Zone</small></div>
+ <div class="rl y"><h2>4つとも同じ<br>→ 1つのZone（建物が違っても）</h2>
+  <svg viewBox="0 0 440 124" width="100%"><rect x="20" y="14" width="170" height="70" rx="8" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/><rect x="250" y="14" width="170" height="70" rx="8" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/>
+   <text x="105" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2f6688">建物5</text><text x="105" y="70" text-anchor="middle" font-size="18" fill="#2f6688">離乳後・群飼い</text>
+   <text x="335" y="44" text-anchor="middle" font-size="20" font-weight="700" fill="#2f6688">建物6</text><text x="335" y="70" text-anchor="middle" font-size="18" fill="#2f6688">離乳後・群飼い</text>
+   <path d="M105 88v9h230V88" fill="none" stroke="#3f6b45" stroke-width="3"/><text x="220" y="122" text-anchor="middle" font-size="20" font-weight="700" fill="#3f6b45">Zone 1つ</text></svg>
+  <small>大型農場は、代表1牛舎を選べばOK</small></div>
+</div>
+
+
+</div></body></html>

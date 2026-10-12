@@ -1,0 +1,49 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-bottom:22px}
+.fs{min-height:112px;border-radius:14px;border:2px solid var(--c);background:var(--c-bg);padding:10px 12px;position:relative;font-size:20px;font-weight:700;line-height:1.35}
+.fs .n{position:absolute;left:-12px;top:-14px;width:32px;height:32px;border-radius:50%;background:var(--c);color:#fff;text-align:center;line-height:32px;font-size:18px}
+.fs small{display:block;font-weight:400;font-size:17px;color:var(--muted);margin-top:2px}
+.fs:not(:last-child)::after{content:"▶";position:absolute;right:-24px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:20px}
+.cols{display:grid;grid-template-columns:1.05fr 1fr;gap:20px}
+.panel{border:2px solid var(--line);border-radius:16px;padding:14px 16px}
+.panel h2{margin:0 0 8px;font-size:26px;font-weight:900}
+.chk{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 10px}
+.chk span{background:var(--zone-bg);border:2px solid var(--zone);color:#5c4900;border-radius:999px;padding:2px 14px;font-weight:700;font-size:20px}
+.rule{display:grid;grid-template-columns:44px 1fr;gap:10px;padding:9px 0;border-top:1px dashed var(--line);align-items:start}
+.rule .z{width:44px;height:44px;border-radius:10px;color:#fff;font-weight:900;font-size:18px;text-align:center;line-height:44px}
+.rule b{font-size:21px;display:block}.rule small{font-size:18px;color:var(--muted)}
+</style></head><body><div class="w">
+<h1>Zoneの決め方</h1>
+<div class="sub">Zone ＝ 同じ飼養環境の「場所」。動画や測定はZone単位で行います</div>
+<div class="flow">
+ <div class="fs"><div class="n">1</div>センターが地図から<br>牛舎を選ぶ</div>
+ <div class="fs"><div class="n">2</div>獣医師が<br>番号を修正</div>
+ <div class="fs"><div class="n">3</div>獣医師が<br>Zoneを登録<small>採材牛・分娩牛の場所</small></div>
+ <div class="fs"><div class="n">4</div>Zone名カードが<br>届く<small>キットに同封</small></div>
+</div>
+<div class="cols">
+ <div class="panel">
+  <h2>例：こんな農場なら</h2>
+  <svg viewBox="0 0 440 330" width="100%">
+   <rect width="440" height="330" rx="12" fill="#f3f6f4"/>
+   <!-- barns -->
+   <rect x="20" y="24" width="120" height="70" rx="6" fill="#fff" stroke="#9aa8a1" stroke-width="2"/><text x="80" y="52" text-anchor="middle" font-size="17" fill="#5d6a64">建物1</text><text x="80" y="76" text-anchor="middle" font-size="15" fill="#5d6a64">搾乳牛</text>
+   <rect x="170" y="24" width="120" height="70" rx="6" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/><text x="230" y="52" text-anchor="middle" font-size="17" fill="#2f6688" font-weight="700">建物2</text><text x="230" y="76" text-anchor="middle" font-size="15" fill="#2f6688">分娩房</text>
+   <rect x="320" y="24" width="100" height="70" rx="6" fill="#e6eef3" stroke="#2f6688" stroke-width="3"/><text x="370" y="52" text-anchor="middle" font-size="17" fill="#2f6688" font-weight="700">建物3</text><text x="370" y="76" text-anchor="middle" font-size="15" fill="#2f6688">乾乳後期</text>
+   <rect x="20" y="130" width="190" height="64" rx="6" fill="#fbf3d2" stroke="#8a6d00" stroke-width="3"/><text x="115" y="158" text-anchor="middle" font-size="17" fill="#5c4900" font-weight="700">建物4　ハッチ</text><text x="115" y="180" text-anchor="middle" font-size="15" fill="#5c4900">0〜60日齢</text>
+   <rect x="240" y="130" width="180" height="64" rx="6" fill="#e8f0e7" stroke="#3f6b45" stroke-width="3"/><text x="330" y="158" text-anchor="middle" font-size="17" fill="#3f6b45" font-weight="700">建物5　ロボット</text><text x="330" y="180" text-anchor="middle" font-size="15" fill="#3f6b45">61〜135日齢</text>
+   <rect x="20" y="226" width="190" height="64" rx="6" fill="#fff" stroke="#9aa8a1" stroke-width="2"/><text x="115" y="254" text-anchor="middle" font-size="17" fill="#5d6a64">建物6</text><text x="115" y="276" text-anchor="middle" font-size="15" fill="#5d6a64">育成牛（136日齢〜）</text>
+   <text x="330" y="262" text-anchor="middle" font-size="16" fill="#5d6a64">灰色 ＝ Zoneにしない</text>
+  </svg>
+  <div style="font-size:19px;color:var(--muted);margin-top:4px">この例では、建物2・3・4・5がZone（計4 Zone）</div>
+ </div>
+ <div class="panel">
+  <h2>Zoneの条件</h2>
+  <div style="font-size:20px">次が<b>共通</b>の場所を、1つのZoneにする</div>
+  <div class="chk"><span>牛舎</span><span>環境</span><span>飼料</span><span>換気</span></div>
+  <div class="rule"><div class="z" style="background:#2f6688">分娩</div><div><b>分娩する場所　すべて</b><small>分娩房・乾乳後期など、<br>別の場所ならそれぞれ1 Zone</small></div></div>
+  <div class="rule"><div class="z" style="background:#8a6d00">子牛</div><div><b>135日齢までの牛がいる場所　すべて</b><small>環境が違えば別Zone<br>（例：ハッチ1、ロボット1）</small></div></div>
+  <div class="rule"><div class="z" style="background:#4a4f4c">大型</div><div><b>同じ飼養形態なら代表1牛舎＝1 Zone</b><small>牛舎が違っても、飼養形態が<br>同じなら1つにまとめる</small></div></div>
+ </div>
+</div>
+</div></body></html>

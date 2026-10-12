@@ -1,0 +1,16 @@
+.cards{grid-template-columns:1fr!important;padding:8px 0!important}
+.tl{font-size:14px!important;gap:6px!important;flex-wrap:wrap}
+.tl .big{font-size:16px!important}
+.tl svg{width:26px}
+.ch{font-size:22px!important}
+.xl{font-size:15px!important}
+.xl br{display:none}
+.bh{font-size:16px!important}
+.flow{grid-template-columns:minmax(0,1fr) 14px minmax(0,1fr) 14px minmax(0,1fr)!important}
+.flow > svg{width:14px}
+.fs .k{font-size:16px!important}
+.fs small{font-size:11px!important}
+.fs small br{display:none}
+.addon{font-size:17px!important}
+.tl{flex-direction:column!important}
+.tl svg{transform:rotate(90deg);height:20px}

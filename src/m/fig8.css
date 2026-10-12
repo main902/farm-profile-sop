@@ -1,0 +1,12 @@
+.tl{flex-direction:column!important;flex-wrap:nowrap!important;gap:4px}
+.rec,.stop{width:auto;flex-direction:row;gap:6px;justify-content:flex-start}
+.rec i,.stop i{margin:0}
+.sg{flex:none!important;width:100%}
+.sg br{display:none}
+.ar{width:auto;transform:rotate(90deg);height:18px}
+.st{grid-template-columns:56px 1fr!important}
+.st b{font-size:18px!important}.st small{font-size:13.5px!important}
+.st .n{width:38px!important;height:38px!important;line-height:38px!important;font-size:20px!important}
+.st{grid-template-columns:44px minmax(0,1fr)!important;padding:8px 10px!important}
+.grp .gh{font-size:19px!important}.grp .gh small{font-size:13px!important}
+.ex .et{font-size:16px!important}

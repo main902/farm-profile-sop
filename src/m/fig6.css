@@ -1,0 +1,10 @@
+.tree{margin-left:14px!important}
+.r{grid-template-columns:34px minmax(0,1fr)!important;margin-left:16px!important;padding:8px 10px!important;gap:8px!important}
+.r::before{left:-19px!important;width:17px!important}
+.r .no{font-size:24px!important}
+.r .nm{font-size:19px!important}
+.r .ds{font-size:14px!important}
+.r .tg{grid-column:2;justify-self:start;font-size:13px!important;padding:1px 10px!important}
+.sub3{flex-wrap:wrap}
+.sub3 span{font-size:14px!important;padding:1px 8px!important}
+.root{font-size:22px!important;padding:8px 16px!important}

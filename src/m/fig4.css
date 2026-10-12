@@ -1,0 +1,20 @@
+.two{grid-template-columns:1fr!important}
+.gi[style*="repeat(3"]{grid-template-columns:repeat(3,1fr)!important}
+h2{font-size:17px!important;line-height:1.4}
+.tt th{font-size:11px!important;padding:2px 2px!important}
+.tt td{font-size:18px!important;padding:6px 4px!important}
+.tt td:first-child{font-size:15px!important}
+.tt td:nth-child(2){font-size:12.5px!important;line-height:1.35}
+.tt td small{display:none!important}
+.tt td.nb{font-size:12px!important}
+.sw{width:12px!important;height:20px!important;margin-right:4px!important}
+.card{width:20px!important;height:16px!important;font-size:10px!important;line-height:12px!important}
+.it b{font-size:15px!important}.it small{font-size:12px!important}
+.it svg{width:48px;height:auto}
+.rules{font-size:14px!important}
+.cont b{font-size:17px!important}.cont small{font-size:13px!important}
+.cont{grid-template-columns:60px 1fr!important}
+h2 svg{display:none}
+h2{display:block!important}
+h2 .tot{display:block;font-size:14px!important;font-weight:700}
+.it small br{display:none}

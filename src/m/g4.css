@@ -1,0 +1,9 @@
+.steps{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;padding:6px 0!important}
+.ar{display:none!important}
+.ic{height:58px!important}.ic svg{width:52px!important;height:52px!important}
+.t{font-size:17px!important}.s{font-size:13px!important}
+.opt{font-size:13px!important}
+.opt br{display:none}
+.bot{margin:6px 0 4px!important}
+.t br{display:none}
+.t{font-size:16px!important;word-break:keep-all;overflow-wrap:anywhere}

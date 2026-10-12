@@ -1,0 +1,67 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.hd{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.blk{border-radius:18px;border:2px solid;margin-top:16px;overflow:hidden}
+.blk .bh{color:#fff;padding:10px 18px;font-size:27px;font-weight:900}
+.blk .bb{padding:14px 16px 16px}
+.k{border-color:var(--k)}.k .bh{background:var(--k)}
+.a{border-color:var(--a)}.a .bh{background:var(--a)}
+.pre{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.pc{background:var(--c-bg);border:2px solid var(--c);border-radius:12px;padding:6px 14px;font-size:21px;font-weight:700}
+.pc.go{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ar{font-size:22px;color:var(--muted)}
+.chain{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.cut{position:relative;border-radius:12px;padding:8px 10px 10px;border:2px solid;min-height:104px}
+.cut.v{border-color:var(--a);background:var(--a-bg)}.cut.s{border-color:var(--k);background:var(--k-bg)}
+.cut .t{display:inline-block;color:#fff;font-size:17px;font-weight:900;border-radius:999px;padding:0 10px;margin-bottom:2px}
+.cut.v .t{background:var(--a)}.cut.s .t{background:var(--k)}
+.cut b{display:block;font-size:21px;line-height:1.3}
+.cut small{display:block;font-size:17px;color:var(--muted);line-height:1.3}
+.cut:not(:nth-child(4n)):not(:last-child)::after{content:"▶";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:17px}
+.cut.split{background:linear-gradient(135deg,#e8f0e7 0 50%,#e6eef3 50% 100%);border-color:#7f8f86;padding:0}
+.cut.split .p1{position:absolute;left:10px;top:8px}
+.cut.split .p2{position:absolute;right:10px;bottom:8px;text-align:right;width:62%}
+.cut.split .p2 b{font-size:18px}
+.up{margin-top:12px;font-size:21px;font-weight:700;background:var(--c-bg);border-radius:10px;padding:8px 14px}
+.vnote{margin-top:12px;border:2px solid var(--a);background:var(--a-bg);border-radius:12px;padding:8px 14px;font-size:20px}
+.vnote .t{display:inline-block;color:#fff;background:var(--a);font-size:17px;font-weight:900;border-radius:999px;padding:0 10px;margin-right:8px}
+.leg{display:flex;gap:16px;font-size:19px;margin-top:6px;color:var(--muted)}
+.leg span{display:inline-flex;gap:6px;align-items:center}
+.leg i{display:inline-block;color:#fff;font-style:normal;font-weight:900;border-radius:999px;padding:0 10px;font-size:16px}
+.lt{font-size:18px;font-weight:400;color:var(--muted);margin-left:12px}.fold{margin-top:16px;border:2px solid var(--ink);border-radius:16px;padding:12px 16px}
+.fh{font-size:23px;font-weight:900}
+.fs{display:flex;gap:10px;margin:8px 0}
+.fs span{flex:1;text-align:center;border:2px solid var(--ink);border-radius:10px;padding:6px;font-size:22px;font-weight:900;background:#fff}
+.fs span.m{background:var(--ink);color:#fff}
+.fn{font-size:18px;color:var(--muted)}
+.wnote{margin-top:10px;display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center;border:2px dashed #5d6a64;border-radius:12px;padding:8px 14px;background:#fafbfa}.wnote b{font-size:21px;display:block}.wnote small{font-size:18px;color:var(--muted)}.wc{width:46px;height:36px;border:3px solid #5d6a64;border-radius:5px;background:#fff;font-weight:900;font-size:20px;text-align:center;line-height:30px;color:#5d6a64}.cut{min-height:150px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:8px 8px 10px}
+.cut .top{align-self:flex-start;display:flex;gap:6px;align-items:center}
+.cut .top b{font-size:21px}
+.cut svg{margin:6px 0 2px}
+.cut small{font-size:15px!important}
+.cut.split{background:linear-gradient(135deg,#e8f0e7 0 55%,#e6eef3 55% 100%);border-color:#7f8f86;padding:8px 8px 10px}
+.t.sm{font-size:14px!important;padding:0 7px!important;margin-right:4px}
+.pc{display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:19px!important}
+
+.cut.split{display:grid!important;grid-template-rows:auto auto;gap:0;padding:0!important;overflow:hidden}
+.cut.split .ea{padding:8px 10px 6px;background:#e8f0e7}
+.cut.split .ea svg{display:block;margin:2px auto 0}
+.cut.split .ea small{display:block;text-align:center}
+.cut.split .eb{padding:6px 10px 10px;background:#e6eef3;border-top:2px dashed #7f9fb6;text-align:right}
+.cut.split .eb .if{font-size:14px;font-weight:900;color:#2f6688;margin-bottom:2px}
+.cut.split .eb .top{justify-content:flex-end}
+.cut.split .eb .top b{font-size:16px!important;color:#2f6688}
+.bub{display:inline-block;margin-top:4px;background:#fff;border:2px solid #2f6688;border-radius:8px;padding:1px 5px;font-size:12px;white-space:nowrap;letter-spacing:-.02em;font-weight:900;color:#2f6688}
+</style></head><body><div class="w">
+<div class="hd"><div><h1>個体の撮り方（牛1頭ずつ）<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1><div class="sub" style="margin-bottom:0">スマホを<b>縦</b>にして、1頭1本の動画（30秒前後）</div></div>
+<svg width="92" height="128" viewBox="0 0 92 128"><rect x="22" y="6" width="48" height="96" rx="9" fill="#fff" stroke="#1c2622" stroke-width="4"/><circle cx="46" cy="92" r="4" fill="#1c2622"/><rect x="30" y="20" width="32" height="60" rx="3" fill="#e6eef3"/><text x="46" y="124" text-anchor="middle" font-size="16" font-weight="900" fill="#1c2622">縦</text></svg></div>
+<div class="leg"><span><i style="background:#3f6b45">撮</i>カメラに写す</span><span><i style="background:#2f6688">声</i>撮りながら声に出す</span></div>
+<div class="blk k"><div class="bh">測った牛すべて</div><div class="bb">
+ <div class="pre"><div class="pc"><svg width="30" height="34" viewBox="0 0 30 34"><rect x="8" y="2" width="14" height="5" rx="1" fill="#2e8b57"/><path d="M7 7h16v18q0 7-8 7t-8-7z" fill="#fff" stroke="#2e8b57" stroke-width="2"/></svg>NPS採材</div><span class="ar">▶</span><div class="pc">胸囲を測る</div><span class="ar">▶</span><div class="pc go">動画スタート</div></div>
+ <div class="pre"><div class="pc" style="border-color:#8a6d00;background:#fbf3d2"><svg width="44" height="30" viewBox="0 0 44 30"><rect x="3" y="3" width="38" height="24" rx="3" fill="#fff" stroke="#5d6a64" stroke-width="2.5"/><text x="22" y="20" text-anchor="middle" font-size="12" font-weight="900" fill="#5d6a64">W03</text></svg>0〜30日齢・胸囲だけ</div><span class="ar">▶</span><div class="pc">胸囲を測る</div><span class="ar">▶</span><div class="pc go">動画スタート</div><span class="ar">▶</span><div class="pc" style="border-color:#c2362b;color:#c2362b">白カード破棄</div></div>
+ <div class="chain"><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b style="font-size:18px;line-height:1.25">採取後チューブ<br>or 白カード</b></div><svg width="120" height="62" viewBox="0 0 120 62"><rect x="8" y="4" width="22" height="8" rx="2" fill="#2e8b57"/><path d="M6 12h26v34q0 12-13 12t-13-12z" fill="#fff" stroke="#2e8b57" stroke-width="2.5"/><rect x="9" y="22" width="20" height="12" fill="#e6eef3"/><text x="19" y="32" text-anchor="middle" font-size="10" font-weight="900" fill="#1c2622">G12</text><text x="53" y="36" text-anchor="middle" font-size="12" font-weight="700" fill="#5d6a64">または</text><rect x="76" y="18" width="40" height="26" rx="3" fill="#fff" stroke="#5d6a64" stroke-width="2.5"/><text x="96" y="36" text-anchor="middle" font-size="13" font-weight="900" fill="#5d6a64">W03</text></svg><small>番号と色を写す</small></div><div class="cut v"><div class="top"><span class="t" style="background:#2f6688">声</span><b>胸囲</b></div><svg width="190" height="66" viewBox="0 0 190 66"><path d="M10 26h44q8 0 10 8v6q-2 6-10 6H14q-6 0-6-8z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M24 24v24" stroke="#d9822b" stroke-width="5"/><path d="M14 46v14M24 46v14M48 46v14M56 46v14" stroke="#1c2622" stroke-width="2.5"/><path d="M76 6h96q4 0 4 4v14q0 4-4 4H98l-8 7v-7h-6q-4 0-4-4V10q0-4 4-4z" fill="#e6eef3" stroke="#2f6688" stroke-width="2"/><text x="124.0" y="22" text-anchor="middle" font-size="13" font-weight="900" fill="#2f6688">胸囲：82cm</text></svg><small>測った数字</small></div><div class="cut v"><div class="top"><span class="t" style="background:#2f6688">声</span><b>Zone名</b></div><svg width="190" height="66" viewBox="0 0 190 66"><rect x="6" y="22" width="40" height="30" rx="4" fill="#fbf3d2" stroke="#8a6d00" stroke-width="2.5"/><text x="26" y="43" text-anchor="middle" font-size="15" font-weight="900" fill="#5c4900">Z3</text><path d="M56 6h124q4 0 4 4v14q0 4-4 4H78l-8 7v-7h-6q-4 0-4-4V10q0-4 4-4z" fill="#e6eef3" stroke="#2f6688" stroke-width="2"/><text x="118.0" y="22" text-anchor="middle" font-size="13" font-weight="900" fill="#2f6688">ゾーン：Z3ハッチ</text></svg><small>いる場所の名前</small></div><div class="cut split"><div class="ea"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>耳標</b></div><svg width="70" height="44" viewBox="0 0 50 44"><path d="M4 30q12-28 38-24q-5 19-26 30z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><rect x="21" y="12" width="16" height="11" rx="2" fill="#f2c94c" stroke="#8a6d00" stroke-width="2"/></svg><small>耳標の番号を写す</small></div><div class="eb"><div class="if">耳標がなければ</div><div class="top"><span class="t" style="background:#2f6688">声</span><b>個体名・生年月日</b></div><span class="bub">「はなこの子：3月13日生まれ」</span></div></div><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>顔</b></div><svg width="110" height="62" viewBox="0 0 110 62"><path d="M36 8h38q6 0 6 8l-4 30q-2 12-21 12t-21-12l-4-30q0-8 6-8z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M34 12l-14-4 10 12M76 12l14-4-10 12" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><circle cx="45" cy="24" r="2.5" fill="#1c2622"/><circle cx="65" cy="24" r="2.5" fill="#1c2622"/><ellipse cx="55" cy="47" rx="12" ry="7" fill="#f3e0d3" stroke="#1c2622" stroke-width="2"/><circle cx="50" cy="47" r="1.8" fill="#1c2622"/><circle cx="60" cy="47" r="1.8" fill="#1c2622"/><path d="M50 50q-1 6 1 9" stroke="#7fb2d4" stroke-width="2.5" fill="none"/></svg><small>鼻汁・眼脂・耳の傾き</small></div><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>横から全体</b></div><svg width="110" height="62" viewBox="0 0 110 62"><path d="M18 18h52q10 0 12 10v8q-2 8-12 8H24q-8 0-8-10z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M78 22l10-12h10q6 2 6 9l-4 9q-4 4-10 2l-8-2z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><circle cx="96" cy="16" r="1.8" fill="#1c2622"/><path d="M90 11l-2-7 6 5" fill="#fff" stroke="#1c2622" stroke-width="2"/><path d="M24 44v14M34 44v14M64 44v14M74 44v14" stroke="#1c2622" stroke-width="3" stroke-linecap="round"/><path d="M16 22q-8 4-6 16" fill="none" stroke="#1c2622" stroke-width="2"/></svg><small>体格</small></div><div class="cut s"><div class="top"><span class="t" style="background:#3f6b45">撮</span><b>後ろから</b></div><svg width="110" height="62" viewBox="0 0 110 62"><path d="M30 8q25-6 50 0q8 16 4 30q-2 8-29 8t-29-8q-4-14 4-30z" fill="#fff" stroke="#1c2622" stroke-width="2.5"/><path d="M55 10v30" stroke="#1c2622" stroke-width="2.5"/><path d="M48 32q7 4 14 0" fill="#c9a96e" stroke="#8a6d00" stroke-width="2"/><path d="M36 44v14M46 46v12M64 46v12M74 44v14" stroke="#1c2622" stroke-width="2.5" stroke-linecap="round"/></svg><small>下痢便スコア</small></div></div>
+ <div class="vnote"><span class="t">声</span>発症している牛のときは、症状など詳しい内容も声で入れる</div>
+</div></div>
+<div class="fold"><div class="fh">アップロード先：「2. 個体撮影」の、牛の日齢のフォルダ</div>
+ <div class="fs"><span>0〜30日齢</span><span class="m">31〜90日齢</span><span>91〜135日齢</span></div>
+ <div class="fn">赤の牛・白カードの牛も日齢で入れる。アップロードは後日まとめてOK（Wi-Fiなど）</div></div>
+</div></body></html>

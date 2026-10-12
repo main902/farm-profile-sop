@@ -1,0 +1,8 @@
+:root{--ink:#1c2622;--muted:#5d6a64;--line:#c9d3cd;--bg:#ffffff;--soft:#f3f6f4;
+--a:#2f6688;--a-bg:#e6eef3;--k:#3f6b45;--k-bg:#e8f0e7;--c:#4a4f4c;--c-bg:#eef1ee;--warn:#c2362b;--warn-bg:#fbe7e4;--zone:#8a6d00;--zone-bg:#fbf3d2}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
+.w{width:1000px;padding:28px 28px 32px}
+h1{font-size:36px;margin:0 0 4px;font-weight:900}
+.sub{color:var(--muted);font-size:20px;margin-bottom:18px}
+.tag{display:inline-block;color:#fff;border-radius:999px;padding:0 14px;font-weight:700;font-size:19px;line-height:1.7}
