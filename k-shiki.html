@@ -384,7 +384,8 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xfig7 .st i{font-style:normal;flex:none;width:32px;height:32px;border-radius:50%;background:var(--c);color:#fff;text-align:center;line-height:32px;font-weight:900;font-size:18px;margin-top:2px}
 #xfig7 .dn{text-align:center;color:var(--muted);font-size:26px;line-height:1;margin:12px 0}
 #xfig7 .up{border:2px solid var(--ink);border-radius:14px;padding:12px 16px;font-size:24px;font-weight:900}
-#xfig7 .up small{display:block;font-size:19px;font-weight:400;color:var(--muted)}#xfig11 *{box-sizing:border-box}
+#xfig7 .up small{display:block;font-size:19px;font-weight:400;color:var(--muted)}#xo_sheetlink .w{width:1000px;padding:4px 0 6px;text-align:center}
+#xo_sheetlink a.dl{display:inline-block;background:#8a6d00;color:#fff;text-decoration:none;font-weight:900;border-radius:999px;padding:8px 22px;font-size:18px;box-shadow:0 3px 0 #5c4900}#xfig11 *{box-sizing:border-box}
 #xfig11{margin:0;background:#fff;color:var(--ink);font-family:"Noto Sans CJK JP","IPAPGothic",sans-serif;font-size:22px;line-height:1.5}
 #xfig11 .w{width:1000px;padding:28px 28px 32px}
 #xfig11 h1{font-size:36px;margin:0 0 4px;font-weight:900}
@@ -783,7 +784,17 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 #xfig7 .w > div:first-child > svg{display:none}
 #xfig7 .way .wb{font-size:17px!important}
 #xfig7 .up{font-size:19px!important}
-#xfig7 .up small{font-size:15px!important}#xfig11 .w{width:100%!important;padding:18px 16px 22px!important}
+#xfig7 .up small{font-size:15px!important}#xo_sheetlink .w{width:100%!important;padding:18px 16px 22px!important}
+#xo_sheetlink *{max-width:100%}
+#xo_sheetlink svg{height:auto}
+#xo_sheetlink [style*="grid-template-columns"],#xo_sheetlink .chain,#xo_sheetlink .grid,#xo_sheetlink .cols,#xo_sheetlink .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+#xo_sheetlink [style*="display:flex"],#xo_sheetlink .pre,#xo_sheetlink .hd,#xo_sheetlink .fs,#xo_sheetlink .leg{flex-wrap:wrap!important}
+#xo_sheetlink h1{font-size:30px!important;line-height:1.25}
+#xo_sheetlink .chain{counter-reset:c}
+#xo_sheetlink .chain .cut{counter-increment:c}
+#xo_sheetlink .chain .cut::after{content:counter(c)!important;display:block!important;position:absolute;right:8px!important;top:6px!important;left:auto!important;transform:none!important;width:26px;height:26px;border-radius:50%;background:#1c2622;color:#fff!important;font-size:16px!important;font-weight:900;line-height:26px;text-align:center}
+#xo_sheetlink .chain .cut{padding-right:32px!important}
+#xo_sheetlink a.dl{font-size:16px!important;padding:8px 16px!important}#xfig11 .w{width:100%!important;padding:18px 16px 22px!important}
 #xfig11 *{max-width:100%}
 #xfig11 svg{height:auto}
 #xfig11 [style*="grid-template-columns"],#xfig11 .chain,#xfig11 .grid,#xfig11 .cols,#xfig11 .row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -1166,7 +1177,7 @@ body{margin:0;background:var(--page);color:var(--ink);font-family:"Noto Sans JP"
 </div>
 <div class="dn">▼　どちらでもOK　▼</div>
 <div class="up">共有クラウドの「4. 聞き取りシート」フォルダへ<small>撮影後すぐでなくてOK。Wi-Fiなど通信が安定した場所で、後日まとめてアップロード</small></div>
-</div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><div class="pg-step" id="step5"><span class="pg-no">5</span><div><small>STEP 5</small><b>終わりにする（先生が判断）</b></div></div><section class="pg-sec" id="s-fig11"><span class="pg-tagst">STEP 5</span><h2>なぜ、この頭数なの？</h2><p class="pg-cap">目安の数が集まったら、または期限が来たら終わり。NPS（緑・橙）は目標15頭 → 目安8頭以上 → 最低5頭</p><div class="pg-fig" id="xfig11"><div class="w">
+</div></div><div class="pg-fig" id="xo_sheetlink"><div class="w"><a class="dl" href="docs/農場聞き取りシート_260626版.pdf" target="_blank" rel="noopener">📄 農場聞き取りシートを開く（PDF）</a></div></div><a class="pg-back" href="#s-fig2k">▲ 流れにもどる</a></section><div class="pg-step" id="step5"><span class="pg-no">5</span><div><small>STEP 5</small><b>終わりにする（先生が判断）</b></div></div><section class="pg-sec" id="s-fig11"><span class="pg-tagst">STEP 5</span><h2>なぜ、この頭数なの？</h2><p class="pg-cap">目安の数が集まったら、または期限が来たら終わり。NPS（緑・橙）は目標15頭 → 目安8頭以上 → 最低5頭</p><div class="pg-fig" id="xfig11"><div class="w">
 <h1>なぜ、この頭数なの？<span style="display:inline-block;vertical-align:8px;margin-left:12px;font-size:20px;font-weight:900;color:#fff;background:#3f6b45;border-radius:999px;padding:0 14px;line-height:1.7">K式</span></h1>
 <div class="sub" style="margin-bottom:10px">牛の時期によって、知りたいことが違うからです</div>
 <div class="bar">
