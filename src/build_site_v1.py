@@ -51,7 +51,7 @@ for n,(f,title,cap) in enumerate(figs,1):
     mob_css.append(scope(mc,fid))
     body=re.search(r'<body>(.*)</body>',s,flags=re.S).group(1)
     if f=='fig2k':
-        links={'1':('https://forms.gle/vr7b8SnN8KoWRgaZ8','申請フォームを開く','_blank'),'2':('#s3','Zoneの説明へ',''),'3':('#s5','キットの中身へ',''),'4':('#s6','採材と撮影へ',''),'5':('#s2','頭数の考え方へ',''),'6':('#s11','アップロードと発送へ','')}
+        links={'1':('https://docs.google.com/forms/d/e/1FAIpQLSdV2-E2YteqzdCNkF99YDuRffNlWEpdek1MivJMex-iblThvQ/viewform?usp=dialog','申請フォームを開く','_blank'),'2':('#s3','Zoneの説明へ',''),'3':('#s5','キットの中身へ',''),'4':('#s6','採材と撮影へ',''),'5':('#s2','頭数の考え方へ',''),'6':('#s11','アップロードと発送へ','')}
         def rep(m):
             n=m.group(2)
             if n not in links: return m.group(0)

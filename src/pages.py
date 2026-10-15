@@ -209,7 +209,7 @@ COMMON_G = '''
 OSTEPS = [(1, '申請フォームで申請', '申請', '申請のしかたへ'),
           (2, '配置図を修正して、実施日をメールで連絡', '配置図・実施日', '配置図と連絡内容へ'),
           (3, '採材シートを作り、キットが届く', '準備', '採材牛の条件とキットへ'),
-          (4, '当日：採材・撮影', '当日', '当日の方法へ'),
+          (4, '実施日：採材・撮影', '実施日', '採材・撮影の方法へ'),
           (5, '冷凍便で発送して、アップロード', '発送', '発送とアップロードへ'),
           (6, '結果レポートが返ってくる', '結果', '結果の見かたへ')]
 odan_items = [sec('s-flow', '横断パッケージの流れ', '各ステップを押すと、その説明へ移動します', ['o_flow'], noback=True, toc=('流れ', '▶')),
@@ -221,9 +221,9 @@ for n, full, short, _ in OSTEPS:
         odan_items.append(sec('s-haichi', '配置図の修正（記入例）', '共有フォルダの「農場名　農場配置ファイル」で番号を確認し、表に牛舎の詳細を書きます', ['haichi']))
         odan_items.append(sec('s-mail', '実施日をメールで連絡', '農場と実施日を相談してから、センターへ', ['o_mail']))
     if n == 3:
-        odan_items.append(sec('s-cows', '採材シート：採材する牛の条件', '共有フォルダの「農場名　採材シート」に、当日採材する子牛を書き出します', ['o_cows']))
+        odan_items.append(sec('s-cows', '採材シート：採材する牛の条件', '共有フォルダの「農場名　採材シート」に、採材する子牛を書き出します', ['o_cows']))
         odan_items.append(sec('s-kit', 'キットの中身', '届いたら、物品チェックリストで確認', ['o_kit']))
-    if n == 4: odan_items.append(sec('s-day', '当日の採材と撮影', '先に動画を見てから。牛は採材サポートカード、農場は撮影サポートカードに従って', ['o_day']))
+    if n == 4: odan_items.append(sec('s-day', '実施日の採材と撮影', '複数日に分けてもOK。先に動画を見てから。牛は採材サポートカード、農場は撮影サポートカードに従って', ['o_day']))
     if n == 5: odan_items.append(sec('s-after', '発送とアップロード', 'サンプルは冷凍便。データは共有フォルダかフォームから', ['o_after']))
     if n == 6:
         odan_items.append(sec('s-g5', 'プロファイル結果', '１か月以内に返送。獣医師向けの「SeF生データ」と、農家さん向けの「SeFレポート」', ['g5', 'o_report']))
@@ -238,7 +238,7 @@ def tf_haichi_odan(b):
 
 
 ODAN = dict(file='odan.html', title='横断パッケージ 実施SOP｜農場プロファイル', theme=('#c8361c', '#fdeee9', '#f1b9a6'),
-            header='<span class="pg-tag">農場プロファイル</span><h1>横断パッケージ 実施SOP</h1><p>専用日に1日で、農場全体（15頭）をまとめて評価します。</p><div class="pg-lead"><a class="pg-cta" href="'+FORM+'" target="_blank" rel="noopener">📝 申請フォームを開く</a><a href="#s-flow">はじめから見る ▶</a><a href="https://youtu.be/no0Gnvm21ps?si=VB3FtnRJIXhM50e8" target="_blank" rel="noopener">▶ 実践ガイド動画</a><a href="#step6">📊 結果の見かた</a></div>',
+            header='<span class="pg-tag">農場プロファイル</span><h1>横断パッケージ 実施SOP</h1><p>採材する日を決めて、農場全体（15頭）をまとめて評価します。1日で終わらなければ、複数日に分けてもOK。</p><div class="pg-lead"><a class="pg-cta" href="'+FORM+'" target="_blank" rel="noopener">📝 申請フォームを開く</a><a href="#s-flow">はじめから見る ▶</a><a href="https://youtu.be/no0Gnvm21ps?si=VB3FtnRJIXhM50e8" target="_blank" rel="noopener">▶ 実践ガイド動画</a><a href="#step6">📊 結果の見かた</a></div>',
             items=odan_items, back=('#s-flow', '▲ 流れにもどる'),
             tf={'o_flow': flow_links(OSTEPS, 'xo_flow', ('<div class="side" style="margin:0 0 10px">いつでもOK：農場聞き取りシート</div>', '<div class="side" style="margin:0 0 10px">いつでもOK：<a href="#s-sheet">農場聞き取りシート ›</a></div>')),
                 'g4': tf_g4_form, 'g6': tf_g6, 'haichi': tf_haichi_odan},
@@ -250,7 +250,7 @@ INDEX = dict(file='index.html', title='農場プロファイル実施SOP｜BRDC 
              header='<span class="pg-tag">BRDC Frontiers</span><h1>📊 農場プロファイル実施SOP</h1><p>2つのルートから選べます。評価する「ものさし」は同じです。</p><div class="pg-lead"><a class="pg-cta" href="' + FORM + '" target="_blank" rel="noopener">📝 申請フォームを開く</a><a href="odan.html">🟥 横断パッケージ</a><a href="k-shiki.html">🟩 蓄積型（K式）</a></div>',
              items=[sec('s-apply', '申請はこちらから', '', ['o_apply'], noback=True, toc=('申請', '📝')),
                     sec('s-media', '説明動画・説明漫画', 'はじめての方は、まずこちらで全体をつかんでください', ['o_media'], toc=('動画・漫画', '🎬')),
-                    sec('s-route', '実施方法をえらぶ', '1日で実施する横断パッケージと、診療・農場フローの中で少しずつためていく蓄積型（K式）、どちらも集めるデータは同じです', ['g1', ('g2', 'desk'), ('o_choose', 'mob')], toc=('えらぶ', '🔀')),
+                    sec('s-route', '実施方法をえらぶ', '決めた日にまとめて実施する横断パッケージと、診療・農場フローの中で少しずつためていく蓄積型（K式）、どちらも集めるデータは同じです', ['g1', ('g2', 'desk'), ('o_choose', 'mob')], toc=('えらぶ', '🔀')),
                     sec('s-sop', '各ルートの実施SOP', 'カードを押すと、それぞれの実施SOPページへ移動します', ['o_routes'], toc=('実施SOP', '📋')),
                     sec('s-howto', '申請のしかた（共通）', 'Googleアカウント → Google Map情報 → 申請フォーム（実施方法を選ぶ）→ センターからメール', ['g4', 'o_gmap'], toc=('申請のしかた', '❓')),
                     sec('s-result', 'プロファイル結果（１か月以内に返送）', '獣医師向けの「SeF生データ」（Excel）と、農家さん向けの「SeFレポート」', ['g5', 'o_report'], toc=('結果', '📊')),
