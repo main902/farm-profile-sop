@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K式キット作成SOP（センター用）</title>
+<style>
+:root{--ink:#1c2622;--mut:#5d6a64;--line:#cfd8d2;--k:#56795c;--kbg:#e8f0e7;--g:#4e8a5c;--o:#d39c66;--r:#b55a4f;--w:#8a8f8c;--bg:#f5f7f5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Noto Sans CJK JP","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.6}
+.top{background:var(--k);color:#fff;padding:18px 16px}
+.top h1{margin:0;font-size:clamp(22px,4.5vw,30px)}
+.top p{margin:4px 0 0;opacity:.9;font-size:14px}
+.nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);display:flex;gap:6px;padding:8px 12px;overflow-x:auto;white-space:nowrap}
+.nav a{border:1px solid var(--line);border-radius:999px;padding:3px 12px;text-decoration:none;color:var(--ink);font-size:14px;font-weight:700}
+.sec{max-width:1000px;margin:16px auto;background:#fff;border-radius:14px;padding:16px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06);scroll-margin-top:56px}
+h2{margin:0 0 8px;font-size:22px}
+h3{margin:14px 0 6px;font-size:17px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--kbg)}
+.chip{display:inline-block;border-radius:6px;padding:0 8px;color:#fff;font-weight:900}
+.cg{background:var(--g)}.co{background:var(--o)}.cr{background:var(--r)}.cw{background:var(--w)}
+ol.steps{padding-left:1.4em}ol.steps>li{margin:8px 0}
+.warn{background:#fbe7e4;border-left:5px solid var(--r);padding:8px 12px;border-radius:6px;margin:8px 0}
+.note{background:#fffcf0;border-left:5px solid #b4944f;padding:8px 12px;border-radius:6px;margin:8px 0}
+.form{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.form label{font-size:13px;font-weight:700;color:var(--mut);display:block}
+.form input,.form textarea{width:100%;font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:8px}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+button{font:inherit;font-weight:900;border:0;border-radius:999px;padding:8px 18px;cursor:pointer;background:var(--k);color:#fff}
+button.sub{background:#fff;color:var(--k);border:2px solid var(--k)}
+.small{font-size:13px;color:var(--mut)}
+@media (max-width:700px){.sec{margin:10px 8px;padding:12px}table{font-size:13px}}
+
+/* ===== 印刷用 ===== */
+#print{display:none}
+@media print{
+  @page{size:A4;margin:0}
+  body{background:#fff}
+  .screen{display:none!important}
+  #print{display:block}
+  .sheet{width:210mm;height:297mm;position:relative;page-break-after:always;overflow:hidden}
+  .sheet:last-child{page-break-after:auto}
+}
+.lab{position:absolute;width:53.3mm;height:25.4mm;overflow:hidden;font-family:"Noto Sans JP","Noto Sans CJK JP",sans-serif;color:#000}
+.lab.cal{outline:.2mm solid #000}
+.lab .band{position:absolute;left:0;top:0;bottom:0;width:7mm;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:5mm;writing-mode:vertical-rl;letter-spacing:.5mm}
+.lab .id{position:absolute;left:8.5mm;top:1.6mm;font-weight:900;font-size:9mm;line-height:1;letter-spacing:-.2mm}
+.lab .age{position:absolute;right:1.5mm;top:2mm;text-align:right;font-weight:900;font-size:3.1mm;line-height:1.2}
+.lab .age small{display:block;font-weight:700;font-size:2.6mm}
+.lab .farm{position:absolute;left:9mm;bottom:1.4mm;font-size:3.4mm;font-weight:900}
+.lab .org{position:absolute;right:2mm;bottom:1.6mm;font-size:2.2mm;color:#333}
+.lab.misc{padding:2mm 3mm}
+.lab.misc b{display:block;font-size:4.2mm;line-height:1.25}
+.lab.misc span{display:block;font-size:3mm;margin-top:1mm}
+.cl{width:210mm;min-height:297mm;padding:14mm 16mm;font-size:3.6mm;page-break-after:always}
+.cl h1{font-size:6mm;margin:0 0 2mm}
+.cl table{font-size:3.4mm}
+.cl td.box{width:9mm;text-align:center}.cl th{white-space:nowrap}
+.cl .sign{display:flex;gap:10mm;margin-top:6mm;font-size:3.6mm}
+.cl .sign span{flex:1;border-bottom:.3mm solid #000;padding-bottom:1mm}
+</style>
+</head>
+<body>
+<div class="screen">
+<header class="top"><h1>K式キット作成SOP（センター用）</h1><p>蓄積型（K式）の採材キット（1農場1コンテナ）を作る手順・番号ラベル印刷・梱包チェックリスト。v0.1（2026-10-19）</p></header>
+<nav class="nav"><a href="#s1">1 全体の流れ</a><a href="#s2">2 番号のルール</a><a href="#s3">3 ラベル印刷</a><a href="#s4">4 チューブ準備</a><a href="#s5">5 梱包チェック</a><a href="#s6">6 発送</a></nav>
+
+<section class="sec" id="s1"><h2>1. 全体の流れ（1農場あたり）</h2>
+<ol class="steps">
+<li><b>Zone登録が終わった農場</b>に農場コードを割り当て、台帳に記入する（例：<code>K27-001</code>＝2027年度の1農場目）</li>
+<li>このページの「3 ラベル印刷」で、<b>チューブ番号ラベル（25枚）＋コンテナ・保冷袋用ラベル</b>を1シートに印刷</li>
+<li>15 mL遠沈管にラベルを貼り、生理食塩水4 mLを入れる（緑16・橙6・赤3）</li>
+<li>Zoneカード・期限札・白カード（耐水紙）を印刷</li>
+<li>「5 梱包チェック」のチェックリストを印刷し、2人で確認しながらコンテナに詰める</li>
+<li>発送し、台帳に発送日と期限日を記入して、獣医師にメール</li>
+</ol>
+<p class="small">ラベルの貼付は、冷凍前に24時間以上おくこと（のりをなじませる）。まとめて作り置きしてよい。</p>
+</section>
+
+<section class="sec" id="s2"><h2>2. 番号のルール</h2>
+<p>チューブの番号は「<b>色の記号＋2けたの番号</b>」。番号ごとに日齢区分が決まっています。検体の番号は「<b>農場コード＋チューブ番号</b>」（例：<code>K27-001-G12</code>）で、全農場で重なりません。</p>
+<table>
+<tr><th>色（キャップ）</th><th>どんな牛</th><th>0〜30日齢</th><th>31〜90日齢</th><th>91〜135日齢</th><th>本数</th></tr>
+<tr><td><span class="chip cg">G 緑</span></td><td>発症していない牛</td><td>G01〜G04</td><td>G05〜G12</td><td>G13〜G16</td><td>16</td></tr>
+<tr><td><span class="chip co">O 橙</span></td><td>発症した牛（初診・治療歴なし）</td><td>O01</td><td>O02〜O05</td><td>O06</td><td>6</td></tr>
+<tr><td><span class="chip cr">R 赤</span></td><td>発症して治療している牛</td><td colspan="3">日齢の区分なし（R01〜R03）</td><td>3</td></tr>
+<tr><td><span class="chip cw">W 白カード</span></td><td>0〜30日齢・胸囲だけ</td><td colspan="3">W01〜W05（耐水紙に印刷。チューブなし）</td><td>5</td></tr>
+</table>
+<div class="note">キャップの色とラベルの記号（G・O・R）が必ず一致するように貼る。ラベルの左の帯にも色名が入るので、貼ったあとに<b>キャップの色と帯の文字</b>を照合する。</div>
+</section>
+
+<section class="sec" id="s3"><h2>3. 番号ラベルの印刷</h2>
+<p>用紙：<b>エーワン 31375</b>（レーザープリンタ専用・マット紙・耐水、53.3×25.4 mm、3列×10段＝30面）。1農場1シート：チューブ25枚＋コンテナ用1＋保冷袋用1＋予備3（空白）。</p>
+<div class="form">
+<div><label>農場コード（1行に1農場。複数可）</label><textarea id="codes" rows="3">K27-001</textarea></div>
+<div><label>農場名（農場コードと同じ順。保冷袋・コンテナ用）</label><textarea id="names" rows="3">○○牧場</textarea></div>
+<div><label>期限（コンテナ用ラベルに入る）</label><input id="due" placeholder="例：2027年5月31日"></div>
+<div><label>上の余白（mm）</label><input id="mt" type="number" step="0.1" value="21.5"></div>
+<div><label>左の余白（mm）</label><input id="ml" type="number" step="0.1" value="19.3"></div>
+<div><label>列のすき間（mm）</label><input id="gx" type="number" step="0.1" value="2.5"></div>
+<div><label>段のすき間（mm）</label><input id="gy" type="number" step="0.1" value="0"></div>
+</div>
+<div class="btns"><button onclick="printLabels(false)">🖨 ラベルを印刷</button><button class="sub" onclick="printLabels(true)">位置合わせ用（枠線つき・普通紙に）</button></div>
+<h3>印刷の手順</h3>
+<ol class="steps">
+<li><b>最初の1回だけ位置合わせ</b>：「位置合わせ用」を<b>普通紙</b>に印刷し、ラベル用紙と重ねて光にすかし、枠とラベルのずれを確認。ずれていたら余白の数字を直す（右にずれる→左の余白を減らす、下にずれる→上の余白を減らす）。決まった数字は台帳にメモ。</li>
+<li>印刷ダイアログで <b>用紙A4・倍率100%（「ページに合わせる」はオフ）・余白なし・背景のグラフィックを印刷：オン</b></li>
+<li>プリンタの用紙設定は「ラベル」または「厚紙」。手差しトレイから1枚ずつ。</li>
+<li>印刷後、トナーが定着するまで数分おいてから剥がす。</li>
+</ol>
+<div class="warn">インクジェットでは印刷しない（31375はレーザー専用。にじんで番号が読めなくなる）。</div>
+</section>
+
+<section class="sec" id="s4"><h2>4. チューブの準備（ラベル貼付・生理食塩水）</h2>
+<ol class="steps">
+<li>手袋をして、キャップ色ごとに遠沈管を並べる（緑16・橙6・赤3）。</li>
+<li>ラベルは<b>乾いた常温のチューブ</b>に貼る。目盛りの上から、帯（左端）が上下方向にそろうように巻き、端まで指でしっかりこする。</li>
+<li>キャップの色と、ラベルの帯の色名・記号を照合（G＝緑、O＝橙、R＝赤）。</li>
+<li>生理食塩水を <b>4 mL</b> 入れ、キャップを固く閉める（ラベルを濡らしたら拭く）。</li>
+<li>色ごと・日齢区分ごとに小袋（チャック袋）に分ける：緑3袋（0〜30／31〜90／91〜135）、橙3袋、赤1袋。袋に区分を油性ペンで書く。</li>
+<li>冷凍しないで保管（キットは常温で送る）。冷凍に耐えることは確認済みだが、貼ってから24時間はおく。</li>
+</ol>
+</section>
+
+<section class="sec" id="s5"><h2>5. 梱包チェックリスト</h2>
+<p>農場コード・農場名を入れて印刷し、詰めた人と確認した人の2人でチェックします（入力欄は「3 ラベル印刷」と共通）。</p>
+<div class="btns"><button onclick="printChecklist()">🖨 チェックリストを印刷</button></div>
+<div id="clPreview"></div>
+</section>
+
+<section class="sec" id="s6"><h2>6. 発送と記録</h2>
+<ol class="steps">
+<li>コンテナのふたに「コンテナ用ラベル」（農場名・農場コード・期限）を貼る。</li>
+<li>常温便で発送。返送用は<b>冷凍便の着払伝票</b>（品名「チューブ（生理食塩水入り）」）を同封済みか確認。</li>
+<li>台帳に：発送日、期限日、チューブ番号の範囲（例 K27-001-G01〜R03）、担当者。</li>
+<li>獣医師にメール：発送したこと、期限、共有フォルダのアドレス、説明ページ（<a href="../k-shiki.html">蓄積型（K式）実施SOP</a>）。</li>
+</ol>
+</section>
+<p class="small" style="max-width:1000px;margin:0 auto 30px;padding:0 16px">センター内部用のページです（説明サイトの目次からはリンクしていません）。物品と購入先はNotion「K式キット 物品と購入先」を参照。</p>
+</div>
+
+<div id="print"></div>
+
+<script>
+const TUBES=[];
+function add(c,from,to,age,ageS){for(let i=from;i<=to;i++)TUBES.push({c,n:c+String(i).padStart(2,'0'),age,ageS});}
+add('G',1,4,'0〜30日齢','発症なし');add('G',5,12,'31〜90日齢','発症なし');add('G',13,16,'91〜135日齢','発症なし');
+add('O',1,1,'0〜30日齢','発症・初診');add('O',2,5,'31〜90日齢','発症・初診');add('O',6,6,'91〜135日齢','発症・初診');
+add('R',1,3,'日齢区分なし','治療中');
+const COL={G:['#2e7d32','緑'],O:['#e07b00','橙'],R:['#c62828','赤']};
+const ITEMS=[
+ ['コンテナ（NCボックス #25）','1','ふたにコンテナ用ラベル'],
+ ['期限札「◯月◯日まで」','1',''],
+ ['NPS採取用チューブ 緑（G01〜G16）','16','日齢区分で3袋'],
+ ['NPS採取用チューブ 橙（O01〜O06）','6','日齢区分で3袋'],
+ ['NPS採取用チューブ 赤（R01〜R03）','3','1袋'],
+ ['白カード（W01〜W05・耐水紙）','5',''],
+ ['スワブ メンティップ 1P3005','30本（1箱）',''],
+ ['除菌ウェットティッシュ','1',''],
+ ['胸囲用メジャー','1',''],
+ ['Zoneカード（耐水紙）','Zone数','台帳のZone数と照合'],
+ ['養生テープ','1',''],
+ ['油性マジック（マッキーノック細字）','1',''],
+ ['牛房サイズ測定用メジャー（5.5 m）','1',''],
+ ['保冷袋（保冷袋用ラベル貼付）','1',''],
+ ['保冷剤','2',''],
+ ['返送用 着払伝票（冷凍便・品名記入済み）','1',''],
+ ['バインダー＋農場聞き取りシート（A4表裏）','1',''],
+ ['実施ガイド（A4・全11ページ）','1',''],
+];
+const v=id=>document.getElementById(id).value;
+function farms(){const c=v('codes').split('\n').map(s=>s.trim()).filter(Boolean);const n=v('names').split('\n').map(s=>s.trim());return c.map((code,i)=>({code,name:n[i]||''}));}
+function esc(s){return s.replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));}
+function sheet(f,cal){
+  const mt=+v('mt'),ml=+v('ml'),gx=+v('gx'),gy=+v('gy');
+  let h='<div class="sheet">';
+  const cells=[];
+  TUBES.forEach(t=>cells.push(`<div class="band" style="background:${COL[t.c][0]}">${COL[t.c][1]}</div><div class="id">${t.n}</div><div class="age">${t.age}<small>${t.ageS}</small></div><div class="farm">${esc(f.code)}</div><div class="org">BRDC Frontiers</div>`));
+  cells.push(`<b>${esc(f.name)}</b><span>${esc(f.code)}　K式キット</span><span>期限：${esc(v('due'))}</span>`);
+  cells.push(`<b>${esc(f.name)}</b><span>${esc(f.code)}　NPSチューブ（冷凍）</span><span>採材日：　　　　　</span>`);
+  for(let i=0;i<30;i++){
+    const r=Math.floor(i/3),c=i%3;
+    const top=mt+r*(25.4+gy),left=ml+c*(53.3+gx);
+    const inner=cells[i]||'';
+    const misc=i>=25?' misc':'';
+    h+=`<div class="lab${misc}${cal?' cal':''}" style="top:${top}mm;left:${left}mm">${cal&&!inner?'':inner}</div>`;
+  }
+  return h+'</div>';
+}
+function printLabels(cal){document.getElementById('print').innerHTML=farms().map(f=>sheet(f,cal)).join('');window.print();}
+function checklist(f){
+  let rows=ITEMS.map(it=>`<tr><td class="box">□</td><td class="box">□</td><td>${it[0]}</td><td>${it[1]}</td><td>${it[2]}</td></tr>`).join('');
+  return `<div class="cl"><h1>K式キット 梱包チェックリスト</h1>
+  <p>農場コード：<b>${esc(f.code)}</b>　　農場名：<b>${esc(f.name)}</b>　　期限：<b>${esc(v('due'))}</b></p>
+  <table><tr><th>詰めた</th><th>確認</th><th>物品</th><th>数</th><th>メモ</th></tr>${rows}</table>
+  <p style="margin-top:4mm">□ チューブのキャップの色とラベルの帯（G緑・O橙・R赤）がすべて一致　□ ラベルの農場コードがこの農場　□ 生理食塩水4 mL・キャップ固く</p>
+  <div class="sign"><span>詰めた人：</span><span>確認した人：</span><span>発送日：</span></div></div>`;
+}
+function printChecklist(){document.getElementById('print').innerHTML=farms().map(checklist).join('');window.print();}
+function preview(){const f=farms()[0]||{code:'',name:''};document.getElementById('clPreview').innerHTML='<table><tr><th>物品</th><th>数</th><th>メモ</th></tr>'+ITEMS.map(it=>`<tr><td>${it[0]}</td><td>${it[1]}</td><td>${it[2]}</td></tr>`).join('')+'</table>';}
+preview();
+</script>
+</body>
+</html>
