@@ -60,19 +60,42 @@ button.sub{background:#fff;color:var(--k);border:2px solid var(--k)}
 .cl td.box{width:9mm;text-align:center}.cl th{white-space:nowrap}
 .cl .sign{display:flex;gap:10mm;margin-top:6mm;font-size:3.6mm}
 .cl .sign span{flex:1;border-bottom:.3mm solid #000;padding-bottom:1mm}
+
+.wsheet{width:210mm;height:297mm;position:relative;page-break-after:always}
+.wc{position:absolute;width:91mm;height:55mm;border:.3mm dashed #999;font-family:"Noto Sans JP","Noto Sans CJK JP",sans-serif;color:#000}
+.wc .wid{position:absolute;left:5mm;top:4mm;font-size:22mm;font-weight:900;line-height:1;letter-spacing:-.5mm}
+.wc .wt{position:absolute;right:4mm;top:5mm;text-align:right;font-weight:900;font-size:4.4mm;line-height:1.35}
+.wc .wt small{display:block;font-size:3.2mm;font-weight:700}
+.wc .wf{position:absolute;left:5mm;bottom:4mm;font-size:4.4mm;font-weight:900}
+.wc .wn{position:absolute;right:4mm;bottom:4mm;font-size:3.2mm;font-weight:900;border:.4mm solid #000;border-radius:1mm;padding:.5mm 1.5mm}
+.zsheet{width:210mm;height:297mm;page-break-after:always}
+.zc{width:210mm;height:148.5mm;padding:9mm 12mm 8mm;border-bottom:.3mm dashed #999;font-family:"Noto Sans JP","Noto Sans CJK JP",sans-serif;color:#000;position:relative}
+.zc:last-child{border-bottom:0}
+.zc .zh{display:flex;justify-content:space-between;align-items:flex-start;gap:6mm}
+.zc .zname{font-size:17mm;font-weight:900;line-height:1.05;border:1mm solid #000;border-radius:3mm;padding:2mm 5mm;max-width:118mm;word-break:keep-all}
+.zc .zr{font-size:4mm;line-height:1.45;text-align:right}
+.zc .zr b{font-size:4.6mm}
+.zc .zf{font-size:4.6mm;font-weight:900;margin-top:2mm}
+.zc .zm{margin-top:5mm;font-size:5mm;font-weight:900}
+.zc .zrow{display:flex;align-items:center;gap:3mm;margin-top:2.5mm;font-size:5.6mm;font-weight:900}
+.zc .zrow i{display:inline-block;width:28mm;height:10mm;border-bottom:.5mm solid #000;font-style:normal}
+.zc .zshot{margin-top:5mm;display:grid;grid-template-columns:1fr 1.6fr 1.4fr;gap:3mm;font-size:3.7mm;line-height:1.4}
+.zc .zshot div{border:.4mm solid #000;border-radius:2mm;padding:2mm 2.5mm}
+.zc .zshot b{display:block;font-size:4.6mm}
+.zc .zshot b span{display:inline-block;width:6mm;height:6mm;border-radius:50%;background:#000;color:#fff;text-align:center;line-height:6mm;font-size:4mm;margin-right:1.5mm}
 </style>
 </head>
 <body>
 <div class="screen">
 <header class="top"><h1>K式キット作成SOP（センター用）</h1><p>蓄積型（K式）の採材キット（1農場1コンテナ）を作る手順・番号ラベル印刷・梱包チェックリスト。v0.1（2026-10-19）</p></header>
-<nav class="nav"><a href="#s1">1 全体の流れ</a><a href="#s2">2 番号のルール</a><a href="#s3">3 ラベル印刷</a><a href="#s4">4 チューブ準備</a><a href="#s5">5 梱包チェック</a><a href="#s6">6 発送</a></nav>
+<nav class="nav"><a href="#s1">1 全体の流れ</a><a href="#s2">2 番号のルール</a><a href="#s3">3 ラベル印刷</a><a href="#s4">4 チューブ準備</a><a href="#s4b">4.5 白カード・Zoneカード</a><a href="#s5">5 梱包チェック</a><a href="#s6">6 発送</a></nav>
 
 <section class="sec" id="s1"><h2>1. 全体の流れ（1農場あたり）</h2>
 <ol class="steps">
 <li><b>Zone登録が終わった農場</b>に農場コードを割り当て、台帳に記入する（例：<code>K27-001</code>＝2027年度の1農場目）</li>
 <li>このページの「3 ラベル印刷」で、<b>チューブ番号ラベル（25枚）＋コンテナ・保冷袋用ラベル</b>を1シートに印刷</li>
 <li>15 mL遠沈管にラベルを貼り、生理食塩水4 mLを入れる（緑16・橙6・赤3）</li>
-<li>Zoneカード・期限札・白カード（耐水紙）を印刷</li>
+<li>白カード・Zoneカード（耐水紙）と期限札を印刷（「4.5」）</li>
 <li>「5 梱包チェック」のチェックリストを印刷し、2人で確認しながらコンテナに詰める</li>
 <li>発送し、台帳に発送日と期限日を記入して、獣医師にメール</li>
 </ol>
@@ -124,6 +147,25 @@ button.sub{background:#fff;color:var(--k);border:2px solid var(--k)}
 </ol>
 </section>
 
+<section class="sec" id="s4b"><h2>4.5 白カード・Zoneカードの印刷</h2>
+<p>用紙：<b>オキナ プロジェクト耐水用紙 PW3045（A4）</b>。インクジェット（顔料インク推奨）で印刷。ラミネートはしない。印刷したら、最初の1枚で油性マジックの書き味と、水をつけてにじまないかを確認。</p>
+<h3>白カード（W01〜W05）</h3>
+<p class="small">名刺サイズ（91×55 mm）・A4に10枚＝2農場分。農場コードは「3 ラベル印刷」の欄を使います（複数農場可）。切り取り線で切る。</p>
+<div class="btns"><button onclick="printWhite()">🖨 白カードを印刷</button></div>
+<h3>Zoneカード</h3>
+<p class="small">A5サイズ・A4に2枚（真ん中で切る）。Zoneの数だけ作ります。台帳のZone名と同じにする。</p>
+<div class="form">
+<div><label>農場コード</label><input id="zcode" value="K27-001"></div>
+<div><label>農場名</label><input id="zname" value="○○牧場"></div>
+<div><label>Zone（1行に1つ。「Z番号 名前」）</label><textarea id="zones" rows="5">Z1 分娩房
+Z2 分娩前の母牛
+Z3 ハッチ
+Z4 ロボット
+Z5 離乳後・群飼い</textarea></div>
+</div>
+<div class="btns"><button onclick="printZone()">🖨 Zoneカードを印刷</button></div>
+</section>
+
 <section class="sec" id="s5"><h2>5. 梱包チェックリスト</h2>
 <p>農場コード・農場名を入れて印刷し、詰めた人と確認した人の2人でチェックします（入力欄は「3 ラベル印刷」と共通）。</p>
 <div class="btns"><button onclick="printChecklist()">🖨 チェックリストを印刷</button></div>
@@ -156,7 +198,7 @@ const ITEMS=[
  ['NPS採取用チューブ 緑（G01〜G16）','16','日齢区分で3袋'],
  ['NPS採取用チューブ 橙（O01〜O06）','6','日齢区分で3袋'],
  ['NPS採取用チューブ 赤（R01〜R03）','3','1袋'],
- ['白カード（W01〜W05・耐水紙）','5',''],
+ ['白カード（W01〜W05・耐水紙）','5','この農場の番号か確認'],
  ['スワブ メンティップ 1P3005','30本（1箱）',''],
  ['除菌ウェットティッシュ','1',''],
  ['胸囲用メジャー','1',''],
@@ -197,6 +239,33 @@ function checklist(f){
   <table><tr><th>詰めた</th><th>確認</th><th>物品</th><th>数</th><th>メモ</th></tr>${rows}</table>
   <p style="margin-top:4mm">□ チューブのキャップの色とラベルの帯（G緑・O橙・R赤）がすべて一致　□ ラベルの農場コードがこの農場　□ 生理食塩水4 mL・キャップ固く</p>
   <div class="sign"><span>詰めた人：</span><span>確認した人：</span><span>発送日：</span></div></div>`;
+}
+
+function wcard(f,i,x,y){const n='W'+String(i).padStart(2,'0');return `<div class="wc" style="left:${x}mm;top:${y}mm"><div class="wid">${n}</div><div class="wt">白カード<small>0〜30日齢・胸囲だけ</small><small>NPSは採らない</small></div><div class="wf">${esc(f.code)}</div><div class="wn">撮影したら破棄</div></div>`;}
+function printWhite(){
+  const fs=farms();let h='';
+  for(let k=0;k<fs.length;k+=2){
+    h+='<div class="wsheet">';
+    [fs[k],fs[k+1]].forEach((f,j)=>{if(!f)return;for(let i=1;i<=5;i++){const idx=j*5+i-1;const c=idx%2,r=Math.floor(idx/2);h+=wcard(f,i,14+c*91,11+r*55);}});
+    h+='</div>';
+  }
+  document.getElementById('print').innerHTML=h;window.print();
+}
+function zcard(code,name,z){
+  const m=z.match(/^(Z\d+)\s*(.*)$/i);const zz=m?m[1].toUpperCase()+'　'+m[2]:z;
+  return `<div class="zc"><div class="zh"><div><div class="zname" style="font-size:${zz.length>8?12:17}mm">${esc(zz)}</div><div class="zf">${esc(name)}（${esc(code)}）</div></div>
+  <div class="zr"><b>Zoneカード</b><br>スマホは<b>横</b>・1 Zone 1本<br><b>止めずに</b>続けて撮る</div></div>
+  <div class="zm">牛房サイズ（代表1〜2か所を測って、マジックで書く）</div>
+  <div class="zrow">牛房A　縦<i></i>m　×　横<i></i>m</div>
+  <div class="zrow">牛房B　縦<i></i>m　×　横<i></i>m</div>
+  <div class="zshot"><div><b><span>1</span>このカード</b>牛房サイズが読めるように</div>
+  <div><b><span>2</span>Zone全体</b>Zoneの中を移動しながら、すべての牛が映るように。途中で<b style="display:inline;font-size:3.9mm">消毒槽、水槽・水桶</b>に寄る</div>
+  <div><b><span>3</span>＋α（あれば）</b>哺乳牛Zone：哺乳具・流し場<br>ロボットZone：哺乳ロボットのライン<br>別の建物なら、止めずに歩いて移動</div></div></div>`;
+}
+function printZone(){
+  const code=v('zcode'),name=v('zname');const zs=v('zones').split('\n').map(s=>s.trim()).filter(Boolean);let h='';
+  for(let k=0;k<zs.length;k+=2){h+='<div class="zsheet">'+zcard(code,name,zs[k])+(zs[k+1]?zcard(code,name,zs[k+1]):'')+'</div>';}
+  document.getElementById('print').innerHTML=h;window.print();
 }
 function printChecklist(){document.getElementById('print').innerHTML=farms().map(checklist).join('');window.print();}
 function preview(){const f=farms()[0]||{code:'',name:''};document.getElementById('clPreview').innerHTML='<table><tr><th>物品</th><th>数</th><th>メモ</th></tr>'+ITEMS.map(it=>`<tr><td>${it[0]}</td><td>${it[1]}</td><td>${it[2]}</td></tr>`).join('')+'</table>';}
