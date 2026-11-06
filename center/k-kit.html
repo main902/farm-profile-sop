@@ -95,7 +95,7 @@ button.sub{background:#fff;color:var(--k);border:2px solid var(--k)}
 <li><b>Zone登録が終わった農場</b>に農場コードを割り当て、台帳に記入する（例：<code>K27-001</code>＝2027年度の1農場目）</li>
 <li>このページの「3 ラベル印刷」で、<b>チューブ番号ラベル（25枚）＋コンテナ・保冷袋用ラベル</b>を1シートに印刷</li>
 <li>15 mL遠沈管にラベルを貼り、生理食塩水4 mLを入れる（緑16・橙6・赤3）</li>
-<li>白カード・Zoneカード（耐水紙）と期限札を印刷（「4.5」）</li>
+<li>白カード・Zoneカード（耐水紙）と期限札を印刷（「4.5」）。実施ガイド（A4・全14ページ）も印刷：<a href="../K式_実施ガイド_A4印刷用.pdf" target="_blank" rel="noopener">📄 実施ガイドPDFを開く</a></li>
 <li>「5 梱包チェック」のチェックリストを印刷し、2人で確認しながらコンテナに詰める</li>
 <li>発送し、台帳に発送日と期限日を記入して、獣医師にメール</li>
 </ol>
@@ -168,7 +168,7 @@ Z5 離乳後・群飼い</textarea></div>
 
 <section class="sec" id="s5"><h2>5. 梱包チェックリスト</h2>
 <p>農場コード・農場名を入れて印刷し、詰めた人と確認した人の2人でチェックします（入力欄は「3 ラベル印刷」と共通）。</p>
-<div class="btns"><button onclick="printChecklist()">🖨 チェックリストを印刷</button></div>
+<div class="btns"><button onclick="printChecklist()">🖨 チェックリストを印刷</button><a href="../K式_実施ガイド_A4印刷用.pdf" target="_blank" rel="noopener" style="display:inline-block;border:2px solid var(--k);color:var(--k);border-radius:999px;padding:6px 16px;font-weight:900;text-decoration:none">📄 実施ガイドPDF（A4・14ページ）を開く</a></div>
 <div id="clPreview"></div>
 </section>
 
@@ -210,7 +210,7 @@ const ITEMS=[
  ['保冷剤','2',''],
  ['返送用 着払伝票（冷凍便・品名記入済み）','1',''],
  ['バインダー＋農場聞き取りシート（A4表裏）','1',''],
- ['実施ガイド（A4・全11ページ）','1',''],
+ ['実施ガイド（A4・全14ページ）','1','片面・カラー推奨'],
 ];
 const v=id=>document.getElementById(id).value;
 function farms(){const c=v('codes').split('\n').map(s=>s.trim()).filter(Boolean);const n=v('names').split('\n').map(s=>s.trim());return c.map((code,i)=>({code,name:n[i]||''}));}
