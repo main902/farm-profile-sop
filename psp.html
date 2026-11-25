@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#143f47">
+<meta name="description" content="臨床獣医師向け：健常牛病原体スクリーニング検査（PSP）と胸囲充足率を組み合わせた農場プロファイルの読み解き方。4つの仮想農場からカイゼンの方向性を考える。">
+<title>健常牛病原体スクリーニング検査について｜農場プロファイル解説</title>
+<style>
+:root{
+  color-scheme:light;--bg:#f5f7f6;--paper:#fff;--ink:#16313a;--ink2:#29454c;--sub:#567078;
+  --line:#dce7e4;--aqua:#117b79;--aqua-dark:#12615e;--aqua-pale:#e8f6f2;--blue:#3a7197;
+  --blue-pale:#edf5f9;--amber:#ac7027;--amber-pale:#fff6e9;--violet:#7c6a9d;--violet-pale:#f2eff8;
+  --red:#b86550;--red-pale:#fff2eb;--shadow:0 16px 42px rgba(13,58,64,.055);--radius:19px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;font-size:15px;line-height:1.84;-webkit-font-smoothing:antialiased}
+a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #e8a84e;outline-offset:3px}
+.english{font-family:ui-sans-serif,system-ui,Arial,sans-serif;letter-spacing:.02em}.muted{color:var(--sub)}.eyebrow{font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;color:var(--aqua)}
+.wrap{width:min(1100px,calc(100% - 48px));margin:0 auto}.section{padding:57px 0 59px;border-bottom:1px solid #e1e9e6}.section:last-of-type{border-bottom:0}
+.topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.topbar-inner{max-width:1190px;width:calc(100% - 44px);height:70px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{text-decoration:none;color:var(--ink);display:flex;gap:11px;align-items:center;min-width:0}.brand-glyph{display:grid;place-items:center;width:41px;height:41px;border-radius:12px;background:#153e46;color:#d7f5ed;font-size:14px;letter-spacing:.04em;font-weight:900;flex:none}.brand-title{font-size:13px;font-weight:850;line-height:1.2}.brand-sub{display:block;font-size:10px;line-height:1.2;color:#61747a;margin-top:4px}
+.nav{display:flex;gap:23px}.nav a{font-size:12px;text-decoration:none;color:#52666a;font-weight:700;white-space:nowrap}.nav a:hover{color:#0b7a76}
+.print-btn{display:flex;gap:7px;align-items:center;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:99px;padding:8px 13px;font-size:12px;font-weight:750;cursor:pointer;white-space:nowrap}.print-btn:hover{background:#eff7f4}.print-btn svg{width:16px;height:16px}.skip{position:absolute;left:10px;top:-75px;padding:10px;background:white;z-index:100}.skip:focus{top:4px}
+.hero{margin:25px 0 33px;position:relative;border-radius:26px;overflow:hidden;background:linear-gradient(116deg,#153b46,#1b5159 57%,#216975);color:#fff;isolation:isolate}
+.hero::before{content:"";position:absolute;right:-165px;top:-295px;width:650px;height:650px;border-radius:50%;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 0 84px rgba(255,255,255,.025),0 0 0 172px rgba(255,255,255,.022);z-index:-1}
+.hero-inner{display:grid;grid-template-columns:1.22fr .78fr;align-items:center;gap:33px;padding:60px 55px}
+.hero-kicker{display:inline-block;color:#bfe5dd;border:1px solid rgba(222,255,245,.30);border-radius:99px;padding:5px 13px;font-size:10px;letter-spacing:.12em;font-weight:800}
+.hero h1{font-size:clamp(30px,3.9vw,45px);font-weight:850;line-height:1.42;letter-spacing:.025em;margin:24px 0 18px}.hero h1 em{font-style:normal;color:#bde9de;font-size:.80em;white-space:nowrap;display:inline-block}
+.hero-lead{font-size:15px;line-height:1.98;color:#e7f3f1;max-width:560px;margin:0}.hero-tags{margin-top:27px;display:flex;gap:9px;flex-wrap:wrap}.hero-tags span{font-size:11px;font-weight:650;padding:4px 11px;border:1px solid rgba(255,255,255,.24);border-radius:99px;color:#dcece9}
+.hero-card{background:#fff;border:1px solid #e8eeed;border-radius:18px;padding:23px 22px;color:var(--ink);box-shadow:0 24px 60px rgba(5,28,36,.22);transform:rotate(1.5deg)}
+.hero-card-head{display:flex;justify-content:space-between;gap:8px;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--line);font-size:13px;font-weight:820}.hero-card-head small{font-size:10px;color:#438780;background:#eaf7f3;border-radius:99px;padding:3px 9px}
+.hero-pair{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:13px 0}.hero-mini{border-radius:11px;background:#f4f8f7;padding:12px}.hero-mini .mini-kicker{display:block;color:#59767c;font-size:10px;margin-bottom:3px}.hero-mini b{font-size:15px}.hero-mini.alt{background:#eff5f9}.hero-mini.alt b{color:#286486}.hero-mini b{color:#0e7773}.hero-note{font-size:11px;color:#657a7f;line-height:1.6;padding-top:10px;border-top:1px solid var(--line)}
+.guide-strap{background:#eaf5f1;border:1px solid #d7e9e4;border-radius:13px;padding:13px 17px;color:#2b5658;font-size:13px;margin-bottom:12px;display:flex;gap:12px;align-items:flex-start}.guide-strap svg{width:20px;height:20px;flex:none;margin-top:3px}
+.section-head{display:flex;gap:12px;align-items:center;margin-bottom:12px}.num{font-family:Georgia,serif;font-size:17px;color:#82a5a5}.dash{width:28px;height:2px;background:#9fbcb6}.section h2{font-size:clamp(24px,3vw,33px);font-weight:850;line-height:1.45;letter-spacing:.01em;margin:0 0 13px}.intro{font-size:14px;color:var(--sub);margin:0 0 29px;max-width:870px;line-height:1.95}
+.card{border-radius:var(--radius);background:var(--paper);border:1px solid var(--line);box-shadow:var(--shadow)}.card-pad{padding:28px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.big{font-size:19px;font-weight:850}
+.problem-card{padding:25px 28px;min-height:193px;position:relative;overflow:hidden}.problem-card::after{content:"?";font-family:Georgia,serif;position:absolute;right:21px;top:2px;font-size:85px;font-weight:bold;color:#eaf5f1;line-height:1}.problem-card h3{position:relative;z-index:1;margin:0 0 9px;font-size:17px;line-height:1.56}.problem-card p{position:relative;z-index:1;margin:0;color:var(--sub);font-size:13px}.problem-card.orange::after{color:#fcf1e4}
+.question{margin-top:17px;background:#183f49;border-radius:15px;padding:21px 26px;color:white;display:flex;gap:24px;align-items:center}.question b{font-size:12px;letter-spacing:.13em;color:#a9e8dc;white-space:nowrap}.question span{font-size:17px;font-weight:750;line-height:1.65}
+.factor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.factor{background:#fff;border:1px solid var(--line);border-radius:16px;padding:23px 19px 21px;min-height:222px}.factor .factor-id{font-size:11px;font-weight:900;letter-spacing:.1em;color:var(--aqua)}.factor h3{font-size:18px;margin:10px 0 3px}.factor .en{font-size:12px;color:#5c7c83;font-weight:750}.factor p{font-size:13px;color:#425d63;line-height:1.82;margin:12px 0 0}.factor.blue{background:#f6f9fc}.factor.blue .factor-id{color:#377ca8}.factor.amber{background:#fffaf3}.factor.amber .factor-id{color:#a87a42}
+.mechanism{margin-top:18px;padding:28px 30px}.flow-small{display:grid;grid-template-columns:1fr 45px 1fr 45px 1fr;gap:8px;align-items:stretch}.flow-node{background:#edf6f3;border:1px solid #d8e8e2;border-radius:14px;padding:16px 12px;text-align:center}.flow-node b{display:block;font-size:14px}.flow-node small{display:block;color:#607c82;margin-top:6px;font-size:11px;line-height:1.65}.flow-node.blue{background:#eff5fa}.flow-node.amber{background:#fff7ed}.flow-arrow{align-self:center;text-align:center;color:#9bb4b4;font-size:29px;font-weight:300}.flow-explain{font-size:12px;color:#6a7e80;margin-top:17px;line-height:1.8}
+.one-liner{border-radius:14px;background:#eaf5f2;border-left:4px solid #4c9c90;padding:17px 22px;margin-top:19px;font-size:15px;font-weight:760;color:#27565c;line-height:1.85}
+.profile-intro{display:grid;grid-template-columns:minmax(240px,.93fr) 1.07fr;gap:0;overflow:hidden}.profile-graphic{background:linear-gradient(148deg,#153e47,#246472);padding:29px;display:flex;justify-content:center;flex-direction:column;color:white}.profile-graphic .label{font-size:11px;letter-spacing:.15em;font-weight:800;color:#b0ded6}.profile-graphic .display{font-weight:900;font-size:clamp(29px,4vw,39px);margin:15px 0 5px}.profile-graphic p{margin:0;color:#d5e9e7;font-size:12px}.profile-symbols{margin-top:21px;display:flex;gap:7px;flex-wrap:wrap}.profile-symbols span{font-size:11px;padding:6px 10px;border-radius:7px;background:rgba(255,255,255,.12)}.profile-copy{padding:30px}.profile-copy h3{font-size:19px;margin:0 0 13px}.profile-copy p{font-size:14px;line-height:1.96;margin:0 0 15px}.profile-copy p:last-child{margin:0}
+.profile-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}.profile-tile{background:#fff;border:1px solid var(--line);border-radius:15px;padding:19px 17px;min-height:155px}.profile-tile .tile-n{display:inline-grid;place-items:center;width:31px;height:31px;border-radius:10px;background:#eaf4f2;color:#187972;font-size:13px;font-weight:900}.profile-tile h4{margin:9px 0 6px;font-size:14px}.profile-tile p{font-size:12px;color:var(--sub);line-height:1.8;margin:0}
+.psp-definition{display:grid;grid-template-columns:280px 1fr;overflow:hidden}.psp-big{padding:31px;background:linear-gradient(145deg,#205e67,#133f47);color:#fff}.psp-big .letters{font-size:76px;font-weight:900;letter-spacing:-.06em;line-height:1;color:#bceee2}.psp-big .full{font-size:12px;color:#d7eee9;line-height:1.55;margin-top:12px}.psp-big .subtxt{margin-top:32px;font-size:11px;color:#a7d2cf}.psp-copy{padding:30px}.psp-copy h3{font-size:20px;margin:0 0 10px}.psp-copy p{font-size:14px;margin:0 0 13px}.mini-types{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:17px}.mini-type{padding:16px;background:white;border:1px solid var(--line);border-radius:12px}.mini-type b{display:block;font-size:13px;color:#2d6263}.mini-type p{font-size:11px;color:#657c82;line-height:1.75;margin:5px 0 0}
+.pathogen-section{display:grid;grid-template-columns:1fr 1fr;gap:17px;margin-top:18px}.path-group{border:1px solid var(--line);border-radius:16px;background:#fff;padding:22px}.path-group h3{font-size:17px;margin:0 0 9px}.path-group .subheading{color:var(--sub);font-size:12px;margin-bottom:14px}.path-item{padding:12px 0;border-top:1px solid #edf1f0}.path-item:first-of-type{border-top:0}.path-item b{font-size:13px;display:block}.path-item p{margin:3px 0 0;font-size:12px;color:var(--sub);line-height:1.7}.type-label{font-size:10px;color:#347d7a;background:#e9f6f2;padding:3px 8px;border-radius:99px;white-space:nowrap}
+.case-legend{margin:0 0 18px;display:flex;flex-wrap:wrap;gap:8px}.case-legend span{font-size:11px;color:#42666c;background:#e9f4f0;border:1px solid #d5e6e0;border-radius:99px;padding:3px 10px}
+.case-wrap{display:grid;grid-template-columns:225px minmax(0,1fr);gap:18px}.case-tabs{display:flex;flex-direction:column;gap:10px}.case-tab{text-align:left;background:white;border:1px solid var(--line);border-radius:14px;padding:16px 16px;cursor:pointer;color:var(--ink);transition:background .2s,border-color .2s,box-shadow .2s}.case-tab:hover{border-color:#8bbab3}.case-tab[aria-selected="true"]{background:#e8f5f1;border-color:#8fc5b7;box-shadow:inset 4px 0 0 #19877f}.case-tab .letter{display:block;color:#187e79;font-size:11px;font-weight:900;letter-spacing:.06em}.case-tab .tabhead{display:block;font-size:13px;font-weight:840;line-height:1.55;margin-top:4px}.case-tab .tabsub{display:block;font-size:11px;color:#678087;margin-top:5px}.case-panel{padding:28px 29px}.case-panel[hidden]{display:none!important}.case-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.case-heading h3{font-size:21px;line-height:1.5;margin:0}.case-heading p{font-size:12px;margin:8px 0 0;color:#628087}.case-number{background:#e9f4f0;border-radius:9px;padding:6px 10px;font-weight:900;font-size:12px;color:#1e736f;white-space:nowrap}
+.case-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:20px 0}.fact{border-radius:11px;padding:12px;background:#f3f7f6}.fact .fact-label{display:block;font-size:10px;color:#637d83;font-weight:770;line-height:1.4;min-height:14px}.fact .fact-value{display:block;font-size:14px;font-weight:900;line-height:1.35;margin-top:6px}.fact .fact-value.high{color:#b45442}.fact .fact-value.low{color:#198276}.fact .fact-value.mid{color:#a16b32}
+.case-insight{background:#edf6f3;border-left:4px solid #43978d;padding:15px 18px;border-radius:9px;color:#254b50;font-size:14px;line-height:1.83;margin:11px 0 22px}.case-insight strong{color:#1d5559}
+.case-three{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.vcard{border:1px solid var(--line);border-radius:12px;padding:15px 13px}.vcard small{display:block;font-size:10px;color:var(--aqua);font-weight:880;letter-spacing:.03em}.vcard b{display:block;font-size:13px;margin:6px 0 4px;line-height:1.5}.vcard p{font-size:11px;line-height:1.8;color:var(--sub);margin:0}.case-story{font-size:13px;line-height:1.97;margin:21px 0}.case-action{padding:18px 20px;background:#f9f7f0;border:1px solid #ede3ce;border-radius:13px}.case-action .tag{font-size:11px;font-weight:900;letter-spacing:.08em;color:#a07836}.case-action p{font-size:13px;line-height:1.85;margin:7px 0 0}.case-conclusion{font-size:14px;font-weight:850;color:#205c5b;margin:17px 0 0}.case-print-title{display:none}
+.case-pager{display:flex;justify-content:space-between;align-items:center;margin:16px 0 0;padding-top:13px;border-top:1px solid var(--line)}.pager-btn{border:1px solid #d9e5e1;background:#fff;border-radius:99px;padding:7px 13px;cursor:pointer;font-size:12px;font-weight:750;color:#345a5f}.pager-btn:hover{background:#eef6f2}.pager-btn:disabled{opacity:.25;cursor:default}.pager-count{font-size:11px;color:#73898d}
+.compare{overflow:auto;margin-top:21px;border:1px solid var(--line);border-radius:15px;background:#fff}.compare table{border-collapse:collapse;width:100%;min-width:665px;text-align:left}.compare thead{background:#eef6f3}.compare th{font-size:12px;padding:13px 15px;font-weight:820;color:#325d61}.compare td{font-size:12px;padding:14px 15px;border-top:1px solid #e7eeeb;vertical-align:top;line-height:1.75}.compare td:first-child{font-weight:850;color:#167771;white-space:nowrap}
+.practice-lead{background:#18434b;color:#e5f5ef;border-radius:20px;padding:34px 36px;display:grid;grid-template-columns:1.04fr .96fr;gap:25px;align-items:center}.practice-lead h3{font-size:22px;line-height:1.55;margin:0 0 11px;color:#fff}.practice-lead p{font-size:13px;color:#d0e8e3;margin:0;line-height:1.95}.practice-list{display:grid;gap:10px}.practice-item{display:flex;align-items:flex-start;gap:11px;background:rgba(255,255,255,.095);border:1px solid rgba(255,255,255,.14);border-radius:11px;padding:12px 14px;font-size:12px;line-height:1.8}.practice-item b{display:grid;place-items:center;width:24px;height:24px;flex:none;background:rgba(194,247,232,.19);border-radius:8px;color:#baf1e1}
+.action-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:19px}.action-step{padding:23px 19px;border-radius:15px;border:1px solid var(--line);background:#fff;min-height:170px}.action-step .n{color:#1e8c82;font-size:13px;font-weight:900;letter-spacing:.05em}.action-step h4{margin:10px 0 8px;font-size:16px}.action-step p{font-size:12px;color:var(--sub);line-height:1.8;margin:0}
+.final-message{margin:24px 0 30px;background:#e9f6f1;border:1px solid #d8ebe3;border-radius:18px;padding:28px 33px}.final-message h3{margin:0 0 11px;font-size:22px}.final-message p{font-size:14px;line-height:1.97;margin:0}
+.resources{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.resource{background:white;border:1px solid var(--line);border-radius:13px;padding:16px 18px;text-decoration:none;min-height:97px;display:block}.resource span{display:block;color:#648085;font-size:10px;letter-spacing:.04em;font-weight:850}.resource b{font-size:13px;display:block;line-height:1.6;margin-top:5px;color:#205f5f}.resource:hover{border-color:#8cc9bd;background:#f9fdfb}
+.footer{border-top:1px solid #dfebe6;color:#7a8e92;font-size:11px;padding:23px 0 45px}.footer .foot-inner{display:flex;justify-content:space-between;gap:22px;align-items:center}.foot-top{text-decoration:none;white-space:nowrap;font-weight:750}
+@media(max-width:1030px){.nav{gap:12px}.nav a{font-size:11px}.case-wrap{grid-template-columns:194px minmax(0,1fr)}.case-panel{padding:23px}.case-facts{gap:7px}}
+@media(max-width:820px){.nav{display:none}.hero-inner{grid-template-columns:1fr;padding:44px 37px}.hero-card{max-width:470px;transform:none}.factor-grid,.profile-row,.action-steps,.resources{grid-template-columns:repeat(2,1fr)}.psp-definition{grid-template-columns:240px 1fr}.case-wrap{grid-template-columns:1fr}.case-tabs{flex-direction:row;overflow-x:auto;scrollbar-width:thin;padding-bottom:4px}.case-tab{flex:1;min-width:170px}.flow-small{grid-template-columns:1fr 28px 1fr 28px 1fr}.practice-lead{grid-template-columns:1fr}}
+@media(max-width:590px){body{font-size:14px}.wrap{width:calc(100% - 30px)}.topbar-inner{width:calc(100% - 28px);height:62px}.brand-glyph{width:35px;height:35px;font-size:12px}.brand-title{font-size:11px}.brand-sub{font-size:9px}.print-btn{padding:6px 10px;font-size:11px}.print-btn svg{width:14px}.hero{margin:15px 0 22px;border-radius:18px}.hero-inner{padding:33px 22px;gap:25px}.hero h1{font-size:27px;margin:19px 0 15px}.hero-lead{font-size:13px}.hero-tags span{font-size:10px}.hero-card{padding:18px}.section{padding:38px 0 41px}.section h2{font-size:23px}.intro{font-size:13px;margin-bottom:20px}.grid2,.grid3,.factor-grid,.profile-row,.pathogen-section,.resources{grid-template-columns:1fr}.question{flex-direction:column;gap:3px;align-items:flex-start;padding:21px}.question span{font-size:15px}.problem-card{min-height:150px;padding:23px}.factor{min-height:auto}.flow-small{grid-template-columns:1fr;gap:6px}.flow-arrow{transform:rotate(90deg);font-size:19px;line-height:1}.mechanism{padding:17px}.profile-intro,.psp-definition{grid-template-columns:1fr}.profile-graphic{padding:25px}.profile-copy,.psp-copy{padding:23px}.psp-big{padding:24px}.psp-big .letters{font-size:58px}.psp-big .subtxt{margin-top:15px}.mini-types{grid-template-columns:1fr}.case-tab{min-width:154px;padding:13px}.case-panel{padding:19px}.case-heading h3{font-size:18px}.case-facts{grid-template-columns:repeat(2,1fr)}.case-three{grid-template-columns:1fr}.case-three .vcard{padding:12px}.practice-lead{padding:26px 21px}.action-steps{grid-template-columns:1fr}.action-step{min-height:0}.final-message{padding:22px}.final-message h3{font-size:20px}.footer .foot-inner{align-items:flex-start;flex-direction:column}}
+.crumb{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:16px 0 0;font-size:12px;font-weight:750;color:#61747a}.crumb a{text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:99px;padding:3px 12px;color:#2e5c60}.crumb a:hover{background:#eef6f2}.crumb b{color:var(--ink)}
+@media print{.crumb{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+@media print{
+  @page{size:A4;margin:12mm}
+  html{scroll-behavior:auto}body{font-size:10px;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .topbar,.case-tabs,.case-pager,.print-btn{display:none!important}.wrap{width:100%}.hero{margin:0 0 8mm;border-radius:10px;break-inside:avoid}.hero-inner{grid-template-columns:1.25fr .75fr;padding:13mm;gap:7mm}.hero h1{font-size:25px}.hero-lead{font-size:11px}.hero-card{transform:none}.section{padding:8mm 0;border:0}.section h2{font-size:19px}.intro{font-size:11px;margin-bottom:15px}.card,.factor,.path-group,.case-panel,.problem-card,.action-step{box-shadow:none;break-inside:avoid}.case-wrap{display:block}.case-panel[hidden]{display:block!important}.case-panel{margin-bottom:6mm;border:1px solid var(--line);padding:17px}.case-heading h3{font-size:18px}.case-three{grid-template-columns:repeat(3,1fr)}.case-facts{grid-template-columns:repeat(3,1fr)}.case-story{margin:8px 0;font-size:11px}.case-conclusion{margin-top:8px}.case-insight{margin:7px 0 10px}.final-message{break-inside:avoid}.practice-lead{break-inside:avoid}.footer{padding-bottom:0}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="topbar"><div class="topbar-inner">
+ <a class="brand" href="#top" aria-label="ページ先頭へ"><span class="brand-glyph">PSP</span><span><span class="brand-title">健常牛病原体スクリーニング</span><span class="brand-sub">農場プロファイル・臨床解説ガイド</span></span></a>
+ <nav class="nav" aria-label="ページ内案内"><a href="#factors">3つの視点</a><a href="#profile">農場プロファイル</a><a href="#psp">PSPとは</a><a href="#farms">仮想農場</a><a href="#kaizen">カイゼン</a></nav>
+ <button type="button" class="print-btn" onclick="window.print()" aria-label="印刷またはPDF保存"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>印刷 / PDF</button>
+</div></header>
+<main class="wrap" id="main">
+<nav class="crumb" aria-label="農場プロファイル実施SOP"><span>農場プロファイル実施SOP ›</span><a href="index.html">目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html">蓄積型（K式）</a><b>結果の読み方（この資料）</b></nav>
+<section class="hero" id="top"><div class="hero-inner"><div>
+ <span class="hero-kicker english">BRDC FRONTIERS · CLINICAL GUIDE</span>
+ <h1>健常牛病原体<br><em>スクリーニング検査</em>について</h1>
+ <p class="hero-lead">健康な子牛の病原体検出から、農場の感染症リスクを考える。<br>PSPと胸囲充足率を組み合わせ、農場ごとに実行できるカイゼンへ。</p>
+ <div class="hero-tags"><span>臨床獣医師向け</span><span>曝露圧・Resistance・Tolerance</span><span>4つの仮想農場</span></div>
+ </div><div class="hero-card" aria-label="農場プロファイルの基本的な組み合わせ">
+ <div class="hero-card-head">農場プロファイルの見方 <small>コンセプト</small></div>
+ <div class="hero-pair"><div class="hero-mini"><span class="mini-kicker">HEALTHY CALVES</span><b>PSP検出</b></div><div class="hero-mini alt"><span class="mini-kicker">GROWTH STATUS</span><b>胸囲充足率</b></div></div>
+ <div class="hero-pair"><div class="hero-mini alt"><span class="mini-kicker">CLINICAL OUTCOMES</span><b>疾病の発生</b></div><div class="hero-mini"><span class="mini-kicker">FARM CONTEXT</span><b>飼養環境</b></div></div>
+ <div class="hero-note">4つの情報を重ねて、農場の強み・課題・改善の方向性を考える</div>
+ </div></div></section>
+<div class="guide-strap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>この資料は、既存の農場プロファイルの「陽性率・農場間比較」や獣医師向け「Ct値」の説明を補う、<b>臨床的な読み解き方のガイド</b>です。PSPは現在検討・検証されている研究上の概念です。</span></div>
+
+<section class="section" id="why">
+ <div class="section-head"><span class="num">01</span><span class="dash"></span><span class="eyebrow">Why farm profiles?</span></div>
+ <h2>なぜ、感染症が多い農場と少ない農場があるのでしょうか？</h2>
+ <p class="intro">子牛のBRDCや下痢症などの感染症では、病原体の存在だけでなく、栄養、飼養環境、ストレスなどの要因が発症に関係します。感染症が日常的に多い農場には、疾病発生を助長する共通の背景があるかもしれません。</p>
+ <div class="grid2">
+  <div class="problem-card card"><h3>病原体が多く見つかるのに、<br>病気が少ない農場</h3><p><i>P. multocida</i> などが健康牛から高率に検出されても、BRDCが少なく、発育のよい農場があります。</p></div>
+  <div class="problem-card card orange"><h3>BCoVや <i>M. bovis</i> は少ないのに、<br>病気が多い農場</h3><p>特定の病原体がほとんど検出されない場合でも、感染症が日常的に多い農場があります。</p></div>
+ </div>
+ <div class="question"><b class="english">QUESTION</b><span>感染症を起こしやすい農場の状態を、客観的に捉えることはできないでしょうか？</span></div>
+</section>
+
+<section class="section" id="factors">
+ <div class="section-head"><span class="num">02</span><span class="dash"></span><span class="eyebrow">Three perspectives</span></div>
+ <h2>感染症発症を考える、3つの視点</h2>
+ <p class="intro">病原体への曝露があっても、すべての牛が同じように発症するわけではありません。農場の感染症リスクを考えるときには、次の3つを分けて考えます。</p>
+ <div class="factor-grid">
+  <article class="factor"><span class="factor-id">01 / EXPOSURE</span><h3>病原体曝露圧</h3><span class="en english">Pathogen exposure pressure</span><p>農場・牛群内で、どの程度病原体にさらされているか。外からの侵入、牛群内の伝播、飼養環境が関わります。</p></article>
+  <article class="factor blue"><span class="factor-id">02 / RESISTANCE</span><h3>感染・増殖抵抗性</h3><span class="en english">Resistance</span><p>病原体に曝露されても、感染や体内での増殖をどれだけ抑えられるか。日頃「免疫力」と呼ばれる働きの重要な一面です。</p></article>
+  <article class="factor amber"><span class="factor-id">03 / TOLERANCE</span><h3>耐病性</h3><span class="en english">Tolerance</span><p>同程度の病原体負荷でも、炎症や組織障害、生産性低下や重症化をどの程度抑えて健康を保てるか。</p></article>
+ </div>
+ <div class="mechanism card"><div class="eyebrow" style="margin-bottom:16px">How disease develops · 概念図</div>
+  <div class="flow-small">
+   <div class="flow-node"><b>病原体曝露圧</b><small>農場の病原体への曝露</small></div>
+   <div class="flow-arrow">→</div>
+   <div class="flow-node blue"><b>宿主内の病原体負荷</b><small>Resistanceが感染・増殖を制御</small></div>
+   <div class="flow-arrow">→</div>
+   <div class="flow-node amber"><b>臨床的な転帰</b><small>Toleranceなどが影響<br>無症状／発症／重症化</small></div>
+  </div>
+  <div class="flow-explain">例えば、病原体を増やさない牛（Resistanceが高い牛）と、病原体がいても健康を維持できる牛（Toleranceが高い牛）は、必ずしも同じではありません。</div>
+ </div>
+ <div class="one-liner">大切なのは「病原体を増やさないこと」と「病原体がいても重症化しにくいこと」を分けて考えることです。</div>
+</section>
+
+<section class="section" id="profile">
+ <div class="section-head"><span class="num">03</span><span class="dash"></span><span class="eyebrow">Reading farm profiles</span></div>
+ <h2>3つの視点は、農場プロファイルのどこに表れるのでしょうか？</h2>
+ <p class="intro">農場プロファイルでは、健常牛の病原体検出と胸囲充足率を<strong>組み合わせて</strong>評価します。さらに疾病の発生状況や飼養環境の情報を重ねることで、感染症リスクの背景を考えます。</p>
+ <div class="profile-intro card">
+  <div class="profile-graphic"><span class="label english">FARM PROFILE</span><div class="display">PSP × 胸囲充足率</div><p>2つの検査情報を組み合わせて読み解く</p><div class="profile-symbols"><span>PSP候補病原体</span><span>個体の発育状態</span><span>牛群の傾向</span></div></div>
+  <div class="profile-copy"><h3>検出結果だけでも、胸囲充足率だけでもない。</h3><p>例えばPSP陽性率が高くても、胸囲充足率が高く疾病の少ない農場があります。反対に、BCoVや <i>M. bovis</i> がほぼ検出されなくても、胸囲充足率が低く疾病の多い農場もあります。</p><p><b>両者の組み合わせ</b>が、病原体曝露と子牛の感染・増殖抵抗性を考える手がかりになります。</p></div>
+ </div>
+ <div class="profile-row">
+  <div class="profile-tile"><span class="tile-n">A</span><h4>PSP検出プロファイル</h4><p>病原体曝露と、宿主内で病原体が検出される状態に注目。</p></div>
+  <div class="profile-tile"><span class="tile-n">B</span><h4>胸囲充足率と組み合わせる</h4><p>発育状態も考慮し、感染・増殖抵抗性に関わる牛群の特徴を考察。</p></div>
+  <div class="profile-tile"><span class="tile-n">C</span><h4>発症・重症化・死亡を見る</h4><p>疾病の実態と重ね、耐病性や管理条件を含む農場全体の特徴を考察。</p></div>
+ </div>
+</section>
+
+<section class="section" id="psp">
+ <div class="section-head"><span class="num">04</span><span class="dash"></span><span class="eyebrow">What is PSP?</span></div>
+ <h2>PSPという考え方</h2>
+ <p class="intro">臨床的に健康な子牛でも、鼻咽頭スワブや糞便の（RT-）qPCR検査で病原体核酸が検出されることがあります。その検出パターンを農場の状態を考える情報として活用しよう、という考え方です。</p>
+ <div class="psp-definition card">
+  <div class="psp-big"><div class="letters english">PSP</div><div class="full english">Pathogens with<br>Subclinical Presence</div><div class="subtxt">臨床的に健康な牛からの病原体核酸検出に着目した、研究上の呼称</div></div>
+  <div class="psp-copy"><h3>健康でも、病原体が検出される。</h3><p>PSP候補病原体には、不顕性感染するもの、症状を示さず定着・保菌するものなどが含まれます。qPCRではこれらの状態を一律に区別しませんが、<b>健康牛でどの病原体核酸が検出されるか</b>という情報を捉えることができます。</p><p>その結果を胸囲充足率や疾病発生状況と組み合わせることで、農場・牛群の感染症リスクを考えるための手がかりを得ます。</p></div>
+ </div>
+ <div class="mini-types"><div class="mini-type"><b>Subclinical infection</b><p>明らかな症状を伴わない感染</p></div><div class="mini-type"><b>Asymptomatic colonization</b><p>症状を伴わない定着・保菌</p></div><div class="mini-type"><b>Molecular detection</b><p>核酸検出によって存在を把握する状態</p></div></div>
+ <div class="pathogen-section">
+  <div class="path-group"><h3>呼吸器関連PSP候補</h3><p class="subheading">主な検体：健常牛の鼻咽頭スワブ</p>
+   <div class="path-item"><b>BCoV <span class="type-label">農場間の違いに注目</span></b><p>検出状況が農場のBRDC発生や胸囲充足率と関連する可能性に注目しています。</p></div>
+   <div class="path-item"><b><i>Mycoplasma bovis</i> <span class="type-label">個体差にも注目</span></b><p>農場内の個体差を考慮しても胸囲充足率との関連がみられ、重要なPSP候補と考えています。</p></div>
+   <div class="path-item"><b><i>P. multocida</i> / <i>M. haemolytica</i> / <i>H. somni</i></b><p>健康で発育のよい牛でも高率に検出されます。検出されることと発症することの違いを考えるうえで重要です。</p></div>
+  </div>
+  <div class="path-group"><h3>消化器関連PSP候補</h3><p class="subheading">主な検体：健常牛の糞便（拡張的な評価）</p>
+   <div class="path-item"><b><i>Eimeria bovis</i> / <i>E. zuernii</i></b><p>健常便や、鏡検でオーシストが確認できない便からもPCRで検出されることがあります。農場環境や他のPSPとの関係に注目しています。</p></div>
+   <div class="path-item"><b>BEV（牛エンテロウイルス）</b><p>健常便でも検出されることがある病原体として、検出パターンと農場の状態との関係を検討しています。</p></div>
+  </div>
+ </div>
+ <div class="one-liner">PSPで大切なのは、単独の陽性・陰性よりも、病原体の組み合わせと、胸囲充足率・疾病発生状況を重ねて読むことです。</div>
+</section>
+
+<section class="section" id="farms">
+ <div class="section-head"><span class="num">05</span><span class="dash"></span><span class="eyebrow">Four farm scenarios</span></div>
+ <h2>4つの仮想農場で、実際の読み方を考える</h2>
+ <p class="intro">どの農場でも「曝露圧・Resistance・Tolerance」の3つを同じ順番で確認します。そのうえで、農場の強みと課題を整理し、現場で実行できる改善を考えます。</p>
+ <div class="case-legend"><span>数値を使わない説明用の仮想例</span><span>高・中・低は模式的な表現</span><span>各農場のタブを選択</span></div>
+ <div class="case-wrap">
+  <div class="case-tabs" role="tablist" aria-label="仮想農場を選択">
+   <button class="case-tab" role="tab" id="tab-a" aria-controls="panel-a" aria-selected="true" tabindex="0" data-case="a"><span class="letter">農場 A</span><span class="tabhead">複数PSP高陽性・疾病多発</span><span class="tabsub">曝露と子牛側の課題</span></button>
+   <button class="case-tab" role="tab" id="tab-b" aria-controls="panel-b" aria-selected="false" tabindex="-1" data-case="b"><span class="letter">農場 B</span><span class="tabhead"><i>M. bovis</i>陰性・発症多</span><span class="tabsub">病原体ごとに異なる曝露</span></button>
+   <button class="case-tab" role="tab" id="tab-c" aria-controls="panel-c" aria-selected="false" tabindex="-1" data-case="c"><span class="letter">農場 C</span><span class="tabhead"><i>M. bovis</i>陽性・健康良好</span><span class="tabsub">管理の強みを活かす</span></button>
+   <button class="case-tab" role="tab" id="tab-d" aria-controls="panel-d" aria-selected="false" tabindex="-1" data-case="d"><span class="letter">農場 D</span><span class="tabhead">呼吸器PSP低・疾病多発</span><span class="tabsub">子牛側の改善を検討</span></button>
+  </div>
+  <div class="case-panels">
+   <article class="case-panel card" role="tabpanel" id="panel-a" aria-labelledby="tab-a" tabindex="0">
+    <div class="case-heading"><div><h3>病原体も多く、発症・重症化も多い農場</h3><p>複数の病原体が検出され、子牛の健康状態も低い</p></div><span class="case-number">農場 A</span></div>
+    <div class="case-facts"><div class="fact"><span class="fact-label">BCoV / M. bovis</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">BRDC・下痢症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value high">要重点改善</span></div></div>
+    <div class="case-insight"><strong>この農場の読み取り：</strong>複数の病原体への曝露が多く、子牛の感染・増殖抵抗性も十分に保たれていない可能性があります。重篤化しやすい背景も重なっていると考えられます。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>曝露圧が高そう</b><p>BCoV・M. bovis・Eimeriaの複数が高陽性。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>抵抗性に課題</b><p>PSP高陽性に胸囲充足率の低さが重なる。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>重症化にも課題</b><p>発症後の重症化や死亡も多い。</p></div></div>
+    <p class="case-story">飼養環境や子牛の健康管理に課題が重なっている農場像です。例えば初乳・哺乳・栄養・換気などの改善と、清掃や牛群接触の見直しなど実行可能な曝露低減策を組み合わせることが考えられます。</p>
+    <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>子牛の抵抗性を支える飼養管理と、実行可能な範囲での病原体曝露低減を並行して進める。</p></div>
+    <p class="case-conclusion">結論：子牛側の健康管理と環境の両面から、優先順位を決めて改善する農場。</p>
+   </article>
+   <article class="case-panel card" role="tabpanel" id="panel-b" aria-labelledby="tab-b" tabindex="0" hidden>
+    <div class="case-heading"><div><h3><i>M. bovis</i>がほぼ陰性なのに、発症は多い農場</h3><p>BCoV・Eimeriaの検出が多く、胸囲充足率が低い</p></div><span class="case-number">農場 B</span></div>
+    <div class="case-facts"><div class="fact"><span class="fact-label"><i>M. bovis</i></span><span class="fact-value low">ほぼ陰性</span></div><div class="fact"><span class="fact-label">BCoV / Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">疾病発症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value mid">発症対策が中心</span></div></div>
+    <div class="case-insight"><strong>この農場の読み取り：</strong>子牛の感染・増殖抵抗性に課題がありそうでも、<i>M. bovis</i>はほぼ検出されません。<strong><i>M. bovis</i>への曝露圧は比較的低く抑えられている</strong>可能性があり、この点は農場の強みと考えられます。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>病原体ごとに差</b><p><i>M. bovis</i>は低い一方、BCoV・Eimeriaは高陽性。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>抵抗性が十分でない可能性</b><p>胸囲充足率が低く、発症も多い。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>重篤化は少ない</b><p>発症は多いものの、重症化・死亡は低い水準。</p></div></div>
+    <p class="case-story">例えば<i>M. bovis</i>への侵入・伝播対策が一定程度機能している一方で、栄養・哺乳・飼養環境など、子牛の健康を支える管理には改善余地がある農場像です。BCoVやEimeriaへの曝露を下げられる部分も検討します。</p>
+    <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p><i>M. bovis</i>を低く抑えられている状態を維持し、初乳・哺乳・栄養・換気などを見直して、まず日常的な発症を減らす。</p></div>
+    <p class="case-conclusion">結論：病原体ごとの「抑えられている部分」を活かしながら、子牛の抵抗性を高める農場。</p>
+   </article>
+   <article class="case-panel card" role="tabpanel" id="panel-c" aria-labelledby="tab-c" tabindex="0" hidden>
+    <div class="case-heading"><div><h3><i>M. bovis</i>が陽性でも、健康状態が良好な農場</h3><p>病原体検出と疾病発生が必ずしも一致しない</p></div><span class="case-number">農場 C</span></div>
+    <div class="case-facts"><div class="fact"><span class="fact-label"><i>M. bovis</i></span><span class="fact-value mid">中程度陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value low">高い</span></div><div class="fact"><span class="fact-label">BRDC発症</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">牛群の健康状態</span><span class="fact-value low">良好</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value low">強みを維持</span></div></div>
+    <div class="case-insight"><strong>この農場の読み取り：</strong><i>M. bovis</i>への曝露・保菌の可能性はある一方、健康状態を比較的良好に維持しています。子牛の抵抗性や、病原体が存在しても健康を保つ力が良好な可能性があります。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b><i>M. bovis</i>への曝露あり</b><p>牛群内で病原体が検出される。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>子牛の状態は良好</b><p>胸囲充足率が高く維持されている。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>発症・重症化が少ない</b><p>病原体が検出されても健康を維持できている。</p></div></div>
+    <p class="case-story">例えば、初乳・哺乳・栄養・温熱環境などの飼養管理がうまく機能している農場像です。感染症リスクをさらに低減するには、無理なくできる範囲で<i>M. bovis</i>の伝播抑制策を加えることが考えられます。</p>
+    <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>すでに良好な健康状態を支えている飼養管理を維持しつつ、可能な範囲で牛群間接触・導入時の管理などを見直す。</p></div>
+    <p class="case-conclusion">結論：現在の飼養管理の強みを維持し、できる対策を積み重ねる農場。</p>
+   </article>
+   <article class="case-panel card" role="tabpanel" id="panel-d" aria-labelledby="tab-d" tabindex="0" hidden>
+    <div class="case-heading"><div><h3>BCoV・<i>M. bovis</i>は低いのに、疾病が多い農場</h3><p>Eimeriaは高陽性で、BRDCと下痢症が日常的に発生</p></div><span class="case-number">農場 D</span></div>
+    <div class="case-facts"><div class="fact"><span class="fact-label">BCoV / <i>M. bovis</i></span><span class="fact-value low">ほぼ陰性</span></div><div class="fact"><span class="fact-label">Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">BRDC・下痢症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value mid">飼養管理を重点確認</span></div></div>
+    <div class="case-insight"><strong>この農場の読み取り：</strong>BCoV・<i>M. bovis</i>への曝露は比較的低く抑えられている可能性があります。一方、Eimeria高陽性と胸囲充足率の低さから、消化器関連の曝露や子牛の抵抗性を支える管理に課題がある農場像が考えられます。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>病原体間で異なる</b><p>BCoV・<i>M. bovis</i>は低いが、Eimeriaは高陽性。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>抵抗性の課題を疑う</b><p>胸囲充足率が低く、日常的な発症が多い。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>重篤化は少ない</b><p>発症は多いが、死亡や重症化には比較的至りにくい。</p></div></div>
+    <p class="case-story">例えば呼吸器病原体の一部は抑えられていても、初乳・哺乳・栄養、敷料や換気など、子牛の抵抗性に関わる飼養管理には改善の余地がある農場像です。健康牛でも保菌し得る呼吸器細菌が発症に関与している可能性も考えます。</p>
+    <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>初乳・哺乳・栄養・飼育環境を優先的に見直し、併せて清掃や敷料などEimeriaへの曝露を減らせる部分を改善する。</p></div>
+    <p class="case-conclusion">結論：呼吸器病原体を低く保てていても、子牛を強く育てる管理が重要な農場。</p>
+   </article>
+   <div class="case-pager"><button class="pager-btn" type="button" id="previous-case">← 前の農場</button><span class="pager-count" id="case-position" aria-live="polite">1 / 4</span><button class="pager-btn" type="button" id="next-case">次の農場 →</button></div>
+  </div>
+ </div>
+ <div class="compare"><table><thead><tr><th>農場</th><th>見えてくる農場の状態</th><th>カイゼンの方向性</th></tr></thead><tbody><tr><td>A 農場</td><td>複数病原体の曝露と、子牛側の健康管理に課題</td><td>飼養管理と曝露低減を組み合わせる</td></tr><tr><td>B 農場</td><td><i>M. bovis</i>の曝露は低そうだが、他のPSP・発症が多い</td><td>現在の強みを維持し、子牛の抵抗性を底上げする</td></tr><tr><td>C 農場</td><td><i>M. bovis</i>がいても健康状態は良好</td><td>良好な飼養管理を維持し、可能な伝播対策を加える</td></tr><tr><td>D 農場</td><td>呼吸器PSP低・Eimeria高、胸囲充足率も低い</td><td>初乳・栄養・飼養環境と消化器関連曝露を重点的に見直す</td></tr></tbody></table></div>
+</section>
+
+<section class="section" id="kaizen">
+ <div class="section-head"><span class="num">06</span><span class="dash"></span><span class="eyebrow">Practical improvement</span></div>
+ <h2>「理想の対策」より、「その農場でできるカイゼン」へ</h2>
+ <p class="intro">農場によって実施できる対策は異なります。バイオセキュリティも重要な考え方ですが、それだけを改善の中心にせず、結果から取り組めるポイントを探します。</p>
+ <div class="practice-lead"><div><h3>農場の強みは残し、<br>課題のある部分から改善する。</h3><p>病原体への曝露を減らす工夫、子牛の抵抗性を支える飼養管理、発症した牛を重症化させない日常管理。どれを優先するかは農場の状況に合わせて選びます。</p></div><div class="practice-list">
+  <div class="practice-item"><b>1</b><span>初乳・哺乳・栄養の見直しで、子牛の健康状態を底上げ</span></div>
+  <div class="practice-item"><b>2</b><span>換気・温熱環境・敷料・飼育密度を改善し、ストレスを減らす</span></div>
+  <div class="practice-item"><b>3</b><span>無理なく実施できる清掃・動線・導入時管理で、曝露を減らす</span></div>
+ </div></div>
+</section>
+
+<section class="section" id="action">
+ <div class="section-head"><span class="num">07</span><span class="dash"></span><span class="eyebrow">Continuous improvement</span></div>
+ <h2>農場プロファイルを、カイゼンのサイクルへ</h2>
+ <p class="intro">検査結果を出すことがゴールではありません。客観的に評価し、改善の優先順位を考え、実行した結果をもう一度確認することが目的です。</p>
+ <div class="action-steps">
+  <div class="action-step"><span class="n">STEP 01</span><h4>現状を見える化</h4><p>PSP検出、胸囲充足率、疾病発生、飼養環境を確認。</p></div>
+  <div class="action-step"><span class="n">STEP 02</span><h4>農場の特徴を解釈</h4><p>曝露圧・Resistance・Toleranceの3視点で強みと課題を整理。</p></div>
+  <div class="action-step"><span class="n">STEP 03</span><h4>実行できる改善</h4><p>現場で取り組める対策を選び、優先順位を付けて実行。</p></div>
+  <div class="action-step"><span class="n">STEP 04</span><h4>再プロファイル</h4><p>病原体検出、胸囲充足率、疾病状況の変化を確認し標準化。</p></div>
+ </div>
+ <div class="final-message"><h3>3つの視点で農場を理解し、その農場に合ったカイゼンを選ぶ。</h3><p>感染症が多い理由は、農場によって異なります。農場プロファイルは、PSP検出と胸囲充足率、疾病発生状況を重ねることで、<b>その農場の強みと課題を考えるための客観的な出発点</b>になります。できる対策から始め、再び評価する。この積み重ねが、感染症の少ない農場づくりにつながります。</p></div>
+ <div class="resources"><a class="resource" href="https://app.notion.com/p/1dc0b8956056804a93d4ca047568efd5" target="_blank" rel="noopener noreferrer"><span>OFFICIAL SOP</span><b>BRDC Frontiers・農場プロファイル</b></a><a class="resource" href="https://app.notion.com/p/1dd0b895605680bebbf1eaa121d67b74" target="_blank" rel="noopener noreferrer"><span>SAMPLING SOP</span><b>鼻咽頭スワブ採取・保存・輸送SOP</b></a><a class="resource" href="https://app.notion.com/p/23a0b895605680468dbfed7e4a13a204" target="_blank" rel="noopener noreferrer"><span>MEASUREMENT SOP</span><b>胸囲充足率SOP</b></a></div>
+</section>
+</main>
+<footer class="footer"><div class="wrap foot-inner"><span>健常牛病原体スクリーニング検査について ｜ 臨床獣医師向け・農場プロファイル解説</span><a href="#top" class="foot-top">ページ先頭へ ↑</a></div></footer>
+<script>
+(function(){
+'use strict';
+const keys=['a','b','c','d'];
+const tabs=keys.map(k=>document.querySelector('[data-case="'+k+'"]'));
+const panels=keys.map(k=>document.getElementById('panel-'+k));
+const pos=document.getElementById('case-position');
+const prev=document.getElementById('previous-case');
+const next=document.getElementById('next-case');
+let index=0;
+function show(i,moveFocus){
+  if(i<0||i>=keys.length)return;
+  index=i;
+  tabs.forEach((tab,n)=>{tab.setAttribute('aria-selected',String(n===i));tab.setAttribute('tabindex',n===i?'0':'-1');});
+  panels.forEach((panel,n)=>{panel.hidden=n!==i;});
+  pos.textContent=(i+1)+' / '+keys.length;
+  prev.disabled=(i===0);next.disabled=(i===keys.length-1);
+  if(moveFocus)tabs[i].focus();
+}
+tabs.forEach((tab,n)=>{
+  tab.addEventListener('click',()=>show(n,false));
+  tab.addEventListener('keydown',e=>{
+    let target=null;
+    if(e.key==='ArrowDown'||e.key==='ArrowRight')target=(n+1)%keys.length;
+    if(e.key==='ArrowUp'||e.key==='ArrowLeft')target=(n-1+keys.length)%keys.length;
+    if(e.key==='Home')target=0;
+    if(e.key==='End')target=keys.length-1;
+    if(target!==null){e.preventDefault();show(target,true);}
+  });
+});
+prev.addEventListener('click',()=>show(index-1,false));
+next.addEventListener('click',()=>show(index+1,false));
+show(0,false);
+})();
+</script>
+</body></html>

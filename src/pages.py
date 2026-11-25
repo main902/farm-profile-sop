@@ -117,7 +117,7 @@ def render(cfg):
     css += '.pg-mob{display:none}\n.pg-band .pg-no{font-size:20px}\n.pg-nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}.pg-nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:1px 10px}.pg-nav a.on{background:#fff;color:var(--th)}\n'
     css += ''.join(desk)
     m = PGM.replace('/*MOB*/', ''.join(mob) + '\n.pg-desk{display:none!important}.pg-mob{display:block!important}\n.pg-fig .sub{font-size:16px!important;margin-bottom:10px!important}\n' + cfg.get('mcss', ''))
-    nav = ''.join(f'<a href="{h}"{" class=on" if h == cfg["file"] else ""}>{l}</a>' for h, l in [('index.html', '目次'), ('odan.html', '横断パッケージ'), ('k-shiki.html', '蓄積型（K式）')])
+    nav = ''.join(f'<a href="{h}"{" class=on" if h == cfg["file"] else ""}>{l}</a>' for h, l in [('index.html', '目次'), ('odan.html', '横断パッケージ'), ('k-shiki.html', '蓄積型（K式）'), ('psp.html', '結果の読み方')])
     page = f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{cfg['title']}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
