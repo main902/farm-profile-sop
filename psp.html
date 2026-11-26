@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#143f47">
-<meta name="description" content="臨床獣医師向け：病原体への曝露圧と子牛の感染症レジリエンスの視点から、健常牛病原体スクリーニング検査（PSP）と胸囲充足率を組み合わせた農場プロファイルの読み解き方。4つの仮想農場からカイゼンの方向性を考える。">
-<title>健常牛病原体スクリーニング検査について｜農場プロファイル解説</title>
+<meta name="description" content="臨床獣医師向け：農場プロファイルの読み方。病原体への曝露圧と子牛の感染症レジリエンスの視点から、健常牛病原体スクリーニング（PSP）と胸囲充足率を組み合わせて読み解く。4つの仮想農場からカイゼンの方向性を考える。">
+<title>農場プロファイルの読み方｜曝露圧と感染症レジリエンス</title>
 <style>
 :root{
   color-scheme:light;--bg:#f5f7f6;--paper:#fff;--ink:#16313a;--ink2:#29454c;--sub:#567078;
@@ -28,7 +28,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 .hero::before{content:"";position:absolute;right:-165px;top:-295px;width:650px;height:650px;border-radius:50%;border:1px solid rgba(255,255,255,.14);box-shadow:0 0 0 84px rgba(255,255,255,.025),0 0 0 172px rgba(255,255,255,.022);z-index:-1}
 .hero-inner{display:grid;grid-template-columns:1.22fr .78fr;align-items:center;gap:33px;padding:60px 55px}
 .hero-kicker{display:inline-block;color:#bfe5dd;border:1px solid rgba(222,255,245,.30);border-radius:99px;padding:5px 13px;font-size:10px;letter-spacing:.12em;font-weight:800}
-.hero h1{font-size:clamp(30px,3.9vw,45px);font-weight:850;line-height:1.42;letter-spacing:.025em;margin:24px 0 18px}.hero h1 em{font-style:normal;color:#bde9de;font-size:.80em;white-space:nowrap;display:inline-block}
+.hero h1{font-size:clamp(30px,3.9vw,45px);font-weight:850;line-height:1.42;letter-spacing:.025em;margin:24px 0 18px}.hero h1 em{font-style:normal;color:#bde9de;font-size:.80em;display:inline-block}
 .hero-lead{font-size:15px;line-height:1.98;color:#e7f3f1;max-width:560px;margin:0}.hero-tags{margin-top:27px;display:flex;gap:9px;flex-wrap:wrap}.hero-tags span{font-size:11px;font-weight:650;padding:4px 11px;border:1px solid rgba(255,255,255,.24);border-radius:99px;color:#dcece9}
 .hero-card{background:#fff;border:1px solid #e8eeed;border-radius:18px;padding:23px 22px;color:var(--ink);box-shadow:0 24px 60px rgba(5,28,36,.22);transform:rotate(1.5deg)}
 .hero-card-head{display:flex;justify-content:space-between;gap:8px;align-items:center;padding-bottom:12px;border-bottom:1px solid var(--line);font-size:13px;font-weight:820}.hero-card-head small{font-size:10px;color:#438780;background:#eaf7f3;border-radius:99px;padding:3px 9px}
@@ -65,6 +65,8 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 .resil{margin-top:18px;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.resil h3{margin:0 0 8px;font-size:18px}.resil p{margin:0 0 10px;font-size:14px;line-height:1.9;color:var(--ink2)}.resil p:last-child{margin:0}.resil .eq{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 12px;font-weight:850;font-size:14px}.resil .eq span{border-radius:10px;padding:6px 12px;background:#eef6f3}.resil .eq span.b{background:#eff5fa;color:#2c6489}.resil .eq span.a{background:#fff7ed;color:#8d5d22}.resil .eq span.r{background:#183f49;color:#fff}.resil .eq i{font-style:normal;color:#8aa3a3}
 @media(max-width:590px){.compare.rt table{min-width:0}.compare.rt thead{display:none}.compare.rt tr{display:block;padding:12px 14px;border-top:1px solid #e7eeeb}.compare.rt td{display:block;border:0;padding:2px 0}.compare.rt td:nth-child(2)::before{content:"情報：";color:#7a8e92}.compare.rt td:nth-child(3)::before{content:"解釈：";color:#7a8e92}}
 .refs details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0}.refs summary{cursor:pointer;list-style:none;padding:16px 20px;font-weight:850;font-size:15px;display:flex;justify-content:space-between;align-items:center}.refs summary::-webkit-details-marker{display:none}.refs summary::after{content:"＋";color:var(--aqua);font-size:18px}.refs details[open] summary::after{content:"－"}.refs ol{margin:0;padding:0 22px 18px 40px;font-size:12.5px;line-height:1.85;color:var(--ink2)}.refs li{margin:0 0 8px}.refs li small{display:block;color:var(--sub)}.refs a{word-break:break-all}
+.terms{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:6px}.term{background:#fff;border:1px solid var(--line);border-radius:13px;padding:12px 16px;font-size:13px;line-height:1.75}.term b{display:block;font-size:14px;color:#1d5c5c}.term a{font-size:12px}
+@media(max-width:590px){.terms{grid-template-columns:1fr}}
 .note-s{font-size:12px;color:var(--sub);line-height:1.8;margin:12px 0 0}
 .matrix{margin-top:20px;padding:24px 26px}.matrix h3{margin:0 0 4px;font-size:17px}.mx{display:grid;grid-template-columns:110px 1fr 1fr;gap:8px;margin-top:14px}.mx .hd{font-size:12px;font-weight:850;color:#325d61;text-align:center;align-self:end;padding:4px}.mx .rh{font-size:12px;font-weight:850;color:#325d61;display:flex;align-items:center}.mx .q{border-radius:12px;padding:13px 14px;font-size:12.5px;line-height:1.8}.mx .q b{display:block;font-size:13px;margin-bottom:3px}.q1{background:#e8f6f2}.q2{background:#eef5fb}.q3{background:#fff6e9}.q4{background:#fff2eb}
 @media(max-width:590px){.mx{grid-template-columns:1fr 1fr}.mx .corner{display:none}.mx .rh{grid-column:1/-1;margin-top:6px}.resil{padding:19px}.matrix{padding:18px}}
@@ -79,15 +81,15 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <body>
 <a class="skip" href="#main">本文へ移動</a>
 <header class="topbar"><div class="topbar-inner">
- <a class="brand" href="#top" aria-label="ページ先頭へ"><span class="brand-glyph">PSP</span><span><span class="brand-title">健常牛病原体スクリーニング</span><span class="brand-sub">農場プロファイル・臨床解説ガイド</span></span></a>
+ <a class="brand" href="#top" aria-label="ページ先頭へ"><span class="brand-glyph">FP</span><span><span class="brand-title">農場プロファイルの読み方</span><span class="brand-sub">臨床獣医師向け解説ガイド</span></span></a>
  <nav class="nav" aria-label="ページ内案内"><a href="#factors">曝露とレジリエンス</a><a href="#psp">PSPとは</a><a href="#profile">農場プロファイル</a><a href="#farms">仮想農場</a><a href="#kaizen">カイゼン</a><a href="#refs">参考文献</a></nav>
  <button type="button" class="print-btn" onclick="window.print()" aria-label="印刷またはPDF保存"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>印刷 / PDF</button>
 </div></header>
 <main class="wrap" id="main">
-<nav class="crumb" aria-label="農場プロファイル実施SOP"><span>農場プロファイル実施SOP ›</span><a href="index.html">目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html">蓄積型（K式）</a><b>結果の読み方（この資料）</b></nav>
+<nav class="crumb" aria-label="農場プロファイル実施SOP"><span>農場プロファイル実施SOP ›</span><a href="index.html">目次</a><a href="odan.html">横断パッケージ</a><a href="k-shiki.html">蓄積型（K式）</a><b>農場プロファイルの読み方（この資料）</b></nav>
 <section class="hero" id="top"><div class="hero-inner"><div>
  <span class="hero-kicker english">BRDC FRONTIERS · CLINICAL GUIDE</span>
- <h1>健常牛病原体<br><em>スクリーニング検査</em>について</h1>
+ <h1>農場プロファイルの<br>読み方<br><em>曝露圧と感染症レジリエンスから</em></h1>
  <p class="hero-lead">農場の感染症リスクを、病原体と子牛の両面から考える。<br>健康な子牛から検出される病原体（PSP）と、発育の指標である胸囲充足率を組み合わせ、農場ごとに実行できるカイゼンへ。</p>
  <div class="hero-tags"><span>臨床獣医師向け</span><span>曝露圧・感染症レジリエンス</span><span>4つの仮想農場</span></div>
  </div><div class="hero-card" aria-label="農場プロファイルの基本的な組み合わせ">
@@ -96,7 +98,12 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  <div class="hero-pair"><div class="hero-mini alt"><span class="mini-kicker">CLINICAL OUTCOMES</span><b>疾病の発生</b></div><div class="hero-mini"><span class="mini-kicker">FARM CONTEXT</span><b>飼養環境</b></div></div>
  <div class="hero-note">4つの情報を重ねて、農場の強み・課題・改善の方向性を考える</div>
  </div></div></section>
-<div class="guide-strap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>この資料は、既存の農場プロファイルの「陽性率・農場間比較」や獣医師向け「Ct値」の説明を補う、<b>臨床的な読み解き方のガイド</b>です。PSP（健康な子牛から検出される病原体。<a href="#psp">03で説明</a>）は、現在検討・検証されている研究上の概念です。</span></div>
+<div class="guide-strap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>この資料は、既存の農場プロファイルの「陽性率・農場間比較」や獣医師向け「Ct値」の説明を補う、<b>臨床的な読み解き方のガイド</b>です。PSPは、現在検討・検証されている研究上の概念です。</span></div>
+
+<div class="terms">
+ <div class="term"><b>PSP（健常牛病原体スクリーニング）</b>健康な子牛の鼻咽頭スワブや糞便から、qPCRで検出される病原体。<a href="#psp">くわしくは03へ</a></div>
+ <div class="term"><b>胸囲充足率（HGR）</b>その日齢の標準に対する、胸囲の割合。簡単に測れる、日増体量（DG）の代わりの発育の指標。</div>
+</div>
 
 <section class="section" id="why">
  <div class="section-head"><span class="num">01</span><span class="dash"></span><span class="eyebrow">Why farm profiles?</span></div>
@@ -116,7 +123,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  <div class="factor-grid">
   <article class="factor"><span class="factor-id">01 / EXPOSURE</span><h3>病原体曝露圧</h3><span class="en english">Pathogen exposure pressure</span><p>農場・牛群内で、どの程度病原体にさらされているか。外からの侵入、牛群内の伝播、飼養環境が関わります。</p></article>
   <article class="factor blue"><span class="factor-id">02 / RESISTANCE</span><h3>感染・増殖抵抗性</h3><span class="en english">Resistance</span><p>病原体に曝露されても、感染や体内での増殖をどれだけ抑えられるか。日頃「免疫力」と呼ばれる働きの重要な一面です。</p></article>
-  <article class="factor amber"><span class="factor-id">03 / TOLERANCE</span><h3>耐病性</h3><span class="en english">Tolerance</span><p>同程度の病原体負荷でも、炎症や組織障害、生産性低下や重症化をどの程度抑えて健康を保てるか。病原体負荷が変わったときの、健康・発育の変わり方で評価します。</p></article>
+  <article class="factor amber"><span class="factor-id">03 / TOLERANCE</span><h3>耐病性</h3><span class="en english">Tolerance</span><p>同程度の病原体負荷でも、炎症や組織障害、生産性低下や重症化をどの程度抑えて健康を保てるか。病原体負荷が変わったときの、健康・発育の変わり方で評価します。重症化しやすさは病原体の種類によっても異なります。</p></article>
  </div>
  <div class="mechanism card"><div class="eyebrow" style="margin-bottom:16px">How disease develops · 概念図</div>
   <div class="flow-small">
@@ -124,7 +131,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
    <div class="flow-arrow">→</div>
    <div class="flow-node blue"><b>宿主内の病原体負荷</b><small>Resistanceが感染・増殖を制御</small></div>
    <div class="flow-arrow">→</div>
-   <div class="flow-node amber"><b>臨床的な転帰</b><small>Toleranceなどが影響<br>無症状／発症／重症化</small></div>
+   <div class="flow-node amber"><b>臨床的な転帰</b><small>Tolerance・病原体の種類などが影響<br>無症状／発症／重症化</small></div>
   </div>
   <div class="flow-explain">例えば、病原体を増やさない牛（Resistanceが高い牛）と、病原体がいても健康を維持できる牛（Toleranceが高い牛）は、必ずしも同じではありません。</div>
  </div>
@@ -167,22 +174,22 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
   <div class="profile-copy"><h3>検出結果だけでも、胸囲充足率だけでもない。</h3><p>例えばPSP陽性率が高くても、胸囲充足率が高く疾病の少ない農場があります。反対に、BCoVや <i>M. bovis</i> がほぼ検出されなくても、胸囲充足率が低く疾病の多い農場もあります。</p><p><b>両者の組み合わせ</b>が、病原体への曝露と、子牛が健康・発育を維持する力（レジリエンス）を考える手がかりになります。農場プロファイルはResistanceやToleranceを直接測定する検査ではなく、異なる情報を重ねて推測するためのものです。</p></div>
  </div>
  <div class="profile-row">
-  <div class="profile-tile"><span class="tile-n">A</span><h4>PSP検出プロファイル</h4><p>どの病原体が、どのくらい検出されるか。曝露の程度と、感染・増殖の制御を推測する材料。</p></div>
+  <div class="profile-tile"><span class="tile-n">A</span><h4>PSP検出プロファイル</h4><p>どの病原体が、どのくらいの割合の牛から検出されるか。曝露の程度と、感染・増殖の制御を推測する材料。</p></div>
   <div class="profile-tile"><span class="tile-n">B</span><h4>胸囲充足率と組み合わせる</h4><p>発育はレジリエンスに関わるアウトカム。病原体検出と重ねて、健康を維持できているかを考察。</p></div>
-  <div class="profile-tile"><span class="tile-n">C</span><h4>発症・重症化・死亡を見る</h4><p>疾病の実態と重ね、Toleranceや治療体制・管理条件を含む農場全体の特徴を考察。</p></div>
+  <div class="profile-tile"><span class="tile-n">C</span><h4>発症・重症化・死亡を見る</h4><p>疾病の実態と重ね、Tolerance、重症化しやすい病原体種、治療体制・管理条件を含む農場全体の特徴を考察。</p></div>
  </div>
  <div class="compare rt"><table><thead><tr><th>評価するもの</th><th>農場プロファイルでの情報</th><th>生物学的な解釈</th></tr></thead><tbody>
   <tr><td>病原体曝露圧</td><td>PSP検出状況、農場環境・飼養管理情報</td><td>病原体への曝露の程度を推測</td></tr>
-  <tr><td>Resistance（抵抗性）</td><td>同一病原体の核酸検出量と曝露状況</td><td>病原体の感染・増殖を制御する能力を推測</td></tr>
-  <tr><td>Tolerance（耐病性）</td><td>病原体負荷と、発育・疾病転帰との関係</td><td>病原体負荷による健康被害の程度を評価</td></tr>
+  <tr><td>Resistance（抵抗性）</td><td>同一病原体の検出率と曝露状況</td><td>病原体の感染・増殖を制御する能力を推測</td></tr>
+  <tr><td>Tolerance（耐病性）</td><td>病原体負荷・病原体の種類と、発育・疾病転帰との関係</td><td>病原体負荷による健康被害の程度を評価。重症化しやすい病原体種かどうかも考慮</td></tr>
   <tr><td>Resilience（レジリエンス）</td><td>胸囲充足率、疾病発生状況など</td><td>曝露がある環境で健康・発育を維持する能力を考察</td></tr>
  </tbody></table></div>
- <div class="matrix card"><div class="eyebrow" style="margin-bottom:6px">Concept map</div><h3>胸囲充足率 × PSP核酸検出量：概念的な解釈</h3>
-  <div class="mx"><div class="corner"></div><div class="hd">PSP核酸検出量が少ない</div><div class="hd">PSP核酸検出量が多い</div>
+ <div class="matrix card"><div class="eyebrow" style="margin-bottom:6px">Concept map</div><h3>胸囲充足率 × PSP検出率：概念的な解釈</h3>
+  <div class="mx"><div class="corner"></div><div class="hd">PSP検出率が低い</div><div class="hd">PSP検出率が高い</div>
    <div class="rh">胸囲充足率が高い</div><div class="q q1"><b>曝露が少ない、または増殖が抑えられている</b>Resistanceが働いている可能性</div><div class="q q2"><b>検出されても健康を維持</b>Toleranceを含むレジリエンスが良好な可能性</div>
    <div class="rh">胸囲充足率が低い</div><div class="q q3"><b>病原体以外の要因を疑う</b>栄養・飼養環境、既往感染や他の病原体が発育に影響している可能性</div><div class="q q4"><b>検出と発育不良が重なる</b>病原体負荷、宿主の状態、飼養環境を総合的に検討</div>
   </div>
-  <p class="note-s">※ 農場プロファイルを解釈するための模式図です。どの象限に入ったかだけで、ResistanceやToleranceを測定できたという意味ではありません。核酸検出量（Ct値が小さいほど多い）は、同じ病原体の中で比べます。異なる病原体どうしでCt値を直接比べることはできません。</p>
+  <p class="note-s">※ 農場プロファイルを解釈するための模式図です。どの象限に入ったかだけで、ResistanceやToleranceを測定できたという意味ではありません。検出率は同じ病原体の中で比べます。Ct値による定量（鼻咽頭スワブの回収率で補正する方法）は検討中のため、現時点では検出率で読みます。採材をくり返しても検出率が高い場合は、感染・増殖を十分に抑えられていない状態に近いと考えます。</p>
  </div>
 </section>
 
@@ -203,7 +210,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
     <div class="case-heading"><div><h3>病原体も多く、発症・重症化も多い農場</h3><p>複数の病原体が検出され、子牛の健康状態も低い</p></div><span class="case-number">農場 A</span></div>
     <div class="case-facts"><div class="fact"><span class="fact-label">BCoV / M. bovis</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">BRDC・下痢症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value high">要重点改善</span></div></div>
     <div class="case-insight"><strong>この農場の読み取り：</strong>病原体の検出と、発育・疾病の悪化が重なっています。曝露の多さ、感染・増殖の制御、飼養管理に、複合的な課題がある可能性があります。</div>
-    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>曝露圧が高そう</b><p>BCoV・M. bovis・Eimeriaの複数が高陽性。</p></div><div class="vcard"><small>02 / RESILIENCE</small><b>健康維持に課題</b><p>PSP高陽性に、胸囲充足率の低さと発症の多さが重なる。</p></div><div class="vcard"><small>03 / SEVERITY</small><b>重症化も多い</b><p>発症後の重症化や死亡も多い。Toleranceの低さや治療の遅れを検討。</p></div></div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>曝露圧が高そう</b><p>BCoV・M. bovis・Eimeriaの複数が高陽性。</p></div><div class="vcard"><small>02 / RESILIENCE</small><b>健康維持に課題</b><p>PSP高陽性に、胸囲充足率の低さと発症の多さが重なる。</p></div><div class="vcard"><small>03 / SEVERITY</small><b>重症化も多い</b><p>発症後の重症化や死亡も多い。Toleranceの低さ、重症化しやすい病原体の関与、治療の遅れを検討。</p></div></div>
     <p class="case-story">飼養環境や子牛の健康管理に課題が重なっている農場像です。例えば初乳・哺乳・栄養・換気などの改善と、清掃や牛群接触の見直しなど実行可能な曝露低減策を組み合わせることが考えられます。</p>
     <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>子牛のレジリエンスを支える飼養管理と、実行可能な範囲での病原体曝露低減を並行して進める。</p></div>
     <p class="case-conclusion">結論：子牛側の健康管理と環境の両面から、優先順位を決めて改善する農場。</p>
@@ -279,7 +286,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  </ol></details>
 </section>
 </main>
-<footer class="footer"><div class="wrap foot-inner"><span>健常牛病原体スクリーニング検査について ｜ 臨床獣医師向け・農場プロファイル解説</span><a href="#refs" class="foot-top">参考文献</a>　<a href="#top" class="foot-top">ページ先頭へ ↑</a></div></footer>
+<footer class="footer"><div class="wrap foot-inner"><span>農場プロファイルの読み方 ｜ 臨床獣医師向け解説ガイド ｜ BRDC Frontiers</span><a href="#refs" class="foot-top">参考文献</a>　<a href="#top" class="foot-top">ページ先頭へ ↑</a></div></footer>
 <script>
 (function(){
 'use strict';
