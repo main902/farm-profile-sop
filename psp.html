@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#143f47">
-<meta name="description" content="臨床獣医師向け：健常牛病原体スクリーニング検査（PSP）と胸囲充足率を組み合わせた農場プロファイルの読み解き方。4つの仮想農場からカイゼンの方向性を考える。">
+<meta name="description" content="臨床獣医師向け：病原体への曝露圧と子牛の感染症レジリエンスの視点から、健常牛病原体スクリーニング検査（PSP）と胸囲充足率を組み合わせた農場プロファイルの読み解き方。4つの仮想農場からカイゼンの方向性を考える。">
 <title>健常牛病原体スクリーニング検査について｜農場プロファイル解説</title>
 <style>
 :root{
@@ -62,6 +62,11 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 @media(max-width:590px){body{font-size:14px}.wrap{width:calc(100% - 30px)}.topbar-inner{width:calc(100% - 28px);height:62px}.brand-glyph{width:35px;height:35px;font-size:12px}.brand-title{font-size:11px}.brand-sub{font-size:9px}.print-btn{padding:6px 10px;font-size:11px}.print-btn svg{width:14px}.hero{margin:15px 0 22px;border-radius:18px}.hero-inner{padding:33px 22px;gap:25px}.hero h1{font-size:27px;margin:19px 0 15px}.hero-lead{font-size:13px}.hero-tags span{font-size:10px}.hero-card{padding:18px}.section{padding:38px 0 41px}.section h2{font-size:23px}.intro{font-size:13px;margin-bottom:20px}.grid2,.grid3,.factor-grid,.profile-row,.pathogen-section,.resources{grid-template-columns:1fr}.question{flex-direction:column;gap:3px;align-items:flex-start;padding:21px}.question span{font-size:15px}.problem-card{min-height:150px;padding:23px}.factor{min-height:auto}.flow-small{grid-template-columns:1fr;gap:6px}.flow-arrow{transform:rotate(90deg);font-size:19px;line-height:1}.mechanism{padding:17px}.profile-intro,.psp-definition{grid-template-columns:1fr}.profile-graphic{padding:25px}.profile-copy,.psp-copy{padding:23px}.psp-big{padding:24px}.psp-big .letters{font-size:58px}.psp-big .subtxt{margin-top:15px}.mini-types{grid-template-columns:1fr}.case-tab{min-width:154px;padding:13px}.case-panel{padding:19px}.case-heading h3{font-size:18px}.case-facts{grid-template-columns:repeat(2,1fr)}.case-three{grid-template-columns:1fr}.case-three .vcard{padding:12px}.practice-lead{padding:26px 21px}.action-steps{grid-template-columns:1fr}.action-step{min-height:0}.final-message{padding:22px}.final-message h3{font-size:20px}.footer .foot-inner{align-items:flex-start;flex-direction:column}}
 .crumb{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:16px 0 0;font-size:12px;font-weight:750;color:#61747a}.crumb a{text-decoration:none;border:1px solid var(--line);background:#fff;border-radius:99px;padding:3px 12px;color:#2e5c60}.crumb a:hover{background:#eef6f2}.crumb b{color:var(--ink)}
 @media print{.crumb{display:none}}
+.resil{margin-top:18px;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.resil h3{margin:0 0 8px;font-size:18px}.resil p{margin:0 0 10px;font-size:14px;line-height:1.9;color:var(--ink2)}.resil p:last-child{margin:0}.resil .eq{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 12px;font-weight:850;font-size:14px}.resil .eq span{border-radius:10px;padding:6px 12px;background:#eef6f3}.resil .eq span.b{background:#eff5fa;color:#2c6489}.resil .eq span.a{background:#fff7ed;color:#8d5d22}.resil .eq span.r{background:#183f49;color:#fff}.resil .eq i{font-style:normal;color:#8aa3a3}
+@media(max-width:590px){.compare.rt table{min-width:0}.compare.rt thead{display:none}.compare.rt tr{display:block;padding:12px 14px;border-top:1px solid #e7eeeb}.compare.rt td{display:block;border:0;padding:2px 0}.compare.rt td:nth-child(2)::before{content:"情報：";color:#7a8e92}.compare.rt td:nth-child(3)::before{content:"解釈：";color:#7a8e92}}
+.note-s{font-size:12px;color:var(--sub);line-height:1.8;margin:12px 0 0}
+.matrix{margin-top:20px;padding:24px 26px}.matrix h3{margin:0 0 4px;font-size:17px}.mx{display:grid;grid-template-columns:110px 1fr 1fr;gap:8px;margin-top:14px}.mx .hd{font-size:12px;font-weight:850;color:#325d61;text-align:center;align-self:end;padding:4px}.mx .rh{font-size:12px;font-weight:850;color:#325d61;display:flex;align-items:center}.mx .q{border-radius:12px;padding:13px 14px;font-size:12.5px;line-height:1.8}.mx .q b{display:block;font-size:13px;margin-bottom:3px}.q1{background:#e8f6f2}.q2{background:#eef5fb}.q3{background:#fff6e9}.q4{background:#fff2eb}
+@media(max-width:590px){.mx{grid-template-columns:1fr 1fr}.mx .corner{display:none}.mx .rh{grid-column:1/-1;margin-top:6px}.resil{padding:19px}.matrix{padding:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 @media print{
   @page{size:A4;margin:12mm}
@@ -74,7 +79,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <a class="skip" href="#main">本文へ移動</a>
 <header class="topbar"><div class="topbar-inner">
  <a class="brand" href="#top" aria-label="ページ先頭へ"><span class="brand-glyph">PSP</span><span><span class="brand-title">健常牛病原体スクリーニング</span><span class="brand-sub">農場プロファイル・臨床解説ガイド</span></span></a>
- <nav class="nav" aria-label="ページ内案内"><a href="#factors">3つの視点</a><a href="#profile">農場プロファイル</a><a href="#psp">PSPとは</a><a href="#farms">仮想農場</a><a href="#kaizen">カイゼン</a></nav>
+ <nav class="nav" aria-label="ページ内案内"><a href="#factors">曝露とレジリエンス</a><a href="#profile">農場プロファイル</a><a href="#psp">PSPとは</a><a href="#farms">仮想農場</a><a href="#kaizen">カイゼン</a></nav>
  <button type="button" class="print-btn" onclick="window.print()" aria-label="印刷またはPDF保存"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>印刷 / PDF</button>
 </div></header>
 <main class="wrap" id="main">
@@ -82,8 +87,8 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <section class="hero" id="top"><div class="hero-inner"><div>
  <span class="hero-kicker english">BRDC FRONTIERS · CLINICAL GUIDE</span>
  <h1>健常牛病原体<br><em>スクリーニング検査</em>について</h1>
- <p class="hero-lead">健康な子牛の病原体検出から、農場の感染症リスクを考える。<br>PSPと胸囲充足率を組み合わせ、農場ごとに実行できるカイゼンへ。</p>
- <div class="hero-tags"><span>臨床獣医師向け</span><span>曝露圧・Resistance・Tolerance</span><span>4つの仮想農場</span></div>
+ <p class="hero-lead">農場の感染症リスクを、病原体と子牛の両面から考える。<br>PSPと胸囲充足率を組み合わせ、農場ごとに実行できるカイゼンへ。</p>
+ <div class="hero-tags"><span>臨床獣医師向け</span><span>曝露圧・感染症レジリエンス</span><span>4つの仮想農場</span></div>
  </div><div class="hero-card" aria-label="農場プロファイルの基本的な組み合わせ">
  <div class="hero-card-head">農場プロファイルの見方 <small>コンセプト</small></div>
  <div class="hero-pair"><div class="hero-mini"><span class="mini-kicker">HEALTHY CALVES</span><b>PSP検出</b></div><div class="hero-mini alt"><span class="mini-kicker">GROWTH STATUS</span><b>胸囲充足率</b></div></div>
@@ -105,12 +110,12 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 
 <section class="section" id="factors">
  <div class="section-head"><span class="num">02</span><span class="dash"></span><span class="eyebrow">Three perspectives</span></div>
- <h2>感染症発症を考える、3つの視点</h2>
- <p class="intro">病原体への曝露があっても、すべての牛が同じように発症するわけではありません。農場の感染症リスクを考えるときには、次の3つを分けて考えます。</p>
+ <h2>病原体への曝露圧と、子牛の感染症レジリエンス</h2>
+ <p class="intro">農場の感染症リスクには、病原体への<b>曝露圧</b>と、子牛の<b>感染症レジリエンス</b>が関係しています。子牛のレジリエンスは、病原体の感染・増殖を抑えるResistance（抵抗性）と、病原体が存在しても健康被害を抑えるTolerance（耐病性）によって支えられています。</p>
  <div class="factor-grid">
   <article class="factor"><span class="factor-id">01 / EXPOSURE</span><h3>病原体曝露圧</h3><span class="en english">Pathogen exposure pressure</span><p>農場・牛群内で、どの程度病原体にさらされているか。外からの侵入、牛群内の伝播、飼養環境が関わります。</p></article>
   <article class="factor blue"><span class="factor-id">02 / RESISTANCE</span><h3>感染・増殖抵抗性</h3><span class="en english">Resistance</span><p>病原体に曝露されても、感染や体内での増殖をどれだけ抑えられるか。日頃「免疫力」と呼ばれる働きの重要な一面です。</p></article>
-  <article class="factor amber"><span class="factor-id">03 / TOLERANCE</span><h3>耐病性</h3><span class="en english">Tolerance</span><p>同程度の病原体負荷でも、炎症や組織障害、生産性低下や重症化をどの程度抑えて健康を保てるか。</p></article>
+  <article class="factor amber"><span class="factor-id">03 / TOLERANCE</span><h3>耐病性</h3><span class="en english">Tolerance</span><p>同程度の病原体負荷でも、炎症や組織障害、生産性低下や重症化をどの程度抑えて健康を保てるか。病原体負荷が変わったときの、健康・発育の変わり方で評価します。</p></article>
  </div>
  <div class="mechanism card"><div class="eyebrow" style="margin-bottom:16px">How disease develops · 概念図</div>
   <div class="flow-small">
@@ -122,21 +127,38 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
   </div>
   <div class="flow-explain">例えば、病原体を増やさない牛（Resistanceが高い牛）と、病原体がいても健康を維持できる牛（Toleranceが高い牛）は、必ずしも同じではありません。</div>
  </div>
- <div class="one-liner">大切なのは「病原体を増やさないこと」と「病原体がいても重症化しにくいこと」を分けて考えることです。</div>
+ <div class="resil"><div class="eyebrow" style="margin-bottom:8px">Disease resilience</div><h3>感染症レジリエンス：曝露がある環境で、健康と発育を維持する力</h3>
+ <div class="eq"><span>曝露圧（農場・環境側）</span><i>のもとで</i><span class="r">レジリエンス</span><i>＝</i><span class="b">Resistance</span><i>＋</i><span class="a">Tolerance</span></div>
+ <p>曝露圧は子牛の能力ではなく、子牛が置かれた条件です。ResistanceとToleranceは本来は個体の性質ですが、この資料では、初乳・栄養・飼養環境などの管理によって<b>牛群として現れる状態</b>として扱います。</p>
+ <p>また、感染・増殖を抑えられない子牛は病原体を多く排出し、農場の曝露圧を高めます。子牛の健康を支える管理は、曝露を減らすことにもつながります。</p></div>
+<div class="one-liner">大切なのは「病原体を増やさないこと」と「病原体がいても健康を保てること」を分けて考えることです。</div>
 </section>
 
 <section class="section" id="profile">
  <div class="section-head"><span class="num">03</span><span class="dash"></span><span class="eyebrow">Reading farm profiles</span></div>
- <h2>3つの視点は、農場プロファイルのどこに表れるのでしょうか？</h2>
- <p class="intro">農場プロファイルでは、健常牛の病原体検出と胸囲充足率を<strong>組み合わせて</strong>評価します。さらに疾病の発生状況や飼養環境の情報を重ねることで、感染症リスクの背景を考えます。</p>
+ <h2>曝露とレジリエンスは、農場プロファイルのどこに表れるのでしょうか？</h2>
+ <p class="intro">農場プロファイルでは、健常牛のPSP検出状況と胸囲充足率を<strong>組み合わせ</strong>、病原体への曝露や子牛の健康維持能力に関する情報を捉えます。さらに、BRDC・下痢症の発生状況や飼養管理情報と照らし合わせることで、農場ごとの強みと課題を考え、実行可能なカイゼンにつなげます。</p>
  <div class="profile-intro card">
   <div class="profile-graphic"><span class="label english">FARM PROFILE</span><div class="display">PSP × 胸囲充足率</div><p>2つの検査情報を組み合わせて読み解く</p><div class="profile-symbols"><span>PSP候補病原体</span><span>個体の発育状態</span><span>牛群の傾向</span></div></div>
-  <div class="profile-copy"><h3>検出結果だけでも、胸囲充足率だけでもない。</h3><p>例えばPSP陽性率が高くても、胸囲充足率が高く疾病の少ない農場があります。反対に、BCoVや <i>M. bovis</i> がほぼ検出されなくても、胸囲充足率が低く疾病の多い農場もあります。</p><p><b>両者の組み合わせ</b>が、病原体曝露と子牛の感染・増殖抵抗性を考える手がかりになります。</p></div>
+  <div class="profile-copy"><h3>検出結果だけでも、胸囲充足率だけでもない。</h3><p>例えばPSP陽性率が高くても、胸囲充足率が高く疾病の少ない農場があります。反対に、BCoVや <i>M. bovis</i> がほぼ検出されなくても、胸囲充足率が低く疾病の多い農場もあります。</p><p><b>両者の組み合わせ</b>が、病原体への曝露と、子牛が健康・発育を維持する力（レジリエンス）を考える手がかりになります。農場プロファイルはResistanceやToleranceを直接測定する検査ではなく、異なる情報を重ねて推測するためのものです。</p></div>
  </div>
  <div class="profile-row">
-  <div class="profile-tile"><span class="tile-n">A</span><h4>PSP検出プロファイル</h4><p>病原体曝露と、宿主内で病原体が検出される状態に注目。</p></div>
-  <div class="profile-tile"><span class="tile-n">B</span><h4>胸囲充足率と組み合わせる</h4><p>発育状態も考慮し、感染・増殖抵抗性に関わる牛群の特徴を考察。</p></div>
-  <div class="profile-tile"><span class="tile-n">C</span><h4>発症・重症化・死亡を見る</h4><p>疾病の実態と重ね、耐病性や管理条件を含む農場全体の特徴を考察。</p></div>
+  <div class="profile-tile"><span class="tile-n">A</span><h4>PSP検出プロファイル</h4><p>どの病原体が、どのくらい検出されるか。曝露の程度と、感染・増殖の制御を推測する材料。</p></div>
+  <div class="profile-tile"><span class="tile-n">B</span><h4>胸囲充足率と組み合わせる</h4><p>発育はレジリエンスに関わるアウトカム。病原体検出と重ねて、健康を維持できているかを考察。</p></div>
+  <div class="profile-tile"><span class="tile-n">C</span><h4>発症・重症化・死亡を見る</h4><p>疾病の実態と重ね、Toleranceや治療体制・管理条件を含む農場全体の特徴を考察。</p></div>
+ </div>
+ <div class="compare rt"><table><thead><tr><th>評価するもの</th><th>農場プロファイルでの情報</th><th>生物学的な解釈</th></tr></thead><tbody>
+  <tr><td>病原体曝露圧</td><td>PSP検出状況、農場環境・飼養管理情報</td><td>病原体への曝露の程度を推測</td></tr>
+  <tr><td>Resistance（抵抗性）</td><td>同一病原体の核酸検出量と曝露状況</td><td>病原体の感染・増殖を制御する能力を推測</td></tr>
+  <tr><td>Tolerance（耐病性）</td><td>病原体負荷と、発育・疾病転帰との関係</td><td>病原体負荷による健康被害の程度を評価</td></tr>
+  <tr><td>Resilience（レジリエンス）</td><td>胸囲充足率、疾病発生状況など</td><td>曝露がある環境で健康・発育を維持する能力を考察</td></tr>
+ </tbody></table></div>
+ <div class="matrix card"><div class="eyebrow" style="margin-bottom:6px">Concept map</div><h3>胸囲充足率 × PSP核酸検出量：概念的な解釈</h3>
+  <div class="mx"><div class="corner"></div><div class="hd">PSP核酸検出量が少ない</div><div class="hd">PSP核酸検出量が多い</div>
+   <div class="rh">胸囲充足率が高い</div><div class="q q1"><b>曝露が少ない、または増殖が抑えられている</b>Resistanceが働いている可能性</div><div class="q q2"><b>検出されても健康を維持</b>Toleranceを含むレジリエンスが良好な可能性</div>
+   <div class="rh">胸囲充足率が低い</div><div class="q q3"><b>病原体以外の要因を疑う</b>栄養・飼養環境、既往感染や他の病原体が発育に影響している可能性</div><div class="q q4"><b>検出と発育不良が重なる</b>病原体負荷、宿主の状態、飼養環境を総合的に検討</div>
+  </div>
+  <p class="note-s">※ 農場プロファイルを解釈するための模式図です。どの象限に入ったかだけで、ResistanceやToleranceを測定できたという意味ではありません。核酸検出量（Ct値が小さいほど多い）は、同じ病原体の中で比べます。異なる病原体どうしでCt値を直接比べることはできません。</p>
  </div>
 </section>
 
@@ -152,7 +174,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  <div class="pathogen-section">
   <div class="path-group"><h3>呼吸器関連PSP候補</h3><p class="subheading">主な検体：健常牛の鼻咽頭スワブ</p>
    <div class="path-item"><b>BCoV <span class="type-label">農場間の違いに注目</span></b><p>検出状況が農場のBRDC発生や胸囲充足率と関連する可能性に注目しています。</p></div>
-   <div class="path-item"><b><i>Mycoplasma bovis</i> <span class="type-label">個体差にも注目</span></b><p>農場内の個体差を考慮しても胸囲充足率との関連がみられ、重要なPSP候補と考えています。</p></div>
+   <div class="path-item"><b><i>Mycoplasma bovis</i> <span class="type-label">個体差にも注目</span></b><p>農場内の個体差を考慮しても胸囲充足率との関連がみられ（前事業の解析にもとづく暫定的な所見）、重要なPSP候補と考えています。</p></div>
    <div class="path-item"><b><i>P. multocida</i> / <i>M. haemolytica</i> / <i>H. somni</i></b><p>健康で発育のよい牛でも高率に検出されます。検出されることと発症することの違いを考えるうえで重要です。</p></div>
   </div>
   <div class="path-group"><h3>消化器関連PSP候補</h3><p class="subheading">主な検体：健常牛の糞便（拡張的な評価）</p>
@@ -166,7 +188,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <section class="section" id="farms">
  <div class="section-head"><span class="num">05</span><span class="dash"></span><span class="eyebrow">Four farm scenarios</span></div>
  <h2>4つの仮想農場で、実際の読み方を考える</h2>
- <p class="intro">どの農場でも「曝露圧・Resistance・Tolerance」の3つを同じ順番で確認します。そのうえで、農場の強みと課題を整理し、現場で実行できる改善を考えます。</p>
+ <p class="intro">どの農場でも「曝露（PSP検出）→ 健康・発育の維持（胸囲充足率・発症）→ 重症化・死亡」の順に確認し、ResistanceとToleranceの関与を考えます。そのうえで、農場の強みと課題を整理し、現場で実行できる改善を考えます。</p>
  <div class="case-legend"><span>数値を使わない説明用の仮想例</span><span>高・中・低は模式的な表現</span><span>各農場のタブを選択</span></div>
  <div class="case-wrap">
   <div class="case-tabs" role="tablist" aria-label="仮想農場を選択">
@@ -179,26 +201,26 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
    <article class="case-panel card" role="tabpanel" id="panel-a" aria-labelledby="tab-a" tabindex="0">
     <div class="case-heading"><div><h3>病原体も多く、発症・重症化も多い農場</h3><p>複数の病原体が検出され、子牛の健康状態も低い</p></div><span class="case-number">農場 A</span></div>
     <div class="case-facts"><div class="fact"><span class="fact-label">BCoV / M. bovis</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">BRDC・下痢症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value high">要重点改善</span></div></div>
-    <div class="case-insight"><strong>この農場の読み取り：</strong>複数の病原体への曝露が多く、子牛の感染・増殖抵抗性も十分に保たれていない可能性があります。重篤化しやすい背景も重なっていると考えられます。</div>
-    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>曝露圧が高そう</b><p>BCoV・M. bovis・Eimeriaの複数が高陽性。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>抵抗性に課題</b><p>PSP高陽性に胸囲充足率の低さが重なる。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>重症化にも課題</b><p>発症後の重症化や死亡も多い。</p></div></div>
+    <div class="case-insight"><strong>この農場の読み取り：</strong>病原体の検出と、発育・疾病の悪化が重なっています。曝露の多さ、感染・増殖の制御、飼養管理に、複合的な課題がある可能性があります。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>曝露圧が高そう</b><p>BCoV・M. bovis・Eimeriaの複数が高陽性。</p></div><div class="vcard"><small>02 / RESILIENCE</small><b>健康維持に課題</b><p>PSP高陽性に、胸囲充足率の低さと発症の多さが重なる。</p></div><div class="vcard"><small>03 / SEVERITY</small><b>重症化も多い</b><p>発症後の重症化や死亡も多い。Toleranceの低さや治療の遅れを検討。</p></div></div>
     <p class="case-story">飼養環境や子牛の健康管理に課題が重なっている農場像です。例えば初乳・哺乳・栄養・換気などの改善と、清掃や牛群接触の見直しなど実行可能な曝露低減策を組み合わせることが考えられます。</p>
-    <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>子牛の抵抗性を支える飼養管理と、実行可能な範囲での病原体曝露低減を並行して進める。</p></div>
+    <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>子牛のレジリエンスを支える飼養管理と、実行可能な範囲での病原体曝露低減を並行して進める。</p></div>
     <p class="case-conclusion">結論：子牛側の健康管理と環境の両面から、優先順位を決めて改善する農場。</p>
    </article>
    <article class="case-panel card" role="tabpanel" id="panel-b" aria-labelledby="tab-b" tabindex="0" hidden>
     <div class="case-heading"><div><h3><i>M. bovis</i>がほぼ陰性なのに、発症は多い農場</h3><p>BCoV・Eimeriaの検出が多く、胸囲充足率が低い</p></div><span class="case-number">農場 B</span></div>
     <div class="case-facts"><div class="fact"><span class="fact-label"><i>M. bovis</i></span><span class="fact-value low">ほぼ陰性</span></div><div class="fact"><span class="fact-label">BCoV / Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">疾病発症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value mid">発症対策が中心</span></div></div>
-    <div class="case-insight"><strong>この農場の読み取り：</strong>子牛の感染・増殖抵抗性に課題がありそうでも、<i>M. bovis</i>はほぼ検出されません。<strong><i>M. bovis</i>への曝露圧は比較的低く抑えられている</strong>可能性があり、この点は農場の強みと考えられます。</div>
-    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>病原体ごとに差</b><p><i>M. bovis</i>は低い一方、BCoV・Eimeriaは高陽性。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>抵抗性が十分でない可能性</b><p>胸囲充足率が低く、発症も多い。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>重篤化は少ない</b><p>発症は多いものの、重症化・死亡は低い水準。</p></div></div>
-    <p class="case-story">例えば<i>M. bovis</i>への侵入・伝播対策が一定程度機能している一方で、栄養・哺乳・飼養環境など、子牛の健康を支える管理には改善余地がある農場像です。BCoVやEimeriaへの曝露を下げられる部分も検討します。</p>
+    <div class="case-insight"><strong>この農場の読み取り：</strong>子牛の健康維持に課題がありそうでも、<i>M. bovis</i>はほぼ検出されません。<strong><i>M. bovis</i>への曝露が少ない、または増殖が制御されている</strong>可能性があり、この点は農場の強みと考えられます。他の病原体への曝露と、子牛の健康維持能力が改善の焦点です。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>病原体ごとに差</b><p><i>M. bovis</i>は低い一方、BCoV・Eimeriaは高陽性。</p></div><div class="vcard"><small>02 / RESILIENCE</small><b>健康維持に課題</b><p>胸囲充足率が低く、発症も多い。</p></div><div class="vcard"><small>03 / SEVERITY</small><b>重篤化は少ない</b><p>発症は多いものの、重症化・死亡は低い水準。Toleranceのほか、早期治療の効果も考えられる。</p></div></div>
+    <p class="case-story">例えば<i>M. bovis</i>への侵入・伝播対策が一定程度機能している（または増殖が抑えられている）一方で、栄養・哺乳・飼養環境など、子牛の健康を支える管理には改善余地がある農場像です。BCoVやEimeriaへの曝露を下げられる部分も検討します。</p>
     <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p><i>M. bovis</i>を低く抑えられている状態を維持し、初乳・哺乳・栄養・換気などを見直して、まず日常的な発症を減らす。</p></div>
-    <p class="case-conclusion">結論：病原体ごとの「抑えられている部分」を活かしながら、子牛の抵抗性を高める農場。</p>
+    <p class="case-conclusion">結論：病原体ごとの「抑えられている部分」を活かしながら、子牛の健康維持能力を高める農場。</p>
    </article>
    <article class="case-panel card" role="tabpanel" id="panel-c" aria-labelledby="tab-c" tabindex="0" hidden>
     <div class="case-heading"><div><h3><i>M. bovis</i>が陽性でも、健康状態が良好な農場</h3><p>病原体検出と疾病発生が必ずしも一致しない</p></div><span class="case-number">農場 C</span></div>
     <div class="case-facts"><div class="fact"><span class="fact-label"><i>M. bovis</i></span><span class="fact-value mid">中程度陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value low">高い</span></div><div class="fact"><span class="fact-label">BRDC発症</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">牛群の健康状態</span><span class="fact-value low">良好</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value low">強みを維持</span></div></div>
-    <div class="case-insight"><strong>この農場の読み取り：</strong><i>M. bovis</i>への曝露・保菌の可能性はある一方、健康状態を比較的良好に維持しています。子牛の抵抗性や、病原体が存在しても健康を保つ力が良好な可能性があります。</div>
-    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b><i>M. bovis</i>への曝露あり</b><p>牛群内で病原体が検出される。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>子牛の状態は良好</b><p>胸囲充足率が高く維持されている。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>発症・重症化が少ない</b><p>病原体が検出されても健康を維持できている。</p></div></div>
+    <div class="case-insight"><strong>この農場の読み取り：</strong><i>M. bovis</i>が検出されても、健康と発育を維持できています。良好なレジリエンスを示唆し、Toleranceの関与も考えられます。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b><i>M. bovis</i>への曝露あり</b><p>牛群内で病原体が検出される。</p></div><div class="vcard"><small>02 / RESILIENCE</small><b>健康と発育を維持</b><p>病原体が検出されても、胸囲充足率が高く、発症も少ない。</p></div><div class="vcard"><small>03 / SEVERITY</small><b>重症化・死亡が少ない</b><p>Toleranceを含むレジリエンスが良好な可能性。</p></div></div>
     <p class="case-story">例えば、初乳・哺乳・栄養・温熱環境などの飼養管理がうまく機能している農場像です。感染症リスクをさらに低減するには、無理なくできる範囲で<i>M. bovis</i>の伝播抑制策を加えることが考えられます。</p>
     <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>すでに良好な健康状態を支えている飼養管理を維持しつつ、可能な範囲で牛群間接触・導入時の管理などを見直す。</p></div>
     <p class="case-conclusion">結論：現在の飼養管理の強みを維持し、できる対策を積み重ねる農場。</p>
@@ -206,23 +228,23 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
    <article class="case-panel card" role="tabpanel" id="panel-d" aria-labelledby="tab-d" tabindex="0" hidden>
     <div class="case-heading"><div><h3>BCoV・<i>M. bovis</i>は低いのに、疾病が多い農場</h3><p>Eimeriaは高陽性で、BRDCと下痢症が日常的に発生</p></div><span class="case-number">農場 D</span></div>
     <div class="case-facts"><div class="fact"><span class="fact-label">BCoV / <i>M. bovis</i></span><span class="fact-value low">ほぼ陰性</span></div><div class="fact"><span class="fact-label">Eimeria</span><span class="fact-value high">高陽性</span></div><div class="fact"><span class="fact-label">胸囲充足率</span><span class="fact-value high">低い</span></div><div class="fact"><span class="fact-label">BRDC・下痢症</span><span class="fact-value high">多い</span></div><div class="fact"><span class="fact-label">重症化・死亡</span><span class="fact-value low">少ない</span></div><div class="fact"><span class="fact-label">総合的な印象</span><span class="fact-value mid">飼養管理を重点確認</span></div></div>
-    <div class="case-insight"><strong>この農場の読み取り：</strong>BCoV・<i>M. bovis</i>への曝露は比較的低く抑えられている可能性があります。一方、Eimeria高陽性と胸囲充足率の低さから、消化器関連の曝露や子牛の抵抗性を支える管理に課題がある農場像が考えられます。</div>
-    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>病原体間で異なる</b><p>BCoV・<i>M. bovis</i>は低いが、Eimeriaは高陽性。</p></div><div class="vcard"><small>02 / RESISTANCE</small><b>抵抗性の課題を疑う</b><p>胸囲充足率が低く、日常的な発症が多い。</p></div><div class="vcard"><small>03 / TOLERANCE</small><b>重篤化は少ない</b><p>発症は多いが、死亡や重症化には比較的至りにくい。</p></div></div>
-    <p class="case-story">例えば呼吸器病原体の一部は抑えられていても、初乳・哺乳・栄養、敷料や換気など、子牛の抵抗性に関わる飼養管理には改善の余地がある農場像です。健康牛でも保菌し得る呼吸器細菌が発症に関与している可能性も考えます。</p>
+    <div class="case-insight"><strong>この農場の読み取り：</strong>呼吸器と消化器で検出パターンが異なります。BCoV・<i>M. bovis</i>は低い一方、Eimeriaは高陽性で、胸囲充足率も低い農場です。初乳・栄養・飼養環境など、子牛の健康維持能力に関係する要因を優先して検討します。</div>
+    <div class="case-three"><div class="vcard"><small>01 / EXPOSURE</small><b>病原体間で異なる</b><p>BCoV・<i>M. bovis</i>は低いが、Eimeriaは高陽性。</p></div><div class="vcard"><small>02 / RESILIENCE</small><b>健康維持に課題</b><p>胸囲充足率が低く、日常的な発症が多い。</p></div><div class="vcard"><small>03 / SEVERITY</small><b>重篤化は少ない</b><p>発症は多いが、死亡や重症化には比較的至りにくい。早期治療の効果も考えられる。</p></div></div>
+    <p class="case-story">例えば呼吸器病原体の一部は抑えられていても、初乳・哺乳・栄養、敷料や換気など、子牛の健康維持に関わる飼養管理には改善の余地がある農場像です。健康牛でも保菌し得る呼吸器細菌が発症に関与している可能性も考えます。</p>
     <div class="case-action"><span class="tag">KAIZEN PRIORITY</span><p>初乳・哺乳・栄養・飼育環境を優先的に見直し、併せて清掃や敷料などEimeriaへの曝露を減らせる部分を改善する。</p></div>
     <p class="case-conclusion">結論：呼吸器病原体を低く保てていても、子牛を強く育てる管理が重要な農場。</p>
    </article>
    <div class="case-pager"><button class="pager-btn" type="button" id="previous-case">← 前の農場</button><span class="pager-count" id="case-position" aria-live="polite">1 / 4</span><button class="pager-btn" type="button" id="next-case">次の農場 →</button></div>
   </div>
  </div>
- <div class="compare"><table><thead><tr><th>農場</th><th>見えてくる農場の状態</th><th>カイゼンの方向性</th></tr></thead><tbody><tr><td>A 農場</td><td>複数病原体の曝露と、子牛側の健康管理に課題</td><td>飼養管理と曝露低減を組み合わせる</td></tr><tr><td>B 農場</td><td><i>M. bovis</i>の曝露は低そうだが、他のPSP・発症が多い</td><td>現在の強みを維持し、子牛の抵抗性を底上げする</td></tr><tr><td>C 農場</td><td><i>M. bovis</i>がいても健康状態は良好</td><td>良好な飼養管理を維持し、可能な伝播対策を加える</td></tr><tr><td>D 農場</td><td>呼吸器PSP低・Eimeria高、胸囲充足率も低い</td><td>初乳・栄養・飼養環境と消化器関連曝露を重点的に見直す</td></tr></tbody></table></div>
+ <div class="compare"><table><thead><tr><th>農場</th><th>見えてくる農場の状態</th><th>カイゼンの方向性</th></tr></thead><tbody><tr><td>A 農場</td><td>複数病原体の曝露と、子牛側の健康管理に課題</td><td>飼養管理と曝露低減を組み合わせる</td></tr><tr><td>B 農場</td><td><i>M. bovis</i>の曝露は低そうだが、他のPSP・発症が多い</td><td>現在の強みを維持し、子牛の健康維持能力を底上げする</td></tr><tr><td>C 農場</td><td><i>M. bovis</i>が検出されても健康と発育を維持（レジリエンス良好）</td><td>良好な飼養管理を維持し、可能な伝播対策を加える</td></tr><tr><td>D 農場</td><td>呼吸器PSP低・Eimeria高、胸囲充足率も低い</td><td>初乳・栄養・飼養環境と消化器関連曝露を重点的に見直す</td></tr></tbody></table></div>
 </section>
 
 <section class="section" id="kaizen">
  <div class="section-head"><span class="num">06</span><span class="dash"></span><span class="eyebrow">Practical improvement</span></div>
  <h2>「理想の対策」より、「その農場でできるカイゼン」へ</h2>
  <p class="intro">農場によって実施できる対策は異なります。バイオセキュリティも重要な考え方ですが、それだけを改善の中心にせず、結果から取り組めるポイントを探します。</p>
- <div class="practice-lead"><div><h3>農場の強みは残し、<br>課題のある部分から改善する。</h3><p>病原体への曝露を減らす工夫、子牛の抵抗性を支える飼養管理、発症した牛を重症化させない日常管理。どれを優先するかは農場の状況に合わせて選びます。</p></div><div class="practice-list">
+ <div class="practice-lead"><div><h3>農場の強みは残し、<br>課題のある部分から改善する。</h3><p>病原体への曝露を減らす工夫、子牛のレジリエンスを支える飼養管理、発症した牛を重症化させない日常管理。どれを優先するかは農場の状況に合わせて選びます。</p></div><div class="practice-list">
   <div class="practice-item"><b>1</b><span>初乳・哺乳・栄養の見直しで、子牛の健康状態を底上げ</span></div>
   <div class="practice-item"><b>2</b><span>換気・温熱環境・敷料・飼育密度を改善し、ストレスを減らす</span></div>
   <div class="practice-item"><b>3</b><span>無理なく実施できる清掃・動線・導入時管理で、曝露を減らす</span></div>
@@ -235,11 +257,11 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  <p class="intro">検査結果を出すことがゴールではありません。客観的に評価し、改善の優先順位を考え、実行した結果をもう一度確認することが目的です。</p>
  <div class="action-steps">
   <div class="action-step"><span class="n">STEP 01</span><h4>現状を見える化</h4><p>PSP検出、胸囲充足率、疾病発生、飼養環境を確認。</p></div>
-  <div class="action-step"><span class="n">STEP 02</span><h4>農場の特徴を解釈</h4><p>曝露圧・Resistance・Toleranceの3視点で強みと課題を整理。</p></div>
+  <div class="action-step"><span class="n">STEP 02</span><h4>農場の特徴を解釈</h4><p>曝露圧とレジリエンス（Resistance・Tolerance）の視点で強みと課題を整理。</p></div>
   <div class="action-step"><span class="n">STEP 03</span><h4>実行できる改善</h4><p>現場で取り組める対策を選び、優先順位を付けて実行。</p></div>
   <div class="action-step"><span class="n">STEP 04</span><h4>再プロファイル</h4><p>病原体検出、胸囲充足率、疾病状況の変化を確認し標準化。</p></div>
  </div>
- <div class="final-message"><h3>3つの視点で農場を理解し、その農場に合ったカイゼンを選ぶ。</h3><p>感染症が多い理由は、農場によって異なります。農場プロファイルは、PSP検出と胸囲充足率、疾病発生状況を重ねることで、<b>その農場の強みと課題を考えるための客観的な出発点</b>になります。できる対策から始め、再び評価する。この積み重ねが、感染症の少ない農場づくりにつながります。</p></div>
+ <div class="final-message"><h3>曝露とレジリエンスの視点で農場を理解し、その農場に合ったカイゼンを選ぶ。</h3><p>感染症が多い理由は、農場によって異なります。農場プロファイルは、PSP検出と胸囲充足率、疾病発生状況を重ねることで、<b>その農場の強みと課題を考えるための客観的な出発点</b>になります。できる対策から始め、再び評価する。この積み重ねが、感染症の少ない農場づくりにつながります。</p></div>
  <div class="resources"><a class="resource" href="https://app.notion.com/p/1dc0b8956056804a93d4ca047568efd5" target="_blank" rel="noopener noreferrer"><span>OFFICIAL SOP</span><b>BRDC Frontiers・農場プロファイル</b></a><a class="resource" href="https://app.notion.com/p/1dd0b895605680bebbf1eaa121d67b74" target="_blank" rel="noopener noreferrer"><span>SAMPLING SOP</span><b>鼻咽頭スワブ採取・保存・輸送SOP</b></a><a class="resource" href="https://app.notion.com/p/23a0b895605680468dbfed7e4a13a204" target="_blank" rel="noopener noreferrer"><span>MEASUREMENT SOP</span><b>胸囲充足率SOP</b></a></div>
 </section>
 </main>
