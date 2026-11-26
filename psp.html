@@ -64,6 +64,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 @media print{.crumb{display:none}}
 .resil{margin-top:18px;padding:24px 28px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.resil h3{margin:0 0 8px;font-size:18px}.resil p{margin:0 0 10px;font-size:14px;line-height:1.9;color:var(--ink2)}.resil p:last-child{margin:0}.resil .eq{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 12px;font-weight:850;font-size:14px}.resil .eq span{border-radius:10px;padding:6px 12px;background:#eef6f3}.resil .eq span.b{background:#eff5fa;color:#2c6489}.resil .eq span.a{background:#fff7ed;color:#8d5d22}.resil .eq span.r{background:#183f49;color:#fff}.resil .eq i{font-style:normal;color:#8aa3a3}
 @media(max-width:590px){.compare.rt table{min-width:0}.compare.rt thead{display:none}.compare.rt tr{display:block;padding:12px 14px;border-top:1px solid #e7eeeb}.compare.rt td{display:block;border:0;padding:2px 0}.compare.rt td:nth-child(2)::before{content:"情報：";color:#7a8e92}.compare.rt td:nth-child(3)::before{content:"解釈：";color:#7a8e92}}
+.refs details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:0}.refs summary{cursor:pointer;list-style:none;padding:16px 20px;font-weight:850;font-size:15px;display:flex;justify-content:space-between;align-items:center}.refs summary::-webkit-details-marker{display:none}.refs summary::after{content:"＋";color:var(--aqua);font-size:18px}.refs details[open] summary::after{content:"－"}.refs ol{margin:0;padding:0 22px 18px 40px;font-size:12.5px;line-height:1.85;color:var(--ink2)}.refs li{margin:0 0 8px}.refs li small{display:block;color:var(--sub)}.refs a{word-break:break-all}
 .note-s{font-size:12px;color:var(--sub);line-height:1.8;margin:12px 0 0}
 .matrix{margin-top:20px;padding:24px 26px}.matrix h3{margin:0 0 4px;font-size:17px}.mx{display:grid;grid-template-columns:110px 1fr 1fr;gap:8px;margin-top:14px}.mx .hd{font-size:12px;font-weight:850;color:#325d61;text-align:center;align-self:end;padding:4px}.mx .rh{font-size:12px;font-weight:850;color:#325d61;display:flex;align-items:center}.mx .q{border-radius:12px;padding:13px 14px;font-size:12.5px;line-height:1.8}.mx .q b{display:block;font-size:13px;margin-bottom:3px}.q1{background:#e8f6f2}.q2{background:#eef5fb}.q3{background:#fff6e9}.q4{background:#fff2eb}
 @media(max-width:590px){.mx{grid-template-columns:1fr 1fr}.mx .corner{display:none}.mx .rh{grid-column:1/-1;margin-top:6px}.resil{padding:19px}.matrix{padding:18px}}
@@ -79,7 +80,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <a class="skip" href="#main">本文へ移動</a>
 <header class="topbar"><div class="topbar-inner">
  <a class="brand" href="#top" aria-label="ページ先頭へ"><span class="brand-glyph">PSP</span><span><span class="brand-title">健常牛病原体スクリーニング</span><span class="brand-sub">農場プロファイル・臨床解説ガイド</span></span></a>
- <nav class="nav" aria-label="ページ内案内"><a href="#factors">曝露とレジリエンス</a><a href="#profile">農場プロファイル</a><a href="#psp">PSPとは</a><a href="#farms">仮想農場</a><a href="#kaizen">カイゼン</a></nav>
+ <nav class="nav" aria-label="ページ内案内"><a href="#factors">曝露とレジリエンス</a><a href="#psp">PSPとは</a><a href="#profile">農場プロファイル</a><a href="#farms">仮想農場</a><a href="#kaizen">カイゼン</a><a href="#refs">参考文献</a></nav>
  <button type="button" class="print-btn" onclick="window.print()" aria-label="印刷またはPDF保存"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>印刷 / PDF</button>
 </div></header>
 <main class="wrap" id="main">
@@ -87,7 +88,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <section class="hero" id="top"><div class="hero-inner"><div>
  <span class="hero-kicker english">BRDC FRONTIERS · CLINICAL GUIDE</span>
  <h1>健常牛病原体<br><em>スクリーニング検査</em>について</h1>
- <p class="hero-lead">農場の感染症リスクを、病原体と子牛の両面から考える。<br>PSPと胸囲充足率を組み合わせ、農場ごとに実行できるカイゼンへ。</p>
+ <p class="hero-lead">農場の感染症リスクを、病原体と子牛の両面から考える。<br>健康な子牛から検出される病原体（PSP）と、発育の指標である胸囲充足率を組み合わせ、農場ごとに実行できるカイゼンへ。</p>
  <div class="hero-tags"><span>臨床獣医師向け</span><span>曝露圧・感染症レジリエンス</span><span>4つの仮想農場</span></div>
  </div><div class="hero-card" aria-label="農場プロファイルの基本的な組み合わせ">
  <div class="hero-card-head">農場プロファイルの見方 <small>コンセプト</small></div>
@@ -95,7 +96,7 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  <div class="hero-pair"><div class="hero-mini alt"><span class="mini-kicker">CLINICAL OUTCOMES</span><b>疾病の発生</b></div><div class="hero-mini"><span class="mini-kicker">FARM CONTEXT</span><b>飼養環境</b></div></div>
  <div class="hero-note">4つの情報を重ねて、農場の強み・課題・改善の方向性を考える</div>
  </div></div></section>
-<div class="guide-strap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>この資料は、既存の農場プロファイルの「陽性率・農場間比較」や獣医師向け「Ct値」の説明を補う、<b>臨床的な読み解き方のガイド</b>です。PSPは現在検討・検証されている研究上の概念です。</span></div>
+<div class="guide-strap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>この資料は、既存の農場プロファイルの「陽性率・農場間比較」や獣医師向け「Ct値」の説明を補う、<b>臨床的な読み解き方のガイド</b>です。PSP（健康な子牛から検出される病原体。<a href="#psp">03で説明</a>）は、現在検討・検証されている研究上の概念です。</span></div>
 
 <section class="section" id="why">
  <div class="section-head"><span class="num">01</span><span class="dash"></span><span class="eyebrow">Why farm profiles?</span></div>
@@ -134,10 +135,33 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
 <div class="one-liner">大切なのは「病原体を増やさないこと」と「病原体がいても健康を保てること」を分けて考えることです。</div>
 </section>
 
+<section class="section" id="psp">
+ <div class="section-head"><span class="num">03</span><span class="dash"></span><span class="eyebrow">What is PSP?</span></div>
+ <h2>PSPという考え方</h2>
+ <p class="intro">臨床的に健康な子牛でも、鼻咽頭スワブや糞便の（RT-）qPCR検査で病原体核酸が検出されることがあります。その検出パターンを農場の状態を考える情報として活用しよう、という考え方です。</p>
+ <div class="psp-definition card">
+  <div class="psp-big"><div class="letters english">PSP</div><div class="full english">Pathogens with<br>Subclinical Presence</div><div class="subtxt">臨床的に健康な牛からの病原体核酸検出に着目した、研究上の呼称</div></div>
+  <div class="psp-copy"><h3>健康でも、病原体が検出される。</h3><p>PSP候補病原体には、不顕性感染するもの、症状を示さず定着・保菌するものなどが含まれます。qPCRではこれらの状態を一律に区別しませんが、<b>健康牛でどの病原体核酸が検出されるか</b>という情報を捉えることができます。</p><p>その結果を胸囲充足率や疾病発生状況と組み合わせることで、農場・牛群の感染症リスクを考えるための手がかりを得ます。</p></div>
+ </div>
+ <div class="mini-types"><div class="mini-type"><b>Subclinical infection</b><p>明らかな症状を伴わない感染</p></div><div class="mini-type"><b>Asymptomatic colonization</b><p>症状を伴わない定着・保菌</p></div><div class="mini-type"><b>Molecular detection</b><p>核酸検出によって存在を把握する状態</p></div></div>
+ <div class="pathogen-section">
+  <div class="path-group"><h3>呼吸器関連PSP候補</h3><p class="subheading">主な検体：健常牛の鼻咽頭スワブ</p>
+   <div class="path-item"><b>BCoV <span class="type-label">農場間の違いに注目</span></b><p>検出状況が農場のBRDC発生や胸囲充足率と関連する可能性に注目しています。</p></div>
+   <div class="path-item"><b><i>Mycoplasma bovis</i> <span class="type-label">個体差にも注目</span></b><p>農場内の個体差を考慮しても胸囲充足率との関連がみられ（前事業の解析にもとづく暫定的な所見）、重要なPSP候補と考えています。</p></div>
+   <div class="path-item"><b><i>P. multocida</i> / <i>M. haemolytica</i> / <i>H. somni</i></b><p>健康で発育のよい牛でも高率に検出されます。検出されることと発症することの違いを考えるうえで重要です。</p></div>
+  </div>
+  <div class="path-group"><h3>消化器関連PSP候補</h3><p class="subheading">主な検体：健常牛の糞便（拡張的な評価）</p>
+   <div class="path-item"><b><i>Eimeria bovis</i> / <i>E. zuernii</i></b><p>健常便や、鏡検でオーシストが確認できない便からもPCRで検出されることがあります。農場環境や他のPSPとの関係に注目しています。</p></div>
+   <div class="path-item"><b>BEV（牛エンテロウイルス）</b><p>健常便でも検出されることがある病原体として、検出パターンと農場の状態との関係を検討しています。</p></div>
+  </div>
+ </div>
+ <div class="one-liner">PSPで大切なのは、単独の陽性・陰性よりも、病原体の組み合わせと、胸囲充足率・疾病発生状況を重ねて読むことです。</div>
+</section>
+
 <section class="section" id="profile">
- <div class="section-head"><span class="num">03</span><span class="dash"></span><span class="eyebrow">Reading farm profiles</span></div>
+ <div class="section-head"><span class="num">04</span><span class="dash"></span><span class="eyebrow">Reading farm profiles</span></div>
  <h2>曝露とレジリエンスは、農場プロファイルのどこに表れるのでしょうか？</h2>
- <p class="intro">農場プロファイルでは、健常牛のPSP検出状況と胸囲充足率を<strong>組み合わせ</strong>、病原体への曝露や子牛の健康維持能力に関する情報を捉えます。さらに、BRDC・下痢症の発生状況や飼養管理情報と照らし合わせることで、農場ごとの強みと課題を考え、実行可能なカイゼンにつなげます。</p>
+ <p class="intro">農場プロファイルでは、健常牛のPSP検出状況と胸囲充足率（子牛の発育を胸囲で評価する指標）を<strong>組み合わせ</strong>、病原体への曝露や子牛の健康維持能力に関する情報を捉えます。さらに、BRDC・下痢症の発生状況や飼養管理情報と照らし合わせることで、農場ごとの強みと課題を考え、実行可能なカイゼンにつなげます。</p>
  <div class="profile-intro card">
   <div class="profile-graphic"><span class="label english">FARM PROFILE</span><div class="display">PSP × 胸囲充足率</div><p>2つの検査情報を組み合わせて読み解く</p><div class="profile-symbols"><span>PSP候補病原体</span><span>個体の発育状態</span><span>牛群の傾向</span></div></div>
   <div class="profile-copy"><h3>検出結果だけでも、胸囲充足率だけでもない。</h3><p>例えばPSP陽性率が高くても、胸囲充足率が高く疾病の少ない農場があります。反対に、BCoVや <i>M. bovis</i> がほぼ検出されなくても、胸囲充足率が低く疾病の多い農場もあります。</p><p><b>両者の組み合わせ</b>が、病原体への曝露と、子牛が健康・発育を維持する力（レジリエンス）を考える手がかりになります。農場プロファイルはResistanceやToleranceを直接測定する検査ではなく、異なる情報を重ねて推測するためのものです。</p></div>
@@ -160,29 +184,6 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
   </div>
   <p class="note-s">※ 農場プロファイルを解釈するための模式図です。どの象限に入ったかだけで、ResistanceやToleranceを測定できたという意味ではありません。核酸検出量（Ct値が小さいほど多い）は、同じ病原体の中で比べます。異なる病原体どうしでCt値を直接比べることはできません。</p>
  </div>
-</section>
-
-<section class="section" id="psp">
- <div class="section-head"><span class="num">04</span><span class="dash"></span><span class="eyebrow">What is PSP?</span></div>
- <h2>PSPという考え方</h2>
- <p class="intro">臨床的に健康な子牛でも、鼻咽頭スワブや糞便の（RT-）qPCR検査で病原体核酸が検出されることがあります。その検出パターンを農場の状態を考える情報として活用しよう、という考え方です。</p>
- <div class="psp-definition card">
-  <div class="psp-big"><div class="letters english">PSP</div><div class="full english">Pathogens with<br>Subclinical Presence</div><div class="subtxt">臨床的に健康な牛からの病原体核酸検出に着目した、研究上の呼称</div></div>
-  <div class="psp-copy"><h3>健康でも、病原体が検出される。</h3><p>PSP候補病原体には、不顕性感染するもの、症状を示さず定着・保菌するものなどが含まれます。qPCRではこれらの状態を一律に区別しませんが、<b>健康牛でどの病原体核酸が検出されるか</b>という情報を捉えることができます。</p><p>その結果を胸囲充足率や疾病発生状況と組み合わせることで、農場・牛群の感染症リスクを考えるための手がかりを得ます。</p></div>
- </div>
- <div class="mini-types"><div class="mini-type"><b>Subclinical infection</b><p>明らかな症状を伴わない感染</p></div><div class="mini-type"><b>Asymptomatic colonization</b><p>症状を伴わない定着・保菌</p></div><div class="mini-type"><b>Molecular detection</b><p>核酸検出によって存在を把握する状態</p></div></div>
- <div class="pathogen-section">
-  <div class="path-group"><h3>呼吸器関連PSP候補</h3><p class="subheading">主な検体：健常牛の鼻咽頭スワブ</p>
-   <div class="path-item"><b>BCoV <span class="type-label">農場間の違いに注目</span></b><p>検出状況が農場のBRDC発生や胸囲充足率と関連する可能性に注目しています。</p></div>
-   <div class="path-item"><b><i>Mycoplasma bovis</i> <span class="type-label">個体差にも注目</span></b><p>農場内の個体差を考慮しても胸囲充足率との関連がみられ（前事業の解析にもとづく暫定的な所見）、重要なPSP候補と考えています。</p></div>
-   <div class="path-item"><b><i>P. multocida</i> / <i>M. haemolytica</i> / <i>H. somni</i></b><p>健康で発育のよい牛でも高率に検出されます。検出されることと発症することの違いを考えるうえで重要です。</p></div>
-  </div>
-  <div class="path-group"><h3>消化器関連PSP候補</h3><p class="subheading">主な検体：健常牛の糞便（拡張的な評価）</p>
-   <div class="path-item"><b><i>Eimeria bovis</i> / <i>E. zuernii</i></b><p>健常便や、鏡検でオーシストが確認できない便からもPCRで検出されることがあります。農場環境や他のPSPとの関係に注目しています。</p></div>
-   <div class="path-item"><b>BEV（牛エンテロウイルス）</b><p>健常便でも検出されることがある病原体として、検出パターンと農場の状態との関係を検討しています。</p></div>
-  </div>
- </div>
- <div class="one-liner">PSPで大切なのは、単独の陽性・陰性よりも、病原体の組み合わせと、胸囲充足率・疾病発生状況を重ねて読むことです。</div>
 </section>
 
 <section class="section" id="farms">
@@ -264,8 +265,21 @@ a{color:var(--aqua-dark);text-underline-offset:3px}a:hover{color:#0e5454}button{
  <div class="final-message"><h3>曝露とレジリエンスの視点で農場を理解し、その農場に合ったカイゼンを選ぶ。</h3><p>感染症が多い理由は、農場によって異なります。農場プロファイルは、PSP検出と胸囲充足率、疾病発生状況を重ねることで、<b>その農場の強みと課題を考えるための客観的な出発点</b>になります。できる対策から始め、再び評価する。この積み重ねが、感染症の少ない農場づくりにつながります。</p></div>
  <div class="resources"><a class="resource" href="https://app.notion.com/p/1dc0b8956056804a93d4ca047568efd5" target="_blank" rel="noopener noreferrer"><span>OFFICIAL SOP</span><b>BRDC Frontiers・農場プロファイル</b></a><a class="resource" href="https://app.notion.com/p/1dd0b895605680bebbf1eaa121d67b74" target="_blank" rel="noopener noreferrer"><span>SAMPLING SOP</span><b>鼻咽頭スワブ採取・保存・輸送SOP</b></a><a class="resource" href="https://app.notion.com/p/23a0b895605680468dbfed7e4a13a204" target="_blank" rel="noopener noreferrer"><span>MEASUREMENT SOP</span><b>胸囲充足率SOP</b></a></div>
 </section>
+<section class="section refs" id="refs">
+ <div class="section-head"><span class="num">08</span><span class="dash"></span><span class="eyebrow">References</span></div>
+ <h2>参考文献・出典</h2>
+ <details><summary>文献リストを開く（7件）</summary><ol>
+  <li>Bishop SC (2012) A consideration of resistance and tolerance for ruminant nematode infections. <i>Frontiers in Genetics</i> 3. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3522420" target="_blank" rel="noopener">PMC3522420</a><small>Resistance・Tolerance・Resilienceの定義（家畜）</small></li>
+  <li>Knap PW, Doeschl-Wilson A (2020) Why breed disease-resilient livestock, and how? <i>Genetics Selection Evolution</i> 52:60. <a href="https://doi.org/10.1186/s12711-020-00580-4" target="_blank" rel="noopener">doi:10.1186/s12711-020-00580-4</a><small>レジリエンス＝ResistanceとToleranceの組み合わせ。Toleranceは病原体負荷に対する生産性の傾き</small></li>
+  <li>Doeschl-Wilson AB, et al. (2012) Novel methods for quantifying individual host response to infectious pathogens for genetic analyses. <i>Frontiers in Genetics</i> 3:266. <a href="https://doi.org/10.3389/fgene.2012.00266" target="_blank" rel="noopener">doi:10.3389/fgene.2012.00266</a><small>宿主応答（Resistance・Tolerance）の定量化</small></li>
+  <li>Råberg L, Sim D, Read AF (2007) Disentangling genetic variation for resistance and tolerance to infectious diseases in animals. <i>Science</i> 318:812–814. <a href="https://doi.org/10.1126/science.1148526" target="_blank" rel="noopener">doi:10.1126/science.1148526</a><small>ResistanceとToleranceを分けて評価する考え方</small></li>
+  <li>Medzhitov R, Schneider DS, Soares MP (2012) Disease tolerance as a defense strategy. <i>Science</i> 335:936–941. <a href="https://doi.org/10.1126/science.1214935" target="_blank" rel="noopener">doi:10.1126/science.1214935</a><small>Tolerance（健康被害を抑える防御戦略）の総説</small></li>
+  <li>Goto Y, Fukunari K, Suzuki T (2023) Multiplex RT-qPCR application in early detection of bovine respiratory disease in healthy calves. <i>Viruses</i> 15:669. <a href="https://doi.org/10.3390/v15030669" target="_blank" rel="noopener">doi:10.3390/v15030669</a><small>健常子牛の鼻咽頭スワブを対象とした12病原体のmultiplex RT-qPCR</small></li>
+  <li>BRDC Frontiers・農場プロファイル実施SOP（目次）. <a href="index.html">main902.github.io/farm-profile-sop/</a><small>検体の採り方、胸囲の測り方、結果（SeF生データ・SeFレポート）</small></li>
+ </ol></details>
+</section>
 </main>
-<footer class="footer"><div class="wrap foot-inner"><span>健常牛病原体スクリーニング検査について ｜ 臨床獣医師向け・農場プロファイル解説</span><a href="#top" class="foot-top">ページ先頭へ ↑</a></div></footer>
+<footer class="footer"><div class="wrap foot-inner"><span>健常牛病原体スクリーニング検査について ｜ 臨床獣医師向け・農場プロファイル解説</span><a href="#refs" class="foot-top">参考文献</a>　<a href="#top" class="foot-top">ページ先頭へ ↑</a></div></footer>
 <script>
 (function(){
 'use strict';
@@ -299,6 +313,7 @@ tabs.forEach((tab,n)=>{
 prev.addEventListener('click',()=>show(index-1,false));
 next.addEventListener('click',()=>show(index+1,false));
 show(0,false);
+window.addEventListener('beforeprint',()=>document.querySelectorAll('.refs details').forEach(d=>d.open=true));
 })();
 </script>
 </body></html>
